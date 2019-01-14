@@ -1,0 +1,2 @@
+# Ignore credentials for different projects
+**/credentials.json
