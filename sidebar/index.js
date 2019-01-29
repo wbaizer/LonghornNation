@@ -19,6 +19,11 @@ const networks = require('./static_data/networks.json');
 const { fetchTeamSchedule } = require('./utils/schedule');
 const { generateSprites } = require('./utils/sprites');
 const { message } = require('./utils/discord');
+const { getWeather, getRecentPosts, getRecentTweets, getLastThread } = require('./utils/ftt');
+
+var gfm = turndownPluginGfm.gfm
+var turndownService = new TurndownService();
+turndownService.use(gfm);
 
 const init = () => {
   console.log(
@@ -38,7 +43,7 @@ const askQuestions = () => {
       name: "ACTION",
       type: "rawlist",
       message: "What do you want to do?",
-      choices: ['Update Sidebar', 'Update Stylesheet', 'Send Message', 'Generate Spritesheet']
+      choices: ['Update Sidebar', 'Update Stylesheet', 'Send Message', 'Generate Spritesheet', 'Generate FTT']
     },
     {
         name: 'USERNAME',
@@ -81,15 +86,12 @@ const run = async () => {
   });
   if(ACTION == 'Update Sidebar') {
     var app = express();
-    var date = moment(Date.now()).format('M/D/Y hh:mm A');
-    
     app.set('views', path.join(__dirname, 'views'));
     app.set('view engine', 'ejs');
+
+    var date = moment(Date.now()).format('M/D/Y hh:mm A');
     fetchTeamSchedule().then(data => {
         app.render('sidebar', {data, teamLink: teamLink, networks: networks, date}, function(err, doc) {
-            var gfm = turndownPluginGfm.gfm
-            var turndownService = new TurndownService();
-            turndownService.use(gfm);
             var markdown = turndownService.turndown(doc, {gfm: true});
             reddit.getSubreddit(process.env.SUBREDDIT).editSettings({
                 description: markdown
@@ -129,6 +131,38 @@ const run = async () => {
   if(ACTION == 'Generate Spritesheet') {
     generateSprites();
     success('Spritesheet Generated');
+  }
+  if(ACTION == 'Generate FTT') {
+    var app = express();
+    app.set('views', path.join(__dirname, 'views'));
+    app.set('view engine', 'ejs');
+    
+    var date = moment(Date.now()).format('M/D/Y');
+    var date_2 = moment(Date.now()).format('M/D/Y hh:mm A');
+    var day = moment(Date.now()).format("dddd['s]");
+    Promise.all([
+      getWeather(), 
+      getRecentPosts(reddit, ['CFB', 'ALL', 'LonghornNation']),
+      getRecentTweets(['sehlinger3']),
+      getLastThread(reddit)
+    ]).then(values => {
+      var data = {
+        date: {
+          short: date,
+          long: date_2
+        },
+        last_thread: values[3] || null,
+        weather: values[0],
+        top: values[1],
+        tweets: values[2]
+      }
+      app.render('ftt', {data}, function(err, doc) {
+        var markdown = turndownService.turndown(doc, {gfm: true});
+        var post_title = "[" + date + "] " + day + " Off Topic Free Talk Thread - Testing";
+        console.log(markdown);
+        // Add code to post to reddit and unsticky last thread.
+      });
+    });
   }
 
 };

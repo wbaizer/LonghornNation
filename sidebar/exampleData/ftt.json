@@ -1,0 +1,122 @@
+{
+    "weather": {
+        "current": "45.5",
+        "forcast": [
+            {
+                "date": 1548698400,
+                "temp": {
+                    "low": 45.5,
+                    "max": 45.5
+                },
+                "conditions":"Clear"
+            },
+            {
+                "date": 1548784800,
+                "temp": {
+                    "low": 45.5,
+                    "max": 45.5
+                },
+                "conditions":"Clear"
+            },
+            {
+                "date": 1548871200,
+                "temp": {
+                    "low": 45.5,
+                    "max": 45.5
+                },
+                "conditions":"Clear"
+            },
+            {
+                "date": 1548957600,
+                "temp": {
+                    "low": 45.5,
+                    "max": 45.5
+                },
+                "conditions":"Clear"
+            },
+            {
+                "date": 1549044000,
+                "temp": {
+                    "low": 45.5,
+                    "max": 45.5
+                },
+                "conditions":"Clear"
+            },
+            {
+                "date": 1549130400,
+                "temp": {
+                    "low": 45.5,
+                    "max": 45.5
+                },
+                "conditions":"Clear"
+            },
+            {
+                "date": 1549216800,
+                "temp": {
+                    "low": 45.5,
+                    "max": 45.5
+                },
+                "conditions":"Clear"
+            }
+        ]
+    },
+    "top": [
+        {
+            "link": "/r/all",
+            "posts": [
+                {
+                    "title": "blah",
+                    "link": "http://reddit.com"
+                }
+            ]
+        }, {
+            "link": "/r/cfb",
+            "posts": [
+                {
+                    "title": "blah",
+                    "link": "http://reddit.com"
+                }
+            ]
+        }, {
+            "link": "/r/longhornnation",
+            "posts": [
+                {
+                    "title": "blah",
+                    "link": "http://reddit.com"
+                }
+            ]
+        }
+    ],
+    "tweets": [
+        {
+            "handle": "@sehlinger3",
+            "url": "https://twitter.com/user/status/1088648251518128134",
+            "text": "Watched you in the State game boss, respect🤘🏻🤘🏻",
+            "short": "https://t.co/0D3GStOW1o"
+        },
+        {
+            "handle": "@CoachTomHerman",
+            "url": "https://twitter.com/user/status/1088648251518128134",
+            "text": "Watched you in the State game boss, respect🤘🏻🤘🏻",
+            "short": "https://t.co/0D3GStOW1o"
+        },
+        {
+            "handle": "@EJHolland247",
+            "url": "https://twitter.com/user/status/1088648251518128134",
+            "text": "Watched you in the State game boss, respect🤘🏻🤘🏻",
+            "short": "https://t.co/0D3GStOW1o"
+        },
+        {
+            "handle": "@MikeRoach247",
+            "url": "https://twitter.com/user/status/1088648251518128134",
+            "text": "Watched you in the State game boss, respect🤘🏻🤘🏻",
+            "short": "https://t.co/0D3GStOW1o"
+        },
+        {
+            "handle": "@_delconte",
+            "url": "https://twitter.com/user/status/1088648251518128134",
+            "text": "Watched you in the State game boss, respect🤘🏻🤘🏻",
+            "short": "https://t.co/0D3GStOW1o"
+        }
+    ]
+}
