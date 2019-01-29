@@ -25,7 +25,7 @@ To run the CLI:
 ### Generating Spritesheets
 You can easily generate new spritesheets using the CLI.
 
-First thing is to upload a new image to the `/src/images` folder make sure you put it in the correct folder. Take note of the filename pattern we are using. The filename is used for the key of the object. So if the image is `F11.png` then the key for that object would be `F11`. Once you have generated your spritesheeet, you can get the image from `/src/images/sprite.css`. At this time you need to manually update the image.
+First thing is to upload a new image to the `/src/images` folder make sure you put it in the correct folder. Take note of the filename pattern we are using. The filename is used for the key of the object. So if the image is `F11.png` then the key for that object would be `F11`. Once you have generated your spritesheeet, you can get the image from `/src/images/sprite.png`. At this time you need to manually update the image.
 
 #### Custom
 This is used for all custom flair.
