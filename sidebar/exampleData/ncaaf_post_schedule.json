@@ -1,0 +1,2758 @@
+{
+    "data": {
+        "timestamp": "2019-01-10T08:04:22Z",
+        "status": "success",
+        "season": {
+            "year": 2018,
+            "type": 3,
+            "name": "Post Season"
+        },
+        "team": {
+            "id": "251",
+            "abbreviation": "TEX",
+            "location": "Texas",
+            "name": "Longhorns",
+            "displayName": "Texas Longhorns",
+            "venueLink": "http://www.espn.com/college-football/team/stadium/_/id/251",
+            "clubhouse": "http://www.espn.com/college-football/team/_/id/251/texas-longhorns",
+            "color": "EE7524",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/251.png",
+            "recordSummary": "10-4",
+            "seasonSummary": "2018",
+            "standingSummary": "2nd in Big 12"
+        },
+        "events": [
+            {
+                "id": "401032086",
+                "date": "2019-01-02T01:45Z",
+                "name": "Texas Longhorns at Georgia Bulldogs",
+                "shortName": "TEX @ UGA",
+                "season": {
+                    "year": 2018
+                },
+                "seasonType": {
+                    "id": "3",
+                    "type": 3,
+                    "name": "Post Season",
+                    "abbreviation": "post"
+                },
+                "week": {
+                    "number": 1,
+                    "text": "Bowls"
+                },
+                "competitions": [
+                    {
+                        "id": "401032086",
+                        "date": "2019-01-02T01:45Z",
+                        "attendance": 71449,
+                        "type": {
+                            "id": "1",
+                            "text": "Standard",
+                            "abbreviation": "STD"
+                        },
+                        "neutralSite": true,
+                        "boxscoreAvailable": true,
+                        "ticketsAvailable": false,
+                        "venue": {
+                            "fullName": "Mercedes-Benz Superdome",
+                            "address": {
+                                "city": "New Orleans",
+                                "state": "LA",
+                                "zipCode": "70112"
+                            }
+                        },
+                        "competitors": [
+                            {
+                                "id": "61",
+                                "type": "team",
+                                "order": 0,
+                                "homeAway": "home",
+                                "winner": false,
+                                "team": {
+                                    "id": "61",
+                                    "location": "Georgia",
+                                    "nickname": "Georgia",
+                                    "abbreviation": "UGA",
+                                    "displayName": "Georgia Bulldogs",
+                                    "shortDisplayName": "Bulldogs",
+                                    "logos": [
+                                        {
+                                            "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/61.png",
+                                            "width": 500,
+                                            "height": 500,
+                                            "alt": "",
+                                            "rel": [
+                                                "full",
+                                                "default"
+                                            ]
+                                        },
+                                        {
+                                            "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/61.png",
+                                            "width": 500,
+                                            "height": 500,
+                                            "alt": "",
+                                            "rel": [
+                                                "full",
+                                                "dark"
+                                            ]
+                                        }
+                                    ],
+                                    "links": [
+                                        {
+                                            "rel": [
+                                                "clubhouse",
+                                                "desktop",
+                                                "team"
+                                            ],
+                                            "href": "http://www.espn.com/college-football/team/_/id/61/georgia-bulldogs",
+                                            "text": "Clubhouse"
+                                        },
+                                        {
+                                            "rel": [
+                                                "clubhouse",
+                                                "mobile",
+                                                "team"
+                                            ],
+                                            "href": "http://www.espn.com/college-football/team/_/id/61/georgia-bulldogs",
+                                            "text": "Clubhouse"
+                                        },
+                                        {
+                                            "rel": [
+                                                "roster",
+                                                "desktop",
+                                                "team"
+                                            ],
+                                            "href": "http://www.espn.com/college-football/team/roster/_/id/61",
+                                            "text": "Roster"
+                                        },
+                                        {
+                                            "rel": [
+                                                "stats",
+                                                "desktop",
+                                                "team"
+                                            ],
+                                            "href": "http://www.espn.com/college-football/team/stats/_/id/61",
+                                            "text": "Statistics"
+                                        },
+                                        {
+                                            "rel": [
+                                                "schedule",
+                                                "desktop",
+                                                "team"
+                                            ],
+                                            "href": "http://www.espn.com/college-football/team/schedule/_/id/61",
+                                            "text": "Schedule"
+                                        },
+                                        {
+                                            "rel": [
+                                                "photos",
+                                                "desktop",
+                                                "team"
+                                            ],
+                                            "href": "http://www.espn.com/college-football/team/photos/_/id/61",
+                                            "text": "photos"
+                                        },
+                                        {
+                                            "rel": [
+                                                "stadium",
+                                                "desktop",
+                                                "team"
+                                            ],
+                                            "href": "http://www.espn.com/college-football/team/stadium/_/id/61",
+                                            "text": "Stadium"
+                                        },
+                                        {
+                                            "rel": [
+                                                "scores",
+                                                "sportscenter",
+                                                "app",
+                                                "team"
+                                            ],
+                                            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:20~l:23~t:61&section=scores",
+                                            "text": "Scores"
+                                        },
+                                        {
+                                            "rel": [
+                                                "awards",
+                                                "desktop",
+                                                "team"
+                                            ],
+                                            "href": "http://www.espn.com/college-football/awards/_/team/61",
+                                            "text": "Awards"
+                                        }
+                                    ]
+                                },
+                                "score": {
+                                    "value": 21,
+                                    "displayValue": "21"
+                                },
+                                "record": [
+                                    {
+                                        "id": "1",
+                                        "abbreviation": "Game",
+                                        "displayName": "Record Year To Date",
+                                        "shortDisplayName": "YTD",
+                                        "description": "Overall Record",
+                                        "type": "total",
+                                        "displayValue": "11-3"
+                                    },
+                                    {
+                                        "id": "9009",
+                                        "displayName": "CONF",
+                                        "shortDisplayName": "CONF",
+                                        "description": "Conference Record",
+                                        "type": "vsconf",
+                                        "displayValue": "7-1"
+                                    }
+                                ],
+                                "curatedRank": {
+                                    "current": 5
+                                }
+                            },
+                            {
+                                "id": "251",
+                                "type": "team",
+                                "order": 1,
+                                "homeAway": "away",
+                                "winner": true,
+                                "team": {
+                                    "id": "251",
+                                    "location": "Texas",
+                                    "nickname": "Texas",
+                                    "abbreviation": "TEX",
+                                    "displayName": "Texas Longhorns",
+                                    "shortDisplayName": "Longhorns",
+                                    "logos": [
+                                        {
+                                            "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/251.png",
+                                            "width": 500,
+                                            "height": 500,
+                                            "alt": "",
+                                            "rel": [
+                                                "full",
+                                                "default"
+                                            ]
+                                        },
+                                        {
+                                            "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/251.png",
+                                            "width": 500,
+                                            "height": 500,
+                                            "alt": "",
+                                            "rel": [
+                                                "full",
+                                                "dark"
+                                            ]
+                                        }
+                                    ],
+                                    "links": [
+                                        {
+                                            "rel": [
+                                                "clubhouse",
+                                                "desktop",
+                                                "team"
+                                            ],
+                                            "href": "http://www.espn.com/college-football/team/_/id/251/texas-longhorns",
+                                            "text": "Clubhouse"
+                                        },
+                                        {
+                                            "rel": [
+                                                "clubhouse",
+                                                "mobile",
+                                                "team"
+                                            ],
+                                            "href": "http://www.espn.com/college-football/team/_/id/251/texas-longhorns",
+                                            "text": "Clubhouse"
+                                        },
+                                        {
+                                            "rel": [
+                                                "roster",
+                                                "desktop",
+                                                "team"
+                                            ],
+                                            "href": "http://www.espn.com/college-football/team/roster/_/id/251",
+                                            "text": "Roster"
+                                        },
+                                        {
+                                            "rel": [
+                                                "stats",
+                                                "desktop",
+                                                "team"
+                                            ],
+                                            "href": "http://www.espn.com/college-football/team/stats/_/id/251",
+                                            "text": "Statistics"
+                                        },
+                                        {
+                                            "rel": [
+                                                "schedule",
+                                                "desktop",
+                                                "team"
+                                            ],
+                                            "href": "http://www.espn.com/college-football/team/schedule/_/id/251",
+                                            "text": "Schedule"
+                                        },
+                                        {
+                                            "rel": [
+                                                "photos",
+                                                "desktop",
+                                                "team"
+                                            ],
+                                            "href": "http://www.espn.com/college-football/team/photos/_/id/251",
+                                            "text": "photos"
+                                        },
+                                        {
+                                            "rel": [
+                                                "stadium",
+                                                "desktop",
+                                                "team"
+                                            ],
+                                            "href": "http://www.espn.com/college-football/team/stadium/_/id/251",
+                                            "text": "Stadium"
+                                        },
+                                        {
+                                            "rel": [
+                                                "scores",
+                                                "sportscenter",
+                                                "app",
+                                                "team"
+                                            ],
+                                            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:20~l:23~t:251&section=scores",
+                                            "text": "Scores"
+                                        },
+                                        {
+                                            "rel": [
+                                                "awards",
+                                                "desktop",
+                                                "team"
+                                            ],
+                                            "href": "http://www.espn.com/college-football/awards/_/team/251",
+                                            "text": "Awards"
+                                        }
+                                    ]
+                                },
+                                "score": {
+                                    "value": 28,
+                                    "displayValue": "28"
+                                },
+                                "leaders": [
+                                    {
+                                        "name": "passingLeader",
+                                        "displayName": "Passing Leader",
+                                        "abbreviation": "PYDS",
+                                        "leaders": [
+                                            {
+                                                "displayValue": "19-27, 169 YDS",
+                                                "value": 169,
+                                                "athlete": {
+                                                    "id": "4241820",
+                                                    "lastName": "Ehlinger",
+                                                    "displayName": "Sam Ehlinger",
+                                                    "shortName": "S. Ehlinger",
+                                                    "links": [
+                                                        {
+                                                            "rel": [
+                                                                "playercard",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/_/id/4241820"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "playercard",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://m.espn.com/ncf/playercard?playerId=4241820"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "stats",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/stats/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "stats",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/stats/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "splits",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/splits/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "splits",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/splits/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "gamelog",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/gamelog/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "gamelog",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/gamelog/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "news",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/news/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "news",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/news/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "bio",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/bio/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "bio",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/bio/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "overview",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "overview",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/_/id/4241820/sam-ehlinger"
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "rushingLeader",
+                                        "displayName": "Rushing Leader",
+                                        "abbreviation": "RYDS",
+                                        "leaders": [
+                                            {
+                                                "displayValue": "18 CAR, 91 YDS",
+                                                "value": 91,
+                                                "athlete": {
+                                                    "id": "3127200",
+                                                    "lastName": "Watson",
+                                                    "displayName": "Tre Watson",
+                                                    "shortName": "T. Watson",
+                                                    "links": [
+                                                        {
+                                                            "rel": [
+                                                                "playercard",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/_/id/3127200"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "playercard",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://m.espn.com/ncf/playercard?playerId=3127200"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "stats",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/stats/_/id/3127200/tre-watson"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "stats",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/stats/_/id/3127200/tre-watson"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "splits",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/splits/_/id/3127200/tre-watson"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "splits",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/splits/_/id/3127200/tre-watson"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "gamelog",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/gamelog/_/id/3127200/tre-watson"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "gamelog",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/gamelog/_/id/3127200/tre-watson"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "news",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/news/_/id/3127200/tre-watson"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "news",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/news/_/id/3127200/tre-watson"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "bio",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/bio/_/id/3127200/tre-watson"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "bio",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/bio/_/id/3127200/tre-watson"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "overview",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/_/id/3127200/tre-watson"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "overview",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/_/id/3127200/tre-watson"
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "receivingLeader",
+                                        "displayName": "Receiving Leader",
+                                        "abbreviation": "RECYDS",
+                                        "leaders": [
+                                            {
+                                                "displayValue": "7 REC, 67 YDS",
+                                                "value": 67,
+                                                "athlete": {
+                                                    "id": "4039057",
+                                                    "lastName": "Humphrey",
+                                                    "displayName": "Lil'Jordan Humphrey",
+                                                    "shortName": "L. Humphrey",
+                                                    "links": [
+                                                        {
+                                                            "rel": [
+                                                                "playercard",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/_/id/4039057"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "playercard",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://m.espn.com/ncf/playercard?playerId=4039057"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "stats",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/stats/_/id/4039057/liljordan-humphrey"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "stats",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/stats/_/id/4039057/liljordan-humphrey"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "splits",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/splits/_/id/4039057/liljordan-humphrey"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "splits",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/splits/_/id/4039057/liljordan-humphrey"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "gamelog",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/gamelog/_/id/4039057/liljordan-humphrey"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "gamelog",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/gamelog/_/id/4039057/liljordan-humphrey"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "news",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/news/_/id/4039057/liljordan-humphrey"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "news",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/news/_/id/4039057/liljordan-humphrey"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "bio",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/bio/_/id/4039057/liljordan-humphrey"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "bio",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/bio/_/id/4039057/liljordan-humphrey"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "overview",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/_/id/4039057/liljordan-humphrey"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "overview",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/_/id/4039057/liljordan-humphrey"
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "passingYards",
+                                        "displayName": "Passing Yards",
+                                        "abbreviation": "PYDS",
+                                        "leaders": [
+                                            {
+                                                "displayValue": "169",
+                                                "value": 169,
+                                                "athlete": {
+                                                    "id": "4241820",
+                                                    "lastName": "Ehlinger",
+                                                    "displayName": "Sam Ehlinger",
+                                                    "shortName": "S. Ehlinger",
+                                                    "links": [
+                                                        {
+                                                            "rel": [
+                                                                "playercard",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/_/id/4241820"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "playercard",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://m.espn.com/ncf/playercard?playerId=4241820"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "stats",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/stats/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "stats",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/stats/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "splits",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/splits/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "splits",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/splits/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "gamelog",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/gamelog/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "gamelog",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/gamelog/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "news",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/news/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "news",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/news/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "bio",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/bio/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "bio",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/bio/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "overview",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "overview",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/_/id/4241820/sam-ehlinger"
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "rushingYards",
+                                        "displayName": "Rushing Yards",
+                                        "abbreviation": "RYDS",
+                                        "leaders": [
+                                            {
+                                                "displayValue": "91",
+                                                "value": 91,
+                                                "athlete": {
+                                                    "id": "3127200",
+                                                    "lastName": "Watson",
+                                                    "displayName": "Tre Watson",
+                                                    "shortName": "T. Watson",
+                                                    "links": [
+                                                        {
+                                                            "rel": [
+                                                                "playercard",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/_/id/3127200"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "playercard",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://m.espn.com/ncf/playercard?playerId=3127200"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "stats",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/stats/_/id/3127200/tre-watson"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "stats",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/stats/_/id/3127200/tre-watson"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "splits",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/splits/_/id/3127200/tre-watson"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "splits",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/splits/_/id/3127200/tre-watson"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "gamelog",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/gamelog/_/id/3127200/tre-watson"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "gamelog",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/gamelog/_/id/3127200/tre-watson"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "news",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/news/_/id/3127200/tre-watson"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "news",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/news/_/id/3127200/tre-watson"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "bio",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/bio/_/id/3127200/tre-watson"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "bio",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/bio/_/id/3127200/tre-watson"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "overview",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/_/id/3127200/tre-watson"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "overview",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/_/id/3127200/tre-watson"
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "receivingYards",
+                                        "displayName": "Receiving Yards",
+                                        "abbreviation": "RECYDS",
+                                        "leaders": [
+                                            {
+                                                "displayValue": "67",
+                                                "value": 67,
+                                                "athlete": {
+                                                    "id": "4039057",
+                                                    "lastName": "Humphrey",
+                                                    "displayName": "Lil'Jordan Humphrey",
+                                                    "shortName": "L. Humphrey",
+                                                    "links": [
+                                                        {
+                                                            "rel": [
+                                                                "playercard",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/_/id/4039057"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "playercard",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://m.espn.com/ncf/playercard?playerId=4039057"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "stats",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/stats/_/id/4039057/liljordan-humphrey"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "stats",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/stats/_/id/4039057/liljordan-humphrey"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "splits",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/splits/_/id/4039057/liljordan-humphrey"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "splits",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/splits/_/id/4039057/liljordan-humphrey"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "gamelog",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/gamelog/_/id/4039057/liljordan-humphrey"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "gamelog",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/gamelog/_/id/4039057/liljordan-humphrey"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "news",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/news/_/id/4039057/liljordan-humphrey"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "news",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/news/_/id/4039057/liljordan-humphrey"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "bio",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/bio/_/id/4039057/liljordan-humphrey"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "bio",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/bio/_/id/4039057/liljordan-humphrey"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "overview",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/_/id/4039057/liljordan-humphrey"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "overview",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/_/id/4039057/liljordan-humphrey"
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "totalTackles",
+                                        "displayName": "Tackles",
+                                        "abbreviation": "TACK",
+                                        "leaders": [
+                                            {
+                                                "displayValue": "8",
+                                                "value": 8,
+                                                "athlete": {
+                                                    "id": "4362094",
+                                                    "lastName": "Ossai",
+                                                    "displayName": "Joseph Ossai",
+                                                    "shortName": "J. Ossai",
+                                                    "links": [
+                                                        {
+                                                            "rel": [
+                                                                "playercard",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/_/id/4362094"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "playercard",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://m.espn.com/ncf/playercard?playerId=4362094"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "stats",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/stats/_/id/4362094/joseph-ossai"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "stats",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/stats/_/id/4362094/joseph-ossai"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "splits",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/splits/_/id/4362094/joseph-ossai"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "splits",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/splits/_/id/4362094/joseph-ossai"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "gamelog",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/gamelog/_/id/4362094/joseph-ossai"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "gamelog",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/gamelog/_/id/4362094/joseph-ossai"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "news",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/news/_/id/4362094/joseph-ossai"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "news",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/news/_/id/4362094/joseph-ossai"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "bio",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/bio/_/id/4362094/joseph-ossai"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "bio",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/bio/_/id/4362094/joseph-ossai"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "overview",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/_/id/4362094/joseph-ossai"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "overview",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/_/id/4362094/joseph-ossai"
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "interceptions",
+                                        "displayName": "Interceptions",
+                                        "abbreviation": "INT",
+                                        "leaders": [
+                                            {
+                                                "displayValue": "1",
+                                                "value": 1,
+                                                "athlete": {
+                                                    "id": "3929850",
+                                                    "lastName": "Locke III",
+                                                    "displayName": "P.J. Locke III",
+                                                    "shortName": "P.J. Locke III",
+                                                    "links": [
+                                                        {
+                                                            "rel": [
+                                                                "playercard",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/_/id/3929850"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "playercard",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://m.espn.com/ncf/playercard?playerId=3929850"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "stats",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/stats/_/id/3929850/pj-locke-iii"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "stats",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/stats/_/id/3929850/pj-locke-iii"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "splits",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/splits/_/id/3929850/pj-locke-iii"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "splits",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/splits/_/id/3929850/pj-locke-iii"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "gamelog",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/gamelog/_/id/3929850/pj-locke-iii"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "gamelog",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/gamelog/_/id/3929850/pj-locke-iii"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "news",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/news/_/id/3929850/pj-locke-iii"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "news",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/news/_/id/3929850/pj-locke-iii"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "bio",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/bio/_/id/3929850/pj-locke-iii"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "bio",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/bio/_/id/3929850/pj-locke-iii"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "overview",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/_/id/3929850/pj-locke-iii"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "overview",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/_/id/3929850/pj-locke-iii"
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "puntReturns",
+                                        "displayName": "Punt Returns",
+                                        "abbreviation": "PR"
+                                    },
+                                    {
+                                        "name": "kickReturns",
+                                        "displayName": "Kick Returns",
+                                        "abbreviation": "KR"
+                                    },
+                                    {
+                                        "name": "punts",
+                                        "displayName": "Punts",
+                                        "abbreviation": "P",
+                                        "leaders": [
+                                            {
+                                                "displayValue": "5",
+                                                "value": 5,
+                                                "athlete": {
+                                                    "id": "4362078",
+                                                    "lastName": "Bujcevski",
+                                                    "displayName": "Ryan Bujcevski",
+                                                    "shortName": "R. Bujcevski",
+                                                    "links": [
+                                                        {
+                                                            "rel": [
+                                                                "playercard",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/_/id/4362078"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "playercard",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://m.espn.com/ncf/playercard?playerId=4362078"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "stats",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/stats/_/id/4362078/ryan-bujcevski"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "stats",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/stats/_/id/4362078/ryan-bujcevski"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "splits",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/splits/_/id/4362078/ryan-bujcevski"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "splits",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/splits/_/id/4362078/ryan-bujcevski"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "gamelog",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/gamelog/_/id/4362078/ryan-bujcevski"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "gamelog",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/gamelog/_/id/4362078/ryan-bujcevski"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "news",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/news/_/id/4362078/ryan-bujcevski"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "news",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/news/_/id/4362078/ryan-bujcevski"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "bio",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/bio/_/id/4362078/ryan-bujcevski"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "bio",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/bio/_/id/4362078/ryan-bujcevski"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "overview",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/_/id/4362078/ryan-bujcevski"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "overview",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/_/id/4362078/ryan-bujcevski"
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "totalKickingPoints",
+                                        "displayName": "Kicking Points",
+                                        "abbreviation": "TP",
+                                        "leaders": [
+                                            {
+                                                "displayValue": "8",
+                                                "value": 8,
+                                                "athlete": {
+                                                    "id": "4362081",
+                                                    "lastName": "Dicker",
+                                                    "displayName": "Cameron Dicker",
+                                                    "shortName": "C. Dicker",
+                                                    "links": [
+                                                        {
+                                                            "rel": [
+                                                                "playercard",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/_/id/4362081"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "playercard",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://m.espn.com/ncf/playercard?playerId=4362081"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "stats",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/stats/_/id/4362081/cameron-dicker"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "stats",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/stats/_/id/4362081/cameron-dicker"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "splits",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/splits/_/id/4362081/cameron-dicker"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "splits",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/splits/_/id/4362081/cameron-dicker"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "gamelog",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/gamelog/_/id/4362081/cameron-dicker"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "gamelog",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/gamelog/_/id/4362081/cameron-dicker"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "news",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/news/_/id/4362081/cameron-dicker"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "news",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/news/_/id/4362081/cameron-dicker"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "bio",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/bio/_/id/4362081/cameron-dicker"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "bio",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/bio/_/id/4362081/cameron-dicker"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "overview",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/_/id/4362081/cameron-dicker"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "overview",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/_/id/4362081/cameron-dicker"
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "fumbles",
+                                        "displayName": "Fumbles",
+                                        "abbreviation": "F",
+                                        "leaders": [
+                                            {
+                                                "displayValue": "1",
+                                                "value": 1,
+                                                "athlete": {
+                                                    "id": "4241820",
+                                                    "lastName": "Ehlinger",
+                                                    "displayName": "Sam Ehlinger",
+                                                    "shortName": "S. Ehlinger",
+                                                    "links": [
+                                                        {
+                                                            "rel": [
+                                                                "playercard",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/_/id/4241820"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "playercard",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://m.espn.com/ncf/playercard?playerId=4241820"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "stats",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/stats/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "stats",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/stats/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "splits",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/splits/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "splits",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/splits/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "gamelog",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/gamelog/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "gamelog",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/gamelog/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "news",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/news/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "news",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/news/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "bio",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/bio/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "bio",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/bio/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "overview",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "overview",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/_/id/4241820/sam-ehlinger"
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "fumblesLost",
+                                        "displayName": "Fumbles Lost",
+                                        "abbreviation": "FL"
+                                    },
+                                    {
+                                        "name": "fumblesRecovered",
+                                        "displayName": "Fumbles Recovered",
+                                        "abbreviation": "CMP",
+                                        "leaders": [
+                                            {
+                                                "displayValue": "1",
+                                                "value": 1,
+                                                "athlete": {
+                                                    "id": "4039067",
+                                                    "lastName": "Wilbon",
+                                                    "displayName": "Gerald Wilbon",
+                                                    "shortName": "G. Wilbon",
+                                                    "links": [
+                                                        {
+                                                            "rel": [
+                                                                "playercard",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/_/id/4039067"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "playercard",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://m.espn.com/ncf/playercard?playerId=4039067"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "stats",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/stats/_/id/4039067/gerald-wilbon"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "stats",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/stats/_/id/4039067/gerald-wilbon"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "splits",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/splits/_/id/4039067/gerald-wilbon"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "splits",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/splits/_/id/4039067/gerald-wilbon"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "gamelog",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/gamelog/_/id/4039067/gerald-wilbon"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "gamelog",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/gamelog/_/id/4039067/gerald-wilbon"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "news",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/news/_/id/4039067/gerald-wilbon"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "news",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/news/_/id/4039067/gerald-wilbon"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "bio",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/bio/_/id/4039067/gerald-wilbon"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "bio",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/bio/_/id/4039067/gerald-wilbon"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "overview",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/_/id/4039067/gerald-wilbon"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "overview",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/_/id/4039067/gerald-wilbon"
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "espnRating",
+                                        "displayName": "ESPN Rating Leader",
+                                        "abbreviation": "ESPNRating",
+                                        "leaders": [
+                                            {
+                                                "displayValue": "19-27, 169 YDS",
+                                                "value": 31.959999084472656,
+                                                "athlete": {
+                                                    "id": "4241820",
+                                                    "lastName": "Ehlinger",
+                                                    "displayName": "Sam Ehlinger",
+                                                    "shortName": "S. Ehlinger",
+                                                    "links": [
+                                                        {
+                                                            "rel": [
+                                                                "playercard",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/_/id/4241820"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "playercard",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://m.espn.com/ncf/playercard?playerId=4241820"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "stats",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/stats/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "stats",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/stats/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "splits",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/splits/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "splits",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/splits/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "gamelog",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/gamelog/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "gamelog",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/gamelog/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "news",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/news/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "news",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/news/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "bio",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/bio/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "bio",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/bio/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "overview",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "overview",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/_/id/4241820/sam-ehlinger"
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "passingTouchdowns",
+                                        "displayName": "Passing Touchdowns",
+                                        "abbreviation": "TD"
+                                    },
+                                    {
+                                        "name": "quarterbackRating",
+                                        "displayName": "Quarterback Rating",
+                                        "abbreviation": "RAT",
+                                        "leaders": [
+                                            {
+                                                "displayValue": "86.8",
+                                                "value": 86.80416870117188,
+                                                "athlete": {
+                                                    "id": "4241820",
+                                                    "lastName": "Ehlinger",
+                                                    "displayName": "Sam Ehlinger",
+                                                    "shortName": "S. Ehlinger",
+                                                    "links": [
+                                                        {
+                                                            "rel": [
+                                                                "playercard",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/_/id/4241820"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "playercard",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://m.espn.com/ncf/playercard?playerId=4241820"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "stats",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/stats/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "stats",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/stats/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "splits",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/splits/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "splits",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/splits/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "gamelog",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/gamelog/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "gamelog",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/gamelog/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "news",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/news/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "news",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/news/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "bio",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/bio/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "bio",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/bio/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "overview",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "overview",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/_/id/4241820/sam-ehlinger"
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "rushingTouchdowns",
+                                        "displayName": "Rushing Touchdowns",
+                                        "abbreviation": "TD",
+                                        "leaders": [
+                                            {
+                                                "displayValue": "3",
+                                                "value": 3,
+                                                "athlete": {
+                                                    "id": "4241820",
+                                                    "lastName": "Ehlinger",
+                                                    "displayName": "Sam Ehlinger",
+                                                    "shortName": "S. Ehlinger",
+                                                    "links": [
+                                                        {
+                                                            "rel": [
+                                                                "playercard",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/_/id/4241820"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "playercard",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://m.espn.com/ncf/playercard?playerId=4241820"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "stats",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/stats/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "stats",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/stats/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "splits",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/splits/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "splits",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/splits/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "gamelog",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/gamelog/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "gamelog",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/gamelog/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "news",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/news/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "news",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/news/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "bio",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/bio/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "bio",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/bio/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "overview",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/_/id/4241820/sam-ehlinger"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "overview",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/_/id/4241820/sam-ehlinger"
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "receptions",
+                                        "displayName": "Receptions",
+                                        "abbreviation": "REC",
+                                        "leaders": [
+                                            {
+                                                "displayValue": "7",
+                                                "value": 7,
+                                                "athlete": {
+                                                    "id": "4039057",
+                                                    "lastName": "Humphrey",
+                                                    "displayName": "Lil'Jordan Humphrey",
+                                                    "shortName": "L. Humphrey",
+                                                    "links": [
+                                                        {
+                                                            "rel": [
+                                                                "playercard",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/_/id/4039057"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "playercard",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://m.espn.com/ncf/playercard?playerId=4039057"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "stats",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/stats/_/id/4039057/liljordan-humphrey"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "stats",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/stats/_/id/4039057/liljordan-humphrey"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "splits",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/splits/_/id/4039057/liljordan-humphrey"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "splits",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/splits/_/id/4039057/liljordan-humphrey"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "gamelog",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/gamelog/_/id/4039057/liljordan-humphrey"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "gamelog",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/gamelog/_/id/4039057/liljordan-humphrey"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "news",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/news/_/id/4039057/liljordan-humphrey"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "news",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/news/_/id/4039057/liljordan-humphrey"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "bio",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/bio/_/id/4039057/liljordan-humphrey"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "bio",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/bio/_/id/4039057/liljordan-humphrey"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "overview",
+                                                                "desktop",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/_/id/4039057/liljordan-humphrey"
+                                                        },
+                                                        {
+                                                            "rel": [
+                                                                "overview",
+                                                                "mobile",
+                                                                "athlete"
+                                                            ],
+                                                            "href": "http://www.espn.com/college-football/player/_/id/4039057/liljordan-humphrey"
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "receivingTouchdowns",
+                                        "displayName": "Receiving Touchdowns",
+                                        "abbreviation": "TD"
+                                    }
+                                ],
+                                "record": [
+                                    {
+                                        "id": "1",
+                                        "abbreviation": "Game",
+                                        "displayName": "Record Year To Date",
+                                        "shortDisplayName": "YTD",
+                                        "description": "Overall Record",
+                                        "type": "total",
+                                        "displayValue": "10-4"
+                                    },
+                                    {
+                                        "id": "9009",
+                                        "displayName": "CONF",
+                                        "shortDisplayName": "CONF",
+                                        "description": "Conference Record",
+                                        "type": "vsconf",
+                                        "displayValue": "7-2"
+                                    }
+                                ],
+                                "curatedRank": {
+                                    "current": 15
+                                }
+                            }
+                        ],
+                        "notes": [
+                            {
+                                "type": "event",
+                                "headline": "ALLSTATE SUGAR BOWL"
+                            }
+                        ],
+                        "broadcasts": [
+                            {
+                                "type": {
+                                    "id": "1",
+                                    "shortName": "TV"
+                                },
+                                "market": {
+                                    "id": "1",
+                                    "type": "National"
+                                },
+                                "media": {
+                                    "shortName": "ESPN"
+                                },
+                                "lang": "en",
+                                "region": "us"
+                            },
+                            {
+                                "type": {
+                                    "id": "5",
+                                    "shortName": "Radio"
+                                },
+                                "market": {
+                                    "id": "1",
+                                    "type": "National"
+                                },
+                                "media": {
+                                    "shortName": "ESPNRM"
+                                },
+                                "lang": "en",
+                                "region": "us"
+                            }
+                        ],
+                        "status": {
+                            "clock": 0,
+                            "displayClock": "0:00",
+                            "period": 4,
+                            "type": {
+                                "id": "3",
+                                "name": "STATUS_FINAL",
+                                "state": "post",
+                                "completed": true,
+                                "description": "Final",
+                                "detail": "Final",
+                                "shortDetail": "Final"
+                            }
+                        }
+                    }
+                ],
+                "links": [
+                    {
+                        "language": "en",
+                        "rel": [
+                            "summary",
+                            "desktop",
+                            "event"
+                        ],
+                        "href": "http://www.espn.com/college-football/game/_/gameId/401032086",
+                        "text": "Gamecast",
+                        "shortText": "Summary",
+                        "isExternal": false,
+                        "isPremium": false
+                    },
+                    {
+                        "language": "en",
+                        "rel": [
+                            "summary",
+                            "sportscenter",
+                            "app",
+                            "event"
+                        ],
+                        "href": "sportscenter://x-callback-url/showGame?sportName=football&leagueAbbrev=college-football&gameId=401032086",
+                        "text": "Gamecast",
+                        "shortText": "Summary",
+                        "isExternal": false,
+                        "isPremium": false
+                    },
+                    {
+                        "language": "en",
+                        "rel": [
+                            "now",
+                            "desktop",
+                            "event"
+                        ],
+                        "href": "http://www.espn.com/college-football/game/_/gameId/401032086",
+                        "text": "Now",
+                        "shortText": "Now",
+                        "isExternal": false,
+                        "isPremium": false
+                    },
+                    {
+                        "language": "en",
+                        "rel": [
+                            "teamstats",
+                            "desktop",
+                            "event"
+                        ],
+                        "href": "http://www.espn.com/college-football/matchup?gameId=401032086",
+                        "text": "Team Stats",
+                        "shortText": "Team Stats",
+                        "isExternal": false,
+                        "isPremium": false
+                    },
+                    {
+                        "language": "en-US",
+                        "rel": [
+                            "boxscore",
+                            "desktop",
+                            "event"
+                        ],
+                        "href": "http://www.espn.com/college-football/boxscore?gameId=401032086",
+                        "text": "Box Score",
+                        "shortText": "Box Score",
+                        "isExternal": false,
+                        "isPremium": false
+                    },
+                    {
+                        "language": "en",
+                        "rel": [
+                            "boxscore",
+                            "sportscenter",
+                            "app",
+                            "event"
+                        ],
+                        "href": "sportscenter://x-callback-url/showGame?sportName=football&leagueAbbrev=college-football&gameId=401032086",
+                        "text": "Box Score",
+                        "shortText": "Box Score",
+                        "isExternal": false,
+                        "isPremium": false
+                    },
+                    {
+                        "language": "en-US",
+                        "rel": [
+                            "gamecast",
+                            "desktop",
+                            "event"
+                        ],
+                        "href": "http://www.espn.com/college-football/gamecast?gameId=401032086",
+                        "text": "Gamecast",
+                        "shortText": "Gamecast",
+                        "isExternal": false,
+                        "isPremium": false
+                    },
+                    {
+                        "language": "en",
+                        "rel": [
+                            "gamecast",
+                            "mobile",
+                            "event"
+                        ],
+                        "href": "http://m.espn.com/college-football/gamecast?gameId=401032086&action=summary",
+                        "text": "Gamecast",
+                        "shortText": "Gamecast",
+                        "isExternal": false,
+                        "isPremium": false
+                    },
+                    {
+                        "language": "en",
+                        "rel": [
+                            "gamecast",
+                            "sportscenter",
+                            "app",
+                            "event"
+                        ],
+                        "href": "sportscenter://x-callback-url/showGame?sportName=football&leagueAbbrev=college-football&gameId=401032086",
+                        "text": "Gamecast",
+                        "shortText": "Gamecast",
+                        "isExternal": false,
+                        "isPremium": false
+                    },
+                    {
+                        "language": "en",
+                        "rel": [
+                            "recap",
+                            "desktop",
+                            "event"
+                        ],
+                        "href": "http://www.espn.com/college-football/recap?gameId=401032086",
+                        "text": "Recap",
+                        "shortText": "Recap",
+                        "isExternal": false,
+                        "isPremium": false
+                    },
+                    {
+                        "language": "en-US",
+                        "rel": [
+                            "pbp",
+                            "desktop",
+                            "event"
+                        ],
+                        "href": "http://www.espn.com/college-football/playbyplay?gameId=401032086",
+                        "text": "Play-by-Play",
+                        "shortText": "Play-by-Play",
+                        "isExternal": false,
+                        "isPremium": false
+                    },
+                    {
+                        "language": "en",
+                        "rel": [
+                            "pickcenter",
+                            "desktop",
+                            "event"
+                        ],
+                        "href": "http://insider.espn.com/insider/pickcenter/college-football/game?gameid=401032086",
+                        "text": "PickCenter",
+                        "shortText": "PickCenter",
+                        "isExternal": false,
+                        "isPremium": true
+                    },
+                    {
+                        "language": "en-US",
+                        "rel": [
+                            "conversation",
+                            "desktop",
+                            "event"
+                        ],
+                        "href": "http://www.espn.com/college-football/conversation?gameId=401032086",
+                        "text": "Conversation",
+                        "shortText": "Conversation",
+                        "isExternal": false,
+                        "isPremium": false
+                    },
+                    {
+                        "language": "en",
+                        "rel": [
+                            "videos",
+                            "desktop",
+                            "event"
+                        ],
+                        "href": "http://www.espn.com/college-football/video?gameId=401032086",
+                        "text": "Videos",
+                        "shortText": "Videos",
+                        "isExternal": false,
+                        "isPremium": false
+                    },
+                    {
+                        "language": "en",
+                        "rel": [
+                            "watchespn",
+                            "desktop",
+                            "event"
+                        ],
+                        "href": "http://www.espn.com/watchespn/index?gameId=401032086&sourceLang=en",
+                        "text": "WatchESPN",
+                        "shortText": "WatchESPN",
+                        "isExternal": false,
+                        "isPremium": false
+                    },
+                    {
+                        "language": "en",
+                        "rel": [
+                            "watchespn",
+                            "app",
+                            "event"
+                        ],
+                        "href": "watchespn://showEvent?gameId=401032086&sourceLang=en",
+                        "text": "WatchESPN",
+                        "shortText": "WatchESPN",
+                        "isExternal": false,
+                        "isPremium": false
+                    }
+                ]
+            }
+        ],
+        "requestedSeason": {
+            "year": 2018,
+            "type": 3,
+            "name": "Post Season"
+        }
+    }
+}

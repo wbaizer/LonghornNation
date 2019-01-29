@@ -1,0 +1,137 @@
+<h1><a href="/r/BigXII">Football</a>: (<%= data.football.rankings.primaryTeam.overall %>) <%= data.football.rankings.primaryTeam.conference %></h1>
+<h4>Big 12 Football Standings</h4>   
+<table>
+       <thead>
+           <tr>
+               <th></th>
+               <th>Team</th>
+               <th>Overall</th>
+               <th>Conference</th>
+           </tr>
+       </thead>
+       <tbody>
+           <% for(var i=0; i < data.football.rankings.teams.length; i++) { %>
+           <tr>
+                <td>
+                    <% if(data.football.rankings.teams[i].id == '251') { %><a href="/texas-row"></a><% } %>
+                    <a href="<%= teamLink[data.football.rankings.teams[i].abbreviation] %>"></a>
+                </td>
+               <td>          
+                   <% if(data.football.rankings.teams[i].id == '251') { %>
+                       <strong>
+                   <% } %>             
+                        
+                   <% if(data.football.rankings.teams[i].rank) { %>
+                    <em><%= data.football.rankings.teams[i].rank %></em>
+                <% } %><%= data.football.rankings.teams[i].name %>
+                    </a>
+                   <% if(data.football.rankings.teams[i].id == '251') { %>
+                   </strong>
+                   <% } %>
+               </td>
+               <td>
+                   <% if(data.football.rankings.teams[i].id == '251') { %>
+                       <strong>
+                   <% } %>
+                   <%= data.football.rankings.teams[i].overall %>
+                   <% if(data.football.rankings.teams[i].id == '251') { %>
+                       </strong>
+                   <% } %>
+               </td>
+               <td>
+                   <% if(data.football.rankings.teams[i].id == '251') { %>
+                       <strong>
+                   <% } %>
+                       <%= data.football.rankings.teams[i].conference %>
+                   <% if(data.football.rankings.teams[i].id == '251') { %>
+                   </strong>
+                   <% } %>
+               </td>
+           </tr>
+           <% } %>
+       </tbody>
+   </table>
+   <% if(data.football.schedule.post) { %>
+       <h4>Post Season</h4>
+       <table>
+               <thead>
+                   <tr>
+                       <th></th>
+                       <th>Opponent</th>
+                       <th>TV</th>
+                       <th>Score</th>
+                   </tr>
+               </thead>
+               <tbody>
+                    <% for(var i=0; i < data.football.schedule.post.length; i++) { %>
+                    <tr>
+                        <td><a href="<%= data.football.schedule.post[i].opposingTeam.reddit %>"></a></td>
+                        <td>        
+                                <strong>
+                                     <%= data.football.schedule.post[i].homeAway %>
+                                     <% if(data.football.schedule.post[i].opposingTeam.curatedRank.current < 99) {%>
+                                         <em><%= data.football.schedule.post[i].opposingTeam.curatedRank.current %></em>
+                                     <% } %>                            
+                                     <%= data.football.schedule.post[i].opposingTeam.team.nickname %>
+                                 </strong>
+                                 <%= data.football.schedule.post[i].date %> - <%= data.football.schedule.post[i].venue.address.city %>, <%= data.football.schedule.post[i].venue.address.state %>
+                            </a>
+                        </td>
+                            <td><a href="<%= networks[data.football.schedule.post[i].network] %>"></a></td>
+                        <td>
+                            <% if(data.football.schedule.post[i].complete) {%>
+                            <% if(data.football.schedule.post[i].primaryTeam.winner) {%>
+                                <strong><a href="/win"></a> <%= data.football.schedule.post[i].primaryTeam.score.displayValue %>-<%= data.football.schedule.post[i].opposingTeam.score.displayValue %></strong>
+                                <% } else { %>
+                                <a href="/loss"></a> <%= data.football.schedule.post[i].primaryTeam.score.displayValue %>-<%= data.football.schedule.post[i].opposingTeam.score.displayValue %>
+                                <% } %>
+                            <% } else {%>
+                                <%= data.football.schedule.post[i].time %>
+                            <% } %>
+                        </td>
+                    </tr>
+                    <% } %>
+                </tbody>
+           </table>
+   <% }%>
+   <h4>Regular Season</h4>
+   <table>
+       <thead>
+           <tr>
+               <th></th>
+               <th>Opponent</th>
+               <th>TV</th>
+               <th>Score</th>
+           </tr>
+       </thead>
+       <tbody>
+           <% for(var i=0; i < data.football.schedule.regular.length; i++) { %>
+           <tr>
+               <td><a href="<%= data.football.schedule.regular[i].opposingTeam.reddit %>"></a></td>
+               <td>        
+                       <strong>
+                            <%= data.football.schedule.regular[i].homeAway %>
+                            <% if(data.football.schedule.regular[i].opposingTeam.curatedRank.current < 99) {%>
+                                <em><%= data.football.schedule.regular[i].opposingTeam.curatedRank.current %></em>
+                            <% } %>                            
+                            <%= data.football.schedule.regular[i].opposingTeam.team.nickname %>
+                        </strong>
+                        <%= data.football.schedule.regular[i].date %> - <%= data.football.schedule.regular[i].venue.address.city %>, <%= data.football.schedule.regular[i].venue.address.state %>
+                   </a>
+               </td>
+                   <td><a href="<%= networks[data.football.schedule.regular[i].network] %>"></a></td>
+               <td>
+                   <% if(data.football.schedule.regular[i].complete) {%>
+                   <% if(data.football.schedule.regular[i].primaryTeam.winner) {%>
+                       <strong><a href="/win"></a> <%= data.football.schedule.regular[i].primaryTeam.score.displayValue %>-<%= data.football.schedule.regular[i].opposingTeam.score.displayValue %></strong>
+                       <% } else { %>
+                       <a href="/loss"></a> <%= data.football.schedule.regular[i].primaryTeam.score.displayValue %>-<%= data.football.schedule.regular[i].opposingTeam.score.displayValue %>
+                       <% } %>
+                   <% } else {%>
+                       <%= data.football.schedule.regular[i].time %>
+                   <% } %>
+               </td>
+           </tr>
+           <% } %>
+       </tbody>
+   </table>

@@ -1,0 +1,2826 @@
+{
+    "2": {
+        "conference": "Southeastern Conference",
+        "name": "Auburn Tigers",
+        "abbreviation": "AUB",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2.png",
+        "reddit": "/r/WDE",
+        "flair": "auburn"
+    },
+    "5": {
+        "conference": "Conference USA",
+        "name": "UAB Blazers",
+        "abbreviation": "UAB",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/5.png",
+        "reddit": "/r/UAB",
+        "flair": "uab"
+    },
+    "6": {
+        "conference": "Sun Belt Conference",
+        "name": "South Alabama Jaguars",
+        "abbreviation": "SALA",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/6.png",
+        "reddit": "/r/SIYM",
+        "flair": "southalabama"
+    },
+    "8": {
+        "conference": "Southeastern Conference",
+        "name": "Arkansas Razorbacks",
+        "abbreviation": "ARK",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/8.png",
+        "reddit": "/r/razorbacks",
+        "flair": "arkansas"
+    },
+    "9": {
+        "conference": "Pac-12 Conference",
+        "name": "Arizona State Sun Devils",
+        "abbreviation": "ASU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/9.png",
+        "reddit": "/r/sundevils",
+        "flair": "arizonastate"
+    },
+    "12": {
+        "conference": "Pac-12 Conference",
+        "name": "Arizona Wildcats",
+        "abbreviation": "ARIZ",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/12.png",
+        "reddit": "/r/UofArizona",
+        "flair": "arizona"
+    },
+    "13": {
+        "conference": "Big West Conference",
+        "name": "Cal Poly Mustangs",
+        "abbreviation": "CP",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/13.png",
+        "reddit": "/r/CalPoly/",
+        "flair": "calpoly"
+    },
+    "16": {
+        "conference": "Big Sky Conference",
+        "name": "Sacramento State Hornets",
+        "abbreviation": "SAC",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/16.png",
+        "reddit": "/r/CSUS/",
+        "flair": "sacramentostate"
+    },
+    "21": {
+        "conference": "Mountain West Conference",
+        "name": "San Diego State Aztecs",
+        "abbreviation": "SDSU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/21.png",
+        "reddit": "/r/SDSUAZTECS",
+        "flair": "sandiegostate"
+    },
+    "23": {
+        "conference": "Mountain West Conference",
+        "name": "San José St Spartans",
+        "abbreviation": "SJSU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/23.png",
+        "reddit": "/r/SJSU",
+        "flair": "sanjosst"
+    },
+    "24": {
+        "conference": "Pac-12 Conference",
+        "name": "Stanford Cardinal",
+        "abbreviation": "STAN",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/24.png",
+        "reddit": "/r/StanfordCardinal",
+        "flair": "stanford"
+    },
+    "25": {
+        "conference": "Pac-12 Conference",
+        "name": "California Golden Bears",
+        "abbreviation": "CAL",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/25.png",
+        "reddit": "/r/berkeley",
+        "flair": "california"
+    },
+    "26": {
+        "conference": "Pac-12 Conference",
+        "name": "UCLA Bruins",
+        "abbreviation": "UCLA",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/26.png",
+        "reddit": "/r/ucla",
+        "flair": "ucla"
+    },
+    "27": {
+        "conference": "Big West Conference",
+        "name": "UC Riverside Highlanders",
+        "abbreviation": "UCR",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/27.png",
+        "reddit": "/r/ucr/",
+        "flair": "ucriverside"
+    },
+    "30": {
+        "conference": "Pac-12 Conference",
+        "name": "USC Trojans",
+        "abbreviation": "USC",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/30.png",
+        "reddit": "/r/USC",
+        "flair": "usc"
+    },
+    "36": {
+        "conference": "Mountain West Conference",
+        "name": "Colorado State Rams",
+        "abbreviation": "CSU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/36.png",
+        "reddit": "/r/CSURams",
+        "flair": "coloradostate"
+    },
+    "38": {
+        "conference": "Pac-12 Conference",
+        "name": "Colorado Buffaloes",
+        "abbreviation": "COLO",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/38.png",
+        "reddit": "/r/cuboulder",
+        "flair": "colorado"
+    },
+    "41": {
+        "conference": "American Athletic Conference",
+        "name": "UConn Huskies",
+        "abbreviation": "CONN",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/41.png",
+        "reddit": "/r/UCONN/",
+        "flair": "uconn"
+    },
+    "42": {
+        "conference": "America East Conference",
+        "name": "Hartford Hawks",
+        "abbreviation": "HART",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/42.png",
+        "reddit": "/r/uhart/",
+        "flair": "hartford"
+    },
+    "43": {
+        "conference": "Ivy League",
+        "name": "Yale Bulldogs",
+        "abbreviation": "YALE",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/43.png",
+        "reddit": "/r/yale/",
+        "flair": "yale"
+    },
+    "44": {
+        "conference": "Patriot League",
+        "name": "American Eagles",
+        "abbreviation": "AMER",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/44.png",
+        "reddit": "/r/AmericanU/",
+        "flair": "american"
+    },
+    "45": {
+        "conference": "Atlantic 10 Conference",
+        "name": "George Washington Colonials",
+        "abbreviation": "GW",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/45.png",
+        "reddit": "/r/gwu/",
+        "flair": "georgewashington"
+    },
+    "46": {
+        "conference": "Big East Conference",
+        "name": "Georgetown Hoyas",
+        "abbreviation": "GTWN",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/46.png",
+        "reddit": "/r/georgetown/",
+        "flair": "georgetown"
+    },
+    "47": {
+        "conference": "Mid-Eastern Athletic Conference",
+        "name": "Howard Bison",
+        "abbreviation": "HOW",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/47.png",
+        "reddit": "/r/HowardUniversity",
+        "flair": "howard"
+    },
+    "48": {
+        "conference": "Colonial Athletic Association",
+        "name": "Delaware Blue Hens",
+        "abbreviation": "DEL",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/48.png",
+        "reddit": "/r/udel/",
+        "flair": "delaware"
+    },
+    "50": {
+        "conference": "Mid-Eastern Athletic Conference",
+        "name": "Florida A&M Rattlers",
+        "abbreviation": "FAMU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/50.png",
+        "reddit": "/r/FloridaAM",
+        "flair": "floridaam"
+    },
+    "52": {
+        "conference": "Atlantic Coast Conference",
+        "name": "Florida State Seminoles",
+        "abbreviation": "FSU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/52.png",
+        "reddit": "/r/fsusports",
+        "flair": "floridastate"
+    },
+    "55": {
+        "conference": "Ohio Valley Conference",
+        "name": "Jacksonville State Gamecocks",
+        "abbreviation": "JVST",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/55.png",
+        "reddit": "/r/JSU",
+        "flair": "jacksonvillestate"
+    },
+    "56": {
+        "conference": "Atlantic Sun Conference",
+        "name": "Stetson Hatters",
+        "abbreviation": "STET",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/56.png",
+        "reddit": "/r/Stetson/",
+        "flair": "stetson"
+    },
+    "57": {
+        "conference": "Southeastern Conference",
+        "name": "Florida Gators",
+        "abbreviation": "FLA",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/57.png",
+        "reddit": "/r/FloridaGators",
+        "flair": "florida"
+    },
+    "58": {
+        "conference": "American Athletic Conference",
+        "name": "South Florida Bulls",
+        "abbreviation": "USF",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/58.png",
+        "reddit": "/r/USF",
+        "flair": "southflorida"
+    },
+    "59": {
+        "conference": "Atlantic Coast Conference",
+        "name": "Georgia Tech Yellow Jackets",
+        "abbreviation": "GT",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/59.png",
+        "reddit": "/r/gatech",
+        "flair": "georgiatech"
+    },
+    "61": {
+        "conference": "Southeastern Conference",
+        "name": "Georgia Bulldogs",
+        "abbreviation": "UGA",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/61.png",
+        "reddit": "/r/georgiabulldogs",
+        "flair": "georgia"
+    },
+    "62": {
+        "conference": "Big West Conference",
+        "name": "Hawai'i Rainbow Warriors",
+        "abbreviation": "HAW",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/62.png",
+        "reddit": "/r/UniversityofHawaii",
+        "flair": "hawaii"
+    },
+    "66": {
+        "conference": "Big 12 Conference",
+        "name": "Iowa State Cyclones",
+        "abbreviation": "ISU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/66.png",
+        "reddit": "/r/cyclONEnation",
+        "flair": "iowastate"
+    },
+    "68": {
+        "conference": "Mountain West Conference",
+        "name": "Boise State Broncos",
+        "abbreviation": "BSU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/68.png",
+        "reddit": "/r/bsufootball",
+        "flair": "boisestate"
+    },
+    "70": {
+        "conference": "Big Sky Conference",
+        "name": "Idaho Vandals",
+        "abbreviation": "IDHO",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/70.png",
+        "reddit": "/r/IdahoVandals/",
+        "flair": "idaho"
+    },
+    "71": {
+        "conference": "Missouri Valley Conference",
+        "name": "Bradley Braves",
+        "abbreviation": "BRAD",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/71.png",
+        "reddit": "/r/bradleyuniversity/",
+        "flair": "bradley"
+    },
+    "77": {
+        "conference": "Big Ten Conference",
+        "name": "Northwestern Wildcats",
+        "abbreviation": "NW",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/77.png",
+        "reddit": "/r/northwestern",
+        "flair": "northwestern"
+    },
+    "79": {
+        "conference": "Missouri Valley Conference",
+        "name": "Southern Illinois Salukis",
+        "abbreviation": "SIU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/79.png",
+        "reddit": "/r/salukis",
+        "flair": "southernillinois"
+    },
+    "82": {
+        "conference": "Horizon League",
+        "name": "UIC Flames",
+        "abbreviation": "UIC",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/82.png",
+        "reddit": "/r/uichicago/",
+        "flair": "uic"
+    },
+    "84": {
+        "conference": "Big Ten Conference",
+        "name": "Indiana Hoosiers",
+        "abbreviation": "IND",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/84.png",
+        "reddit": "/r/IndianaHoosiers",
+        "flair": "indiana"
+    },
+    "85": {
+        "conference": "Horizon League",
+        "name": "IUPUI Jaguars",
+        "abbreviation": "IUPU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/85.png",
+        "reddit": "#/iupu",
+        "flair": "iupui"
+    },
+    "87": {
+        "conference": "Atlantic Coast Conference",
+        "name": "Notre Dame Fighting Irish",
+        "abbreviation": "ND",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/87.png",
+        "reddit": "/r/notredamefootball",
+        "flair": "notredame"
+    },
+    "93": {
+        "conference": "Ohio Valley Conference",
+        "name": "Murray State Racers",
+        "abbreviation": "MURR",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/93.png",
+        "reddit": "/r/Murray",
+        "flair": "murraystate"
+    },
+    "94": {
+        "conference": "Horizon League",
+        "name": "Northern Kentucky Norse",
+        "abbreviation": "NKU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/94.png",
+        "reddit": "/r/NKU/",
+        "flair": "northernkentucky"
+    },
+    "96": {
+        "conference": "Southeastern Conference",
+        "name": "Kentucky Wildcats",
+        "abbreviation": "UK",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/96.png",
+        "reddit": "/r/wildcats",
+        "flair": "kentucky"
+    },
+    "97": {
+        "conference": "Atlantic Coast Conference",
+        "name": "Louisville Cardinals",
+        "abbreviation": "LOU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/97.png",
+        "reddit": "/r/AllHail",
+        "flair": "louisville"
+    },
+    "98": {
+        "conference": "Conference USA",
+        "name": "Western Kentucky Hilltoppers",
+        "abbreviation": "WKU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/98.png",
+        "reddit": "/r/WKU",
+        "flair": "westernkentucky"
+    },
+    "99": {
+        "conference": "Southeastern Conference",
+        "name": "LSU Tigers",
+        "abbreviation": "LSU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/99.png",
+        "reddit": "/r/LSUFootball",
+        "flair": "lsu"
+    },
+    "103": {
+        "conference": "Atlantic Coast Conference",
+        "name": "Boston College Eagles",
+        "abbreviation": "BC",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/103.png",
+        "reddit": "/r/bostoncollege",
+        "flair": "bostoncollege"
+    },
+    "104": {
+        "conference": "Patriot League",
+        "name": "Boston University Terriers",
+        "abbreviation": "BU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/104.png",
+        "reddit": "/r/BostonU/",
+        "flair": "bostonuniversity"
+    },
+    "107": {
+        "conference": "Patriot League",
+        "name": "Holy Cross Crusaders",
+        "abbreviation": "HC",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/107.png",
+        "reddit": "/r/HolyCross",
+        "flair": "holycross"
+    },
+    "108": {
+        "conference": "Ivy League",
+        "name": "Harvard Crimson",
+        "abbreviation": "HARV",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/108.png",
+        "reddit": "/r/Harvard",
+        "flair": "harvard"
+    },
+    "111": {
+        "conference": "Colonial Athletic Association",
+        "name": "Northeastern Huskies",
+        "abbreviation": "NE",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/111.png",
+        "reddit": "/r/NEU/",
+        "flair": "northeastern"
+    },
+    "113": {
+        "conference": "Atlantic 10 Conference",
+        "name": "UMass Minutemen",
+        "abbreviation": "MASS",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/113.png",
+        "reddit": "/r/umass/",
+        "flair": "umass"
+    },
+    "116": {
+        "conference": "Northeast Conference",
+        "name": "Mt. St. Mary's Mountaineers",
+        "abbreviation": "MSM",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/116.png",
+        "reddit": "#/msm",
+        "flair": "mtstmarys"
+    },
+    "119": {
+        "conference": "Colonial Athletic Association",
+        "name": "Towson Tigers",
+        "abbreviation": "TOW",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/119.png",
+        "reddit": "/r/Towson/",
+        "flair": "towson"
+    },
+    "120": {
+        "conference": "Big Ten Conference",
+        "name": "Maryland Terrapins",
+        "abbreviation": "MD",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/120.png",
+        "reddit": "/r/umd",
+        "flair": "maryland"
+    },
+    "127": {
+        "conference": "Big Ten Conference",
+        "name": "Michigan State Spartans",
+        "abbreviation": "MSU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/127.png",
+        "reddit": "/r/theonlycolors",
+        "flair": "michiganstate"
+    },
+    "130": {
+        "conference": "Big Ten Conference",
+        "name": "Michigan Wolverines",
+        "abbreviation": "MICH",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/130.png",
+        "reddit": "/r/MichiganWolverines",
+        "flair": "michigan"
+    },
+    "135": {
+        "conference": "Big Ten Conference",
+        "name": "Minnesota Golden Gophers",
+        "abbreviation": "MINN",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/135.png",
+        "reddit": "/r/GopherSports",
+        "flair": "minnesota"
+    },
+    "139": {
+        "conference": "Atlantic 10 Conference",
+        "name": "Saint Louis Billikens",
+        "abbreviation": "SLU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/139.png",
+        "reddit": "/r/billikens/",
+        "flair": "saintlouis"
+    },
+    "140": {
+        "conference": "Western Athletic Conference",
+        "name": "UMKC Kangaroos",
+        "abbreviation": "UMKC",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/140.png",
+        "reddit": "/r/UMKC/",
+        "flair": "umkc"
+    },
+    "142": {
+        "conference": "Southeastern Conference",
+        "name": "Missouri Tigers",
+        "abbreviation": "MIZ",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/142.png",
+        "reddit": "/r/mizzou",
+        "flair": "missouri"
+    },
+    "145": {
+        "conference": "Southeastern Conference",
+        "name": "Ole Miss Rebels",
+        "abbreviation": "MISS",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/145.png",
+        "reddit": "/r/olemiss",
+        "flair": "olemiss"
+    },
+    "147": {
+        "conference": "Big Sky Conference",
+        "name": "Montana State Bobcats",
+        "abbreviation": "MTST",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/147.png",
+        "reddit": "/r/MSUcats/",
+        "flair": "montanastate"
+    },
+    "149": {
+        "conference": "Big Sky Conference",
+        "name": "Montana Grizzlies",
+        "abbreviation": "MONT",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/149.png",
+        "reddit": "/r/UniversityofMontana/",
+        "flair": "montana"
+    },
+    "150": {
+        "conference": "Atlantic Coast Conference",
+        "name": "Duke Blue Devils",
+        "abbreviation": "DUKE",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/150.png",
+        "reddit": "/r/cameroncrazies",
+        "flair": "duke"
+    },
+    "151": {
+        "conference": "American Athletic Conference",
+        "name": "East Carolina Pirates",
+        "abbreviation": "ECU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/151.png",
+        "reddit": "/r/ECU",
+        "flair": "eastcarolina"
+    },
+    "152": {
+        "conference": "Atlantic Coast Conference",
+        "name": "NC State Wolfpack",
+        "abbreviation": "NCST",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/152.png",
+        "reddit": "/r/ncsu",
+        "flair": "ncstate"
+    },
+    "153": {
+        "conference": "Atlantic Coast Conference",
+        "name": "North Carolina Tar Heels",
+        "abbreviation": "UNC",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/153.png",
+        "reddit": "/r/tarheels",
+        "flair": "northcarolina"
+    },
+    "154": {
+        "conference": "Atlantic Coast Conference",
+        "name": "Wake Forest Demon Deacons",
+        "abbreviation": "WAKE",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/154.png",
+        "reddit": "/r/demondeacons",
+        "flair": "wakeforest"
+    },
+    "155": {
+        "conference": "Summit League",
+        "name": "North Dakota Fighting Hawks",
+        "abbreviation": "UND",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/155.png",
+        "reddit": "/r/fightingsioux",
+        "flair": "northdakota"
+    },
+    "156": {
+        "conference": "Big East Conference",
+        "name": "Creighton Bluejays",
+        "abbreviation": "CREI",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/156.png",
+        "reddit": "/r/Creighton/",
+        "flair": "creighton"
+    },
+    "158": {
+        "conference": "Big Ten Conference",
+        "name": "Nebraska Cornhuskers",
+        "abbreviation": "NEB",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/158.png",
+        "reddit": "/r/Huskers",
+        "flair": "nebraska"
+    },
+    "159": {
+        "conference": "Ivy League",
+        "name": "Dartmouth Big Green",
+        "abbreviation": "DART",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/159.png",
+        "reddit": "/r/dartmouth",
+        "flair": "dartmouth"
+    },
+    "160": {
+        "conference": "America East Conference",
+        "name": "New Hampshire Wildcats",
+        "abbreviation": "UNH",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/160.png",
+        "reddit": "/r/unh/",
+        "flair": "newhampshire"
+    },
+    "161": {
+        "conference": "Northeast Conference",
+        "name": "Fairleigh Dickinson Knights",
+        "abbreviation": "FDU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/161.png",
+        "reddit": "#/fdu",
+        "flair": "fairleighdickinson"
+    },
+    "163": {
+        "conference": "Ivy League",
+        "name": "Princeton Tigers",
+        "abbreviation": "PRIN",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/163.png",
+        "reddit": "/r/princeton/",
+        "flair": "princeton"
+    },
+    "164": {
+        "conference": "Big Ten Conference",
+        "name": "Rutgers Scarlet Knights",
+        "abbreviation": "RUTG",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/164.png",
+        "reddit": "/r/scarletknights",
+        "flair": "rutgers"
+    },
+    "166": {
+        "conference": "Western Athletic Conference",
+        "name": "New Mexico State Aggies",
+        "abbreviation": "NMSU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/166.png",
+        "reddit": "/r/NMSU",
+        "flair": "newmexicostate"
+    },
+    "167": {
+        "conference": "Mountain West Conference",
+        "name": "New Mexico Lobos",
+        "abbreviation": "UNM",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/167.png",
+        "reddit": "/r/unm",
+        "flair": "newmexico"
+    },
+    "171": {
+        "conference": "Ivy League",
+        "name": "Columbia Lions",
+        "abbreviation": "CLMB",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/171.png",
+        "reddit": "/r/columbia",
+        "flair": "columbia"
+    },
+    "172": {
+        "conference": "Ivy League",
+        "name": "Cornell Big Red",
+        "abbreviation": "COR",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/172.png",
+        "reddit": "/r/Cornell/",
+        "flair": "cornell"
+    },
+    "179": {
+        "conference": "Atlantic 10 Conference",
+        "name": "St. Bonaventure Bonnies",
+        "abbreviation": "SBU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/179.png",
+        "reddit": "/r/gobonnies/",
+        "flair": "stbonaventure"
+    },
+    "183": {
+        "conference": "Atlantic Coast Conference",
+        "name": "Syracuse Orange",
+        "abbreviation": "SYR",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/183.png",
+        "reddit": "/r/cuse",
+        "flair": "syracuse"
+    },
+    "189": {
+        "conference": "Mid-American Conference",
+        "name": "Bowling Green Falcons",
+        "abbreviation": "BGSU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/189.png",
+        "reddit": "/r/BGSU",
+        "flair": "bowlinggreen"
+    },
+    "193": {
+        "conference": "Mid-American Conference",
+        "name": "Miami (OH) RedHawks",
+        "abbreviation": "M-OH",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/193.png",
+        "reddit": "/r/miamioh",
+        "flair": "miamioh"
+    },
+    "194": {
+        "conference": "Big Ten Conference",
+        "name": "Ohio State Buckeyes",
+        "abbreviation": "OSU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/194.png",
+        "reddit": "/r/OhioStateFootball",
+        "flair": "ohiostate"
+    },
+    "195": {
+        "conference": "Mid-American Conference",
+        "name": "Ohio Bobcats",
+        "abbreviation": "OHIO",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/195.png",
+        "reddit": "/r/athensohio",
+        "flair": "ohio"
+    },
+    "197": {
+        "conference": "Big 12 Conference",
+        "name": "Oklahoma State Cowboys",
+        "abbreviation": "OKST",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/197.png",
+        "reddit": "/r/okstate",
+        "flair": "oklahomastate"
+    },
+    "198": {
+        "conference": "Summit League",
+        "name": "Oral Roberts Golden Eagles",
+        "abbreviation": "ORU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/198.png",
+        "reddit": "/r/oru/",
+        "flair": "oralroberts"
+    },
+    "201": {
+        "conference": "Big 12 Conference",
+        "name": "Oklahoma Sooners",
+        "abbreviation": "OKLA",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/201.png",
+        "reddit": "/r/sooners",
+        "flair": "oklahoma"
+    },
+    "202": {
+        "conference": "American Athletic Conference",
+        "name": "Tulsa Golden Hurricane",
+        "abbreviation": "TLSA",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/202.png",
+        "reddit": "/r/tulsa",
+        "flair": "tulsa"
+    },
+    "204": {
+        "conference": "Pac-12 Conference",
+        "name": "Oregon State Beavers",
+        "abbreviation": "ORST",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/204.png",
+        "reddit": "/r/oregonstate",
+        "flair": "oregonstate"
+    },
+    "213": {
+        "conference": "Big Ten Conference",
+        "name": "Penn State Nittany Lions",
+        "abbreviation": "PSU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/213.png",
+        "reddit": "/r/PennStateUniversity",
+        "flair": "pennstate"
+    },
+    "218": {
+        "conference": "American Athletic Conference",
+        "name": "Temple Owls",
+        "abbreviation": "TEM",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/218.png",
+        "reddit": "/r/Temple",
+        "flair": "temple"
+    },
+    "219": {
+        "conference": "Ivy League",
+        "name": "Pennsylvania Quakers",
+        "abbreviation": "PENN",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/219.png",
+        "reddit": "/r/UPenn/",
+        "flair": "pennsylvania"
+    },
+    "221": {
+        "conference": "Atlantic Coast Conference",
+        "name": "Pittsburgh Panthers",
+        "abbreviation": "PITT",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/221.png",
+        "reddit": "/r/pittsports",
+        "flair": "pittsburgh"
+    },
+    "222": {
+        "conference": "Big East Conference",
+        "name": "Villanova Wildcats",
+        "abbreviation": "VILL",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/222.png",
+        "reddit": "/r/villanova/",
+        "flair": "villanova"
+    },
+    "225": {
+        "conference": "Ivy League",
+        "name": "Brown Bears",
+        "abbreviation": "BRWN",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/225.png",
+        "reddit": "/r/BrownU/",
+        "flair": "brown"
+    },
+    "227": {
+        "conference": "Atlantic 10 Conference",
+        "name": "Rhode Island Rams",
+        "abbreviation": "URI",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/227.png",
+        "reddit": "/r/univRI/",
+        "flair": "rhodeisland"
+    },
+    "228": {
+        "conference": "Atlantic Coast Conference",
+        "name": "Clemson Tigers",
+        "abbreviation": "CLEM",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/228.png",
+        "reddit": "/r/ClemsonTigers",
+        "flair": "clemson"
+    },
+    "231": {
+        "conference": "Southern Conference",
+        "name": "Furman Paladins",
+        "abbreviation": "FUR",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/231.png",
+        "reddit": "/r/Furman",
+        "flair": "furman"
+    },
+    "232": {
+        "conference": "Colonial Athletic Association",
+        "name": "Charleston Cougars",
+        "abbreviation": "CHLS",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/232.png",
+        "reddit": "/r/Charleston/",
+        "flair": "charleston"
+    },
+    "233": {
+        "conference": "Summit League",
+        "name": "South Dakota Coyotes",
+        "abbreviation": "SDAK",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/233.png",
+        "reddit": "/r/USouthDakota",
+        "flair": "southdakota"
+    },
+    "235": {
+        "conference": "American Athletic Conference",
+        "name": "Memphis Tigers",
+        "abbreviation": "MEM",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/235.png",
+        "reddit": "/r/MemphisTigers",
+        "flair": "memphis"
+    },
+    "236": {
+        "conference": "Southern Conference",
+        "name": "Chattanooga Mocs",
+        "abbreviation": "CHAT",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/236.png",
+        "reddit": "/r/utc",
+        "flair": "chattanooga"
+    },
+    "238": {
+        "conference": "Southeastern Conference",
+        "name": "Vanderbilt Commodores",
+        "abbreviation": "VAN",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/238.png",
+        "reddit": "/r/Vanderbilt",
+        "flair": "vanderbilt"
+    },
+    "239": {
+        "conference": "Big 12 Conference",
+        "name": "Baylor Bears",
+        "abbreviation": "BAY",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/239.png",
+        "reddit": "/r/baylor",
+        "flair": "baylor"
+    },
+    "242": {
+        "conference": "Conference USA",
+        "name": "Rice Owls",
+        "abbreviation": "RICE",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/242.png",
+        "reddit": "/r/riceuniversity",
+        "flair": "rice"
+    },
+    "245": {
+        "conference": "Southeastern Conference",
+        "name": "Texas A&M Aggies",
+        "abbreviation": "TA&M",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/245.png",
+        "reddit": "/r/aggies",
+        "flair": "texasam"
+    },
+    "248": {
+        "conference": "American Athletic Conference",
+        "name": "Houston Cougars",
+        "abbreviation": "HOU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/248.png",
+        "reddit": "/r/UniversityOfHouston",
+        "flair": "houston"
+    },
+    "249": {
+        "conference": "Conference USA",
+        "name": "North Texas Mean Green",
+        "abbreviation": "UNT",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/249.png",
+        "reddit": "/r/unt",
+        "flair": "northtexas"
+    },
+    "250": {
+        "conference": "Sun Belt Conference",
+        "name": "UT Arlington Mavericks",
+        "abbreviation": "UTA",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/250.png",
+        "reddit": "/r/utarlington/",
+        "flair": "utarlington"
+    },
+    "251": {
+        "conference": "Big 12 Conference",
+        "name": "Texas Longhorns",
+        "abbreviation": "TEX",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/251.png",
+        "reddit": "/r/LonghornNation",
+        "flair": "texas"
+    },
+    "252": {
+        "conference": "West Coast Conference",
+        "name": "BYU Cougars",
+        "abbreviation": "BYU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/252.png",
+        "reddit": "/r/byu",
+        "flair": "byu"
+    },
+    "253": {
+        "conference": "Big Sky Conference",
+        "name": "Southern Utah Thunderbirds",
+        "abbreviation": "SUU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/253.png",
+        "reddit": "/r/SUU/",
+        "flair": "southernutah"
+    },
+    "254": {
+        "conference": "Pac-12 Conference",
+        "name": "Utah Utes",
+        "abbreviation": "UTAH",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/254.png",
+        "reddit": "/r/uofu",
+        "flair": "utah"
+    },
+    "256": {
+        "conference": "Colonial Athletic Association",
+        "name": "James Madison Dukes",
+        "abbreviation": "JMU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/256.png",
+        "reddit": "/r/jmu/",
+        "flair": "jamesmadison"
+    },
+    "257": {
+        "conference": "Atlantic 10 Conference",
+        "name": "Richmond Spiders",
+        "abbreviation": "RICH",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/257.png",
+        "reddit": "/r/urichmond/",
+        "flair": "richmond"
+    },
+    "258": {
+        "conference": "Atlantic Coast Conference",
+        "name": "Virginia Cavaliers",
+        "abbreviation": "UVA",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/258.png",
+        "reddit": "/r/UVA",
+        "flair": "virginia"
+    },
+    "259": {
+        "conference": "Atlantic Coast Conference",
+        "name": "Virginia Tech Hokies",
+        "abbreviation": "VT",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/259.png",
+        "reddit": "/r/virginiatech",
+        "flair": "virginiatech"
+    },
+    "261": {
+        "conference": "America East Conference",
+        "name": "Vermont Catamounts",
+        "abbreviation": "UVM",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/261.png",
+        "reddit": "/r/UniversityofVermont/",
+        "flair": "vermont"
+    },
+    "264": {
+        "conference": "Pac-12 Conference",
+        "name": "Washington Huskies",
+        "abbreviation": "WASH",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/264.png",
+        "reddit": "/r/huskies",
+        "flair": "washington"
+    },
+    "265": {
+        "conference": "Pac-12 Conference",
+        "name": "Washington State Cougars",
+        "abbreviation": "WSU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/265.png",
+        "reddit": "/r/wsu",
+        "flair": "washingtonstate"
+    },
+    "269": {
+        "conference": "Big East Conference",
+        "name": "Marquette Golden Eagles",
+        "abbreviation": "MARQ",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/269.png",
+        "reddit": "/r/mubb/",
+        "flair": "marquette"
+    },
+    "270": {
+        "conference": "Horizon League",
+        "name": "Milwaukee Panthers",
+        "abbreviation": "MILW",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/270.png",
+        "reddit": "/r/UWMilwaukee/",
+        "flair": "milwaukee"
+    },
+    "275": {
+        "conference": "Big Ten Conference",
+        "name": "Wisconsin Badgers",
+        "abbreviation": "WIS",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/275.png",
+        "reddit": "/r/WisconsinBadgers",
+        "flair": "wisconsin"
+    },
+    "276": {
+        "conference": "Conference USA",
+        "name": "Marshall Thundering Herd",
+        "abbreviation": "MRSH",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/276.png",
+        "reddit": "/r/MarshallUniversity",
+        "flair": "marshall"
+    },
+    "277": {
+        "conference": "Big 12 Conference",
+        "name": "West Virginia Mountaineers",
+        "abbreviation": "WVU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/277.png",
+        "reddit": "/r/Mountaineers",
+        "flair": "westvirginia"
+    },
+    "278": {
+        "conference": "Mountain West Conference",
+        "name": "Fresno State Bulldogs",
+        "abbreviation": "FRES",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/278.png",
+        "reddit": "/r/fresnostate",
+        "flair": "fresnostate"
+    },
+    "279": {
+        "conference": "West Coast Conference",
+        "name": "Pacific Tigers",
+        "abbreviation": "PAC",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/279.png",
+        "reddit": "/r/UoP/",
+        "flair": "pacific"
+    },
+    "282": {
+        "conference": "Missouri Valley Conference",
+        "name": "Indiana State Sycamores",
+        "abbreviation": "INST",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/282.png",
+        "reddit": "/r/IndianaState",
+        "flair": "indianastate"
+    },
+    "288": {
+        "conference": "Atlantic Sun Conference",
+        "name": "Lipscomb Bisons",
+        "abbreviation": "LIP",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/288.png",
+        "reddit": "/r/lipscomb/",
+        "flair": "lipscomb"
+    },
+    "290": {
+        "conference": "Sun Belt Conference",
+        "name": "Georgia Southern Eagles",
+        "abbreviation": "GASO",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/290.png",
+        "reddit": "/r/GSU",
+        "flair": "georgiasouthern"
+    },
+    "292": {
+        "conference": "Western Athletic Conference",
+        "name": "UT Rio Grande Valley Vaqueros",
+        "abbreviation": "RIO",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/292.png",
+        "reddit": "/r/utrgv/",
+        "flair": "utriograndevalley"
+    },
+    "294": {
+        "conference": "Atlantic Sun Conference",
+        "name": "Jacksonville Dolphins",
+        "abbreviation": "JU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/294.png",
+        "reddit": "/r/jaxu/",
+        "flair": "jacksonville"
+    },
+    "295": {
+        "conference": "Conference USA",
+        "name": "Old Dominion Monarchs",
+        "abbreviation": "ODU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/295.png",
+        "reddit": "/r/olddominionfootball",
+        "flair": "olddominion"
+    },
+    "299": {
+        "conference": "Big West Conference",
+        "name": "Long Beach State 49ers",
+        "abbreviation": "LBSU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/299.png",
+        "reddit": "/r/CSULB/",
+        "flair": "longbeachstate"
+    },
+    "300": {
+        "conference": "Big West Conference",
+        "name": "UC Irvine Anteaters",
+        "abbreviation": "UCI",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/300.png",
+        "reddit": "/r/UCI/",
+        "flair": "ucirvine"
+    },
+    "301": {
+        "conference": "West Coast Conference",
+        "name": "San Diego Toreros",
+        "abbreviation": "USD",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/301.png",
+        "reddit": "/r/USD",
+        "flair": "sandiego"
+    },
+    "302": {
+        "conference": "Big West Conference",
+        "name": "UC Davis Aggies",
+        "abbreviation": "UCD",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/302.png",
+        "reddit": "/r/UCDavis/",
+        "flair": "ucdavis"
+    },
+    "304": {
+        "conference": "Big Sky Conference",
+        "name": "Idaho State Bengals",
+        "abbreviation": "IDST",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/304.png",
+        "reddit": "/r/idahostate/",
+        "flair": "idahostate"
+    },
+    "305": {
+        "conference": "Big East Conference",
+        "name": "DePaul Blue Demons",
+        "abbreviation": "DEP",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/305.png",
+        "reddit": "/r/depaul/",
+        "flair": "depaul"
+    },
+    "309": {
+        "conference": "Sun Belt Conference",
+        "name": "Louisiana Ragin' Cajuns",
+        "abbreviation": "UL",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/309.png",
+        "reddit": "/r/ULL",
+        "flair": "louisiana"
+    },
+    "311": {
+        "conference": "America East Conference",
+        "name": "Maine Black Bears",
+        "abbreviation": "ME",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/311.png",
+        "reddit": "/r/umaine/",
+        "flair": "maine"
+    },
+    "314": {
+        "conference": "Metro Atlantic Athletic Conference",
+        "name": "Iona Gaels",
+        "abbreviation": "IONA",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/314.png",
+        "reddit": "/r/gaels/",
+        "flair": "iona"
+    },
+    "315": {
+        "conference": "Metro Atlantic Athletic Conference",
+        "name": "Niagara Purple Eagles",
+        "abbreviation": "NIAG",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/315.png",
+        "reddit": "#/niag",
+        "flair": "niagara"
+    },
+    "322": {
+        "conference": "Patriot League",
+        "name": "Lafayette Leopards",
+        "abbreviation": "LAF",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/322.png",
+        "reddit": "/r/lafayettecollege",
+        "flair": "lafayette"
+    },
+    "324": {
+        "conference": "Sun Belt Conference",
+        "name": "Coastal Carolina Chanticleers",
+        "abbreviation": "CCU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/324.png",
+        "reddit": "/r/CCU",
+        "flair": "coastalcarolina"
+    },
+    "325": {
+        "conference": "Horizon League",
+        "name": "Cleveland State Vikings",
+        "abbreviation": "CLEV",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/325.png",
+        "reddit": "/r/CSUOHIO/",
+        "flair": "clevelandstate"
+    },
+    "326": {
+        "conference": "Sun Belt Conference",
+        "name": "Texas State Bobcats",
+        "abbreviation": "TXST",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/326.png",
+        "reddit": "/r/txstatebobcats",
+        "flair": "texasstate"
+    },
+    "328": {
+        "conference": "Mountain West Conference",
+        "name": "Utah State Aggies",
+        "abbreviation": "USU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/328.png",
+        "reddit": "/r/usu",
+        "flair": "utahstate"
+    },
+    "331": {
+        "conference": "Big Sky Conference",
+        "name": "Eastern Washington Eagles",
+        "abbreviation": "EWU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/331.png",
+        "reddit": "/r/ewu/",
+        "flair": "easternwashington"
+    },
+    "333": {
+        "conference": "Southeastern Conference",
+        "name": "Alabama Crimson Tide",
+        "abbreviation": "ALA",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/333.png",
+        "reddit": "/r/rolltide",
+        "flair": "alabama"
+    },
+    "338": {
+        "conference": "Atlantic Sun Conference",
+        "name": "Kennesaw State Owls",
+        "abbreviation": "KENN",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/338.png",
+        "reddit": "/r/KSU/",
+        "flair": "kennesawstate"
+    },
+    "339": {
+        "conference": "Missouri Valley Conference",
+        "name": "Evansville Purple Aces",
+        "abbreviation": "EVAN",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/339.png",
+        "reddit": "#/evan",
+        "flair": "evansville"
+    },
+    "344": {
+        "conference": "Southeastern Conference",
+        "name": "Mississippi State Bulldogs",
+        "abbreviation": "MSST",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/344.png",
+        "reddit": "/r/msstate",
+        "flair": "mississippistate"
+    },
+    "349": {
+        "conference": "Patriot League",
+        "name": "Army Black Knights",
+        "abbreviation": "ARMY",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/349.png",
+        "reddit": "/r/USMA",
+        "flair": "army"
+    },
+    "350": {
+        "conference": "Colonial Athletic Association",
+        "name": "UNC Wilmington Seahawks",
+        "abbreviation": "UNCW",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/350.png",
+        "reddit": "/r/UNCW/",
+        "flair": "uncwilmington"
+    },
+    "356": {
+        "conference": "Big Ten Conference",
+        "name": "Illinois Fighting Illini",
+        "abbreviation": "ILL",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/356.png",
+        "reddit": "/r/fightingillini",
+        "flair": "illinois"
+    },
+    "357": {
+        "conference": "Southland Conference",
+        "name": "Texas A&M-CC Islanders",
+        "abbreviation": "AMCC",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/357.png",
+        "reddit": "/r/TAMUCC/",
+        "flair": "texasamcc"
+    },
+    "399": {
+        "conference": "America East Conference",
+        "name": "Albany Great Danes",
+        "abbreviation": "ALB",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/399.png",
+        "reddit": "/r/ualbany/",
+        "flair": "albany"
+    },
+    "526": {
+        "conference": "Atlantic Sun Conference",
+        "name": "Florida Gulf Coast Eagles",
+        "abbreviation": "FGCU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/526.png",
+        "reddit": "/r/fgcu/",
+        "flair": "floridagulfcoast"
+    },
+    "2000": {
+        "conference": "Southland Conference",
+        "name": "Abilene Christian Wildcats",
+        "abbreviation": "ACU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2000.png",
+        "reddit": "/r/ACU",
+        "flair": "abilenechristian"
+    },
+    "2005": {
+        "conference": "Mountain West Conference",
+        "name": "Air Force Falcons",
+        "abbreviation": "AFA",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2005.png",
+        "reddit": "/r/usafa",
+        "flair": "airforce"
+    },
+    "2006": {
+        "conference": "Mid-American Conference",
+        "name": "Akron Zips",
+        "abbreviation": "AKR",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2006.png",
+        "reddit": "/r/uakron/",
+        "flair": "akron"
+    },
+    "2010": {
+        "conference": "Southwestern Athletic Conference",
+        "name": "Alabama A&M Bulldogs",
+        "abbreviation": "AAMU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2010.png",
+        "reddit": "/r/AlabamaAM",
+        "flair": "alabamaam"
+    },
+    "2011": {
+        "conference": "Southwestern Athletic Conference",
+        "name": "Alabama State Hornets",
+        "abbreviation": "ALST",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2011.png",
+        "reddit": "/r/AlabamaState",
+        "flair": "alabamastate"
+    },
+    "2016": {
+        "conference": "Southwestern Athletic Conference",
+        "name": "Alcorn State Braves",
+        "abbreviation": "ALCN",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2016.png",
+        "reddit": "/r/AlcornState",
+        "flair": "alcornstate"
+    },
+    "2026": {
+        "conference": "Sun Belt Conference",
+        "name": "Appalachian State Mountaineers",
+        "abbreviation": "APP",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2026.png",
+        "reddit": "/r/appstate",
+        "flair": "appalachianstate"
+    },
+    "2029": {
+        "conference": "Southwestern Athletic Conference",
+        "name": "Arkansas-Pine Bluff Golden Lions",
+        "abbreviation": "UAPB",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2029.png",
+        "reddit": "/r/UAPB",
+        "flair": "arkansaspinebluff"
+    },
+    "2031": {
+        "conference": "Sun Belt Conference",
+        "name": "Little Rock Trojans",
+        "abbreviation": "UALR",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2031.png",
+        "reddit": "/r/UALR/",
+        "flair": "littlerock"
+    },
+    "2032": {
+        "conference": "Sun Belt Conference",
+        "name": "Arkansas State Red Wolves",
+        "abbreviation": "ARST",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2032.png",
+        "reddit": "/r/arkst",
+        "flair": "arkansasstate"
+    },
+    "2046": {
+        "conference": "Ohio Valley Conference",
+        "name": "Austin Peay Governors",
+        "abbreviation": "APSU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2046.png",
+        "reddit": "/r/APSU",
+        "flair": "austinpeay"
+    },
+    "2050": {
+        "conference": "Mid-American Conference",
+        "name": "Ball State Cardinals",
+        "abbreviation": "BALL",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2050.png",
+        "reddit": "/r/BallState",
+        "flair": "ballstate"
+    },
+    "2057": {
+        "conference": "Ohio Valley Conference",
+        "name": "Belmont Bruins",
+        "abbreviation": "BEL",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2057.png",
+        "reddit": "/r/BelmontUniversity/",
+        "flair": "belmont"
+    },
+    "2065": {
+        "conference": "Mid-Eastern Athletic Conference",
+        "name": "Bethune-Cookman Wildcats",
+        "abbreviation": "BCU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2065.png",
+        "reddit": "/r/BethuneCookman",
+        "flair": "bethunecookman"
+    },
+    "2066": {
+        "conference": "America East Conference",
+        "name": "Binghamton Bearcats",
+        "abbreviation": "BING",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2066.png",
+        "reddit": "/r/BinghamtonUniversity/",
+        "flair": "binghamton"
+    },
+    "2083": {
+        "conference": "Patriot League",
+        "name": "Bucknell Bison",
+        "abbreviation": "BUCK",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2083.png",
+        "reddit": "/r/bucknell",
+        "flair": "bucknell"
+    },
+    "2084": {
+        "conference": "Mid-American Conference",
+        "name": "Buffalo Bulls",
+        "abbreviation": "BUFF",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2084.png",
+        "reddit": "/r/UBreddit",
+        "flair": "buffalo"
+    },
+    "2086": {
+        "conference": "Big East Conference",
+        "name": "Butler Bulldogs",
+        "abbreviation": "BUT",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2086.png",
+        "reddit": "/r/butleruniversity/",
+        "flair": "butler"
+    },
+    "2097": {
+        "conference": "Big South Conference",
+        "name": "Campbell Fighting Camels",
+        "abbreviation": "CAM",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2097.png",
+        "reddit": "#/cam",
+        "flair": "campbell"
+    },
+    "2099": {
+        "conference": "Metro Atlantic Athletic Conference",
+        "name": "Canisius Golden Griffins",
+        "abbreviation": "CAN",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2099.png",
+        "reddit": "/r/Canisius/",
+        "flair": "canisius"
+    },
+    "2110": {
+        "conference": "Southland Conference",
+        "name": "Central Arkansas Bears",
+        "abbreviation": "UCA",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2110.png",
+        "reddit": "/r/UCA",
+        "flair": "centralarkansas"
+    },
+    "2115": {
+        "conference": "Northeast Conference",
+        "name": "Central Connecticut Blue Devils",
+        "abbreviation": "CCSU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2115.png",
+        "reddit": "/r/ccsu",
+        "flair": "centralconnecticut"
+    },
+    "2116": {
+        "conference": "American Athletic Conference",
+        "name": "UCF Knights",
+        "abbreviation": "UCF",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2116.png",
+        "reddit": "/r/ucfknights",
+        "flair": "ucf"
+    },
+    "2117": {
+        "conference": "Mid-American Conference",
+        "name": "Central Michigan Chippewas",
+        "abbreviation": "CMU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2117.png",
+        "reddit": "/r/centralmich",
+        "flair": "centralmichigan"
+    },
+    "2127": {
+        "conference": "Big South Conference",
+        "name": "Charleston Southern Buccaneers",
+        "abbreviation": "CHSO",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2127.png",
+        "reddit": "/r/CharlestonSouthern/",
+        "flair": "charlestonsouthern"
+    },
+    "2130": {
+        "conference": "Western Athletic Conference",
+        "name": "Chicago State Cougars",
+        "abbreviation": "CHIC",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2130.png",
+        "reddit": "#/chic",
+        "flair": "chicagostate"
+    },
+    "2132": {
+        "conference": "American Athletic Conference",
+        "name": "Cincinnati Bearcats",
+        "abbreviation": "CIN",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2132.png",
+        "reddit": "/r/uCinci",
+        "flair": "cincinnati"
+    },
+    "2142": {
+        "conference": "Patriot League",
+        "name": "Colgate Raiders",
+        "abbreviation": "COLG",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2142.png",
+        "reddit": "/r/Colgate",
+        "flair": "colgate"
+    },
+    "2154": {
+        "conference": "Mid-Eastern Athletic Conference",
+        "name": "Coppin State Eagles",
+        "abbreviation": "COPP",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2154.png",
+        "reddit": "#/copp",
+        "flair": "coppinstate"
+    },
+    "2166": {
+        "conference": "Atlantic 10 Conference",
+        "name": "Davidson Wildcats",
+        "abbreviation": "DAV",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2166.png",
+        "reddit": "/r/davidson/",
+        "flair": "davidson"
+    },
+    "2168": {
+        "conference": "Atlantic 10 Conference",
+        "name": "Dayton Flyers",
+        "abbreviation": "DAY",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2168.png",
+        "reddit": "/r/UDFlyers/",
+        "flair": "dayton"
+    },
+    "2169": {
+        "conference": "Mid-Eastern Athletic Conference",
+        "name": "Delaware State Hornets",
+        "abbreviation": "DSU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2169.png",
+        "reddit": "/r/Delaware/",
+        "flair": "delawarestate"
+    },
+    "2172": {
+        "conference": "Summit League",
+        "name": "Denver Pioneers",
+        "abbreviation": "DEN",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2172.png",
+        "reddit": "/r/denveru/",
+        "flair": "denver"
+    },
+    "2174": {
+        "conference": "Horizon League",
+        "name": "Detroit Mercy Titans",
+        "abbreviation": "DET",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2174.png",
+        "reddit": "#/det",
+        "flair": "detroitmercy"
+    },
+    "2181": {
+        "conference": "Missouri Valley Conference",
+        "name": "Drake Bulldogs",
+        "abbreviation": "DRKE",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2181.png",
+        "reddit": "/r/drake",
+        "flair": "drake"
+    },
+    "2182": {
+        "conference": "Colonial Athletic Association",
+        "name": "Drexel Dragons",
+        "abbreviation": "DREX",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2182.png",
+        "reddit": "/r/Drexel/",
+        "flair": "drexel"
+    },
+    "2184": {
+        "conference": "Atlantic 10 Conference",
+        "name": "Duquesne Dukes",
+        "abbreviation": "DUQ",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2184.png",
+        "reddit": "/r/Duquesne/",
+        "flair": "duquesne"
+    },
+    "2193": {
+        "conference": "Southern Conference",
+        "name": "East Tennessee State Buccaneers",
+        "abbreviation": "ETSU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2193.png",
+        "reddit": "/r/ETSU",
+        "flair": "easttennesseestate"
+    },
+    "2197": {
+        "conference": "Ohio Valley Conference",
+        "name": "Eastern Illinois Panthers",
+        "abbreviation": "EIU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2197.png",
+        "reddit": "/r/EIU",
+        "flair": "easternillinois"
+    },
+    "2198": {
+        "conference": "Ohio Valley Conference",
+        "name": "Eastern Kentucky Colonels",
+        "abbreviation": "EKY",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2198.png",
+        "reddit": "/r/eku",
+        "flair": "easternkentucky"
+    },
+    "2199": {
+        "conference": "Mid-American Conference",
+        "name": "Eastern Michigan Eagles",
+        "abbreviation": "EMU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2199.png",
+        "reddit": "/r/emu",
+        "flair": "easternmichigan"
+    },
+    "2210": {
+        "conference": "Colonial Athletic Association",
+        "name": "Elon Phoenix",
+        "abbreviation": "ELON",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2210.png",
+        "reddit": "/r/elon/",
+        "flair": "elon"
+    },
+    "2217": {
+        "conference": "Metro Atlantic Athletic Conference",
+        "name": "Fairfield Stags",
+        "abbreviation": "FAIR",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2217.png",
+        "reddit": "/r/fairfieldU/",
+        "flair": "fairfield"
+    },
+    "2226": {
+        "conference": "Conference USA",
+        "name": "Florida Atlantic Owls",
+        "abbreviation": "FAU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2226.png",
+        "reddit": "/r/faufootball",
+        "flair": "floridaatlantic"
+    },
+    "2229": {
+        "conference": "Conference USA",
+        "name": "Florida International Golden Panthers",
+        "abbreviation": "FIU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2229.png",
+        "reddit": "/r/FIU",
+        "flair": "floridainternational"
+    },
+    "2230": {
+        "conference": "Atlantic 10 Conference",
+        "name": "Fordham Rams",
+        "abbreviation": "FOR",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2230.png",
+        "reddit": "/r/Fordham/",
+        "flair": "fordham"
+    },
+    "2239": {
+        "conference": "Big West Conference",
+        "name": "CSU Fullerton Titans",
+        "abbreviation": "CSF",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2239.png",
+        "reddit": "/r/csuf/",
+        "flair": "csufullerton"
+    },
+    "2241": {
+        "conference": "Big South Conference",
+        "name": "Gardner-Webb Bulldogs",
+        "abbreviation": "WEBB",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2241.png",
+        "reddit": "#/webb",
+        "flair": "gardnerwebb"
+    },
+    "2244": {
+        "conference": "Atlantic 10 Conference",
+        "name": "George Mason Patriots",
+        "abbreviation": "GMU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2244.png",
+        "reddit": "/r/gmu/",
+        "flair": "georgemason"
+    },
+    "2247": {
+        "conference": "Sun Belt Conference",
+        "name": "Georgia State Panthers",
+        "abbreviation": "GAST",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2247.png",
+        "reddit": "/r/GaState",
+        "flair": "georgiastate"
+    },
+    "2250": {
+        "conference": "West Coast Conference",
+        "name": "Gonzaga Bulldogs",
+        "abbreviation": "GONZ",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2250.png",
+        "reddit": "/r/Gonzaga/",
+        "flair": "gonzaga"
+    },
+    "2253": {
+        "conference": "Western Athletic Conference",
+        "name": "Grand Canyon Antelopes",
+        "abbreviation": "GCU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2253.png",
+        "reddit": "/r/gcu/",
+        "flair": "grandcanyon"
+    },
+    "2261": {
+        "conference": "Big South Conference",
+        "name": "Hampton Pirates",
+        "abbreviation": "HAMP",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2261.png",
+        "reddit": "#/hamp",
+        "flair": "hampton"
+    },
+    "2272": {
+        "conference": "Big South Conference",
+        "name": "High Point Panthers",
+        "abbreviation": "HPU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2272.png",
+        "reddit": "/r/HPU/",
+        "flair": "highpoint"
+    },
+    "2275": {
+        "conference": "Colonial Athletic Association",
+        "name": "Hofstra Pride",
+        "abbreviation": "HOF",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2275.png",
+        "reddit": "/r/Hofstra/",
+        "flair": "hofstra"
+    },
+    "2277": {
+        "conference": "Southland Conference",
+        "name": "Houston Baptist Huskies",
+        "abbreviation": "HB",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2277.png",
+        "reddit": "/r/HBU",
+        "flair": "houstonbaptist"
+    },
+    "2287": {
+        "conference": "Missouri Valley Conference",
+        "name": "Illinois State Redbirds",
+        "abbreviation": "ILST",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2287.png",
+        "reddit": "/r/ilstu",
+        "flair": "illinoisstate"
+    },
+    "2294": {
+        "conference": "Big Ten Conference",
+        "name": "Iowa Hawkeyes",
+        "abbreviation": "IOWA",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2294.png",
+        "reddit": "/r/Hawkeye_Football",
+        "flair": "iowa"
+    },
+    "2296": {
+        "conference": "Southwestern Athletic Conference",
+        "name": "Jackson State Tigers",
+        "abbreviation": "JKST",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2296.png",
+        "reddit": "/r/JacksonStateTigers",
+        "flair": "jacksonstate"
+    },
+    "2305": {
+        "conference": "Big 12 Conference",
+        "name": "Kansas Jayhawks",
+        "abbreviation": "KU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2305.png",
+        "reddit": "/r/jayhawks",
+        "flair": "kansas"
+    },
+    "2306": {
+        "conference": "Big 12 Conference",
+        "name": "Kansas State Wildcats",
+        "abbreviation": "KSU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2306.png",
+        "reddit": "/r/kstate",
+        "flair": "kansasstate"
+    },
+    "2309": {
+        "conference": "Mid-American Conference",
+        "name": "Kent State Golden Flashes",
+        "abbreviation": "KENT",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2309.png",
+        "reddit": "/r/KentStateUniversity",
+        "flair": "kentstate"
+    },
+    "2320": {
+        "conference": "Southland Conference",
+        "name": "Lamar Cardinals",
+        "abbreviation": "LAM",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2320.png",
+        "reddit": "/r/LamarUniversity",
+        "flair": "lamar"
+    },
+    "2325": {
+        "conference": "Atlantic 10 Conference",
+        "name": "La Salle Explorers",
+        "abbreviation": "LAS",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2325.png",
+        "reddit": "/r/LaSalle/",
+        "flair": "lasalle"
+    },
+    "2329": {
+        "conference": "Patriot League",
+        "name": "Lehigh Mountain Hawks",
+        "abbreviation": "LEH",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2329.png",
+        "reddit": "/r/Lehigh",
+        "flair": "lehigh"
+    },
+    "2335": {
+        "conference": "Atlantic Sun Conference",
+        "name": "Liberty Flames",
+        "abbreviation": "LIB",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2335.png",
+        "reddit": "/r/LibertyUniversity",
+        "flair": "liberty"
+    },
+    "2341": {
+        "conference": "Northeast Conference",
+        "name": "LIU Brooklyn Blackbirds",
+        "abbreviation": "LIU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2341.png",
+        "reddit": "#/liu",
+        "flair": "liubrooklyn"
+    },
+    "2344": {
+        "conference": "Big South Conference",
+        "name": "Longwood Lancers",
+        "abbreviation": "LONG",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2344.png",
+        "reddit": "/r/Longwood/",
+        "flair": "longwood"
+    },
+    "2348": {
+        "conference": "Conference USA",
+        "name": "Louisiana Tech Bulldogs",
+        "abbreviation": "LT",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2348.png",
+        "reddit": "/r/LouisianaTech",
+        "flair": "louisianatech"
+    },
+    "2349": {
+        "conference": "America East Conference",
+        "name": "UMass Lowell River Hawks",
+        "abbreviation": "UML",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2349.png",
+        "reddit": "/r/uml/",
+        "flair": "umasslowell"
+    },
+    "2350": {
+        "conference": "Missouri Valley Conference",
+        "name": "Loyola-Chicago Ramblers",
+        "abbreviation": "LCHI",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2350.png",
+        "reddit": "/r/LoyolaChicago/",
+        "flair": "loyolachicago"
+    },
+    "2351": {
+        "conference": "West Coast Conference",
+        "name": "Loyola Marymount Lions",
+        "abbreviation": "LMU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2351.png",
+        "reddit": "/r/LMU/",
+        "flair": "loyolamarymount"
+    },
+    "2352": {
+        "conference": "Patriot League",
+        "name": "Loyola (MD) Greyhounds",
+        "abbreviation": "L-MD",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2352.png",
+        "reddit": "/r/Loyola/",
+        "flair": "loyolamd"
+    },
+    "2363": {
+        "conference": "Metro Atlantic Athletic Conference",
+        "name": "Manhattan Jaspers",
+        "abbreviation": "MAN",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2363.png",
+        "reddit": "/r/ManhattanCollege/",
+        "flair": "manhattan"
+    },
+    "2368": {
+        "conference": "Metro Atlantic Athletic Conference",
+        "name": "Marist Red Foxes",
+        "abbreviation": "MRST",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2368.png",
+        "reddit": "#/mrst",
+        "flair": "marist"
+    },
+    "2377": {
+        "conference": "Southland Conference",
+        "name": "McNeese Cowboys",
+        "abbreviation": "MCN",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2377.png",
+        "reddit": "/r/mcneese",
+        "flair": "mcneese"
+    },
+    "2378": {
+        "conference": "America East Conference",
+        "name": "UMBC Retrievers",
+        "abbreviation": "UMBC",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2378.png",
+        "reddit": "/r/UMBC/",
+        "flair": "umbc"
+    },
+    "2379": {
+        "conference": "Mid-Eastern Athletic Conference",
+        "name": "Maryland-Eastern Shore Hawks",
+        "abbreviation": "UMES",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2379.png",
+        "reddit": "/r/easternshoremd/",
+        "flair": "marylandeasternshore"
+    },
+    "2382": {
+        "conference": "Southern Conference",
+        "name": "Mercer Bears",
+        "abbreviation": "MER",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2382.png",
+        "reddit": "/r/mercer",
+        "flair": "mercer"
+    },
+    "2390": {
+        "conference": "Atlantic Coast Conference",
+        "name": "Miami Hurricanes",
+        "abbreviation": "MIA",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2390.png",
+        "reddit": "/r/MiamiHurricanes/",
+        "flair": "miami"
+    },
+    "2393": {
+        "conference": "Conference USA",
+        "name": "Middle Tennessee Blue Raiders",
+        "abbreviation": "MTSU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2393.png",
+        "reddit": "/r/MTSU",
+        "flair": "middletennessee"
+    },
+    "2400": {
+        "conference": "Southwestern Athletic Conference",
+        "name": "Mississippi Valley State Delta Devils",
+        "abbreviation": "MVSU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2400.png",
+        "reddit": "/r/MVSU",
+        "flair": "mississippivalleystate"
+    },
+    "2405": {
+        "conference": "Metro Atlantic Athletic Conference",
+        "name": "Monmouth Hawks",
+        "abbreviation": "MONM",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2405.png",
+        "reddit": "/r/MonmouthUniversity/",
+        "flair": "monmouth"
+    },
+    "2413": {
+        "conference": "Ohio Valley Conference",
+        "name": "Morehead State Eagles",
+        "abbreviation": "MORE",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2413.png",
+        "reddit": "/r/MoreheadState",
+        "flair": "moreheadstate"
+    },
+    "2415": {
+        "conference": "Mid-Eastern Athletic Conference",
+        "name": "Morgan State Bears",
+        "abbreviation": "MORG",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2415.png",
+        "reddit": "/r/MorganState",
+        "flair": "morganstate"
+    },
+    "2426": {
+        "conference": "Patriot League",
+        "name": "Navy Midshipmen",
+        "abbreviation": "NAVY",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2426.png",
+        "reddit": "/r/USNA",
+        "flair": "navy"
+    },
+    "2427": {
+        "conference": "Big South Conference",
+        "name": "UNC Asheville Bulldogs",
+        "abbreviation": "UNCA",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2427.png",
+        "reddit": "/r/unca/",
+        "flair": "uncasheville"
+    },
+    "2428": {
+        "conference": "Mid-Eastern Athletic Conference",
+        "name": "North Carolina Central Eagles",
+        "abbreviation": "NCCU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2428.png",
+        "reddit": "/r/NCCU",
+        "flair": "northcarolinacentral"
+    },
+    "2429": {
+        "conference": "Conference USA",
+        "name": "Charlotte 49ers",
+        "abbreviation": "CHAR",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2429.png",
+        "reddit": "/r/UNCCharlotte",
+        "flair": "charlotte"
+    },
+    "2430": {
+        "conference": "Southern Conference",
+        "name": "UNC Greensboro Spartans",
+        "abbreviation": "UNCG",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2430.png",
+        "reddit": "/r/UNCG/",
+        "flair": "uncgreensboro"
+    },
+    "2433": {
+        "conference": "Sun Belt Conference",
+        "name": "UL Monroe Warhawks",
+        "abbreviation": "ULM",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2433.png",
+        "reddit": "/r/ulmwarhawks",
+        "flair": "ulmonroe"
+    },
+    "2437": {
+        "conference": "Summit League",
+        "name": "Omaha Mavericks",
+        "abbreviation": "OMA",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2437.png",
+        "reddit": "/r/UNOmaha/",
+        "flair": "omaha"
+    },
+    "2439": {
+        "conference": "Mountain West Conference",
+        "name": "UNLV Rebels",
+        "abbreviation": "UNLV",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2439.png",
+        "reddit": "/r/UNLV",
+        "flair": "unlv"
+    },
+    "2440": {
+        "conference": "Mountain West Conference",
+        "name": "Nevada Wolf Pack",
+        "abbreviation": "NEV",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2440.png",
+        "reddit": "/r/unr",
+        "flair": "nevada"
+    },
+    "2443": {
+        "conference": "Southland Conference",
+        "name": "New Orleans Privateers",
+        "abbreviation": "UNO",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2443.png",
+        "reddit": "/r/UNO/",
+        "flair": "neworleans"
+    },
+    "2447": {
+        "conference": "Southland Conference",
+        "name": "Nicholls Colonels",
+        "abbreviation": "NICH",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2447.png",
+        "reddit": "/r/NSU",
+        "flair": "nicholls"
+    },
+    "2448": {
+        "conference": "Mid-Eastern Athletic Conference",
+        "name": "North Carolina A&T Aggies",
+        "abbreviation": "NCAT",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2448.png",
+        "reddit": "/r/NCAT",
+        "flair": "northcarolinaat"
+    },
+    "2449": {
+        "conference": "Summit League",
+        "name": "North Dakota State Bison",
+        "abbreviation": "NDSU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2449.png",
+        "reddit": "/r/NDSU",
+        "flair": "northdakotastate"
+    },
+    "2450": {
+        "conference": "Mid-Eastern Athletic Conference",
+        "name": "Norfolk State Spartans",
+        "abbreviation": "NORF",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2450.png",
+        "reddit": "/r/NorfolkState",
+        "flair": "norfolkstate"
+    },
+    "2453": {
+        "conference": "Atlantic Sun Conference",
+        "name": "North Alabama Lions",
+        "abbreviation": "UNA",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2453.png",
+        "reddit": "/r/FlorenceAl/",
+        "flair": "northalabama"
+    },
+    "2454": {
+        "conference": "Atlantic Sun Conference",
+        "name": "North Florida Ospreys",
+        "abbreviation": "UNF",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2454.png",
+        "reddit": "/r/UNF/",
+        "flair": "northflorida"
+    },
+    "2458": {
+        "conference": "Big Sky Conference",
+        "name": "Northern Colorado Bears",
+        "abbreviation": "UNCO",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2458.png",
+        "reddit": "/r/UNCO/",
+        "flair": "northerncolorado"
+    },
+    "2459": {
+        "conference": "Mid-American Conference",
+        "name": "Northern Illinois Huskies",
+        "abbreviation": "NIU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2459.png",
+        "reddit": "/r/NIU",
+        "flair": "northernillinois"
+    },
+    "2460": {
+        "conference": "Missouri Valley Conference",
+        "name": "Northern Iowa Panthers",
+        "abbreviation": "UNI",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2460.png",
+        "reddit": "/r/uni",
+        "flair": "northerniowa"
+    },
+    "2463": {
+        "conference": "Big West Conference",
+        "name": "CSU Northridge Matadors",
+        "abbreviation": "CSUN",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2463.png",
+        "reddit": "/r/csun/",
+        "flair": "csunorthridge"
+    },
+    "2464": {
+        "conference": "Big Sky Conference",
+        "name": "Northern Arizona Lumberjacks",
+        "abbreviation": "NAU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2464.png",
+        "reddit": "/r/NAU/",
+        "flair": "northernarizona"
+    },
+    "2466": {
+        "conference": "Southland Conference",
+        "name": "Northwestern State Demons",
+        "abbreviation": "NWST",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2466.png",
+        "reddit": "/r/nsula",
+        "flair": "northwesternstate"
+    },
+    "2473": {
+        "conference": "Horizon League",
+        "name": "Oakland Golden Grizzlies",
+        "abbreviation": "OAK",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2473.png",
+        "reddit": "/r/oaklanduniversity/",
+        "flair": "oakland"
+    },
+    "2483": {
+        "conference": "Pac-12 Conference",
+        "name": "Oregon Ducks",
+        "abbreviation": "ORE",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2483.png",
+        "reddit": "/r/ducks",
+        "flair": "oregon"
+    },
+    "2492": {
+        "conference": "West Coast Conference",
+        "name": "Pepperdine Waves",
+        "abbreviation": "PEPP",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2492.png",
+        "reddit": "/r/Pepperdine/",
+        "flair": "pepperdine"
+    },
+    "2501": {
+        "conference": "West Coast Conference",
+        "name": "Portland Pilots",
+        "abbreviation": "PORT",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2501.png",
+        "reddit": "/r/UPortland/",
+        "flair": "portland"
+    },
+    "2502": {
+        "conference": "Big Sky Conference",
+        "name": "Portland State Vikings",
+        "abbreviation": "PRST",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2502.png",
+        "reddit": "/r/portlandstate/",
+        "flair": "portlandstate"
+    },
+    "2504": {
+        "conference": "Southwestern Athletic Conference",
+        "name": "Prairie View A&M Panthers",
+        "abbreviation": "PV",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2504.png",
+        "reddit": "/r/PrairieViewAM",
+        "flair": "prairieviewam"
+    },
+    "2506": {
+        "conference": "Big South Conference",
+        "name": "Presbyterian Blue Hose",
+        "abbreviation": "PRE",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2506.png",
+        "reddit": "/r/bluehose/",
+        "flair": "presbyterian"
+    },
+    "2507": {
+        "conference": "Big East Conference",
+        "name": "Providence Friars",
+        "abbreviation": "PROV",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2507.png",
+        "reddit": "/r/pcbb/",
+        "flair": "providence"
+    },
+    "2509": {
+        "conference": "Big Ten Conference",
+        "name": "Purdue Boilermakers",
+        "abbreviation": "PUR",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2509.png",
+        "reddit": "/r/boilermakers",
+        "flair": "purdue"
+    },
+    "2514": {
+        "conference": "Metro Atlantic Athletic Conference",
+        "name": "Quinnipiac Bobcats",
+        "abbreviation": "QUIN",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2514.png",
+        "reddit": "/r/Quinnipiac/",
+        "flair": "quinnipiac"
+    },
+    "2515": {
+        "conference": "Big South Conference",
+        "name": "Radford Highlanders",
+        "abbreviation": "RAD",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2515.png",
+        "reddit": "/r/radforduniversity/",
+        "flair": "radford"
+    },
+    "2520": {
+        "conference": "Metro Atlantic Athletic Conference",
+        "name": "Rider Broncs",
+        "abbreviation": "RID",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2520.png",
+        "reddit": "/r/RiderUniversity/",
+        "flair": "rider"
+    },
+    "2523": {
+        "conference": "Northeast Conference",
+        "name": "Robert Morris Colonials",
+        "abbreviation": "RMU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2523.png",
+        "reddit": "/r/RMU",
+        "flair": "robertmorris"
+    },
+    "2529": {
+        "conference": "Northeast Conference",
+        "name": "Sacred Heart Pioneers",
+        "abbreviation": "SHU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2529.png",
+        "reddit": "/r/Sacredheart",
+        "flair": "sacredheart"
+    },
+    "2534": {
+        "conference": "Southland Conference",
+        "name": "Sam Houston State Bearkats",
+        "abbreviation": "SHSU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2534.png",
+        "reddit": "/r/shsu",
+        "flair": "samhoustonstate"
+    },
+    "2535": {
+        "conference": "Southern Conference",
+        "name": "Samford Bulldogs",
+        "abbreviation": "SAM",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2535.png",
+        "reddit": "/r/SamfordUniversity",
+        "flair": "samford"
+    },
+    "2539": {
+        "conference": "West Coast Conference",
+        "name": "San Francisco Dons",
+        "abbreviation": "SF",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2539.png",
+        "reddit": "/r/usfdons/",
+        "flair": "sanfrancisco"
+    },
+    "2540": {
+        "conference": "Big West Conference",
+        "name": "UC Santa Barbara Gauchos",
+        "abbreviation": "UCSB",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2540.png",
+        "reddit": "/r/UCSantaBarbara/",
+        "flair": "ucsantabarbara"
+    },
+    "2541": {
+        "conference": "West Coast Conference",
+        "name": "Santa Clara Broncos",
+        "abbreviation": "SCU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2541.png",
+        "reddit": "/r/SCU/",
+        "flair": "santaclara"
+    },
+    "2542": {
+        "conference": "Mid-Eastern Athletic Conference",
+        "name": "Savannah State Tigers",
+        "abbreviation": "SAV",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2542.png",
+        "reddit": "/r/SavannahState",
+        "flair": "savannahstate"
+    },
+    "2545": {
+        "conference": "Southland Conference",
+        "name": "SE Louisiana Lions",
+        "abbreviation": "SELA",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2545.png",
+        "reddit": "/r/Southeastern",
+        "flair": "selouisiana"
+    },
+    "2546": {
+        "conference": "Ohio Valley Conference",
+        "name": "Se Missouri St Southeast Missouri State",
+        "abbreviation": "SEMO",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2546.png",
+        "reddit": "/r/semo/",
+        "flair": "semissourist"
+    },
+    "2547": {
+        "conference": "Western Athletic Conference",
+        "name": "Seattle Redhawks",
+        "abbreviation": "SEA",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2547.png",
+        "reddit": "/r/seattleu/",
+        "flair": "seattle"
+    },
+    "2550": {
+        "conference": "Big East Conference",
+        "name": "Seton Hall Pirates",
+        "abbreviation": "HALL",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2550.png",
+        "reddit": "/r/SHU/",
+        "flair": "setonhall"
+    },
+    "2561": {
+        "conference": "Metro Atlantic Athletic Conference",
+        "name": "Siena Saints",
+        "abbreviation": "SIE",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2561.png",
+        "reddit": "/r/siena/",
+        "flair": "siena"
+    },
+    "2565": {
+        "conference": "Ohio Valley Conference",
+        "name": "SIU-Edwardsville Cougars",
+        "abbreviation": "SIUE",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2565.png",
+        "reddit": "/r/SIUE/",
+        "flair": "siuedwardsville"
+    },
+    "2567": {
+        "conference": "American Athletic Conference",
+        "name": "SMU Mustangs",
+        "abbreviation": "SMU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2567.png",
+        "reddit": "/r/SMU",
+        "flair": "smu"
+    },
+    "2569": {
+        "conference": "Mid-Eastern Athletic Conference",
+        "name": "South Carolina State Bulldogs",
+        "abbreviation": "SCST",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2569.png",
+        "reddit": "/r/SouthCarolinaState",
+        "flair": "southcarolinastate"
+    },
+    "2571": {
+        "conference": "Summit League",
+        "name": "South Dakota State Jackrabbits",
+        "abbreviation": "SDST",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2571.png",
+        "reddit": "/r/sdstate",
+        "flair": "southdakotastate"
+    },
+    "2572": {
+        "conference": "Conference USA",
+        "name": "Southern Miss Golden Eagles",
+        "abbreviation": "USM",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2572.png",
+        "reddit": "/r/USM",
+        "flair": "southernmiss"
+    },
+    "2579": {
+        "conference": "Southeastern Conference",
+        "name": "South Carolina Gamecocks",
+        "abbreviation": "SC",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2579.png",
+        "reddit": "/r/gamecocks",
+        "flair": "southcarolina"
+    },
+    "2582": {
+        "conference": "Southwestern Athletic Conference",
+        "name": "Southern Jaguars",
+        "abbreviation": "SOU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2582.png",
+        "reddit": "/r/SouthernUniversity",
+        "flair": "southern"
+    },
+    "2597": {
+        "conference": "Northeast Conference",
+        "name": "St. Francis (BKN) Terriers",
+        "abbreviation": "SFBK",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2597.png",
+        "reddit": "#/sfbk",
+        "flair": "stfrancisbkn"
+    },
+    "2598": {
+        "conference": "Northeast Conference",
+        "name": "St. Francis (PA) Red Flash",
+        "abbreviation": "SFPA",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2598.png",
+        "reddit": "/r/redflash/",
+        "flair": "stfrancispa"
+    },
+    "2599": {
+        "conference": "Big East Conference",
+        "name": "St. John's Red Storm",
+        "abbreviation": "SJU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2599.png",
+        "reddit": "/r/RedStorm/",
+        "flair": "stjohns"
+    },
+    "2603": {
+        "conference": "Atlantic 10 Conference",
+        "name": "Saint Joseph's Hawks",
+        "abbreviation": "JOES",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2603.png",
+        "reddit": "/r/THWND/",
+        "flair": "saintjosephs"
+    },
+    "2608": {
+        "conference": "West Coast Conference",
+        "name": "Saint Mary's Gaels",
+        "abbreviation": "SMC",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2608.png",
+        "reddit": "/r/StMarysCollegeCA/",
+        "flair": "saintmarys"
+    },
+    "2612": {
+        "conference": "Metro Atlantic Athletic Conference",
+        "name": "Saint Peter's Peacocks",
+        "abbreviation": "SPU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2612.png",
+        "reddit": "/r/SaintPetersUniversity/",
+        "flair": "saintpeters"
+    },
+    "2617": {
+        "conference": "Southland Conference",
+        "name": "Stephen F. Austin Lumberjacks",
+        "abbreviation": "SFA",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2617.png",
+        "reddit": "/r/sfasu",
+        "flair": "stephenfaustin"
+    },
+    "2619": {
+        "conference": "America East Conference",
+        "name": "Stony Brook Seawolves",
+        "abbreviation": "SB",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2619.png",
+        "reddit": "/r/SBU/",
+        "flair": "stonybrook"
+    },
+    "2623": {
+        "conference": "Missouri Valley Conference",
+        "name": "Missouri State Bears",
+        "abbreviation": "MOST",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2623.png",
+        "reddit": "/r/missouristate",
+        "flair": "missouristate"
+    },
+    "2628": {
+        "conference": "Big 12 Conference",
+        "name": "TCU Horned Frogs",
+        "abbreviation": "TCU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2628.png",
+        "reddit": "/r/tcu",
+        "flair": "tcu"
+    },
+    "2630": {
+        "conference": "Ohio Valley Conference",
+        "name": "UT Martin Skyhawks",
+        "abbreviation": "UTM",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2630.png",
+        "reddit": "/r/UTMartin/",
+        "flair": "utmartin"
+    },
+    "2633": {
+        "conference": "Southeastern Conference",
+        "name": "Tennessee Volunteers",
+        "abbreviation": "TENN",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2633.png",
+        "reddit": "/r/UTK",
+        "flair": "tennessee"
+    },
+    "2634": {
+        "conference": "Ohio Valley Conference",
+        "name": "Tennessee State Tigers",
+        "abbreviation": "TNST",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2634.png",
+        "reddit": "/r/TennesseeState",
+        "flair": "tennesseestate"
+    },
+    "2635": {
+        "conference": "Ohio Valley Conference",
+        "name": "Tennessee Tech Golden Eagles",
+        "abbreviation": "TNTC",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2635.png",
+        "reddit": "/r/TNTechUniversity",
+        "flair": "tennesseetech"
+    },
+    "2636": {
+        "conference": "Conference USA",
+        "name": "UTSA Roadrunners",
+        "abbreviation": "UTSA",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2636.png",
+        "reddit": "/r/UTSA",
+        "flair": "utsa"
+    },
+    "2638": {
+        "conference": "Conference USA",
+        "name": "UTEP Miners",
+        "abbreviation": "UTEP",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2638.png",
+        "reddit": "/r/UTEP",
+        "flair": "utep"
+    },
+    "2640": {
+        "conference": "Southwestern Athletic Conference",
+        "name": "Texas Southern Tigers",
+        "abbreviation": "TXSO",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2640.png",
+        "reddit": "/r/TexasSouthern",
+        "flair": "texassouthern"
+    },
+    "2641": {
+        "conference": "Big 12 Conference",
+        "name": "Texas Tech Red Raiders",
+        "abbreviation": "TTU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2641.png",
+        "reddit": "/r/texastech",
+        "flair": "texastech"
+    },
+    "2643": {
+        "conference": "Southern Conference",
+        "name": "The Citadel Bulldogs",
+        "abbreviation": "CIT",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2643.png",
+        "reddit": "/r/TheCitadelAlumni",
+        "flair": "thecitadel"
+    },
+    "2649": {
+        "conference": "Mid-American Conference",
+        "name": "Toledo Rockets",
+        "abbreviation": "TOL",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2649.png",
+        "reddit": "/r/UToledo",
+        "flair": "toledo"
+    },
+    "2653": {
+        "conference": "Sun Belt Conference",
+        "name": "Troy Trojans",
+        "abbreviation": "TROY",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2653.png",
+        "reddit": "/r/TroyTrojans",
+        "flair": "troy"
+    },
+    "2655": {
+        "conference": "American Athletic Conference",
+        "name": "Tulane Green Wave",
+        "abbreviation": "TULN",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2655.png",
+        "reddit": "/r/Tulane",
+        "flair": "tulane"
+    },
+    "2670": {
+        "conference": "Atlantic 10 Conference",
+        "name": "VCU Rams",
+        "abbreviation": "VCU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2670.png",
+        "reddit": "/r/vcu/",
+        "flair": "vcu"
+    },
+    "2674": {
+        "conference": "Missouri Valley Conference",
+        "name": "Valparaiso Crusaders",
+        "abbreviation": "VAL",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2674.png",
+        "reddit": "/r/valpo",
+        "flair": "valparaiso"
+    },
+    "2678": {
+        "conference": "Southern Conference",
+        "name": "VMI Keydets",
+        "abbreviation": "VMI",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2678.png",
+        "reddit": "/r/vmi",
+        "flair": "vmi"
+    },
+    "2681": {
+        "conference": "Northeast Conference",
+        "name": "Wagner Seahawks",
+        "abbreviation": "WAG",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2681.png",
+        "reddit": "/r/WagnerCollege",
+        "flair": "wagner"
+    },
+    "2692": {
+        "conference": "Big Sky Conference",
+        "name": "Weber State Wildcats",
+        "abbreviation": "WEB",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2692.png",
+        "reddit": "/r/weber/",
+        "flair": "weberstate"
+    },
+    "2710": {
+        "conference": "Summit League",
+        "name": "Western Illinois Leathernecks",
+        "abbreviation": "WIU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2710.png",
+        "reddit": "/r/WIU",
+        "flair": "westernillinois"
+    },
+    "2711": {
+        "conference": "Mid-American Conference",
+        "name": "Western Michigan Broncos",
+        "abbreviation": "WMU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2711.png",
+        "reddit": "/r/WMU",
+        "flair": "westernmichigan"
+    },
+    "2717": {
+        "conference": "Southern Conference",
+        "name": "Western Carolina Catamounts",
+        "abbreviation": "WCU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2717.png",
+        "reddit": "/r/WCU",
+        "flair": "westerncarolina"
+    },
+    "2724": {
+        "conference": "American Athletic Conference",
+        "name": "Wichita State Shockers",
+        "abbreviation": "WICH",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2724.png",
+        "reddit": "/r/WichitaState/",
+        "flair": "wichitastate"
+    },
+    "2729": {
+        "conference": "Colonial Athletic Association",
+        "name": "William & Mary Tribe",
+        "abbreviation": "W&M",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2729.png",
+        "reddit": "/r/williamandmary/",
+        "flair": "williammary"
+    },
+    "2737": {
+        "conference": "Big South Conference",
+        "name": "Winthrop Eagles",
+        "abbreviation": "WIN",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2737.png",
+        "reddit": "/r/WinthropU/",
+        "flair": "winthrop"
+    },
+    "2739": {
+        "conference": "Horizon League",
+        "name": "Green Bay Phoenix",
+        "abbreviation": "GB",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2739.png",
+        "reddit": "/r/uwgb/",
+        "flair": "greenbay"
+    },
+    "2747": {
+        "conference": "Southern Conference",
+        "name": "Wofford Terriers",
+        "abbreviation": "WOF",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2747.png",
+        "reddit": "/r/wofford",
+        "flair": "wofford"
+    },
+    "2750": {
+        "conference": "Horizon League",
+        "name": "Wright State Raiders",
+        "abbreviation": "WRST",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2750.png",
+        "reddit": "/r/wrightstate/",
+        "flair": "wrightstate"
+    },
+    "2751": {
+        "conference": "Mountain West Conference",
+        "name": "Wyoming Cowboys",
+        "abbreviation": "WYO",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2751.png",
+        "reddit": "/r/uwyo",
+        "flair": "wyoming"
+    },
+    "2752": {
+        "conference": "Big East Conference",
+        "name": "Xavier Musketeers",
+        "abbreviation": "XAV",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2752.png",
+        "reddit": "/r/XavierUniversity/",
+        "flair": "xavier"
+    },
+    "2754": {
+        "conference": "Horizon League",
+        "name": "Youngstown State Penguins",
+        "abbreviation": "YSU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2754.png",
+        "reddit": "/r/YSU/",
+        "flair": "youngstownstate"
+    },
+    "2755": {
+        "conference": "Southwestern Athletic Conference",
+        "name": "Grambling Tigers",
+        "abbreviation": "GRAM",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2755.png",
+        "reddit": "/r/Grambling",
+        "flair": "grambling"
+    },
+    "2803": {
+        "conference": "Northeast Conference",
+        "name": "Bryant Bulldogs",
+        "abbreviation": "BRY",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2803.png",
+        "reddit": "/r/bryant",
+        "flair": "bryant"
+    },
+    "2856": {
+        "conference": "Western Athletic Conference",
+        "name": "California Baptist Lancers",
+        "abbreviation": "CBU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2856.png",
+        "reddit": "/r/Calbaptist/",
+        "flair": "californiabaptist"
+    },
+    "2870": {
+        "conference": "Summit League",
+        "name": "Purdue Fort Wayne Purdue Fort Wayne",
+        "abbreviation": "PFW",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2870.png",
+        "reddit": "/r/IPFW/",
+        "flair": "purduefortwayne"
+    },
+    "2885": {
+        "conference": "Atlantic Sun Conference",
+        "name": "NJIT Highlanders",
+        "abbreviation": "NJIT",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2885.png",
+        "reddit": "/r/NJTech/",
+        "flair": "njit"
+    },
+    "2908": {
+        "conference": "Big South Conference",
+        "name": "South Carolina Upstate Spartans",
+        "abbreviation": "SCUS",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2908.png",
+        "reddit": "/r/Spartanburg/",
+        "flair": "southcarolinaupstate"
+    },
+    "2916": {
+        "conference": "Southland Conference",
+        "name": "Incarnate Word Cardinals",
+        "abbreviation": "UIW",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2916.png",
+        "reddit": "/r/UIW",
+        "flair": "incarnateword"
+    },
+    "2934": {
+        "conference": "Western Athletic Conference",
+        "name": "CSU Bakersfield Roadrunners",
+        "abbreviation": "CSB",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2934.png",
+        "reddit": "/r/CSUB/",
+        "flair": "csubakersfield"
+    },
+    "3084": {
+        "conference": "Western Athletic Conference",
+        "name": "Utah Valley Wolverines",
+        "abbreviation": "UVU",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/3084.png",
+        "reddit": "/r/UtahValley/",
+        "flair": "utahvalley"
+    }
+  }

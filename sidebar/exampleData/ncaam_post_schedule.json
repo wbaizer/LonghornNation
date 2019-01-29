@@ -1,0 +1,25 @@
+{
+    "data": {
+        "timestamp": "2019-01-11T21:14:12Z",
+        "status": "success",
+        "season": {
+            "year": 2019,
+            "type": 2,
+            "name": "Regular Season"
+        },
+        "team": {
+            "id": "251",
+            "abbreviation": "TEX",
+            "location": "Texas",
+            "name": "Longhorns",
+            "displayName": "Texas Longhorns",
+            "clubhouse": "http://www.espn.com/mens-college-basketball/team/_/id/251/texas-longhorns",
+            "color": "EE7524",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/251.png",
+            "recordSummary": "10-5",
+            "seasonSummary": "2018-19",
+            "standingSummary": "2nd in Big 12"
+        },
+        "events": []
+    }
+}

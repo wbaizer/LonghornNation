@@ -1,0 +1,103 @@
+<h1><a href="/r/BigXII">Basketball</a>: (<%= data.basketball.rankings.primaryTeam.overall %>) <%= data.basketball.rankings.primaryTeam.conference %></h1>
+<h4>Big 12 Basketball Standings</h4>   
+<table>
+       <thead>
+           <tr>
+               <th></th>
+               <th>Team</th>
+               <th>Overall</th>
+               <th>Conference</th>
+           </tr>
+       </thead>
+       <tbody>
+           <% for(var i=0; i < data.basketball.rankings.teams.length; i++) { %>
+           <tr>
+                <td>          
+                    <% if(data.basketball.rankings.teams[i].id == '251') { %>
+                        <strong>
+                    <% } %>
+                        <% if(data.basketball.rankings.teams[i].rank) { %>
+                            #<%= data.basketball.rankings.teams[i].rank %>
+                        <% } %>    
+                    <% if(data.basketball.rankings.teams[i].id == '251') { %>
+                    </strong>
+                    <% } %>
+                </td>
+                <td>          
+                   <% if(data.basketball.rankings.teams[i].id == '251') { %>
+                       <strong>
+                   <% } %>
+                    <a href="<%= teamLink[data.basketball.rankings.teams[i].abbreviation] %>"> 
+                        <%= data.basketball.rankings.teams[i].name %>
+                    </a>
+                   <% if(data.basketball.rankings.teams[i].id == '251') { %>
+                   </strong>
+                   <% } %>
+               </td>
+               <td>
+                   <% if(data.basketball.rankings.teams[i].id == '251') { %>
+                       <strong>
+                   <% } %>
+                   <%= data.basketball.rankings.teams[i].overall %>
+                   <% if(data.basketball.rankings.teams[i].id == '251') { %>
+                       </strong>
+                   <% } %>
+               </td>
+               <td>
+                   <% if(data.basketball.rankings.teams[i].id == '251') { %>
+                       <strong>
+                   <% } %>
+                       <%= data.basketball.rankings.teams[i].conference %>
+                   <% if(data.basketball.rankings.teams[i].id == '251') { %>
+                   </strong>
+                   <% } %>
+               </td>
+           </tr>
+           <% } %>
+       </tbody>
+   </table>
+   <h4>Regular Season</h4>
+   <table>
+       <thead>
+           <tr>
+               <th>Date</th>
+               <th></th>
+               <th></th>
+               <th>Opponent</th>
+               <th>TV</th>
+               <th>Score</th>
+           </tr>
+       </thead>
+       <tbody>
+           <% for(var i=0; i < data.basketball.schedule.regular.length; i++) { %>
+           <tr>
+               <td><%= data.basketball.schedule.regular[i].date %></td>
+               <td><%= data.basketball.schedule.regular[i].homeAway %></td>
+                <td>
+                    <% if(data.basketball.schedule.regular[i].opposingTeam.curatedRank.current < 99) {%>
+                        #<%= data.basketball.schedule.regular[i].opposingTeam.curatedRank.current %>
+                    <% } %>                  
+                </td>
+               <td>        
+                   <a href="<%= data.basketball.schedule.regular[i].opposingTeam.reddit %>">
+                       <%= data.basketball.schedule.regular[i].opposingTeam.team.nickname %>
+                   </a>
+               </td>
+               <td><a href="<%= networks[data.basketball.schedule.regular[i].network] %>"></a></td>
+               <td>
+                   <% if(data.basketball.schedule.regular[i].complete) {%>
+                   <% if(data.basketball.schedule.regular[i].primaryTeam.winner) {%>
+                       <strong><a href="/win"></a> <%= data.basketball.schedule.regular[i].primaryTeam.score.displayValue %>-<%= data.basketball.schedule.regular[i].opposingTeam.score.displayValue %></strong>
+                       <% } else { %>
+                       <a href="/loss"></a> <%= data.basketball.schedule.regular[i].primaryTeam.score.displayValue %>-<%= data.basketball.schedule.regular[i].opposingTeam.score.displayValue %>
+                       <% } %>
+                       
+                   <% } else {%>
+                       <%= data.basketball.schedule.regular[i].time %>
+                   <% } %>
+               </td>
+           </tr>
+           <% } %>
+       </tbody>
+   </table>
+ 

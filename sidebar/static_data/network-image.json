@@ -1,0 +1,50 @@
+{
+	"N1": {
+		"reddit": "/abc",
+		"flair": "abc"
+    },
+    "N2": {
+        "reddit": "/cbs",
+        "flair": "cbd"
+    },
+    "N3": {
+        "reddit": "/espn",
+        "flair": "epsn"
+    },
+    "N4": {
+        "reddit": "/espn2",
+        "flair": "espn2"
+    },
+    "N5": {
+        "reddit": "/espnU",
+        "flair": "espnU"
+    },
+    "N6": {
+        "reddit": "/fox",
+        "flair": "fox"
+    },
+    "N7": {
+        "reddit": "/fs1",
+        "flair": "fs1"
+    },
+    "N8": {
+        "reddit": "/longhornnetwork",
+        "flair": "longhornnetwork"
+    },
+    "N9": {
+        "reddit": "/nbc",
+        "flair": "nbc"
+    },
+    "N10": {
+        "reddit": "/tbs",
+        "flair": "tbs"
+    },
+    "N11": {
+        "reddit": "/tnt",
+        "flair": "ntn"
+    },
+    "N12": {
+        "reddit": "/espn3",
+        "flair": "espn3"
+    }
+}
