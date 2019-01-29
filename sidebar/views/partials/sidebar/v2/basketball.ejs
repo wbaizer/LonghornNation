@@ -13,11 +13,11 @@
            <% for(var i=0; i < data.basketball.rankings.teams.length; i++) { %>
            <tr>
                 <td>
-                    <% if(data.basketball.rankings.teams[i].id == '251') { %><a href="/texas-row"></a><% } %>
+                    <% if(data.basketball.rankings.teams[i].id == process.env.TEAM_ID) { %><a href="/texas-row"></a><% } %>
                     <a href="<%= teamLink[data.basketball.rankings.teams[i].abbreviation] %>"></a>
                 </td>
                <td>          
-                   <% if(data.basketball.rankings.teams[i].id == '251') { %>
+                   <% if(data.basketball.rankings.teams[i].id == process.env.TEAM_ID) { %>
                        <strong>
                    <% } %>             
                         
@@ -25,25 +25,25 @@
                     <em><%= data.basketball.rankings.teams[i].rank %></em>
                 <% } %><%= data.basketball.rankings.teams[i].name %>
                     </a>
-                   <% if(data.basketball.rankings.teams[i].id == '251') { %>
+                   <% if(data.basketball.rankings.teams[i].id == process.env.TEAM_ID) { %>
                    </strong>
                    <% } %>
                </td>
                <td>
-                   <% if(data.basketball.rankings.teams[i].id == '251') { %>
+                   <% if(data.basketball.rankings.teams[i].id == process.env.TEAM_ID) { %>
                        <strong>
                    <% } %>
                    <%= data.basketball.rankings.teams[i].overall %>
-                   <% if(data.basketball.rankings.teams[i].id == '251') { %>
+                   <% if(data.basketball.rankings.teams[i].id == process.env.TEAM_ID) { %>
                        </strong>
                    <% } %>
                </td>
                <td>
-                   <% if(data.basketball.rankings.teams[i].id == '251') { %>
+                   <% if(data.basketball.rankings.teams[i].id == process.env.TEAM_ID) { %>
                        <strong>
                    <% } %>
                        <%= data.basketball.rankings.teams[i].conference %>
-                   <% if(data.basketball.rankings.teams[i].id == '251') { %>
+                   <% if(data.basketball.rankings.teams[i].id == process.env.TEAM_ID) { %>
                    </strong>
                    <% } %>
                </td>

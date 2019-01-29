@@ -13,11 +13,11 @@
            <% for(var i=0; i < data.football.rankings.teams.length; i++) { %>
            <tr>
                 <td>
-                    <% if(data.football.rankings.teams[i].id == '251') { %><a href="/texas-row"></a><% } %>
+                    <% if(data.football.rankings.teams[i].id == process.env.TEAM_ID) { %><a href="/texas-row"></a><% } %>
                     <a href="<%= teamLink[data.football.rankings.teams[i].abbreviation] %>"></a>
                 </td>
                <td>          
-                   <% if(data.football.rankings.teams[i].id == '251') { %>
+                   <% if(data.football.rankings.teams[i].id == process.env.TEAM_ID) { %>
                        <strong>
                    <% } %>             
                         
@@ -25,25 +25,25 @@
                     <em><%= data.football.rankings.teams[i].rank %></em>
                 <% } %><%= data.football.rankings.teams[i].name %>
                     </a>
-                   <% if(data.football.rankings.teams[i].id == '251') { %>
+                   <% if(data.football.rankings.teams[i].id == process.env.TEAM_ID) { %>
                    </strong>
                    <% } %>
                </td>
                <td>
-                   <% if(data.football.rankings.teams[i].id == '251') { %>
+                   <% if(data.football.rankings.teams[i].id == process.env.TEAM_ID) { %>
                        <strong>
                    <% } %>
                    <%= data.football.rankings.teams[i].overall %>
-                   <% if(data.football.rankings.teams[i].id == '251') { %>
+                   <% if(data.football.rankings.teams[i].id == process.env.TEAM_ID) { %>
                        </strong>
                    <% } %>
                </td>
                <td>
-                   <% if(data.football.rankings.teams[i].id == '251') { %>
+                   <% if(data.football.rankings.teams[i].id == process.env.TEAM_ID) { %>
                        <strong>
                    <% } %>
                        <%= data.football.rankings.teams[i].conference %>
-                   <% if(data.football.rankings.teams[i].id == '251') { %>
+                   <% if(data.football.rankings.teams[i].id == process.env.TEAM_ID) { %>
                    </strong>
                    <% } %>
                </td>
