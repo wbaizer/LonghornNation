@@ -147,7 +147,7 @@ const run = async () => {
         'sehlinger3', 
         'CoachTomHerman', 
         'TexasFootball', 
-        'EJHolland247',
+        'BCarringtonUT',
         'MikeRoach247',
         '_delconte'
       ]);
