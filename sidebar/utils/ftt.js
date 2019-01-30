@@ -9,7 +9,6 @@ var client = new Twitter({
     access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET
 });
 
-
 async function getLastThread(reddit) {
     var submissions = await reddit.getUser('LonghornMod').getSubmissions();
     for (const post of submissions) {
@@ -24,22 +23,35 @@ async function getLastThread(reddit) {
 async function getRecentTweets(users) {
     var list = [];
     for (const user of users) {
-        var params = {
-            screen_name: user,
-            count: 1
+        try {
+            await mapTweet(user).then(data => {
+                list.push(data);
+            });
+        } catch (error) {
+            console.log(error);
         }
-        await client.get('statuses/user_timeline', params, function(error, tweets, response) {
+     
+    }
+    return list;
+}
+async function mapTweet(user) {
+    var params = {
+        screen_name: user,
+        count: 1
+    }
+    return new Promise((resolve, reject) => {
+        client.get('statuses/user_timeline', params, function(error, tweets, response) {
             if (!error) {
-                var tweet = {
+                resolve({
                     screen_name: tweets[0].user.screen_name,
                     url: 'https://twitter.com/user/status/' + tweets[0].id,
                     text: tweets[0].text
-                }
-                list.push(tweet);
+                });
+            } else {
+                reject(error);
             }
-        });       
-    }
-    return list;
+        });    
+    }); 
 }
 
 async function getRecentPosts(reddit, subs) {
@@ -47,7 +59,7 @@ async function getRecentPosts(reddit, subs) {
     for (const subKey of subs) {
         var sub = await reddit.getSubreddit(subKey).getHot({limit:5}).then(submissions => {
             return {
-                link: submissions[0].subreddit_name_prefixed,
+                link: 'r/' + subKey,
                 posts: mapPosts(submissions)
             }
         });

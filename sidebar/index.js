@@ -140,29 +140,37 @@ const run = async () => {
     var date = moment(Date.now()).format('M/D/Y');
     var date_2 = moment(Date.now()).format('M/D/Y hh:mm A');
     var day = moment(Date.now()).format("dddd['s]");
-    Promise.all([
-      getWeather(), 
-      getRecentPosts(reddit, ['CFB', 'ALL', 'LonghornNation']),
-      getRecentTweets(['sehlinger3']),
-      getLastThread(reddit)
-    ]).then(values => {
+    async function getFTT() {
+      var weather = await getWeather();
+      var posts = await getRecentPosts(reddit, ['All', 'CFB', 'LonghornNation']);
+      var tweets = await getRecentTweets([
+        'sehlinger3', 
+        'CoachTomHerman', 
+        'TexasFootball', 
+        'EJHolland247',
+        'MikeRoach247',
+        '_delconte'
+      ]);
+      var last_thread = await getLastThread(reddit);
       var data = {
         date: {
           short: date,
           long: date_2
         },
-        last_thread: values[3] || null,
-        weather: values[0],
-        top: values[1],
-        tweets: values[2]
+        last_thread: last_thread || null,
+        weather: weather,
+        top: posts,
+        tweets: tweets
       }
       app.render('ftt', {data}, function(err, doc) {
         var markdown = turndownService.turndown(doc, {gfm: true});
         var post_title = "[" + date + "] " + day + " Off Topic Free Talk Thread - Testing";
+        //reddit.getSubreddit(process.env.SUBREDDIT).submitSelfpost({title: post_title, text: markdown});
         console.log(markdown);
-        // Add code to post to reddit and unsticky last thread.
+        //message(process.env.DISCORD_CHANNEL, false, `MoOooOoo FTT posted on ${process.env.SUBREDDIT}!`);
       });
-    });
+    }
+    getFTT();
   }
 
 };
