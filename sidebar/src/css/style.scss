@@ -1143,10 +1143,9 @@ div {
 		margin:0;
 		border-bottom:1px solid $concrete;
 		position:relative;
-		display:grid;
-		grid-template-columns: 40px 85px auto;
+		overflow:hidden;
     &.comment {
-	  grid-template-columns: 36px auto;
+
 	  .entry {
 		  margin-left:0;
 	  }
@@ -1155,12 +1154,9 @@ div {
       border:1px solid $concrete;
       background:#fcfcfc;
     }
-    .midcol {
-      grid-column: 1;
-    }
     .entry {
       margin:-15px 0 -15px 15px;
-      padding:15px 0;
+	  padding:15px 0;
       &.res-selected {
         background:#fcfcfc;
       }
@@ -1210,8 +1206,9 @@ div {
     }
     .thumbnail {
       width: 70px;
-      height: 70px;
-	  margin: 0 0 0 5px;
+	  height: 70px;
+	  min-width:70px;
+	  margin: 0 15px 0 5px;
 	  position:relative;
 	  background:transparent $url_2;
 	  border-radius:4px;

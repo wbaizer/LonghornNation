@@ -4,7 +4,7 @@
 <h5>Today: <%= data.date.short %></h5>
 <hr>
 <% if(data.last_thread) { %>
-<a href="<%= data.last_thread %>">Last Thread</a>
+<a href="<%= data.last_thread.url %>">Last Thread</a>
 <hr>
 <% } %>
 <h3>Current Austin Weather: <%= data.weather.current.temp %>° and <%= data.weather.current.conditions %></h3>

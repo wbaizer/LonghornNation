@@ -14,7 +14,10 @@ async function getLastThread(reddit) {
     for (const post of submissions) {
         if(post.subreddit.display_name == process.env.SUBREDDIT) {
             if(post.title.indexOf('Off Topic Free Talk Thread') > -1) {
-                return post.url;
+                return {
+                    url: post.url,
+                    id: post.id
+                }
             }
         }
     }

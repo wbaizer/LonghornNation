@@ -165,9 +165,11 @@ const run = async () => {
       app.render('ftt', {data}, function(err, doc) {
         var markdown = turndownService.turndown(doc, {gfm: true});
         var post_title = "[" + date + "] " + day + " Off Topic Free Talk Thread - Testing";
-        //reddit.getSubreddit(process.env.SUBREDDIT).submitSelfpost({title: post_title, text: markdown});
-        console.log(markdown);
-        //message(process.env.DISCORD_CHANNEL, false, `MoOooOoo FTT posted on ${process.env.SUBREDDIT}!`);
+        reddit.getSubreddit(process.env.SUBREDDIT).submitSelfpost({title: post_title, text: markdown}).sticky();
+        if(last_thread && last_thread.id) { 
+          reddit.getSubmission(last_thread.id).unsticky();
+        }
+        message(process.env.DISCORD_CHANNEL, false, `MoOooOoo FTT posted on ${process.env.SUBREDDIT}!`);
       });
     }
     getFTT();
