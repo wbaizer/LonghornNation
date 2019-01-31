@@ -1,5 +1,6 @@
 const axios = require('axios');
 const moment = require('moment');
+const nodeSchedule = require('node-schedule');
 const teamLink = require('../static_data/teams.reddit.json');
 
 const test_ncaaf_post_schedule = require('../exampleData/ncaaf_post_schedule');
@@ -10,6 +11,7 @@ const test_ncaam_regular_schedule = require('../exampleData/ncaam_regular_schedu
 const test_ncaam_standings = require('../exampleData/ncaam_standings');
 
 const production = process.env.PRODUCTION || false;
+var jobsList = {};
 
 function fetchTeamSchedule(query, key, limit = 10) {
     if(production) {
@@ -30,7 +32,7 @@ function fetchTeamSchedule(query, key, limit = 10) {
             ncaam_post_schedule,
             ncaam_standings
             ) {
-            return {
+              return {
                 basketball: {
                     schedule: {
                     regular: mapSchedule(ncaam_regular_schedule.data),
@@ -81,6 +83,12 @@ function mapSchedule(schedule) {
       var complete = false;
       var homeAway = '@';
       var venue = {};
+      if(moment(event.date).isAfter(Date.now())) {
+        var scheduleDate = moment(event.date).subtract(1, 'hours').toDate();
+        /*jobsList[event.id] = nodeSchedule.scheduleJob(scheduleDate, function(){
+          console.log('The world is going to end today.');
+        });*/
+      }
       event.competitions.forEach(game => {
         if(game.broadcasts.length > 0) {
           network = game.broadcasts[0].media.shortName;
@@ -105,7 +113,6 @@ function mapSchedule(schedule) {
           }
         })
       })
-      
       return {
         date: moment(event.date).format('MMM D'),
         time: moment(event.date).format('h:mm a'),

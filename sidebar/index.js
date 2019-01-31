@@ -5,7 +5,7 @@ const inquirer = require("inquirer");
 const chalk = require("chalk");
 const figlet = require("figlet");
 const shell = require("shelljs");
-const snoowrap = require('snoowrap');
+const { reddit } = require('./utils/reddit');
 const sass = require('node-sass');
 const express = require('express');
 const path = require('path');
@@ -77,13 +77,6 @@ const run = async () => {
   // ask questions
   const answers = await askQuestions();
   const { ACTION, USERNAME, PASSWORD, REASON } = answers;
-  const reddit = new snoowrap({
-    userAgent: '/u/chrislabeard texas-schedule@0.0.1',
-    clientId: process.env.REDDIT_KEY,
-    clientSecret: process.env.REDDIT_SECRET,
-    username: process.env.USERNAME || USERNAME,
-    password: process.env.PASSWORD || PASSWORD
-  });
   if(ACTION == 'Update Sidebar') {
     var app = express();
     app.set('views', path.join(__dirname, 'views'));
