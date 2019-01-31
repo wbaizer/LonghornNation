@@ -86,6 +86,7 @@ function mapSchedule(schedule) {
       var venue = {};
       if(moment(event.date).isAfter(Date.now())) {
         var scheduleDate = moment(event.date).subtract(1, 'hours').toDate();
+        console.log('schedule game thread', moment(scheduleDate).fromNow());
         jobsList[event.id] = nodeSchedule.scheduleJob(scheduleDate, function(){
           console.log('game job executing');
           gameThread(event, false);
