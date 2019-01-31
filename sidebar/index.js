@@ -84,7 +84,7 @@ const run = async () => {
 
     var date = moment(Date.now()).format('M/D/Y hh:mm A');
     fetchTeamSchedule().then(data => {
-        app.render('sidebar', {data, teamLink: teamLink, networks: networks, date}, function(err, doc) {
+        /*app.render('sidebar', {data, teamLink: teamLink, networks: networks, date}, function(err, doc) {
             var markdown = turndownService.turndown(doc, {gfm: true});
             reddit.getSubreddit(process.env.SUBREDDIT).editSettings({
                 description: markdown
@@ -95,7 +95,7 @@ const run = async () => {
                   console.log(err.message);
                   message(process.env.DISCORD_CHANNEL, true, err.message);
               });
-        });
+        });*/
     });
   }
   if(ACTION == 'Update Stylesheet') {

@@ -2,6 +2,7 @@ const axios = require('axios');
 const moment = require('moment');
 const nodeSchedule = require('node-schedule');
 const teamLink = require('../static_data/teams.reddit.json');
+const { gameThread } = require('../utils/gameThread');
 
 const test_ncaaf_post_schedule = require('../exampleData/ncaaf_post_schedule');
 const test_ncaaf_regular_schedule = require('../exampleData/ncaaf_regular_schedule');
@@ -85,9 +86,10 @@ function mapSchedule(schedule) {
       var venue = {};
       if(moment(event.date).isAfter(Date.now())) {
         var scheduleDate = moment(event.date).subtract(1, 'hours').toDate();
-        /*jobsList[event.id] = nodeSchedule.scheduleJob(scheduleDate, function(){
-          console.log('The world is going to end today.');
-        });*/
+        jobsList[event.id] = nodeSchedule.scheduleJob(scheduleDate, function(){
+          console.log('game job executing');
+          gameThread(event, false);
+        });
       }
       event.competitions.forEach(game => {
         if(game.broadcasts.length > 0) {
