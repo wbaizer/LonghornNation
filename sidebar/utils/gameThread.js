@@ -15,7 +15,7 @@ function gameThread(event, type, sport) {
             console.log(game.title);
             setTimeout(function() {
                 gameWatcher(event, sport)
-            }, 5000);
+            }, 1000 * 60 * 60);
         });     
         
     }
@@ -30,7 +30,7 @@ function gameWatcher(event, sport) {
             console.log('Game is still going lets do this..');
             setTimeout(function() {
                 gameWatcher(event, sport)
-            }, 5000);
+            }, 300000);
         }
     });
 
