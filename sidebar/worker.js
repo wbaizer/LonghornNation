@@ -33,7 +33,7 @@ cron.schedule("0 0 * * *", function() {
         password: process.env.PASSWORD
       });
     fetchTeamSchedule().then(data => {
-        app.render('sidebar', {data, teamLink: teamLink, networks: networks, date, snow}, function(err, doc) {
+        app.render('sidebar', {data, teamLink: teamLink, networks: networks, date, show}, function(err, doc) {
             var gfm = turndownPluginGfm.gfm
             var turndownService = new TurndownService();
             turndownService.use(gfm);
