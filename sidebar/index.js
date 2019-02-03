@@ -12,6 +12,8 @@ const path = require('path');
 const moment = require('moment');
 const TurndownService = require('turndown');
 const turndownPluginGfm = require('turndown-plugin-gfm');
+const nodeSchedule = require('node-schedule');
+const { gameThread } = require('./utils/gameThread');
 
 const teamLink = require('./static_data/teams.reddit.json');
 const networks = require('./static_data/networks.json');
@@ -20,6 +22,7 @@ const { fetchTeamSchedule } = require('./utils/schedule');
 const { generateSprites } = require('./utils/sprites');
 const { message } = require('./utils/discord');
 const { getWeather, getRecentPosts, getRecentTweets, getLastThread } = require('./utils/ftt');
+const { texasSports, tsBoxScore }= require('./utils/service');
 
 var gfm = turndownPluginGfm.gfm
 var turndownService = new TurndownService();
@@ -43,7 +46,7 @@ const askQuestions = () => {
       name: "ACTION",
       type: "rawlist",
       message: "What do you want to do?",
-      choices: ['Update Sidebar', 'Update Stylesheet', 'Send Message', 'Generate Spritesheet', 'Generate FTT']
+      choices: ['Update Sidebar', 'Update Stylesheet', 'Send Message', 'Generate Spritesheet', 'Generate FTT', 'Scrape Texas', 'Schedule Job']
     },
     {
         name: 'USERNAME',
@@ -83,18 +86,27 @@ const run = async () => {
     app.set('view engine', 'ejs');
 
     var date = moment(Date.now()).format('M/D/Y hh:mm A');
+    var show = {
+      football: false,
+      baseball: true,
+      basketball: true
+    }
     fetchTeamSchedule().then(data => {
-        app.render('sidebar', {data, teamLink: teamLink, networks: networks, date}, function(err, doc) {
-            var markdown = turndownService.turndown(doc, {gfm: true});
-            reddit.getSubreddit(process.env.SUBREDDIT).editSettings({
+      app.render('sidebar', {data, teamLink: teamLink, networks: networks, date, show}, function(err, doc) {
+          if(err) {
+            return console.log(err);
+          }
+          var markdown = turndownService.turndown(doc, {gfm: true}); 
+          reddit.getSubreddit(process.env.SUBREDDIT).editSettings({
                 description: markdown
               }).then(data => {
                 success('Success, you did it peter!');  
-                message(process.env.DISCORD_CHANNEL, false, `MoOooOoo I updated the sidebar on ${process.env.SUBREDDIT}!`);         
+                //message(process.env.DISCORD_CHANNEL, false, `MoOooOoo I updated the sidebar on ${process.env.SUBREDDIT}!`);         
               }).catch(err => {
                   console.log(err.message);
                   message(process.env.DISCORD_CHANNEL, true, err.message);
               });
+
         });
     });
   }
@@ -166,6 +178,38 @@ const run = async () => {
       });
     }
     getFTT();
+  }
+  if(ACTION == 'Scrape Texas') {
+    //tsBoxScore('12343').then(data => {});
+    texasSports().then(data => {});
+  }
+  if(ACTION == 'Schedule Job') {
+    var jobsList = {};
+    var testData = { 
+      id: '12343',
+    opposingTeam:
+     { id: '201',
+       team: { nickname: 'Oklahoma' },
+       curatedRank: { current: '2' },
+       score: { displayValue: null },
+       reddit: '/r/sooners' },
+    primaryTeam:
+     { id: '251',
+       winner: false,
+       team: { nickname: 'Texas' },
+       score: { displayValue: null } },
+    date: 'May 18',
+    time: '2:30 pm',
+    network: '',
+    homeAway: '',
+    complete: false,
+    venue: { address: { city: 'Austin', state: 'TX' } } }
+    var scheduleDate = moment().add(5, 'seconds').toDate();
+    console.log('schedule game thread', moment(scheduleDate).fromNow());
+    jobsList[testData.id] = nodeSchedule.scheduleJob(scheduleDate, function(){
+      console.log('game job executing');
+      gameThread(testData, false, 'baseball');
+    });
   }
 
 };

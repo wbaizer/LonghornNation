@@ -3,7 +3,7 @@ const moment = require('moment');
 const nodeSchedule = require('node-schedule');
 const teamLink = require('../static_data/teams.reddit.json');
 const { gameThread } = require('../utils/gameThread');
-
+const { texasSports }= require('../utils/service');
 const test_ncaaf_post_schedule = require('../exampleData/ncaaf_post_schedule');
 const test_ncaaf_regular_schedule = require('../exampleData/ncaaf_regular_schedule');
 const test_ncaaf_standings = require('../exampleData/ncaaf_standings');
@@ -14,9 +14,15 @@ const test_ncaam_standings = require('../exampleData/ncaam_standings');
 const production = process.env.PRODUCTION || false;
 var jobsList = {};
 
-function fetchTeamSchedule(query, key, limit = 10) {
-    if(production) {
+async function fetchTeamSchedule(query, key, limit = 10) {
+  var allJobs = nodeSchedule.scheduledJobs;
+  Object.values(allJobs).map(job => {
+    console.log('Each Job', job.name);
+    nodeSchedule.cancelJob(job.name);
+  }); 
+  if(production) {
         console.log('Hitting up ESPN for the details');
+        var baseballData = await texasSports();
         return axios.all([
             axios.get('https://site.web.api.espn.com/apis/site/v2/sports/football/college-football/teams/' + process.env.TEAM_ID + '/schedule?region=us&lang=en&seasontype=2&enable=broadcasts&disable=leaders'),
             axios.get('https://site.web.api.espn.com/apis/site/v2/sports/football/college-football/teams/' + process.env.TEAM_ID + '/schedule?region=us&lang=en&seasontype=3&enable=broadcasts&disable=leaders'),
@@ -36,8 +42,8 @@ function fetchTeamSchedule(query, key, limit = 10) {
               return {
                 basketball: {
                     schedule: {
-                    regular: mapSchedule(ncaam_regular_schedule.data),
-                    post: mapSchedule(ncaam_post_schedule.data)
+                      regular: mapSchedule(ncaam_regular_schedule.data),
+                      post: mapSchedule(ncaam_post_schedule.data)
                     },
                     rankings: standings(ncaam_standings.data)
                 },
@@ -47,8 +53,9 @@ function fetchTeamSchedule(query, key, limit = 10) {
                     post: mapSchedule(ncaaf_post_schedule.data)
                     },
                     rankings: standings(ncaaf_standings.data)
-                }
-                }
+                },
+                baseball: baseballData
+              }
             }
             ))
             .catch(error => console.log(error));
@@ -87,7 +94,7 @@ function mapSchedule(schedule) {
       if(moment(event.date).isAfter(Date.now())) {
         var scheduleDate = moment(event.date).subtract(1, 'hours').toDate();
         console.log('schedule game thread', moment(scheduleDate).fromNow());
-        jobsList[event.id] = nodeSchedule.scheduleJob(scheduleDate, function(){
+        jobsList[event.id] = nodeSchedule.scheduleJob(event.id, scheduleDate, function(){
           console.log('game job executing');
           gameThread(event, false);
         });

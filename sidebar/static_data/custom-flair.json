@@ -210,5 +210,17 @@
     "N12": {
         "reddit": "/espn3",
         "flair": "espn3"
-    }
+	},
+	"N13": {
+		"reddit": "/sec",
+		"flair": "sec"
+	}, 
+	"N14": {
+		"reddit": "/secplus",
+		"flair": "secplus"
+	},
+	"N15": {
+		"reddit": "/cox",
+		"flair": "cox"
+	}
 }

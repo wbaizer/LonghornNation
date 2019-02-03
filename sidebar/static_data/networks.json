@@ -9,5 +9,7 @@
     "ESPN3": "/espn3",
     "ESPNU": "/espnU",
     "TBS": "/tbs",
-    "TNT": "/tnt"
+    "TNT": "/tnt",
+    "SEC": "/sec",
+    "COX": "/cox"
 }

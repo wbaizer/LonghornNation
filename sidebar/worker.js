@@ -20,6 +20,11 @@ cron.schedule("0 0 * * *", function() {
     var date = moment(Date.now()).format('M/D/Y hh:mm A');
     app.set('views', path.join(__dirname, 'views'));
     app.set('view engine', 'ejs');
+    var show = {
+        football: false,
+        baseball: true,
+        basketball: true
+      }
     const reddit = new snoowrap({
         userAgent: '/u/chrislabeard texas-schedule@0.0.1',
         clientId: process.env.REDDIT_KEY,
@@ -28,7 +33,7 @@ cron.schedule("0 0 * * *", function() {
         password: process.env.PASSWORD
       });
     fetchTeamSchedule().then(data => {
-        app.render('sidebar', {data, teamLink: teamLink, networks: networks, date}, function(err, doc) {
+        app.render('sidebar', {data, teamLink: teamLink, networks: networks, date, snow}, function(err, doc) {
             var gfm = turndownPluginGfm.gfm
             var turndownService = new TurndownService();
             turndownService.use(gfm);

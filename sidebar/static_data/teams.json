@@ -2,6 +2,7 @@
     "2": {
         "conference": "Southeastern Conference",
         "name": "Auburn Tigers",
+        "nickname": "Auburn",
         "abbreviation": "AUB",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2.png",
         "reddit": "/r/WDE",
@@ -10,6 +11,7 @@
     "5": {
         "conference": "Conference USA",
         "name": "UAB Blazers",
+        "nickname": "UAB",
         "abbreviation": "UAB",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/5.png",
         "reddit": "/r/UAB",
@@ -18,6 +20,7 @@
     "6": {
         "conference": "Sun Belt Conference",
         "name": "South Alabama Jaguars",
+        "nickname": "South Alabama",
         "abbreviation": "SALA",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/6.png",
         "reddit": "/r/SIYM",
@@ -26,6 +29,7 @@
     "8": {
         "conference": "Southeastern Conference",
         "name": "Arkansas Razorbacks",
+        "nickname": "Arkansas",
         "abbreviation": "ARK",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/8.png",
         "reddit": "/r/razorbacks",
@@ -34,6 +38,7 @@
     "9": {
         "conference": "Pac-12 Conference",
         "name": "Arizona State Sun Devils",
+        "nickname": "Arizona State",
         "abbreviation": "ASU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/9.png",
         "reddit": "/r/sundevils",
@@ -42,6 +47,7 @@
     "12": {
         "conference": "Pac-12 Conference",
         "name": "Arizona Wildcats",
+        "nickname": "Arizona",
         "abbreviation": "ARIZ",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/12.png",
         "reddit": "/r/UofArizona",
@@ -50,6 +56,7 @@
     "13": {
         "conference": "Big West Conference",
         "name": "Cal Poly Mustangs",
+        "nickname": "Cal Poly",
         "abbreviation": "CP",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/13.png",
         "reddit": "/r/CalPoly/",
@@ -58,6 +65,7 @@
     "16": {
         "conference": "Big Sky Conference",
         "name": "Sacramento State Hornets",
+        "nickname": "Sacramento State",
         "abbreviation": "SAC",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/16.png",
         "reddit": "/r/CSUS/",
@@ -66,6 +74,7 @@
     "21": {
         "conference": "Mountain West Conference",
         "name": "San Diego State Aztecs",
+        "nickname": "San Diego State",
         "abbreviation": "SDSU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/21.png",
         "reddit": "/r/SDSUAZTECS",
@@ -74,6 +83,7 @@
     "23": {
         "conference": "Mountain West Conference",
         "name": "San José St Spartans",
+        "nickname": "San José St",
         "abbreviation": "SJSU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/23.png",
         "reddit": "/r/SJSU",
@@ -82,6 +92,7 @@
     "24": {
         "conference": "Pac-12 Conference",
         "name": "Stanford Cardinal",
+        "nickname": "Stanford",
         "abbreviation": "STAN",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/24.png",
         "reddit": "/r/StanfordCardinal",
@@ -90,6 +101,7 @@
     "25": {
         "conference": "Pac-12 Conference",
         "name": "California Golden Bears",
+        "nickname": "California",
         "abbreviation": "CAL",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/25.png",
         "reddit": "/r/berkeley",
@@ -98,6 +110,7 @@
     "26": {
         "conference": "Pac-12 Conference",
         "name": "UCLA Bruins",
+        "nickname": "UCLA",
         "abbreviation": "UCLA",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/26.png",
         "reddit": "/r/ucla",
@@ -106,6 +119,7 @@
     "27": {
         "conference": "Big West Conference",
         "name": "UC Riverside Highlanders",
+        "nickname": "UC Riverside",
         "abbreviation": "UCR",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/27.png",
         "reddit": "/r/ucr/",
@@ -114,6 +128,7 @@
     "30": {
         "conference": "Pac-12 Conference",
         "name": "USC Trojans",
+        "nickname": "USC",
         "abbreviation": "USC",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/30.png",
         "reddit": "/r/USC",
@@ -122,6 +137,7 @@
     "36": {
         "conference": "Mountain West Conference",
         "name": "Colorado State Rams",
+        "nickname": "Colorado State",
         "abbreviation": "CSU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/36.png",
         "reddit": "/r/CSURams",
@@ -130,6 +146,7 @@
     "38": {
         "conference": "Pac-12 Conference",
         "name": "Colorado Buffaloes",
+        "nickname": "Colorado",
         "abbreviation": "COLO",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/38.png",
         "reddit": "/r/cuboulder",
@@ -138,6 +155,7 @@
     "41": {
         "conference": "American Athletic Conference",
         "name": "UConn Huskies",
+        "nickname": "UConn",
         "abbreviation": "CONN",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/41.png",
         "reddit": "/r/UCONN/",
@@ -146,6 +164,7 @@
     "42": {
         "conference": "America East Conference",
         "name": "Hartford Hawks",
+        "nickname": "Hartford",
         "abbreviation": "HART",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/42.png",
         "reddit": "/r/uhart/",
@@ -154,6 +173,7 @@
     "43": {
         "conference": "Ivy League",
         "name": "Yale Bulldogs",
+        "nickname": "Yale",
         "abbreviation": "YALE",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/43.png",
         "reddit": "/r/yale/",
@@ -162,6 +182,7 @@
     "44": {
         "conference": "Patriot League",
         "name": "American Eagles",
+        "nickname": "American",
         "abbreviation": "AMER",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/44.png",
         "reddit": "/r/AmericanU/",
@@ -170,6 +191,7 @@
     "45": {
         "conference": "Atlantic 10 Conference",
         "name": "George Washington Colonials",
+        "nickname": "George Washington",
         "abbreviation": "GW",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/45.png",
         "reddit": "/r/gwu/",
@@ -178,6 +200,7 @@
     "46": {
         "conference": "Big East Conference",
         "name": "Georgetown Hoyas",
+        "nickname": "Georgetown",
         "abbreviation": "GTWN",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/46.png",
         "reddit": "/r/georgetown/",
@@ -186,6 +209,7 @@
     "47": {
         "conference": "Mid-Eastern Athletic Conference",
         "name": "Howard Bison",
+        "nickname": "Howard",
         "abbreviation": "HOW",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/47.png",
         "reddit": "/r/HowardUniversity",
@@ -194,6 +218,7 @@
     "48": {
         "conference": "Colonial Athletic Association",
         "name": "Delaware Blue Hens",
+        "nickname": "Delaware",
         "abbreviation": "DEL",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/48.png",
         "reddit": "/r/udel/",
@@ -202,6 +227,7 @@
     "50": {
         "conference": "Mid-Eastern Athletic Conference",
         "name": "Florida A&M Rattlers",
+        "nickname": "Florida A&M",
         "abbreviation": "FAMU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/50.png",
         "reddit": "/r/FloridaAM",
@@ -210,6 +236,7 @@
     "52": {
         "conference": "Atlantic Coast Conference",
         "name": "Florida State Seminoles",
+        "nickname": "Florida State",
         "abbreviation": "FSU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/52.png",
         "reddit": "/r/fsusports",
@@ -218,6 +245,7 @@
     "55": {
         "conference": "Ohio Valley Conference",
         "name": "Jacksonville State Gamecocks",
+        "nickname": "Jacksonville State",
         "abbreviation": "JVST",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/55.png",
         "reddit": "/r/JSU",
@@ -226,6 +254,7 @@
     "56": {
         "conference": "Atlantic Sun Conference",
         "name": "Stetson Hatters",
+        "nickname": "Stetson",
         "abbreviation": "STET",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/56.png",
         "reddit": "/r/Stetson/",
@@ -234,6 +263,7 @@
     "57": {
         "conference": "Southeastern Conference",
         "name": "Florida Gators",
+        "nickname": "Florida",
         "abbreviation": "FLA",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/57.png",
         "reddit": "/r/FloridaGators",
@@ -242,6 +272,7 @@
     "58": {
         "conference": "American Athletic Conference",
         "name": "South Florida Bulls",
+        "nickname": "South Florida",
         "abbreviation": "USF",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/58.png",
         "reddit": "/r/USF",
@@ -250,6 +281,7 @@
     "59": {
         "conference": "Atlantic Coast Conference",
         "name": "Georgia Tech Yellow Jackets",
+        "nickname": "Georgia Tech",
         "abbreviation": "GT",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/59.png",
         "reddit": "/r/gatech",
@@ -258,6 +290,7 @@
     "61": {
         "conference": "Southeastern Conference",
         "name": "Georgia Bulldogs",
+        "nickname": "Georgia",
         "abbreviation": "UGA",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/61.png",
         "reddit": "/r/georgiabulldogs",
@@ -266,6 +299,7 @@
     "62": {
         "conference": "Big West Conference",
         "name": "Hawai'i Rainbow Warriors",
+        "nickname": "Hawai'i",
         "abbreviation": "HAW",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/62.png",
         "reddit": "/r/UniversityofHawaii",
@@ -274,6 +308,7 @@
     "66": {
         "conference": "Big 12 Conference",
         "name": "Iowa State Cyclones",
+        "nickname": "Iowa State",
         "abbreviation": "ISU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/66.png",
         "reddit": "/r/cyclONEnation",
@@ -282,6 +317,7 @@
     "68": {
         "conference": "Mountain West Conference",
         "name": "Boise State Broncos",
+        "nickname": "Boise State",
         "abbreviation": "BSU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/68.png",
         "reddit": "/r/bsufootball",
@@ -290,6 +326,7 @@
     "70": {
         "conference": "Big Sky Conference",
         "name": "Idaho Vandals",
+        "nickname": "Idaho",
         "abbreviation": "IDHO",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/70.png",
         "reddit": "/r/IdahoVandals/",
@@ -298,6 +335,7 @@
     "71": {
         "conference": "Missouri Valley Conference",
         "name": "Bradley Braves",
+        "nickname": "Bradley",
         "abbreviation": "BRAD",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/71.png",
         "reddit": "/r/bradleyuniversity/",
@@ -306,6 +344,7 @@
     "77": {
         "conference": "Big Ten Conference",
         "name": "Northwestern Wildcats",
+        "nickname": "Northwestern",
         "abbreviation": "NW",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/77.png",
         "reddit": "/r/northwestern",
@@ -314,6 +353,7 @@
     "79": {
         "conference": "Missouri Valley Conference",
         "name": "Southern Illinois Salukis",
+        "nickname": "Southern Illinois",
         "abbreviation": "SIU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/79.png",
         "reddit": "/r/salukis",
@@ -322,6 +362,7 @@
     "82": {
         "conference": "Horizon League",
         "name": "UIC Flames",
+        "nickname": "UIC",
         "abbreviation": "UIC",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/82.png",
         "reddit": "/r/uichicago/",
@@ -330,6 +371,7 @@
     "84": {
         "conference": "Big Ten Conference",
         "name": "Indiana Hoosiers",
+        "nickname": "Indiana",
         "abbreviation": "IND",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/84.png",
         "reddit": "/r/IndianaHoosiers",
@@ -338,6 +380,7 @@
     "85": {
         "conference": "Horizon League",
         "name": "IUPUI Jaguars",
+        "nickname": "IUPUI",
         "abbreviation": "IUPU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/85.png",
         "reddit": "#/iupu",
@@ -346,6 +389,7 @@
     "87": {
         "conference": "Atlantic Coast Conference",
         "name": "Notre Dame Fighting Irish",
+        "nickname": "Notre Dame",
         "abbreviation": "ND",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/87.png",
         "reddit": "/r/notredamefootball",
@@ -354,6 +398,7 @@
     "93": {
         "conference": "Ohio Valley Conference",
         "name": "Murray State Racers",
+        "nickname": "Murray State",
         "abbreviation": "MURR",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/93.png",
         "reddit": "/r/Murray",
@@ -362,6 +407,7 @@
     "94": {
         "conference": "Horizon League",
         "name": "Northern Kentucky Norse",
+        "nickname": "Northern Kentucky",
         "abbreviation": "NKU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/94.png",
         "reddit": "/r/NKU/",
@@ -370,6 +416,7 @@
     "96": {
         "conference": "Southeastern Conference",
         "name": "Kentucky Wildcats",
+        "nickname": "Kentucky",
         "abbreviation": "UK",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/96.png",
         "reddit": "/r/wildcats",
@@ -378,6 +425,7 @@
     "97": {
         "conference": "Atlantic Coast Conference",
         "name": "Louisville Cardinals",
+        "nickname": "Louisville",
         "abbreviation": "LOU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/97.png",
         "reddit": "/r/AllHail",
@@ -386,6 +434,7 @@
     "98": {
         "conference": "Conference USA",
         "name": "Western Kentucky Hilltoppers",
+        "nickname": "Western Kentucky",
         "abbreviation": "WKU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/98.png",
         "reddit": "/r/WKU",
@@ -394,6 +443,7 @@
     "99": {
         "conference": "Southeastern Conference",
         "name": "LSU Tigers",
+        "nickname": "LSU",
         "abbreviation": "LSU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/99.png",
         "reddit": "/r/LSUFootball",
@@ -402,6 +452,7 @@
     "103": {
         "conference": "Atlantic Coast Conference",
         "name": "Boston College Eagles",
+        "nickname": "Boston College",
         "abbreviation": "BC",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/103.png",
         "reddit": "/r/bostoncollege",
@@ -410,6 +461,7 @@
     "104": {
         "conference": "Patriot League",
         "name": "Boston University Terriers",
+        "nickname": "Boston University",
         "abbreviation": "BU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/104.png",
         "reddit": "/r/BostonU/",
@@ -418,6 +470,7 @@
     "107": {
         "conference": "Patriot League",
         "name": "Holy Cross Crusaders",
+        "nickname": "Holy Cross",
         "abbreviation": "HC",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/107.png",
         "reddit": "/r/HolyCross",
@@ -426,6 +479,7 @@
     "108": {
         "conference": "Ivy League",
         "name": "Harvard Crimson",
+        "nickname": "Harvard",
         "abbreviation": "HARV",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/108.png",
         "reddit": "/r/Harvard",
@@ -434,6 +488,7 @@
     "111": {
         "conference": "Colonial Athletic Association",
         "name": "Northeastern Huskies",
+        "nickname": "Northeastern",
         "abbreviation": "NE",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/111.png",
         "reddit": "/r/NEU/",
@@ -442,6 +497,7 @@
     "113": {
         "conference": "Atlantic 10 Conference",
         "name": "UMass Minutemen",
+        "nickname": "UMass",
         "abbreviation": "MASS",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/113.png",
         "reddit": "/r/umass/",
@@ -450,6 +506,7 @@
     "116": {
         "conference": "Northeast Conference",
         "name": "Mt. St. Mary's Mountaineers",
+        "nickname": "Mt. St. Mary's",
         "abbreviation": "MSM",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/116.png",
         "reddit": "#/msm",
@@ -458,6 +515,7 @@
     "119": {
         "conference": "Colonial Athletic Association",
         "name": "Towson Tigers",
+        "nickname": "Towson",
         "abbreviation": "TOW",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/119.png",
         "reddit": "/r/Towson/",
@@ -466,6 +524,7 @@
     "120": {
         "conference": "Big Ten Conference",
         "name": "Maryland Terrapins",
+        "nickname": "Maryland",
         "abbreviation": "MD",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/120.png",
         "reddit": "/r/umd",
@@ -474,6 +533,7 @@
     "127": {
         "conference": "Big Ten Conference",
         "name": "Michigan State Spartans",
+        "nickname": "Michigan State",
         "abbreviation": "MSU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/127.png",
         "reddit": "/r/theonlycolors",
@@ -482,6 +542,7 @@
     "130": {
         "conference": "Big Ten Conference",
         "name": "Michigan Wolverines",
+        "nickname": "Michigan",
         "abbreviation": "MICH",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/130.png",
         "reddit": "/r/MichiganWolverines",
@@ -490,6 +551,7 @@
     "135": {
         "conference": "Big Ten Conference",
         "name": "Minnesota Golden Gophers",
+        "nickname": "Minnesota",
         "abbreviation": "MINN",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/135.png",
         "reddit": "/r/GopherSports",
@@ -498,6 +560,7 @@
     "139": {
         "conference": "Atlantic 10 Conference",
         "name": "Saint Louis Billikens",
+        "nickname": "Saint Louis",
         "abbreviation": "SLU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/139.png",
         "reddit": "/r/billikens/",
@@ -506,6 +569,7 @@
     "140": {
         "conference": "Western Athletic Conference",
         "name": "UMKC Kangaroos",
+        "nickname": "UMKC",
         "abbreviation": "UMKC",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/140.png",
         "reddit": "/r/UMKC/",
@@ -514,6 +578,7 @@
     "142": {
         "conference": "Southeastern Conference",
         "name": "Missouri Tigers",
+        "nickname": "Missouri",
         "abbreviation": "MIZ",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/142.png",
         "reddit": "/r/mizzou",
@@ -522,6 +587,7 @@
     "145": {
         "conference": "Southeastern Conference",
         "name": "Ole Miss Rebels",
+        "nickname": "Ole Miss",
         "abbreviation": "MISS",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/145.png",
         "reddit": "/r/olemiss",
@@ -530,6 +596,7 @@
     "147": {
         "conference": "Big Sky Conference",
         "name": "Montana State Bobcats",
+        "nickname": "Montana State",
         "abbreviation": "MTST",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/147.png",
         "reddit": "/r/MSUcats/",
@@ -538,6 +605,7 @@
     "149": {
         "conference": "Big Sky Conference",
         "name": "Montana Grizzlies",
+        "nickname": "Montana",
         "abbreviation": "MONT",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/149.png",
         "reddit": "/r/UniversityofMontana/",
@@ -546,6 +614,7 @@
     "150": {
         "conference": "Atlantic Coast Conference",
         "name": "Duke Blue Devils",
+        "nickname": "Duke",
         "abbreviation": "DUKE",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/150.png",
         "reddit": "/r/cameroncrazies",
@@ -554,6 +623,7 @@
     "151": {
         "conference": "American Athletic Conference",
         "name": "East Carolina Pirates",
+        "nickname": "East Carolina",
         "abbreviation": "ECU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/151.png",
         "reddit": "/r/ECU",
@@ -562,6 +632,7 @@
     "152": {
         "conference": "Atlantic Coast Conference",
         "name": "NC State Wolfpack",
+        "nickname": "NC State",
         "abbreviation": "NCST",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/152.png",
         "reddit": "/r/ncsu",
@@ -570,6 +641,7 @@
     "153": {
         "conference": "Atlantic Coast Conference",
         "name": "North Carolina Tar Heels",
+        "nickname": "North Carolina",
         "abbreviation": "UNC",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/153.png",
         "reddit": "/r/tarheels",
@@ -578,6 +650,7 @@
     "154": {
         "conference": "Atlantic Coast Conference",
         "name": "Wake Forest Demon Deacons",
+        "nickname": "Wake Forest",
         "abbreviation": "WAKE",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/154.png",
         "reddit": "/r/demondeacons",
@@ -586,6 +659,7 @@
     "155": {
         "conference": "Summit League",
         "name": "North Dakota Fighting Hawks",
+        "nickname": "North Dakota",
         "abbreviation": "UND",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/155.png",
         "reddit": "/r/fightingsioux",
@@ -594,6 +668,7 @@
     "156": {
         "conference": "Big East Conference",
         "name": "Creighton Bluejays",
+        "nickname": "Creighton",
         "abbreviation": "CREI",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/156.png",
         "reddit": "/r/Creighton/",
@@ -602,6 +677,7 @@
     "158": {
         "conference": "Big Ten Conference",
         "name": "Nebraska Cornhuskers",
+        "nickname": "Nebraska",
         "abbreviation": "NEB",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/158.png",
         "reddit": "/r/Huskers",
@@ -610,6 +686,7 @@
     "159": {
         "conference": "Ivy League",
         "name": "Dartmouth Big Green",
+        "nickname": "Dartmouth",
         "abbreviation": "DART",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/159.png",
         "reddit": "/r/dartmouth",
@@ -618,6 +695,7 @@
     "160": {
         "conference": "America East Conference",
         "name": "New Hampshire Wildcats",
+        "nickname": "New Hampshire",
         "abbreviation": "UNH",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/160.png",
         "reddit": "/r/unh/",
@@ -626,6 +704,7 @@
     "161": {
         "conference": "Northeast Conference",
         "name": "Fairleigh Dickinson Knights",
+        "nickname": "Fairleigh Dickinson",
         "abbreviation": "FDU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/161.png",
         "reddit": "#/fdu",
@@ -634,6 +713,7 @@
     "163": {
         "conference": "Ivy League",
         "name": "Princeton Tigers",
+        "nickname": "Princeton",
         "abbreviation": "PRIN",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/163.png",
         "reddit": "/r/princeton/",
@@ -642,6 +722,7 @@
     "164": {
         "conference": "Big Ten Conference",
         "name": "Rutgers Scarlet Knights",
+        "nickname": "Rutgers",
         "abbreviation": "RUTG",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/164.png",
         "reddit": "/r/scarletknights",
@@ -650,6 +731,7 @@
     "166": {
         "conference": "Western Athletic Conference",
         "name": "New Mexico State Aggies",
+        "nickname": "New Mexico State",
         "abbreviation": "NMSU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/166.png",
         "reddit": "/r/NMSU",
@@ -658,6 +740,7 @@
     "167": {
         "conference": "Mountain West Conference",
         "name": "New Mexico Lobos",
+        "nickname": "New Mexico",
         "abbreviation": "UNM",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/167.png",
         "reddit": "/r/unm",
@@ -666,6 +749,7 @@
     "171": {
         "conference": "Ivy League",
         "name": "Columbia Lions",
+        "nickname": "Columbia",
         "abbreviation": "CLMB",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/171.png",
         "reddit": "/r/columbia",
@@ -674,6 +758,7 @@
     "172": {
         "conference": "Ivy League",
         "name": "Cornell Big Red",
+        "nickname": "Cornell",
         "abbreviation": "COR",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/172.png",
         "reddit": "/r/Cornell/",
@@ -682,6 +767,7 @@
     "179": {
         "conference": "Atlantic 10 Conference",
         "name": "St. Bonaventure Bonnies",
+        "nickname": "St. Bonaventure",
         "abbreviation": "SBU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/179.png",
         "reddit": "/r/gobonnies/",
@@ -690,6 +776,7 @@
     "183": {
         "conference": "Atlantic Coast Conference",
         "name": "Syracuse Orange",
+        "nickname": "Syracuse",
         "abbreviation": "SYR",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/183.png",
         "reddit": "/r/cuse",
@@ -698,6 +785,7 @@
     "189": {
         "conference": "Mid-American Conference",
         "name": "Bowling Green Falcons",
+        "nickname": "Bowling Green",
         "abbreviation": "BGSU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/189.png",
         "reddit": "/r/BGSU",
@@ -706,6 +794,7 @@
     "193": {
         "conference": "Mid-American Conference",
         "name": "Miami (OH) RedHawks",
+        "nickname": "Miami (OH)",
         "abbreviation": "M-OH",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/193.png",
         "reddit": "/r/miamioh",
@@ -714,6 +803,7 @@
     "194": {
         "conference": "Big Ten Conference",
         "name": "Ohio State Buckeyes",
+        "nickname": "Ohio State",
         "abbreviation": "OSU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/194.png",
         "reddit": "/r/OhioStateFootball",
@@ -722,6 +812,7 @@
     "195": {
         "conference": "Mid-American Conference",
         "name": "Ohio Bobcats",
+        "nickname": "Ohio",
         "abbreviation": "OHIO",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/195.png",
         "reddit": "/r/athensohio",
@@ -730,6 +821,7 @@
     "197": {
         "conference": "Big 12 Conference",
         "name": "Oklahoma State Cowboys",
+        "nickname": "Oklahoma State",
         "abbreviation": "OKST",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/197.png",
         "reddit": "/r/okstate",
@@ -738,6 +830,7 @@
     "198": {
         "conference": "Summit League",
         "name": "Oral Roberts Golden Eagles",
+        "nickname": "Oral Roberts",
         "abbreviation": "ORU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/198.png",
         "reddit": "/r/oru/",
@@ -746,6 +839,7 @@
     "201": {
         "conference": "Big 12 Conference",
         "name": "Oklahoma Sooners",
+        "nickname": "Oklahoma",
         "abbreviation": "OKLA",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/201.png",
         "reddit": "/r/sooners",
@@ -754,6 +848,7 @@
     "202": {
         "conference": "American Athletic Conference",
         "name": "Tulsa Golden Hurricane",
+        "nickname": "Tulsa",
         "abbreviation": "TLSA",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/202.png",
         "reddit": "/r/tulsa",
@@ -762,6 +857,7 @@
     "204": {
         "conference": "Pac-12 Conference",
         "name": "Oregon State Beavers",
+        "nickname": "Oregon State",
         "abbreviation": "ORST",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/204.png",
         "reddit": "/r/oregonstate",
@@ -770,6 +866,7 @@
     "213": {
         "conference": "Big Ten Conference",
         "name": "Penn State Nittany Lions",
+        "nickname": "Penn State",
         "abbreviation": "PSU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/213.png",
         "reddit": "/r/PennStateUniversity",
@@ -778,6 +875,7 @@
     "218": {
         "conference": "American Athletic Conference",
         "name": "Temple Owls",
+        "nickname": "Temple",
         "abbreviation": "TEM",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/218.png",
         "reddit": "/r/Temple",
@@ -786,6 +884,7 @@
     "219": {
         "conference": "Ivy League",
         "name": "Pennsylvania Quakers",
+        "nickname": "Pennsylvania",
         "abbreviation": "PENN",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/219.png",
         "reddit": "/r/UPenn/",
@@ -794,6 +893,7 @@
     "221": {
         "conference": "Atlantic Coast Conference",
         "name": "Pittsburgh Panthers",
+        "nickname": "Pittsburgh",
         "abbreviation": "PITT",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/221.png",
         "reddit": "/r/pittsports",
@@ -802,6 +902,7 @@
     "222": {
         "conference": "Big East Conference",
         "name": "Villanova Wildcats",
+        "nickname": "Villanova",
         "abbreviation": "VILL",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/222.png",
         "reddit": "/r/villanova/",
@@ -810,6 +911,7 @@
     "225": {
         "conference": "Ivy League",
         "name": "Brown Bears",
+        "nickname": "Brown",
         "abbreviation": "BRWN",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/225.png",
         "reddit": "/r/BrownU/",
@@ -818,6 +920,7 @@
     "227": {
         "conference": "Atlantic 10 Conference",
         "name": "Rhode Island Rams",
+        "nickname": "Rhode Island",
         "abbreviation": "URI",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/227.png",
         "reddit": "/r/univRI/",
@@ -826,6 +929,7 @@
     "228": {
         "conference": "Atlantic Coast Conference",
         "name": "Clemson Tigers",
+        "nickname": "Clemson",
         "abbreviation": "CLEM",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/228.png",
         "reddit": "/r/ClemsonTigers",
@@ -834,6 +938,7 @@
     "231": {
         "conference": "Southern Conference",
         "name": "Furman Paladins",
+        "nickname": "Furman",
         "abbreviation": "FUR",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/231.png",
         "reddit": "/r/Furman",
@@ -842,6 +947,7 @@
     "232": {
         "conference": "Colonial Athletic Association",
         "name": "Charleston Cougars",
+        "nickname": "Charleston",
         "abbreviation": "CHLS",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/232.png",
         "reddit": "/r/Charleston/",
@@ -850,6 +956,7 @@
     "233": {
         "conference": "Summit League",
         "name": "South Dakota Coyotes",
+        "nickname": "South Dakota",
         "abbreviation": "SDAK",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/233.png",
         "reddit": "/r/USouthDakota",
@@ -858,6 +965,7 @@
     "235": {
         "conference": "American Athletic Conference",
         "name": "Memphis Tigers",
+        "nickname": "Memphis",
         "abbreviation": "MEM",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/235.png",
         "reddit": "/r/MemphisTigers",
@@ -866,6 +974,7 @@
     "236": {
         "conference": "Southern Conference",
         "name": "Chattanooga Mocs",
+        "nickname": "Chattanooga",
         "abbreviation": "CHAT",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/236.png",
         "reddit": "/r/utc",
@@ -874,6 +983,7 @@
     "238": {
         "conference": "Southeastern Conference",
         "name": "Vanderbilt Commodores",
+        "nickname": "Vanderbilt",
         "abbreviation": "VAN",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/238.png",
         "reddit": "/r/Vanderbilt",
@@ -882,6 +992,7 @@
     "239": {
         "conference": "Big 12 Conference",
         "name": "Baylor Bears",
+        "nickname": "Baylor",
         "abbreviation": "BAY",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/239.png",
         "reddit": "/r/baylor",
@@ -890,6 +1001,7 @@
     "242": {
         "conference": "Conference USA",
         "name": "Rice Owls",
+        "nickname": "Rice",
         "abbreviation": "RICE",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/242.png",
         "reddit": "/r/riceuniversity",
@@ -898,6 +1010,7 @@
     "245": {
         "conference": "Southeastern Conference",
         "name": "Texas A&M Aggies",
+        "nickname": "Texas A&M",
         "abbreviation": "TA&M",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/245.png",
         "reddit": "/r/aggies",
@@ -906,6 +1019,7 @@
     "248": {
         "conference": "American Athletic Conference",
         "name": "Houston Cougars",
+        "nickname": "Houston",
         "abbreviation": "HOU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/248.png",
         "reddit": "/r/UniversityOfHouston",
@@ -914,6 +1028,7 @@
     "249": {
         "conference": "Conference USA",
         "name": "North Texas Mean Green",
+        "nickname": "North Texas",
         "abbreviation": "UNT",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/249.png",
         "reddit": "/r/unt",
@@ -922,6 +1037,7 @@
     "250": {
         "conference": "Sun Belt Conference",
         "name": "UT Arlington Mavericks",
+        "nickname": "UT Arlington",
         "abbreviation": "UTA",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/250.png",
         "reddit": "/r/utarlington/",
@@ -930,6 +1046,7 @@
     "251": {
         "conference": "Big 12 Conference",
         "name": "Texas Longhorns",
+        "nickname": "Texas",
         "abbreviation": "TEX",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/251.png",
         "reddit": "/r/LonghornNation",
@@ -938,6 +1055,7 @@
     "252": {
         "conference": "West Coast Conference",
         "name": "BYU Cougars",
+        "nickname": "BYU",
         "abbreviation": "BYU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/252.png",
         "reddit": "/r/byu",
@@ -946,6 +1064,7 @@
     "253": {
         "conference": "Big Sky Conference",
         "name": "Southern Utah Thunderbirds",
+        "nickname": "Southern Utah",
         "abbreviation": "SUU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/253.png",
         "reddit": "/r/SUU/",
@@ -954,6 +1073,7 @@
     "254": {
         "conference": "Pac-12 Conference",
         "name": "Utah Utes",
+        "nickname": "Utah",
         "abbreviation": "UTAH",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/254.png",
         "reddit": "/r/uofu",
@@ -962,6 +1082,7 @@
     "256": {
         "conference": "Colonial Athletic Association",
         "name": "James Madison Dukes",
+        "nickname": "James Madison",
         "abbreviation": "JMU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/256.png",
         "reddit": "/r/jmu/",
@@ -970,6 +1091,7 @@
     "257": {
         "conference": "Atlantic 10 Conference",
         "name": "Richmond Spiders",
+        "nickname": "Richmond",
         "abbreviation": "RICH",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/257.png",
         "reddit": "/r/urichmond/",
@@ -978,6 +1100,7 @@
     "258": {
         "conference": "Atlantic Coast Conference",
         "name": "Virginia Cavaliers",
+        "nickname": "Virginia",
         "abbreviation": "UVA",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/258.png",
         "reddit": "/r/UVA",
@@ -986,6 +1109,7 @@
     "259": {
         "conference": "Atlantic Coast Conference",
         "name": "Virginia Tech Hokies",
+        "nickname": "Virginia Tech",
         "abbreviation": "VT",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/259.png",
         "reddit": "/r/virginiatech",
@@ -994,6 +1118,7 @@
     "261": {
         "conference": "America East Conference",
         "name": "Vermont Catamounts",
+        "nickname": "Vermont",
         "abbreviation": "UVM",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/261.png",
         "reddit": "/r/UniversityofVermont/",
@@ -1002,6 +1127,7 @@
     "264": {
         "conference": "Pac-12 Conference",
         "name": "Washington Huskies",
+        "nickname": "Washington",
         "abbreviation": "WASH",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/264.png",
         "reddit": "/r/huskies",
@@ -1010,6 +1136,7 @@
     "265": {
         "conference": "Pac-12 Conference",
         "name": "Washington State Cougars",
+        "nickname": "Washington State",
         "abbreviation": "WSU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/265.png",
         "reddit": "/r/wsu",
@@ -1018,6 +1145,7 @@
     "269": {
         "conference": "Big East Conference",
         "name": "Marquette Golden Eagles",
+        "nickname": "Marquette",
         "abbreviation": "MARQ",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/269.png",
         "reddit": "/r/mubb/",
@@ -1026,6 +1154,7 @@
     "270": {
         "conference": "Horizon League",
         "name": "Milwaukee Panthers",
+        "nickname": "Milwaukee",
         "abbreviation": "MILW",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/270.png",
         "reddit": "/r/UWMilwaukee/",
@@ -1034,6 +1163,7 @@
     "275": {
         "conference": "Big Ten Conference",
         "name": "Wisconsin Badgers",
+        "nickname": "Wisconsin",
         "abbreviation": "WIS",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/275.png",
         "reddit": "/r/WisconsinBadgers",
@@ -1042,6 +1172,7 @@
     "276": {
         "conference": "Conference USA",
         "name": "Marshall Thundering Herd",
+        "nickname": "Marshall",
         "abbreviation": "MRSH",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/276.png",
         "reddit": "/r/MarshallUniversity",
@@ -1050,6 +1181,7 @@
     "277": {
         "conference": "Big 12 Conference",
         "name": "West Virginia Mountaineers",
+        "nickname": "West Virginia",
         "abbreviation": "WVU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/277.png",
         "reddit": "/r/Mountaineers",
@@ -1058,6 +1190,7 @@
     "278": {
         "conference": "Mountain West Conference",
         "name": "Fresno State Bulldogs",
+        "nickname": "Fresno State",
         "abbreviation": "FRES",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/278.png",
         "reddit": "/r/fresnostate",
@@ -1066,6 +1199,7 @@
     "279": {
         "conference": "West Coast Conference",
         "name": "Pacific Tigers",
+        "nickname": "Pacific",
         "abbreviation": "PAC",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/279.png",
         "reddit": "/r/UoP/",
@@ -1074,6 +1208,7 @@
     "282": {
         "conference": "Missouri Valley Conference",
         "name": "Indiana State Sycamores",
+        "nickname": "Indiana State",
         "abbreviation": "INST",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/282.png",
         "reddit": "/r/IndianaState",
@@ -1082,6 +1217,7 @@
     "288": {
         "conference": "Atlantic Sun Conference",
         "name": "Lipscomb Bisons",
+        "nickname": "Lipscomb",
         "abbreviation": "LIP",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/288.png",
         "reddit": "/r/lipscomb/",
@@ -1090,6 +1226,7 @@
     "290": {
         "conference": "Sun Belt Conference",
         "name": "Georgia Southern Eagles",
+        "nickname": "Georgia Southern",
         "abbreviation": "GASO",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/290.png",
         "reddit": "/r/GSU",
@@ -1098,6 +1235,7 @@
     "292": {
         "conference": "Western Athletic Conference",
         "name": "UT Rio Grande Valley Vaqueros",
+        "nickname": "UT Rio Grande Valley",
         "abbreviation": "RIO",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/292.png",
         "reddit": "/r/utrgv/",
@@ -1106,6 +1244,7 @@
     "294": {
         "conference": "Atlantic Sun Conference",
         "name": "Jacksonville Dolphins",
+        "nickname": "Jacksonville",
         "abbreviation": "JU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/294.png",
         "reddit": "/r/jaxu/",
@@ -1114,6 +1253,7 @@
     "295": {
         "conference": "Conference USA",
         "name": "Old Dominion Monarchs",
+        "nickname": "Old Dominion",
         "abbreviation": "ODU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/295.png",
         "reddit": "/r/olddominionfootball",
@@ -1122,6 +1262,7 @@
     "299": {
         "conference": "Big West Conference",
         "name": "Long Beach State 49ers",
+        "nickname": "Long Beach State",
         "abbreviation": "LBSU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/299.png",
         "reddit": "/r/CSULB/",
@@ -1130,6 +1271,7 @@
     "300": {
         "conference": "Big West Conference",
         "name": "UC Irvine Anteaters",
+        "nickname": "UC Irvine",
         "abbreviation": "UCI",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/300.png",
         "reddit": "/r/UCI/",
@@ -1138,6 +1280,7 @@
     "301": {
         "conference": "West Coast Conference",
         "name": "San Diego Toreros",
+        "nickname": "San Diego",
         "abbreviation": "USD",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/301.png",
         "reddit": "/r/USD",
@@ -1146,6 +1289,7 @@
     "302": {
         "conference": "Big West Conference",
         "name": "UC Davis Aggies",
+        "nickname": "UC Davis",
         "abbreviation": "UCD",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/302.png",
         "reddit": "/r/UCDavis/",
@@ -1154,6 +1298,7 @@
     "304": {
         "conference": "Big Sky Conference",
         "name": "Idaho State Bengals",
+        "nickname": "Idaho State",
         "abbreviation": "IDST",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/304.png",
         "reddit": "/r/idahostate/",
@@ -1162,6 +1307,7 @@
     "305": {
         "conference": "Big East Conference",
         "name": "DePaul Blue Demons",
+        "nickname": "DePaul",
         "abbreviation": "DEP",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/305.png",
         "reddit": "/r/depaul/",
@@ -1170,6 +1316,7 @@
     "309": {
         "conference": "Sun Belt Conference",
         "name": "Louisiana Ragin' Cajuns",
+        "nickname": "Louisiana",
         "abbreviation": "UL",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/309.png",
         "reddit": "/r/ULL",
@@ -1178,6 +1325,7 @@
     "311": {
         "conference": "America East Conference",
         "name": "Maine Black Bears",
+        "nickname": "Maine",
         "abbreviation": "ME",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/311.png",
         "reddit": "/r/umaine/",
@@ -1186,6 +1334,7 @@
     "314": {
         "conference": "Metro Atlantic Athletic Conference",
         "name": "Iona Gaels",
+        "nickname": "Iona",
         "abbreviation": "IONA",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/314.png",
         "reddit": "/r/gaels/",
@@ -1194,6 +1343,7 @@
     "315": {
         "conference": "Metro Atlantic Athletic Conference",
         "name": "Niagara Purple Eagles",
+        "nickname": "Niagara",
         "abbreviation": "NIAG",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/315.png",
         "reddit": "#/niag",
@@ -1202,6 +1352,7 @@
     "322": {
         "conference": "Patriot League",
         "name": "Lafayette Leopards",
+        "nickname": "Lafayette",
         "abbreviation": "LAF",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/322.png",
         "reddit": "/r/lafayettecollege",
@@ -1210,6 +1361,7 @@
     "324": {
         "conference": "Sun Belt Conference",
         "name": "Coastal Carolina Chanticleers",
+        "nickname": "Coastal Carolina",
         "abbreviation": "CCU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/324.png",
         "reddit": "/r/CCU",
@@ -1218,6 +1370,7 @@
     "325": {
         "conference": "Horizon League",
         "name": "Cleveland State Vikings",
+        "nickname": "Cleveland State",
         "abbreviation": "CLEV",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/325.png",
         "reddit": "/r/CSUOHIO/",
@@ -1226,6 +1379,7 @@
     "326": {
         "conference": "Sun Belt Conference",
         "name": "Texas State Bobcats",
+        "nickname": "Texas State",
         "abbreviation": "TXST",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/326.png",
         "reddit": "/r/txstatebobcats",
@@ -1234,6 +1388,7 @@
     "328": {
         "conference": "Mountain West Conference",
         "name": "Utah State Aggies",
+        "nickname": "Utah State",
         "abbreviation": "USU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/328.png",
         "reddit": "/r/usu",
@@ -1242,6 +1397,7 @@
     "331": {
         "conference": "Big Sky Conference",
         "name": "Eastern Washington Eagles",
+        "nickname": "Eastern Washington",
         "abbreviation": "EWU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/331.png",
         "reddit": "/r/ewu/",
@@ -1250,6 +1406,7 @@
     "333": {
         "conference": "Southeastern Conference",
         "name": "Alabama Crimson Tide",
+        "nickname": "Alabama",
         "abbreviation": "ALA",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/333.png",
         "reddit": "/r/rolltide",
@@ -1258,6 +1415,7 @@
     "338": {
         "conference": "Atlantic Sun Conference",
         "name": "Kennesaw State Owls",
+        "nickname": "Kennesaw State",
         "abbreviation": "KENN",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/338.png",
         "reddit": "/r/KSU/",
@@ -1266,6 +1424,7 @@
     "339": {
         "conference": "Missouri Valley Conference",
         "name": "Evansville Purple Aces",
+        "nickname": "Evansville",
         "abbreviation": "EVAN",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/339.png",
         "reddit": "#/evan",
@@ -1274,6 +1433,7 @@
     "344": {
         "conference": "Southeastern Conference",
         "name": "Mississippi State Bulldogs",
+        "nickname": "Mississippi State",
         "abbreviation": "MSST",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/344.png",
         "reddit": "/r/msstate",
@@ -1282,6 +1442,7 @@
     "349": {
         "conference": "Patriot League",
         "name": "Army Black Knights",
+        "nickname": "Army",
         "abbreviation": "ARMY",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/349.png",
         "reddit": "/r/USMA",
@@ -1290,6 +1451,7 @@
     "350": {
         "conference": "Colonial Athletic Association",
         "name": "UNC Wilmington Seahawks",
+        "nickname": "UNC Wilmington",
         "abbreviation": "UNCW",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/350.png",
         "reddit": "/r/UNCW/",
@@ -1298,6 +1460,7 @@
     "356": {
         "conference": "Big Ten Conference",
         "name": "Illinois Fighting Illini",
+        "nickname": "Illinois",
         "abbreviation": "ILL",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/356.png",
         "reddit": "/r/fightingillini",
@@ -1306,6 +1469,7 @@
     "357": {
         "conference": "Southland Conference",
         "name": "Texas A&M-CC Islanders",
+        "nickname": "Texas A&M-CC",
         "abbreviation": "AMCC",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/357.png",
         "reddit": "/r/TAMUCC/",
@@ -1314,6 +1478,7 @@
     "399": {
         "conference": "America East Conference",
         "name": "Albany Great Danes",
+        "nickname": "Albany",
         "abbreviation": "ALB",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/399.png",
         "reddit": "/r/ualbany/",
@@ -1322,6 +1487,7 @@
     "526": {
         "conference": "Atlantic Sun Conference",
         "name": "Florida Gulf Coast Eagles",
+        "nickname": "Florida Gulf Coast",
         "abbreviation": "FGCU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/526.png",
         "reddit": "/r/fgcu/",
@@ -1330,6 +1496,7 @@
     "2000": {
         "conference": "Southland Conference",
         "name": "Abilene Christian Wildcats",
+        "nickname": "Abilene Christian",
         "abbreviation": "ACU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2000.png",
         "reddit": "/r/ACU",
@@ -1338,6 +1505,7 @@
     "2005": {
         "conference": "Mountain West Conference",
         "name": "Air Force Falcons",
+        "nickname": "Air Force",
         "abbreviation": "AFA",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2005.png",
         "reddit": "/r/usafa",
@@ -1346,6 +1514,7 @@
     "2006": {
         "conference": "Mid-American Conference",
         "name": "Akron Zips",
+        "nickname": "Akron",
         "abbreviation": "AKR",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2006.png",
         "reddit": "/r/uakron/",
@@ -1354,6 +1523,7 @@
     "2010": {
         "conference": "Southwestern Athletic Conference",
         "name": "Alabama A&M Bulldogs",
+        "nickname": "Alabama A&M",
         "abbreviation": "AAMU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2010.png",
         "reddit": "/r/AlabamaAM",
@@ -1362,6 +1532,7 @@
     "2011": {
         "conference": "Southwestern Athletic Conference",
         "name": "Alabama State Hornets",
+        "nickname": "Alabama State",
         "abbreviation": "ALST",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2011.png",
         "reddit": "/r/AlabamaState",
@@ -1370,6 +1541,7 @@
     "2016": {
         "conference": "Southwestern Athletic Conference",
         "name": "Alcorn State Braves",
+        "nickname": "Alcorn State",
         "abbreviation": "ALCN",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2016.png",
         "reddit": "/r/AlcornState",
@@ -1378,6 +1550,7 @@
     "2026": {
         "conference": "Sun Belt Conference",
         "name": "Appalachian State Mountaineers",
+        "nickname": "Appalachian State",
         "abbreviation": "APP",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2026.png",
         "reddit": "/r/appstate",
@@ -1386,6 +1559,7 @@
     "2029": {
         "conference": "Southwestern Athletic Conference",
         "name": "Arkansas-Pine Bluff Golden Lions",
+        "nickname": "Arkansas-Pine Bluff",
         "abbreviation": "UAPB",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2029.png",
         "reddit": "/r/UAPB",
@@ -1394,6 +1568,7 @@
     "2031": {
         "conference": "Sun Belt Conference",
         "name": "Little Rock Trojans",
+        "nickname": "Little Rock",
         "abbreviation": "UALR",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2031.png",
         "reddit": "/r/UALR/",
@@ -1402,6 +1577,7 @@
     "2032": {
         "conference": "Sun Belt Conference",
         "name": "Arkansas State Red Wolves",
+        "nickname": "Arkansas State",
         "abbreviation": "ARST",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2032.png",
         "reddit": "/r/arkst",
@@ -1410,6 +1586,7 @@
     "2046": {
         "conference": "Ohio Valley Conference",
         "name": "Austin Peay Governors",
+        "nickname": "Austin Peay",
         "abbreviation": "APSU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2046.png",
         "reddit": "/r/APSU",
@@ -1418,6 +1595,7 @@
     "2050": {
         "conference": "Mid-American Conference",
         "name": "Ball State Cardinals",
+        "nickname": "Ball State",
         "abbreviation": "BALL",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2050.png",
         "reddit": "/r/BallState",
@@ -1426,6 +1604,7 @@
     "2057": {
         "conference": "Ohio Valley Conference",
         "name": "Belmont Bruins",
+        "nickname": "Belmont",
         "abbreviation": "BEL",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2057.png",
         "reddit": "/r/BelmontUniversity/",
@@ -1434,6 +1613,7 @@
     "2065": {
         "conference": "Mid-Eastern Athletic Conference",
         "name": "Bethune-Cookman Wildcats",
+        "nickname": "Bethune-Cookman",
         "abbreviation": "BCU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2065.png",
         "reddit": "/r/BethuneCookman",
@@ -1442,6 +1622,7 @@
     "2066": {
         "conference": "America East Conference",
         "name": "Binghamton Bearcats",
+        "nickname": "Binghamton",
         "abbreviation": "BING",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2066.png",
         "reddit": "/r/BinghamtonUniversity/",
@@ -1450,6 +1631,7 @@
     "2083": {
         "conference": "Patriot League",
         "name": "Bucknell Bison",
+        "nickname": "Bucknell",
         "abbreviation": "BUCK",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2083.png",
         "reddit": "/r/bucknell",
@@ -1458,6 +1640,7 @@
     "2084": {
         "conference": "Mid-American Conference",
         "name": "Buffalo Bulls",
+        "nickname": "Buffalo",
         "abbreviation": "BUFF",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2084.png",
         "reddit": "/r/UBreddit",
@@ -1466,6 +1649,7 @@
     "2086": {
         "conference": "Big East Conference",
         "name": "Butler Bulldogs",
+        "nickname": "Butler",
         "abbreviation": "BUT",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2086.png",
         "reddit": "/r/butleruniversity/",
@@ -1474,6 +1658,7 @@
     "2097": {
         "conference": "Big South Conference",
         "name": "Campbell Fighting Camels",
+        "nickname": "Campbell",
         "abbreviation": "CAM",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2097.png",
         "reddit": "#/cam",
@@ -1482,6 +1667,7 @@
     "2099": {
         "conference": "Metro Atlantic Athletic Conference",
         "name": "Canisius Golden Griffins",
+        "nickname": "Canisius",
         "abbreviation": "CAN",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2099.png",
         "reddit": "/r/Canisius/",
@@ -1490,6 +1676,7 @@
     "2110": {
         "conference": "Southland Conference",
         "name": "Central Arkansas Bears",
+        "nickname": "Central Arkansas",
         "abbreviation": "UCA",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2110.png",
         "reddit": "/r/UCA",
@@ -1498,6 +1685,7 @@
     "2115": {
         "conference": "Northeast Conference",
         "name": "Central Connecticut Blue Devils",
+        "nickname": "Central Connecticut",
         "abbreviation": "CCSU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2115.png",
         "reddit": "/r/ccsu",
@@ -1506,6 +1694,7 @@
     "2116": {
         "conference": "American Athletic Conference",
         "name": "UCF Knights",
+        "nickname": "UCF",
         "abbreviation": "UCF",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2116.png",
         "reddit": "/r/ucfknights",
@@ -1514,6 +1703,7 @@
     "2117": {
         "conference": "Mid-American Conference",
         "name": "Central Michigan Chippewas",
+        "nickname": "Central Michigan",
         "abbreviation": "CMU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2117.png",
         "reddit": "/r/centralmich",
@@ -1522,6 +1712,7 @@
     "2127": {
         "conference": "Big South Conference",
         "name": "Charleston Southern Buccaneers",
+        "nickname": "Charleston Southern",
         "abbreviation": "CHSO",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2127.png",
         "reddit": "/r/CharlestonSouthern/",
@@ -1530,6 +1721,7 @@
     "2130": {
         "conference": "Western Athletic Conference",
         "name": "Chicago State Cougars",
+        "nickname": "Chicago State",
         "abbreviation": "CHIC",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2130.png",
         "reddit": "#/chic",
@@ -1538,6 +1730,7 @@
     "2132": {
         "conference": "American Athletic Conference",
         "name": "Cincinnati Bearcats",
+        "nickname": "Cincinnati",
         "abbreviation": "CIN",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2132.png",
         "reddit": "/r/uCinci",
@@ -1546,6 +1739,7 @@
     "2142": {
         "conference": "Patriot League",
         "name": "Colgate Raiders",
+        "nickname": "Colgate",
         "abbreviation": "COLG",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2142.png",
         "reddit": "/r/Colgate",
@@ -1554,6 +1748,7 @@
     "2154": {
         "conference": "Mid-Eastern Athletic Conference",
         "name": "Coppin State Eagles",
+        "nickname": "Coppin State",
         "abbreviation": "COPP",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2154.png",
         "reddit": "#/copp",
@@ -1562,6 +1757,7 @@
     "2166": {
         "conference": "Atlantic 10 Conference",
         "name": "Davidson Wildcats",
+        "nickname": "Davidson",
         "abbreviation": "DAV",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2166.png",
         "reddit": "/r/davidson/",
@@ -1570,6 +1766,7 @@
     "2168": {
         "conference": "Atlantic 10 Conference",
         "name": "Dayton Flyers",
+        "nickname": "Dayton",
         "abbreviation": "DAY",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2168.png",
         "reddit": "/r/UDFlyers/",
@@ -1578,6 +1775,7 @@
     "2169": {
         "conference": "Mid-Eastern Athletic Conference",
         "name": "Delaware State Hornets",
+        "nickname": "Delaware State",
         "abbreviation": "DSU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2169.png",
         "reddit": "/r/Delaware/",
@@ -1586,6 +1784,7 @@
     "2172": {
         "conference": "Summit League",
         "name": "Denver Pioneers",
+        "nickname": "Denver",
         "abbreviation": "DEN",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2172.png",
         "reddit": "/r/denveru/",
@@ -1594,6 +1793,7 @@
     "2174": {
         "conference": "Horizon League",
         "name": "Detroit Mercy Titans",
+        "nickname": "Detroit Mercy",
         "abbreviation": "DET",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2174.png",
         "reddit": "#/det",
@@ -1602,6 +1802,7 @@
     "2181": {
         "conference": "Missouri Valley Conference",
         "name": "Drake Bulldogs",
+        "nickname": "Drake",
         "abbreviation": "DRKE",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2181.png",
         "reddit": "/r/drake",
@@ -1610,6 +1811,7 @@
     "2182": {
         "conference": "Colonial Athletic Association",
         "name": "Drexel Dragons",
+        "nickname": "Drexel",
         "abbreviation": "DREX",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2182.png",
         "reddit": "/r/Drexel/",
@@ -1618,6 +1820,7 @@
     "2184": {
         "conference": "Atlantic 10 Conference",
         "name": "Duquesne Dukes",
+        "nickname": "Duquesne",
         "abbreviation": "DUQ",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2184.png",
         "reddit": "/r/Duquesne/",
@@ -1626,6 +1829,7 @@
     "2193": {
         "conference": "Southern Conference",
         "name": "East Tennessee State Buccaneers",
+        "nickname": "East Tennessee State",
         "abbreviation": "ETSU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2193.png",
         "reddit": "/r/ETSU",
@@ -1634,6 +1838,7 @@
     "2197": {
         "conference": "Ohio Valley Conference",
         "name": "Eastern Illinois Panthers",
+        "nickname": "Eastern Illinois",
         "abbreviation": "EIU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2197.png",
         "reddit": "/r/EIU",
@@ -1642,6 +1847,7 @@
     "2198": {
         "conference": "Ohio Valley Conference",
         "name": "Eastern Kentucky Colonels",
+        "nickname": "Eastern Kentucky",
         "abbreviation": "EKY",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2198.png",
         "reddit": "/r/eku",
@@ -1650,6 +1856,7 @@
     "2199": {
         "conference": "Mid-American Conference",
         "name": "Eastern Michigan Eagles",
+        "nickname": "Eastern Michigan",
         "abbreviation": "EMU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2199.png",
         "reddit": "/r/emu",
@@ -1658,6 +1865,7 @@
     "2210": {
         "conference": "Colonial Athletic Association",
         "name": "Elon Phoenix",
+        "nickname": "Elon",
         "abbreviation": "ELON",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2210.png",
         "reddit": "/r/elon/",
@@ -1666,6 +1874,7 @@
     "2217": {
         "conference": "Metro Atlantic Athletic Conference",
         "name": "Fairfield Stags",
+        "nickname": "Fairfield",
         "abbreviation": "FAIR",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2217.png",
         "reddit": "/r/fairfieldU/",
@@ -1674,6 +1883,7 @@
     "2226": {
         "conference": "Conference USA",
         "name": "Florida Atlantic Owls",
+        "nickname": "Florida Atlantic",
         "abbreviation": "FAU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2226.png",
         "reddit": "/r/faufootball",
@@ -1682,6 +1892,7 @@
     "2229": {
         "conference": "Conference USA",
         "name": "Florida International Golden Panthers",
+        "nickname": "Florida International",
         "abbreviation": "FIU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2229.png",
         "reddit": "/r/FIU",
@@ -1690,6 +1901,7 @@
     "2230": {
         "conference": "Atlantic 10 Conference",
         "name": "Fordham Rams",
+        "nickname": "Fordham",
         "abbreviation": "FOR",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2230.png",
         "reddit": "/r/Fordham/",
@@ -1698,6 +1910,7 @@
     "2239": {
         "conference": "Big West Conference",
         "name": "CSU Fullerton Titans",
+        "nickname": "CSU Fullerton",
         "abbreviation": "CSF",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2239.png",
         "reddit": "/r/csuf/",
@@ -1706,6 +1919,7 @@
     "2241": {
         "conference": "Big South Conference",
         "name": "Gardner-Webb Bulldogs",
+        "nickname": "Gardner-Webb",
         "abbreviation": "WEBB",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2241.png",
         "reddit": "#/webb",
@@ -1714,6 +1928,7 @@
     "2244": {
         "conference": "Atlantic 10 Conference",
         "name": "George Mason Patriots",
+        "nickname": "George Mason",
         "abbreviation": "GMU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2244.png",
         "reddit": "/r/gmu/",
@@ -1722,6 +1937,7 @@
     "2247": {
         "conference": "Sun Belt Conference",
         "name": "Georgia State Panthers",
+        "nickname": "Georgia State",
         "abbreviation": "GAST",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2247.png",
         "reddit": "/r/GaState",
@@ -1730,6 +1946,7 @@
     "2250": {
         "conference": "West Coast Conference",
         "name": "Gonzaga Bulldogs",
+        "nickname": "Gonzaga",
         "abbreviation": "GONZ",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2250.png",
         "reddit": "/r/Gonzaga/",
@@ -1738,6 +1955,7 @@
     "2253": {
         "conference": "Western Athletic Conference",
         "name": "Grand Canyon Antelopes",
+        "nickname": "Grand Canyon",
         "abbreviation": "GCU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2253.png",
         "reddit": "/r/gcu/",
@@ -1746,6 +1964,7 @@
     "2261": {
         "conference": "Big South Conference",
         "name": "Hampton Pirates",
+        "nickname": "Hampton",
         "abbreviation": "HAMP",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2261.png",
         "reddit": "#/hamp",
@@ -1754,6 +1973,7 @@
     "2272": {
         "conference": "Big South Conference",
         "name": "High Point Panthers",
+        "nickname": "High Point",
         "abbreviation": "HPU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2272.png",
         "reddit": "/r/HPU/",
@@ -1762,6 +1982,7 @@
     "2275": {
         "conference": "Colonial Athletic Association",
         "name": "Hofstra Pride",
+        "nickname": "Hofstra",
         "abbreviation": "HOF",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2275.png",
         "reddit": "/r/Hofstra/",
@@ -1770,6 +1991,7 @@
     "2277": {
         "conference": "Southland Conference",
         "name": "Houston Baptist Huskies",
+        "nickname": "Houston Baptist",
         "abbreviation": "HB",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2277.png",
         "reddit": "/r/HBU",
@@ -1778,6 +2000,7 @@
     "2287": {
         "conference": "Missouri Valley Conference",
         "name": "Illinois State Redbirds",
+        "nickname": "Illinois State",
         "abbreviation": "ILST",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2287.png",
         "reddit": "/r/ilstu",
@@ -1786,6 +2009,7 @@
     "2294": {
         "conference": "Big Ten Conference",
         "name": "Iowa Hawkeyes",
+        "nickname": "Iowa",
         "abbreviation": "IOWA",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2294.png",
         "reddit": "/r/Hawkeye_Football",
@@ -1794,6 +2018,7 @@
     "2296": {
         "conference": "Southwestern Athletic Conference",
         "name": "Jackson State Tigers",
+        "nickname": "Jackson State",
         "abbreviation": "JKST",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2296.png",
         "reddit": "/r/JacksonStateTigers",
@@ -1802,6 +2027,7 @@
     "2305": {
         "conference": "Big 12 Conference",
         "name": "Kansas Jayhawks",
+        "nickname": "Kansas",
         "abbreviation": "KU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2305.png",
         "reddit": "/r/jayhawks",
@@ -1810,6 +2036,7 @@
     "2306": {
         "conference": "Big 12 Conference",
         "name": "Kansas State Wildcats",
+        "nickname": "Kansas State",
         "abbreviation": "KSU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2306.png",
         "reddit": "/r/kstate",
@@ -1818,6 +2045,7 @@
     "2309": {
         "conference": "Mid-American Conference",
         "name": "Kent State Golden Flashes",
+        "nickname": "Kent State",
         "abbreviation": "KENT",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2309.png",
         "reddit": "/r/KentStateUniversity",
@@ -1826,6 +2054,7 @@
     "2320": {
         "conference": "Southland Conference",
         "name": "Lamar Cardinals",
+        "nickname": "Lamar",
         "abbreviation": "LAM",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2320.png",
         "reddit": "/r/LamarUniversity",
@@ -1834,6 +2063,7 @@
     "2325": {
         "conference": "Atlantic 10 Conference",
         "name": "La Salle Explorers",
+        "nickname": "La Salle",
         "abbreviation": "LAS",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2325.png",
         "reddit": "/r/LaSalle/",
@@ -1842,6 +2072,7 @@
     "2329": {
         "conference": "Patriot League",
         "name": "Lehigh Mountain Hawks",
+        "nickname": "Lehigh",
         "abbreviation": "LEH",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2329.png",
         "reddit": "/r/Lehigh",
@@ -1850,6 +2081,7 @@
     "2335": {
         "conference": "Atlantic Sun Conference",
         "name": "Liberty Flames",
+        "nickname": "Liberty",
         "abbreviation": "LIB",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2335.png",
         "reddit": "/r/LibertyUniversity",
@@ -1858,6 +2090,7 @@
     "2341": {
         "conference": "Northeast Conference",
         "name": "LIU Brooklyn Blackbirds",
+        "nickname": "LIU Brooklyn",
         "abbreviation": "LIU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2341.png",
         "reddit": "#/liu",
@@ -1866,6 +2099,7 @@
     "2344": {
         "conference": "Big South Conference",
         "name": "Longwood Lancers",
+        "nickname": "Longwood",
         "abbreviation": "LONG",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2344.png",
         "reddit": "/r/Longwood/",
@@ -1874,6 +2108,7 @@
     "2348": {
         "conference": "Conference USA",
         "name": "Louisiana Tech Bulldogs",
+        "nickname": "Louisiana Tech",
         "abbreviation": "LT",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2348.png",
         "reddit": "/r/LouisianaTech",
@@ -1882,6 +2117,7 @@
     "2349": {
         "conference": "America East Conference",
         "name": "UMass Lowell River Hawks",
+        "nickname": "UMass Lowell",
         "abbreviation": "UML",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2349.png",
         "reddit": "/r/uml/",
@@ -1890,6 +2126,7 @@
     "2350": {
         "conference": "Missouri Valley Conference",
         "name": "Loyola-Chicago Ramblers",
+        "nickname": "Loyola-Chicago",
         "abbreviation": "LCHI",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2350.png",
         "reddit": "/r/LoyolaChicago/",
@@ -1898,6 +2135,7 @@
     "2351": {
         "conference": "West Coast Conference",
         "name": "Loyola Marymount Lions",
+        "nickname": "Loyola Marymount",
         "abbreviation": "LMU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2351.png",
         "reddit": "/r/LMU/",
@@ -1906,6 +2144,7 @@
     "2352": {
         "conference": "Patriot League",
         "name": "Loyola (MD) Greyhounds",
+        "nickname": "Loyola (MD)",
         "abbreviation": "L-MD",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2352.png",
         "reddit": "/r/Loyola/",
@@ -1914,6 +2153,7 @@
     "2363": {
         "conference": "Metro Atlantic Athletic Conference",
         "name": "Manhattan Jaspers",
+        "nickname": "Manhattan",
         "abbreviation": "MAN",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2363.png",
         "reddit": "/r/ManhattanCollege/",
@@ -1922,6 +2162,7 @@
     "2368": {
         "conference": "Metro Atlantic Athletic Conference",
         "name": "Marist Red Foxes",
+        "nickname": "Marist",
         "abbreviation": "MRST",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2368.png",
         "reddit": "#/mrst",
@@ -1930,6 +2171,7 @@
     "2377": {
         "conference": "Southland Conference",
         "name": "McNeese Cowboys",
+        "nickname": "McNeese",
         "abbreviation": "MCN",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2377.png",
         "reddit": "/r/mcneese",
@@ -1938,6 +2180,7 @@
     "2378": {
         "conference": "America East Conference",
         "name": "UMBC Retrievers",
+        "nickname": "UMBC",
         "abbreviation": "UMBC",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2378.png",
         "reddit": "/r/UMBC/",
@@ -1946,6 +2189,7 @@
     "2379": {
         "conference": "Mid-Eastern Athletic Conference",
         "name": "Maryland-Eastern Shore Hawks",
+        "nickname": "Maryland-Eastern Shore",
         "abbreviation": "UMES",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2379.png",
         "reddit": "/r/easternshoremd/",
@@ -1954,6 +2198,7 @@
     "2382": {
         "conference": "Southern Conference",
         "name": "Mercer Bears",
+        "nickname": "Mercer",
         "abbreviation": "MER",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2382.png",
         "reddit": "/r/mercer",
@@ -1962,6 +2207,7 @@
     "2390": {
         "conference": "Atlantic Coast Conference",
         "name": "Miami Hurricanes",
+        "nickname": "Miami",
         "abbreviation": "MIA",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2390.png",
         "reddit": "/r/MiamiHurricanes/",
@@ -1970,6 +2216,7 @@
     "2393": {
         "conference": "Conference USA",
         "name": "Middle Tennessee Blue Raiders",
+        "nickname": "Middle Tennessee",
         "abbreviation": "MTSU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2393.png",
         "reddit": "/r/MTSU",
@@ -1978,6 +2225,7 @@
     "2400": {
         "conference": "Southwestern Athletic Conference",
         "name": "Mississippi Valley State Delta Devils",
+        "nickname": "Mississippi Valley State",
         "abbreviation": "MVSU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2400.png",
         "reddit": "/r/MVSU",
@@ -1986,6 +2234,7 @@
     "2405": {
         "conference": "Metro Atlantic Athletic Conference",
         "name": "Monmouth Hawks",
+        "nickname": "Monmouth",
         "abbreviation": "MONM",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2405.png",
         "reddit": "/r/MonmouthUniversity/",
@@ -1994,6 +2243,7 @@
     "2413": {
         "conference": "Ohio Valley Conference",
         "name": "Morehead State Eagles",
+        "nickname": "Morehead State",
         "abbreviation": "MORE",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2413.png",
         "reddit": "/r/MoreheadState",
@@ -2002,6 +2252,7 @@
     "2415": {
         "conference": "Mid-Eastern Athletic Conference",
         "name": "Morgan State Bears",
+        "nickname": "Morgan State",
         "abbreviation": "MORG",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2415.png",
         "reddit": "/r/MorganState",
@@ -2010,6 +2261,7 @@
     "2426": {
         "conference": "Patriot League",
         "name": "Navy Midshipmen",
+        "nickname": "Navy",
         "abbreviation": "NAVY",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2426.png",
         "reddit": "/r/USNA",
@@ -2018,6 +2270,7 @@
     "2427": {
         "conference": "Big South Conference",
         "name": "UNC Asheville Bulldogs",
+        "nickname": "UNC Asheville",
         "abbreviation": "UNCA",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2427.png",
         "reddit": "/r/unca/",
@@ -2026,6 +2279,7 @@
     "2428": {
         "conference": "Mid-Eastern Athletic Conference",
         "name": "North Carolina Central Eagles",
+        "nickname": "North Carolina Central",
         "abbreviation": "NCCU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2428.png",
         "reddit": "/r/NCCU",
@@ -2034,6 +2288,7 @@
     "2429": {
         "conference": "Conference USA",
         "name": "Charlotte 49ers",
+        "nickname": "Charlotte",
         "abbreviation": "CHAR",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2429.png",
         "reddit": "/r/UNCCharlotte",
@@ -2042,6 +2297,7 @@
     "2430": {
         "conference": "Southern Conference",
         "name": "UNC Greensboro Spartans",
+        "nickname": "UNC Greensboro",
         "abbreviation": "UNCG",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2430.png",
         "reddit": "/r/UNCG/",
@@ -2050,6 +2306,7 @@
     "2433": {
         "conference": "Sun Belt Conference",
         "name": "UL Monroe Warhawks",
+        "nickname": "UL Monroe",
         "abbreviation": "ULM",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2433.png",
         "reddit": "/r/ulmwarhawks",
@@ -2058,6 +2315,7 @@
     "2437": {
         "conference": "Summit League",
         "name": "Omaha Mavericks",
+        "nickname": "Omaha",
         "abbreviation": "OMA",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2437.png",
         "reddit": "/r/UNOmaha/",
@@ -2066,6 +2324,7 @@
     "2439": {
         "conference": "Mountain West Conference",
         "name": "UNLV Rebels",
+        "nickname": "UNLV",
         "abbreviation": "UNLV",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2439.png",
         "reddit": "/r/UNLV",
@@ -2074,6 +2333,7 @@
     "2440": {
         "conference": "Mountain West Conference",
         "name": "Nevada Wolf Pack",
+        "nickname": "Nevada",
         "abbreviation": "NEV",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2440.png",
         "reddit": "/r/unr",
@@ -2082,6 +2342,7 @@
     "2443": {
         "conference": "Southland Conference",
         "name": "New Orleans Privateers",
+        "nickname": "New Orleans",
         "abbreviation": "UNO",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2443.png",
         "reddit": "/r/UNO/",
@@ -2090,6 +2351,7 @@
     "2447": {
         "conference": "Southland Conference",
         "name": "Nicholls Colonels",
+        "nickname": "Nicholls",
         "abbreviation": "NICH",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2447.png",
         "reddit": "/r/NSU",
@@ -2098,6 +2360,7 @@
     "2448": {
         "conference": "Mid-Eastern Athletic Conference",
         "name": "North Carolina A&T Aggies",
+        "nickname": "North Carolina A&T",
         "abbreviation": "NCAT",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2448.png",
         "reddit": "/r/NCAT",
@@ -2106,6 +2369,7 @@
     "2449": {
         "conference": "Summit League",
         "name": "North Dakota State Bison",
+        "nickname": "North Dakota State",
         "abbreviation": "NDSU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2449.png",
         "reddit": "/r/NDSU",
@@ -2114,6 +2378,7 @@
     "2450": {
         "conference": "Mid-Eastern Athletic Conference",
         "name": "Norfolk State Spartans",
+        "nickname": "Norfolk State",
         "abbreviation": "NORF",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2450.png",
         "reddit": "/r/NorfolkState",
@@ -2122,6 +2387,7 @@
     "2453": {
         "conference": "Atlantic Sun Conference",
         "name": "North Alabama Lions",
+        "nickname": "North Alabama",
         "abbreviation": "UNA",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2453.png",
         "reddit": "/r/FlorenceAl/",
@@ -2130,6 +2396,7 @@
     "2454": {
         "conference": "Atlantic Sun Conference",
         "name": "North Florida Ospreys",
+        "nickname": "North Florida",
         "abbreviation": "UNF",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2454.png",
         "reddit": "/r/UNF/",
@@ -2138,6 +2405,7 @@
     "2458": {
         "conference": "Big Sky Conference",
         "name": "Northern Colorado Bears",
+        "nickname": "Northern Colorado",
         "abbreviation": "UNCO",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2458.png",
         "reddit": "/r/UNCO/",
@@ -2146,6 +2414,7 @@
     "2459": {
         "conference": "Mid-American Conference",
         "name": "Northern Illinois Huskies",
+        "nickname": "Northern Illinois",
         "abbreviation": "NIU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2459.png",
         "reddit": "/r/NIU",
@@ -2154,6 +2423,7 @@
     "2460": {
         "conference": "Missouri Valley Conference",
         "name": "Northern Iowa Panthers",
+        "nickname": "Northern Iowa",
         "abbreviation": "UNI",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2460.png",
         "reddit": "/r/uni",
@@ -2162,6 +2432,7 @@
     "2463": {
         "conference": "Big West Conference",
         "name": "CSU Northridge Matadors",
+        "nickname": "CSU Northridge",
         "abbreviation": "CSUN",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2463.png",
         "reddit": "/r/csun/",
@@ -2170,6 +2441,7 @@
     "2464": {
         "conference": "Big Sky Conference",
         "name": "Northern Arizona Lumberjacks",
+        "nickname": "Northern Arizona",
         "abbreviation": "NAU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2464.png",
         "reddit": "/r/NAU/",
@@ -2178,6 +2450,7 @@
     "2466": {
         "conference": "Southland Conference",
         "name": "Northwestern State Demons",
+        "nickname": "Northwestern State",
         "abbreviation": "NWST",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2466.png",
         "reddit": "/r/nsula",
@@ -2186,6 +2459,7 @@
     "2473": {
         "conference": "Horizon League",
         "name": "Oakland Golden Grizzlies",
+        "nickname": "Oakland",
         "abbreviation": "OAK",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2473.png",
         "reddit": "/r/oaklanduniversity/",
@@ -2194,6 +2468,7 @@
     "2483": {
         "conference": "Pac-12 Conference",
         "name": "Oregon Ducks",
+        "nickname": "Oregon",
         "abbreviation": "ORE",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2483.png",
         "reddit": "/r/ducks",
@@ -2202,6 +2477,7 @@
     "2492": {
         "conference": "West Coast Conference",
         "name": "Pepperdine Waves",
+        "nickname": "Pepperdine",
         "abbreviation": "PEPP",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2492.png",
         "reddit": "/r/Pepperdine/",
@@ -2210,6 +2486,7 @@
     "2501": {
         "conference": "West Coast Conference",
         "name": "Portland Pilots",
+        "nickname": "Portland",
         "abbreviation": "PORT",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2501.png",
         "reddit": "/r/UPortland/",
@@ -2218,6 +2495,7 @@
     "2502": {
         "conference": "Big Sky Conference",
         "name": "Portland State Vikings",
+        "nickname": "Portland State",
         "abbreviation": "PRST",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2502.png",
         "reddit": "/r/portlandstate/",
@@ -2226,6 +2504,7 @@
     "2504": {
         "conference": "Southwestern Athletic Conference",
         "name": "Prairie View A&M Panthers",
+        "nickname": "Prairie View A&M",
         "abbreviation": "PV",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2504.png",
         "reddit": "/r/PrairieViewAM",
@@ -2234,6 +2513,7 @@
     "2506": {
         "conference": "Big South Conference",
         "name": "Presbyterian Blue Hose",
+        "nickname": "Presbyterian",
         "abbreviation": "PRE",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2506.png",
         "reddit": "/r/bluehose/",
@@ -2242,6 +2522,7 @@
     "2507": {
         "conference": "Big East Conference",
         "name": "Providence Friars",
+        "nickname": "Providence",
         "abbreviation": "PROV",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2507.png",
         "reddit": "/r/pcbb/",
@@ -2250,6 +2531,7 @@
     "2509": {
         "conference": "Big Ten Conference",
         "name": "Purdue Boilermakers",
+        "nickname": "Purdue",
         "abbreviation": "PUR",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2509.png",
         "reddit": "/r/boilermakers",
@@ -2258,6 +2540,7 @@
     "2514": {
         "conference": "Metro Atlantic Athletic Conference",
         "name": "Quinnipiac Bobcats",
+        "nickname": "Quinnipiac",
         "abbreviation": "QUIN",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2514.png",
         "reddit": "/r/Quinnipiac/",
@@ -2266,6 +2549,7 @@
     "2515": {
         "conference": "Big South Conference",
         "name": "Radford Highlanders",
+        "nickname": "Radford",
         "abbreviation": "RAD",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2515.png",
         "reddit": "/r/radforduniversity/",
@@ -2274,6 +2558,7 @@
     "2520": {
         "conference": "Metro Atlantic Athletic Conference",
         "name": "Rider Broncs",
+        "nickname": "Rider",
         "abbreviation": "RID",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2520.png",
         "reddit": "/r/RiderUniversity/",
@@ -2282,6 +2567,7 @@
     "2523": {
         "conference": "Northeast Conference",
         "name": "Robert Morris Colonials",
+        "nickname": "Robert Morris",
         "abbreviation": "RMU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2523.png",
         "reddit": "/r/RMU",
@@ -2290,6 +2576,7 @@
     "2529": {
         "conference": "Northeast Conference",
         "name": "Sacred Heart Pioneers",
+        "nickname": "Sacred Heart",
         "abbreviation": "SHU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2529.png",
         "reddit": "/r/Sacredheart",
@@ -2298,6 +2585,7 @@
     "2534": {
         "conference": "Southland Conference",
         "name": "Sam Houston State Bearkats",
+        "nickname": "Sam Houston State",
         "abbreviation": "SHSU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2534.png",
         "reddit": "/r/shsu",
@@ -2306,6 +2594,7 @@
     "2535": {
         "conference": "Southern Conference",
         "name": "Samford Bulldogs",
+        "nickname": "Samford",
         "abbreviation": "SAM",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2535.png",
         "reddit": "/r/SamfordUniversity",
@@ -2314,6 +2603,7 @@
     "2539": {
         "conference": "West Coast Conference",
         "name": "San Francisco Dons",
+        "nickname": "San Francisco",
         "abbreviation": "SF",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2539.png",
         "reddit": "/r/usfdons/",
@@ -2322,6 +2612,7 @@
     "2540": {
         "conference": "Big West Conference",
         "name": "UC Santa Barbara Gauchos",
+        "nickname": "UC Santa Barbara",
         "abbreviation": "UCSB",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2540.png",
         "reddit": "/r/UCSantaBarbara/",
@@ -2330,6 +2621,7 @@
     "2541": {
         "conference": "West Coast Conference",
         "name": "Santa Clara Broncos",
+        "nickname": "Santa Clara",
         "abbreviation": "SCU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2541.png",
         "reddit": "/r/SCU/",
@@ -2338,6 +2630,7 @@
     "2542": {
         "conference": "Mid-Eastern Athletic Conference",
         "name": "Savannah State Tigers",
+        "nickname": "Savannah State",
         "abbreviation": "SAV",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2542.png",
         "reddit": "/r/SavannahState",
@@ -2346,6 +2639,7 @@
     "2545": {
         "conference": "Southland Conference",
         "name": "SE Louisiana Lions",
+        "nickname": "SE Louisiana",
         "abbreviation": "SELA",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2545.png",
         "reddit": "/r/Southeastern",
@@ -2354,6 +2648,7 @@
     "2546": {
         "conference": "Ohio Valley Conference",
         "name": "Se Missouri St Southeast Missouri State",
+        "nickname": "Se Missouri St",
         "abbreviation": "SEMO",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2546.png",
         "reddit": "/r/semo/",
@@ -2362,6 +2657,7 @@
     "2547": {
         "conference": "Western Athletic Conference",
         "name": "Seattle Redhawks",
+        "nickname": "Seattle",
         "abbreviation": "SEA",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2547.png",
         "reddit": "/r/seattleu/",
@@ -2370,6 +2666,7 @@
     "2550": {
         "conference": "Big East Conference",
         "name": "Seton Hall Pirates",
+        "nickname": "Seton Hall",
         "abbreviation": "HALL",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2550.png",
         "reddit": "/r/SHU/",
@@ -2378,6 +2675,7 @@
     "2561": {
         "conference": "Metro Atlantic Athletic Conference",
         "name": "Siena Saints",
+        "nickname": "Siena",
         "abbreviation": "SIE",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2561.png",
         "reddit": "/r/siena/",
@@ -2386,6 +2684,7 @@
     "2565": {
         "conference": "Ohio Valley Conference",
         "name": "SIU-Edwardsville Cougars",
+        "nickname": "SIU-Edwardsville",
         "abbreviation": "SIUE",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2565.png",
         "reddit": "/r/SIUE/",
@@ -2394,6 +2693,7 @@
     "2567": {
         "conference": "American Athletic Conference",
         "name": "SMU Mustangs",
+        "nickname": "SMU",
         "abbreviation": "SMU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2567.png",
         "reddit": "/r/SMU",
@@ -2402,6 +2702,7 @@
     "2569": {
         "conference": "Mid-Eastern Athletic Conference",
         "name": "South Carolina State Bulldogs",
+        "nickname": "South Carolina State",
         "abbreviation": "SCST",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2569.png",
         "reddit": "/r/SouthCarolinaState",
@@ -2410,6 +2711,7 @@
     "2571": {
         "conference": "Summit League",
         "name": "South Dakota State Jackrabbits",
+        "nickname": "South Dakota State",
         "abbreviation": "SDST",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2571.png",
         "reddit": "/r/sdstate",
@@ -2418,6 +2720,7 @@
     "2572": {
         "conference": "Conference USA",
         "name": "Southern Miss Golden Eagles",
+        "nickname": "Southern Miss",
         "abbreviation": "USM",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2572.png",
         "reddit": "/r/USM",
@@ -2426,6 +2729,7 @@
     "2579": {
         "conference": "Southeastern Conference",
         "name": "South Carolina Gamecocks",
+        "nickname": "South Carolina",
         "abbreviation": "SC",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2579.png",
         "reddit": "/r/gamecocks",
@@ -2434,6 +2738,7 @@
     "2582": {
         "conference": "Southwestern Athletic Conference",
         "name": "Southern Jaguars",
+        "nickname": "Southern",
         "abbreviation": "SOU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2582.png",
         "reddit": "/r/SouthernUniversity",
@@ -2442,6 +2747,7 @@
     "2597": {
         "conference": "Northeast Conference",
         "name": "St. Francis (BKN) Terriers",
+        "nickname": "St. Francis (BKN)",
         "abbreviation": "SFBK",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2597.png",
         "reddit": "#/sfbk",
@@ -2450,6 +2756,7 @@
     "2598": {
         "conference": "Northeast Conference",
         "name": "St. Francis (PA) Red Flash",
+        "nickname": "St. Francis (PA)",
         "abbreviation": "SFPA",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2598.png",
         "reddit": "/r/redflash/",
@@ -2458,6 +2765,7 @@
     "2599": {
         "conference": "Big East Conference",
         "name": "St. John's Red Storm",
+        "nickname": "St. John's",
         "abbreviation": "SJU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2599.png",
         "reddit": "/r/RedStorm/",
@@ -2466,6 +2774,7 @@
     "2603": {
         "conference": "Atlantic 10 Conference",
         "name": "Saint Joseph's Hawks",
+        "nickname": "Saint Joseph's",
         "abbreviation": "JOES",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2603.png",
         "reddit": "/r/THWND/",
@@ -2474,6 +2783,7 @@
     "2608": {
         "conference": "West Coast Conference",
         "name": "Saint Mary's Gaels",
+        "nickname": "Saint Mary's",
         "abbreviation": "SMC",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2608.png",
         "reddit": "/r/StMarysCollegeCA/",
@@ -2482,6 +2792,7 @@
     "2612": {
         "conference": "Metro Atlantic Athletic Conference",
         "name": "Saint Peter's Peacocks",
+        "nickname": "Saint Peter's",
         "abbreviation": "SPU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2612.png",
         "reddit": "/r/SaintPetersUniversity/",
@@ -2490,6 +2801,7 @@
     "2617": {
         "conference": "Southland Conference",
         "name": "Stephen F. Austin Lumberjacks",
+        "nickname": "Stephen F. Austin",
         "abbreviation": "SFA",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2617.png",
         "reddit": "/r/sfasu",
@@ -2498,6 +2810,7 @@
     "2619": {
         "conference": "America East Conference",
         "name": "Stony Brook Seawolves",
+        "nickname": "Stony Brook",
         "abbreviation": "SB",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2619.png",
         "reddit": "/r/SBU/",
@@ -2506,6 +2819,7 @@
     "2623": {
         "conference": "Missouri Valley Conference",
         "name": "Missouri State Bears",
+        "nickname": "Missouri State",
         "abbreviation": "MOST",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2623.png",
         "reddit": "/r/missouristate",
@@ -2514,6 +2828,7 @@
     "2628": {
         "conference": "Big 12 Conference",
         "name": "TCU Horned Frogs",
+        "nickname": "TCU",
         "abbreviation": "TCU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2628.png",
         "reddit": "/r/tcu",
@@ -2522,6 +2837,7 @@
     "2630": {
         "conference": "Ohio Valley Conference",
         "name": "UT Martin Skyhawks",
+        "nickname": "UT Martin",
         "abbreviation": "UTM",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2630.png",
         "reddit": "/r/UTMartin/",
@@ -2530,6 +2846,7 @@
     "2633": {
         "conference": "Southeastern Conference",
         "name": "Tennessee Volunteers",
+        "nickname": "Tennessee",
         "abbreviation": "TENN",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2633.png",
         "reddit": "/r/UTK",
@@ -2538,6 +2855,7 @@
     "2634": {
         "conference": "Ohio Valley Conference",
         "name": "Tennessee State Tigers",
+        "nickname": "Tennessee State",
         "abbreviation": "TNST",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2634.png",
         "reddit": "/r/TennesseeState",
@@ -2546,6 +2864,7 @@
     "2635": {
         "conference": "Ohio Valley Conference",
         "name": "Tennessee Tech Golden Eagles",
+        "nickname": "Tennessee Tech",
         "abbreviation": "TNTC",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2635.png",
         "reddit": "/r/TNTechUniversity",
@@ -2554,6 +2873,7 @@
     "2636": {
         "conference": "Conference USA",
         "name": "UTSA Roadrunners",
+        "nickname": "UTSA",
         "abbreviation": "UTSA",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2636.png",
         "reddit": "/r/UTSA",
@@ -2562,6 +2882,7 @@
     "2638": {
         "conference": "Conference USA",
         "name": "UTEP Miners",
+        "nickname": "UTEP",
         "abbreviation": "UTEP",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2638.png",
         "reddit": "/r/UTEP",
@@ -2570,6 +2891,7 @@
     "2640": {
         "conference": "Southwestern Athletic Conference",
         "name": "Texas Southern Tigers",
+        "nickname": "Texas Southern",
         "abbreviation": "TXSO",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2640.png",
         "reddit": "/r/TexasSouthern",
@@ -2578,6 +2900,7 @@
     "2641": {
         "conference": "Big 12 Conference",
         "name": "Texas Tech Red Raiders",
+        "nickname": "Texas Tech",
         "abbreviation": "TTU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2641.png",
         "reddit": "/r/texastech",
@@ -2586,6 +2909,7 @@
     "2643": {
         "conference": "Southern Conference",
         "name": "The Citadel Bulldogs",
+        "nickname": "The Citadel",
         "abbreviation": "CIT",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2643.png",
         "reddit": "/r/TheCitadelAlumni",
@@ -2594,6 +2918,7 @@
     "2649": {
         "conference": "Mid-American Conference",
         "name": "Toledo Rockets",
+        "nickname": "Toledo",
         "abbreviation": "TOL",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2649.png",
         "reddit": "/r/UToledo",
@@ -2602,6 +2927,7 @@
     "2653": {
         "conference": "Sun Belt Conference",
         "name": "Troy Trojans",
+        "nickname": "Troy",
         "abbreviation": "TROY",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2653.png",
         "reddit": "/r/TroyTrojans",
@@ -2610,6 +2936,7 @@
     "2655": {
         "conference": "American Athletic Conference",
         "name": "Tulane Green Wave",
+        "nickname": "Tulane",
         "abbreviation": "TULN",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2655.png",
         "reddit": "/r/Tulane",
@@ -2618,6 +2945,7 @@
     "2670": {
         "conference": "Atlantic 10 Conference",
         "name": "VCU Rams",
+        "nickname": "VCU",
         "abbreviation": "VCU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2670.png",
         "reddit": "/r/vcu/",
@@ -2626,6 +2954,7 @@
     "2674": {
         "conference": "Missouri Valley Conference",
         "name": "Valparaiso Crusaders",
+        "nickname": "Valparaiso",
         "abbreviation": "VAL",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2674.png",
         "reddit": "/r/valpo",
@@ -2634,6 +2963,7 @@
     "2678": {
         "conference": "Southern Conference",
         "name": "VMI Keydets",
+        "nickname": "VMI",
         "abbreviation": "VMI",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2678.png",
         "reddit": "/r/vmi",
@@ -2642,6 +2972,7 @@
     "2681": {
         "conference": "Northeast Conference",
         "name": "Wagner Seahawks",
+        "nickname": "Wagner",
         "abbreviation": "WAG",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2681.png",
         "reddit": "/r/WagnerCollege",
@@ -2650,6 +2981,7 @@
     "2692": {
         "conference": "Big Sky Conference",
         "name": "Weber State Wildcats",
+        "nickname": "Weber State",
         "abbreviation": "WEB",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2692.png",
         "reddit": "/r/weber/",
@@ -2658,6 +2990,7 @@
     "2710": {
         "conference": "Summit League",
         "name": "Western Illinois Leathernecks",
+        "nickname": "Western Illinois",
         "abbreviation": "WIU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2710.png",
         "reddit": "/r/WIU",
@@ -2666,6 +2999,7 @@
     "2711": {
         "conference": "Mid-American Conference",
         "name": "Western Michigan Broncos",
+        "nickname": "Western Michigan",
         "abbreviation": "WMU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2711.png",
         "reddit": "/r/WMU",
@@ -2674,6 +3008,7 @@
     "2717": {
         "conference": "Southern Conference",
         "name": "Western Carolina Catamounts",
+        "nickname": "Western Carolina",
         "abbreviation": "WCU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2717.png",
         "reddit": "/r/WCU",
@@ -2682,6 +3017,7 @@
     "2724": {
         "conference": "American Athletic Conference",
         "name": "Wichita State Shockers",
+        "nickname": "Wichita State",
         "abbreviation": "WICH",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2724.png",
         "reddit": "/r/WichitaState/",
@@ -2690,6 +3026,7 @@
     "2729": {
         "conference": "Colonial Athletic Association",
         "name": "William & Mary Tribe",
+        "nickname": "William & Mary",
         "abbreviation": "W&M",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2729.png",
         "reddit": "/r/williamandmary/",
@@ -2698,6 +3035,7 @@
     "2737": {
         "conference": "Big South Conference",
         "name": "Winthrop Eagles",
+        "nickname": "Winthrop",
         "abbreviation": "WIN",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2737.png",
         "reddit": "/r/WinthropU/",
@@ -2706,6 +3044,7 @@
     "2739": {
         "conference": "Horizon League",
         "name": "Green Bay Phoenix",
+        "nickname": "Green Bay",
         "abbreviation": "GB",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2739.png",
         "reddit": "/r/uwgb/",
@@ -2714,6 +3053,7 @@
     "2747": {
         "conference": "Southern Conference",
         "name": "Wofford Terriers",
+        "nickname": "Wofford",
         "abbreviation": "WOF",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2747.png",
         "reddit": "/r/wofford",
@@ -2722,6 +3062,7 @@
     "2750": {
         "conference": "Horizon League",
         "name": "Wright State Raiders",
+        "nickname": "Wright State",
         "abbreviation": "WRST",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2750.png",
         "reddit": "/r/wrightstate/",
@@ -2730,6 +3071,7 @@
     "2751": {
         "conference": "Mountain West Conference",
         "name": "Wyoming Cowboys",
+        "nickname": "Wyoming",
         "abbreviation": "WYO",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2751.png",
         "reddit": "/r/uwyo",
@@ -2738,6 +3080,7 @@
     "2752": {
         "conference": "Big East Conference",
         "name": "Xavier Musketeers",
+        "nickname": "Xavier",
         "abbreviation": "XAV",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2752.png",
         "reddit": "/r/XavierUniversity/",
@@ -2746,6 +3089,7 @@
     "2754": {
         "conference": "Horizon League",
         "name": "Youngstown State Penguins",
+        "nickname": "Youngstown State",
         "abbreviation": "YSU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2754.png",
         "reddit": "/r/YSU/",
@@ -2754,6 +3098,7 @@
     "2755": {
         "conference": "Southwestern Athletic Conference",
         "name": "Grambling Tigers",
+        "nickname": "Grambling",
         "abbreviation": "GRAM",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2755.png",
         "reddit": "/r/Grambling",
@@ -2762,6 +3107,7 @@
     "2803": {
         "conference": "Northeast Conference",
         "name": "Bryant Bulldogs",
+        "nickname": "Bryant",
         "abbreviation": "BRY",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2803.png",
         "reddit": "/r/bryant",
@@ -2770,6 +3116,7 @@
     "2856": {
         "conference": "Western Athletic Conference",
         "name": "California Baptist Lancers",
+        "nickname": "California Baptist",
         "abbreviation": "CBU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2856.png",
         "reddit": "/r/Calbaptist/",
@@ -2778,6 +3125,7 @@
     "2870": {
         "conference": "Summit League",
         "name": "Purdue Fort Wayne Purdue Fort Wayne",
+        "nickname": "Purdue Fort Wayne",
         "abbreviation": "PFW",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2870.png",
         "reddit": "/r/IPFW/",
@@ -2786,6 +3134,7 @@
     "2885": {
         "conference": "Atlantic Sun Conference",
         "name": "NJIT Highlanders",
+        "nickname": "NJIT",
         "abbreviation": "NJIT",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2885.png",
         "reddit": "/r/NJTech/",
@@ -2794,6 +3143,7 @@
     "2908": {
         "conference": "Big South Conference",
         "name": "South Carolina Upstate Spartans",
+        "nickname": "South Carolina Upstate",
         "abbreviation": "SCUS",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2908.png",
         "reddit": "/r/Spartanburg/",
@@ -2802,6 +3152,7 @@
     "2916": {
         "conference": "Southland Conference",
         "name": "Incarnate Word Cardinals",
+        "nickname": "Incarnate Word",
         "abbreviation": "UIW",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2916.png",
         "reddit": "/r/UIW",
@@ -2810,6 +3161,7 @@
     "2934": {
         "conference": "Western Athletic Conference",
         "name": "CSU Bakersfield Roadrunners",
+        "nickname": "CSU Bakersfield",
         "abbreviation": "CSB",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2934.png",
         "reddit": "/r/CSUB/",
@@ -2818,9 +3170,10 @@
     "3084": {
         "conference": "Western Athletic Conference",
         "name": "Utah Valley Wolverines",
+        "nickname": "Utah Valley",
         "abbreviation": "UVU",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/3084.png",
         "reddit": "/r/UtahValley/",
         "flair": "utahvalley"
     }
-  }
+}

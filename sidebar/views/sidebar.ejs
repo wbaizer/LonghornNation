@@ -9,8 +9,15 @@
     <li><a href="/r/BurntOrangeKoolAid">OH YEAH!</a></li>
 </ul>
 <hr>
+<% if(show.football) { %>
 <% include ../views/partials/sidebar/v2/football %>
+<% } %>
+<% if(show.basketball) { %>
 <% include ../views/partials/sidebar/v2/basketball %>
+<% } %>
+<% if(show.baseball) { %>
+<% include ../views/partials/sidebar/v2/baseball %>
+<% } %>
 <h1>LHN Info</h1>
 <h4>Sources of News</h4>
 <ul>
