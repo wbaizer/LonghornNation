@@ -1,21 +1,40 @@
-const { reddit } = require('../utils/reddit');
+const { reddit, getLastThread } = require('../utils/reddit');
 const axios = require('axios');
+const moment = require('moment');
 const { tsBoxScore } = require('../utils/service');
+const oneHour = 1000 * 60 * 60;
+const quick = 3000;
+const long = 300000;
+/*
 
+Schedule runs every at midnight
+It will find upcoming games and create a game thread job
+When the game thread job runs, it will post a game thread then schedule a game thread watcher
+When the game thread watcher runs it will check if the game is done:
+• If game is done - fire off gamethread(event, true) submits post game thread.
+• If game is not done - schedule the next job to check again in 5 mins.
+
+*/
 function gameThread(event, type, sport) {
     if(type) {
         //Post Game Thread
         console.log('sending post game thread and stopping watcher');
-        reddit.getSubreddit(process.env.SUBREDDIT).submitSelfpost({title: event.title})
+        reddit.getSubreddit(process.env.SUBREDDIT).submitSelfpost({title: event.title}).sticky();
+        getLastThread('[GAME THREAD]').then(last_thread => {
+            if(last_thread && last_thread.id) { 
+                reddit.getSubmission(last_thread.id).unsticky();
+            }
+        });
+
     } else {
         //send game thread and start watching
         console.log('starting game thread and watcher');
         gameData(event, sport).then(game => {
-            reddit.getSubreddit(process.env.SUBREDDIT).submitSelfpost({title: game.title});
+            reddit.getSubreddit(process.env.SUBREDDIT).submitSelfpost({title: game.title}).sticky();
             console.log(game.title);
             setTimeout(function() {
                 gameWatcher(event, sport)
-            }, 1000 * 60 * 60);
+            }, quick);
         });     
         
     }
@@ -28,9 +47,10 @@ function gameWatcher(event, sport) {
             gameThread(game, true)
         } else {
             console.log('Game is still going lets do this..');
+            //Schedule
             setTimeout(function() {
                 gameWatcher(event, sport)
-            }, 300000);
+            }, quick);
         }
     });
 
@@ -42,10 +62,11 @@ function gameData(event, sport) {
             return buildTitle(gameData);
         });
     } else {
-        //var url = 'http://localhost:3100/summary';
-        var url = 'https://site.web.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=' + event.id;
+        var url = 'http://localhost:3100/summary';
+        //var url = 'https://site.web.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=' + event.id;
         return axios.get(url).then(data => {
             var gameData = data.data.header.competitions[0];
+            gameData.time = moment(gameData.date).format('h:mm a');
             return buildTitle(gameData);
         });
     }
@@ -93,5 +114,6 @@ function buildTitle(gameData) {
 
 module.exports = {
     gameThread,
-    gameWatcher
+    gameWatcher,
+    gameData
 };

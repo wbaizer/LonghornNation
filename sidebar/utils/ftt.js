@@ -10,7 +10,7 @@ var client = new Twitter({
 });
 
 async function getLastThread(reddit) {
-    var submissions = await reddit.getUser('LonghornMod').getSubmissions();
+    var submissions = await reddit.getUser(process.env.USERNAME).getSubmissions();
     for (const post of submissions) {
         if(post.subreddit.display_name == process.env.SUBREDDIT) {
             if(post.title.indexOf('Off Topic Free Talk Thread') > -1) {

@@ -5,7 +5,7 @@ const inquirer = require("inquirer");
 const chalk = require("chalk");
 const figlet = require("figlet");
 const shell = require("shelljs");
-const { reddit } = require('./utils/reddit');
+const { reddit , getLastThread } = require('./utils/reddit');
 const sass = require('node-sass');
 const express = require('express');
 const path = require('path');
@@ -13,15 +13,15 @@ const moment = require('moment');
 const TurndownService = require('turndown');
 const turndownPluginGfm = require('turndown-plugin-gfm');
 const nodeSchedule = require('node-schedule');
+const agenda = require('./jobs/agenda');
 const { gameThread } = require('./utils/gameThread');
-
 const teamLink = require('./static_data/teams.reddit.json');
 const networks = require('./static_data/networks.json');
 
 const { fetchTeamSchedule } = require('./utils/schedule');
 const { generateSprites } = require('./utils/sprites');
 const { message } = require('./utils/discord');
-const { getWeather, getRecentPosts, getRecentTweets, getLastThread } = require('./utils/ftt');
+const { getWeather, getRecentPosts, getRecentTweets } = require('./utils/ftt');
 const { texasSports, tsBoxScore }= require('./utils/service');
 
 var gfm = turndownPluginGfm.gfm
@@ -156,7 +156,7 @@ const run = async () => {
         'MikeRoach247',
         '_delconte'
       ]);
-      var last_thread = await getLastThread(reddit);
+      var last_thread = await getLastThread('Off Topic Free Talk Thread');
       var data = {
         date: {
           short: date,
@@ -204,12 +204,10 @@ const run = async () => {
     homeAway: '',
     complete: false,
     venue: { address: { city: 'Austin', state: 'TX' } } }
-    var scheduleDate = moment().add(5, 'seconds').toDate();
+    var scheduleDate = moment().add(30, 'seconds').toDate();
     console.log('schedule game thread', moment(scheduleDate).fromNow());
-    jobsList[testData.id] = nodeSchedule.scheduleJob(scheduleDate, function(){
-      console.log('game job executing');
-      gameThread(testData, false, 'baseball');
-    });
+    //agenda.create('game thread', {event: testData}).unique({'game_id': testData.id}).schedule(scheduleDate).save();
+    agenda.create('update sidebar', {event: testData}).unique({'game_id': testData.id}).schedule(scheduleDate).save();
   }
 
 };

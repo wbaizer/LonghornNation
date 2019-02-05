@@ -2,12 +2,11 @@ const axios = require('axios');
 const cheerio = require('cheerio');
 const moment = require('moment');
 const util = require('util');
-
 const ts_teams = require('../static_data/texas_sports_teams.json');
 const ts_networks = require('../static_data/texas_sports_networks.json');
 const teams = require('../static_data/teams.json');
 const statesList = require('../static_data/states.json');
-function texasSports(sport) {
+function texasSports(agenda) {
     //var base = 'https://texassports.com/schedule.aspx?path='+ sport;
     let baseball = {
         schedule: {
@@ -27,7 +26,7 @@ function texasSports(sport) {
         baseball_standings,
         ) {
             return {
-                schedule: processSchedule(baseball_schedule),
+                schedule: processSchedule(baseball_schedule, agenda),
                 rankings: processStandings(baseball_standings)
             }
 
@@ -74,7 +73,7 @@ function processStandings(response) {
     });
     return rankings;
 }
-function processSchedule(response) {
+function processSchedule(response, agenda) {
     let schedule = {
         regular: [],
         post: []
@@ -93,8 +92,11 @@ function processSchedule(response) {
     $('.sidearm-schedule-game').each(function(i, elem) {
         var venue2 = $(this).find('.sidearm-schedule-game-details .sidearm-schedule-game-location span:first-child').text().trim().replace(/\s/g,'').split(',');
         var state = statesList[venue2[1]];
+        var rank = null;
         var away = $(this).find('.sidearm-schedule-game-away').text().trim().replace(/\s/g,'');
-        var rank = $(this).find('.sidearm-schedule-game-opponent-name span');
+        if($(this).find('.sidearm-schedule-game-opponent-name span').text().length > 0) {
+            rank = $(this).find('.sidearm-schedule-game-opponent-name span').text().trim();
+        }
         var result = $(this).find('.sidearm-schedule-game-result').text().trim().replace(/\s/g,'').split('-').join(',').split(',');
         var teamName = $(this).find('.sidearm-schedule-game-opponent-name').text().trim().replace('(DH)','').replace(/#*[0-9]/g, '').trim().toUpperCase();
         var network = $(this).find('.sidearm-schedule-game-coverage-tv-content').text().trim().toUpperCase();
@@ -124,7 +126,7 @@ function processSchedule(response) {
                     nickname: teamName === 'ALUMNI GAME' ? 'ALUMNI GAME' : team.nickname
                 },
                 curatedRank: {
-                    current: rank || ''
+                    current: rank
                 },
                 score: {
                     displayValue: result[2] || null
@@ -154,8 +156,9 @@ function processSchedule(response) {
             }
         }
         if(moment(gameDate, 'MMM D YYYY h:mm:ss A').isAfter(Date.now())) {
-            //var scheduleDate = moment(gameDate, 'MMM D YYYY h:mm:ss A').subtract(1, 'hours').toDate();
-            //console.log('schedule game thread', moment(scheduleDate).fromNow());
+            var scheduleDate = moment(gameDate, 'MMM D YYYY h:mm:ss A').subtract(1, 'hours').toDate();
+            console.log('baseball - schedule game thread', moment(scheduleDate).fromNow());
+            agenda.create('game thread', {event: game, sport: 'baseball'}).unique({'game_id': game.id}).schedule(scheduleDate).save();
         }
         if($(this).parent('.sidearm-schedule-games-container').length) {
             schedule.regular.push(game);

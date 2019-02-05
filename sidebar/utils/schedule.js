@@ -1,6 +1,5 @@
 const axios = require('axios');
 const moment = require('moment');
-const nodeSchedule = require('node-schedule');
 const teamLink = require('../static_data/teams.reddit.json');
 const { gameThread } = require('../utils/gameThread');
 const { texasSports }= require('../utils/service');
@@ -14,15 +13,11 @@ const test_ncaam_standings = require('../exampleData/ncaam_standings');
 const production = process.env.PRODUCTION || false;
 var jobsList = {};
 
-async function fetchTeamSchedule(query, key, limit = 10) {
-  var allJobs = nodeSchedule.scheduledJobs;
-  Object.values(allJobs).map(job => {
-    console.log('Each Job', job.name);
-    nodeSchedule.cancelJob(job.name);
-  }); 
+async function fetchTeamSchedule(agenda) {
+
   if(production) {
         console.log('Hitting up ESPN for the details');
-        var baseballData = await texasSports();
+        var baseballData = await texasSports(agenda);
         return axios.all([
             axios.get('https://site.web.api.espn.com/apis/site/v2/sports/football/college-football/teams/' + process.env.TEAM_ID + '/schedule?region=us&lang=en&seasontype=2&enable=broadcasts&disable=leaders'),
             axios.get('https://site.web.api.espn.com/apis/site/v2/sports/football/college-football/teams/' + process.env.TEAM_ID + '/schedule?region=us&lang=en&seasontype=3&enable=broadcasts&disable=leaders'),
@@ -42,15 +37,15 @@ async function fetchTeamSchedule(query, key, limit = 10) {
               return {
                 basketball: {
                     schedule: {
-                      regular: mapSchedule(ncaam_regular_schedule.data),
-                      post: mapSchedule(ncaam_post_schedule.data)
+                      regular: mapSchedule(ncaam_regular_schedule.data, agenda),
+                      post: mapSchedule(ncaam_post_schedule.data, agenda)
                     },
                     rankings: standings(ncaam_standings.data)
                 },
                 football: {
                     schedule: {
-                    regular: mapSchedule(ncaaf_regular_schedule.data),
-                    post: mapSchedule(ncaaf_post_schedule.data)
+                    regular: mapSchedule(ncaaf_regular_schedule.data, agenda),
+                    post: mapSchedule(ncaaf_post_schedule.data, agenda)
                     },
                     rankings: standings(ncaaf_standings.data)
                 },
@@ -58,7 +53,9 @@ async function fetchTeamSchedule(query, key, limit = 10) {
               }
             }
             ))
-            .catch(error => console.log(error));
+            .catch(error => {
+              return error;
+            });
     } else {
         return new Promise(function(resolve, rejct){
             resolve({
@@ -81,7 +78,7 @@ async function fetchTeamSchedule(query, key, limit = 10) {
     }
 }
 
-function mapSchedule(schedule) {
+function mapSchedule(schedule, agenda) {
     console.log('Digesting the data');
     return schedule.events.map(event => {
       var primaryTeam = {};
@@ -94,10 +91,7 @@ function mapSchedule(schedule) {
       if(moment(event.date).isAfter(Date.now())) {
         var scheduleDate = moment(event.date).subtract(1, 'hours').toDate();
         console.log('schedule game thread', moment(scheduleDate).fromNow());
-        jobsList[event.id] = nodeSchedule.scheduleJob(event.id, scheduleDate, function(){
-          console.log('game job executing');
-          gameThread(event, false);
-        });
+        agenda.create('game thread', {event: event}).unique({'game_id': event.id}).schedule(scheduleDate).save();
       }
       event.competitions.forEach(game => {
         if(game.broadcasts.length > 0) {

@@ -8,6 +8,21 @@ const reddit = new snoowrap({
     password: process.env.PASSWORD || PASSWORD
   });
 
+async function getLastThread(search) {
+    var submissions = await reddit.getUser(process.env.USERNAME).getSubmissions();
+    for (const post of submissions) {
+        if(post.subreddit.display_name == process.env.SUBREDDIT) {
+            if(post.title.indexOf(search) > -1) {
+                return {
+                    url: post.url,
+                    id: post.id
+                }
+            }
+        }
+    }
+}  
+
 module.exports = {
-    reddit
+    reddit,
+    getLastThread
 }
