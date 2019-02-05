@@ -186,7 +186,7 @@ const run = async () => {
   if(ACTION == 'Schedule Job') {
     var jobsList = {};
     var testData = { 
-      id: '12343',
+      id: '401013060',
     opposingTeam:
      { id: '201',
        team: { nickname: 'Oklahoma' },
@@ -206,8 +206,8 @@ const run = async () => {
     venue: { address: { city: 'Austin', state: 'TX' } } }
     var scheduleDate = moment().add(30, 'seconds').toDate();
     console.log('schedule game thread', moment(scheduleDate).fromNow());
-    //agenda.create('game thread', {event: testData}).unique({'game_id': testData.id}).schedule(scheduleDate).save();
-    agenda.create('update sidebar', {event: testData}).unique({'game_id': testData.id}).schedule(scheduleDate).save();
+    agenda.create('game thread', {event: testData, sport: 'football'}).unique({'game_id': testData.id}).schedule(scheduleDate).save();
+    //agenda.create('update sidebar', {event: testData}).unique({'game_id': testData.id}).schedule(scheduleDate).save();
   }
 
 };

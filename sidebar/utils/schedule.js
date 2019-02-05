@@ -37,15 +37,15 @@ async function fetchTeamSchedule(agenda) {
               return {
                 basketball: {
                     schedule: {
-                      regular: mapSchedule(ncaam_regular_schedule.data, agenda),
-                      post: mapSchedule(ncaam_post_schedule.data, agenda)
+                      regular: mapSchedule(ncaam_regular_schedule.data, agenda, 'basetkball'),
+                      post: mapSchedule(ncaam_post_schedule.data, agenda, 'basketball')
                     },
                     rankings: standings(ncaam_standings.data)
                 },
                 football: {
                     schedule: {
-                    regular: mapSchedule(ncaaf_regular_schedule.data, agenda),
-                    post: mapSchedule(ncaaf_post_schedule.data, agenda)
+                    regular: mapSchedule(ncaaf_regular_schedule.data, agenda, 'football'),
+                    post: mapSchedule(ncaaf_post_schedule.data, agenda, 'football')
                     },
                     rankings: standings(ncaaf_standings.data)
                 },
@@ -78,7 +78,7 @@ async function fetchTeamSchedule(agenda) {
     }
 }
 
-function mapSchedule(schedule, agenda) {
+function mapSchedule(schedule, agenda, sport) {
     console.log('Digesting the data');
     return schedule.events.map(event => {
       var primaryTeam = {};
@@ -89,9 +89,9 @@ function mapSchedule(schedule, agenda) {
       var homeAway = '@';
       var venue = {};
       if(moment(event.date).isAfter(Date.now())) {
-        var scheduleDate = moment(event.date).subtract(1, 'hours').toDate();
+        var scheduleDate = moment(event.date).subtract(2, 'hours').toDate();
         console.log('schedule game thread', moment(scheduleDate).fromNow());
-        agenda.create('game thread', {event: event}).unique({'game_id': event.id}).schedule(scheduleDate).save();
+        agenda.create('game thread', {event: event, sport: sport}).unique({'game_id': event.id}).schedule(scheduleDate).save();
       }
       event.competitions.forEach(game => {
         if(game.broadcasts.length > 0) {

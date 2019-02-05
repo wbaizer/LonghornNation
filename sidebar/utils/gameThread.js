@@ -19,7 +19,8 @@ function gameThread(event, type, sport) {
     if(type) {
         //Post Game Thread
         console.log('sending post game thread and stopping watcher');
-        reddit.getSubreddit(process.env.SUBREDDIT).submitSelfpost({title: event.title}).sticky();
+        var markdown = `[Box Score](${event.link})`;
+        reddit.getSubreddit(process.env.SUBREDDIT).submitSelfpost({title: event.title, text: markdown}).sticky();
         getLastThread('[GAME THREAD]').then(last_thread => {
             if(last_thread && last_thread.id) { 
                 reddit.getSubmission(last_thread.id).unsticky();
@@ -59,13 +60,19 @@ function gameWatcher(event, sport) {
 function gameData(event, sport) {
     if(sport == 'baseball') {
         return tsBoxScore(event).then(gameData => {
+            gameData.link = `https://texassports.com/boxscore.aspx?id=${gameData.id}&path=baseball`;
             return buildTitle(gameData);
         });
     } else {
-        var url = 'http://localhost:3100/summary';
-        //var url = 'https://site.web.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=' + event.id;
+        //var url = 'http://localhost:3100/summary';
+        var leagueName = 'college-football'
+        if(sport == 'basketball') {
+            leagueName = 'mens-college-basketball'
+        }
+        var url = `https://site.web.api.espn.com/apis/site/v2/sports/${sport}/${leagueName}/summary?event=${event.id}`;
         return axios.get(url).then(data => {
             var gameData = data.data.header.competitions[0];
+            gameData.link = data.data.header.links[2].href;
             gameData.time = moment(gameData.date).format('h:mm a');
             return buildTitle(gameData);
         });
@@ -75,6 +82,7 @@ function gameData(event, sport) {
 function buildTitle(gameData) {
     var game = {
         completed: gameData.status.type.completed,
+        link: gameData.link,
         teams: gameData.competitors.map(team => {
             return {
                 id: team.id,
