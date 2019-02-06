@@ -37,7 +37,7 @@ async function fetchTeamSchedule(agenda) {
               return {
                 basketball: {
                     schedule: {
-                      regular: mapSchedule(ncaam_regular_schedule.data, agenda, 'basetkball'),
+                      regular: mapSchedule(ncaam_regular_schedule.data, agenda, 'basketball'),
                       post: mapSchedule(ncaam_post_schedule.data, agenda, 'basketball')
                     },
                     rankings: standings(ncaam_standings.data)
