@@ -61,7 +61,7 @@ function gameData(event, sport) {
     if(sport == 'baseball') {
         return tsBoxScore(event).then(gameData => {
             gameData.link = `https://texassports.com/boxscore.aspx?id=${gameData.id}&path=baseball`;
-            return buildTitle(gameData);
+            return buildTitle(gameData, sport);
         });
     } else {
         //var url = 'http://localhost:3100/summary';
@@ -74,12 +74,12 @@ function gameData(event, sport) {
             var gameData = data.data.header.competitions[0];
             gameData.link = data.data.header.links[2].href;
             gameData.time = moment(gameData.date).format('h:mm a');
-            return buildTitle(gameData);
+            return buildTitle(gameData, sport);
         });
     }
 }
 
-function buildTitle(gameData) {
+function buildTitle(gameData, sport) {
     var game = {
         completed: gameData.status.type.completed,
         link: gameData.link,
@@ -90,12 +90,19 @@ function buildTitle(gameData) {
             }
         })
     }
+    var sportIcon = "🏈";
+    if(sport == 'baseball') {
+      sportIcon = "⚾";
+    }
+    if(sport == 'basketball') {
+      sportIcon = "🏀";
+    }
     if(gameData.status.type.completed) {
         var winner = gameData.competitors.find(function( obj ) { return obj.winner === true; });
         var loser = gameData.competitors.find(function( obj ) { return obj.winner === false; });
-        game.title = '[POST GAME THREAD] ';
+        game.title = `[POST GAME THREAD] ${sportIcon} `;
         if(winner.rank) {
-            game.title += '#' + winner.rank + ' ';
+            game.title += ' #' + winner.rank + ' ';
         }
         game.title += winner.team.nickname + ' defeats ';
         if(loser.rank) {
@@ -105,8 +112,8 @@ function buildTitle(gameData) {
     } else {
         var primary = gameData.competitors.find(function( obj ) { return obj.id === process.env.TEAM_ID; });
         var opposing = gameData.competitors.find(function( obj ) { return obj.id != process.env.TEAM_ID; });
-        game.title = '[GAME THREAD] ';
-        game.title += primary.team.nickname;
+        game.title = `[GAME THREAD] ${sportIcon} `;
+        game.title += ' ' + primary.team.nickname;
         if(primary.record && primary.record.length > 0) {
             game.title += ' (' + primary.record[0].displayValue + ')'
         }

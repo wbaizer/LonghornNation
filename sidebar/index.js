@@ -14,7 +14,7 @@ const TurndownService = require('turndown');
 const turndownPluginGfm = require('turndown-plugin-gfm');
 const nodeSchedule = require('node-schedule');
 const agenda = require('./jobs/agenda');
-const { gameThread } = require('./utils/gameThread');
+const { gameThread, gameData } = require('./utils/gameThread');
 const teamLink = require('./static_data/teams.reddit.json');
 const networks = require('./static_data/networks.json');
 
@@ -23,7 +23,6 @@ const { generateSprites } = require('./utils/sprites');
 const { message } = require('./utils/discord');
 const { getWeather, getRecentPosts, getRecentTweets } = require('./utils/ftt');
 const { texasSports, tsBoxScore }= require('./utils/service');
-
 var gfm = turndownPluginGfm.gfm
 var turndownService = new TurndownService();
 turndownService.use(gfm);
@@ -121,6 +120,11 @@ const run = async () => {
         var style = {};
         style.css = result.css.toString().trim();
         style.reason = REASON;
+        reddit.getSubreddit(process.env.SUBREDDIT).uploadStylesheetImage({name: 'sprite', file: './src/images/sprite.png'}).then(data => {
+          message(process.env.DISCORD_CHANNEL, false, `MoOooOoo I updated the spritesheet on ${process.env.SUBREDDIT}!`);
+        }).catch(err => {
+          message(process.env.DISCORD_CHANNEL, true, err.message);
+        });
         reddit.getSubreddit(process.env.SUBREDDIT).updateStylesheet(style).then(data => {
             success('Success, you did it peter!');
             message(process.env.DISCORD_CHANNEL, false, `MoOooOoo I updated the styelsheet on ${process.env.SUBREDDIT}!`);
@@ -131,7 +135,29 @@ const run = async () => {
     });
   }
   if(ACTION == 'Send Message') {
-    message(process.env.DISCORD_CHANNEL, false, REASON);
+    //message(process.env.DISCORD_CHANNEL, false, REASON);
+    var testData = { 
+      id: '401013060',
+    opposingTeam:
+     { id: '201',
+       team: { nickname: 'Oklahoma' },
+       curatedRank: { current: '2' },
+       score: { displayValue: null },
+       reddit: '/r/sooners' },
+    primaryTeam:
+     { id: '251',
+       winner: false,
+       team: { nickname: 'Texas' },
+       score: { displayValue: null } },
+    date: 'May 18',
+    time: '2:30 pm',
+    network: '',
+    homeAway: '',
+    complete: false,
+    venue: { address: { city: 'Austin', state: 'TX' } } }
+    gameData(testData, 'football').then(title => {
+      console.log(title.title);
+    });
   }
   if(ACTION == 'Generate Spritesheet') {
     generateSprites();
