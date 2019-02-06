@@ -11,12 +11,13 @@ module.exports = function(agenda) {
             } else {
                 console.log('Game is still going lets do this..');
                 //Schedule  
-                done();
-                agenda.create('game watcher', {
-                    event: game,
-                    sport: sport
-                }).unique({'game_id': event.id}).schedule('5 minutes').save();
                 
+                job.schedule('5 minutes', {
+                    event: game,
+                    sport: sport                  
+                });
+                job.save();
+                done();
             }
         }).catch(err => {
             return done(err);
