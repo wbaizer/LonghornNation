@@ -81,6 +81,7 @@ function gameData(event, sport) {
 
 function buildTitle(gameData, sport) {
     var game = {
+        id: gameData.id,
         completed: gameData.status.type.completed,
         link: gameData.link,
         teams: gameData.competitors.map(team => {
