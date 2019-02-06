@@ -31,7 +31,9 @@ function texasSports(agenda) {
             }
 
         })
-    );
+    ).catch(err => {
+        return err;
+    });
 }
 function processStandings(response) {
     let rankings = {

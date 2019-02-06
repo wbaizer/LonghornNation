@@ -62,6 +62,8 @@ function gameData(event, sport) {
         return tsBoxScore(event).then(gameData => {
             gameData.link = `https://texassports.com/boxscore.aspx?id=${gameData.id}&path=baseball`;
             return buildTitle(gameData, sport);
+        }).catch(err => {
+            return err;
         });
     } else {
         //var url = 'http://localhost:3100/summary';
@@ -75,6 +77,8 @@ function gameData(event, sport) {
             gameData.link = data.data.header.links[2].href;
             gameData.time = moment(gameData.date).format('h:mm a');
             return buildTitle(gameData, sport);
+        }).catch(err => {
+            return err;
         });
     }
 }

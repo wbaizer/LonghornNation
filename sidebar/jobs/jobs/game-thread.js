@@ -23,6 +23,8 @@ module.exports = function(agenda) {
                 }).unique({'game_id': event.id}).schedule('5 minutes').save();
                 done();                
             }
+        }).catch(err => {
+            return done(err);
         });
     });
 }

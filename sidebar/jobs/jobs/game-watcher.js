@@ -10,13 +10,15 @@ module.exports = function(agenda) {
                 gameThread(game, true, sport)
             } else {
                 console.log('Game is still going lets do this..');
-                //Schedule
-                done();
+                //Schedule  
                 agenda.create('game watcher', {
                     event: game,
                     sport: sport
                 }).unique({'game_id': event.id}).schedule('5 minutes').save();
+                done();
             }
+        }).catch(err => {
+            return done(err);
         });
     });
 }
