@@ -7,7 +7,7 @@ module.exports = function(agenda) {
             if(game.completed) {
                 console.log('sending post game thread and stopping watcher');
                 var markdown = `[Box Score](${game.link})`;
-                reddit.getSubreddit(process.env.SUBREDDIT).submitSelfpost({title: game.title, text: markdown}).sticky();
+                reddit.getSubreddit(process.env.SUBREDDIT).submitSelfpost({title: game.title, text: markdown}).sticky().approve();
                 getLastThread('[GAME THREAD]').then(last_thread => {
                     if(last_thread && last_thread.id) { 
                         reddit.getSubmission(last_thread.id).unsticky();
@@ -15,7 +15,7 @@ module.exports = function(agenda) {
                 });
                 done();
             } else {
-                reddit.getSubreddit(process.env.SUBREDDIT).submitSelfpost({title: game.title}).sticky();
+                reddit.getSubreddit(process.env.SUBREDDIT).submitSelfpost({title: game.title}).sticky().approve();
                 console.log(game.title);
                 agenda.create('game watcher', {
                     event: event,

@@ -20,7 +20,7 @@ function gameThread(event, type, sport) {
         //Post Game Thread
         console.log('sending post game thread and stopping watcher');
         var markdown = `[Box Score](${event.link})`;
-        reddit.getSubreddit(process.env.SUBREDDIT).submitSelfpost({title: event.title, text: markdown}).sticky();
+        reddit.getSubreddit(process.env.SUBREDDIT).submitSelfpost({title: event.title, text: markdown}).sticky().approve();
         getLastThread('[GAME THREAD]').then(last_thread => {
             if(last_thread && last_thread.id) { 
                 reddit.getSubmission(last_thread.id).unsticky();
@@ -31,7 +31,7 @@ function gameThread(event, type, sport) {
         //send game thread and start watching
         console.log('starting game thread and watcher');
         gameData(event, sport).then(game => {
-            reddit.getSubreddit(process.env.SUBREDDIT).submitSelfpost({title: game.title}).sticky();
+            reddit.getSubreddit(process.env.SUBREDDIT).submitSelfpost({title: game.title}).sticky().approve();
             console.log(game.title);
             setTimeout(function() {
                 gameWatcher(event, sport)
