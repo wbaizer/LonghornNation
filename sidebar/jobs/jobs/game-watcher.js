@@ -6,8 +6,8 @@ module.exports = function(agenda) {
         gameData(event, sport).then(game => {
             if(game.completed) {
                 //Game is done make post game thread
+                gameThread(game, true, sport);
                 done();
-                gameThread(game, true, sport)
             } else {
                 console.log('Game is still going lets do this..');
                 //Schedule  
