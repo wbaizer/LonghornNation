@@ -42,18 +42,28 @@ module.exports = function(agenda) {
             top: posts,
             tweets: tweets
           }
-          console.log(data);
           app.render('ftt', {data}, function(err, doc) {
+            if(err) {
+              done(err);
+            }
             var markdown = turndownService.turndown(doc, {gfm: true});
             var post_title = "[" + date + "] " + day + " Off Topic Free Talk Thread";
-            console.log(err);
-            reddit.getSubreddit(process.env.SUBREDDIT).submitSelfpost({title: post_title, text: markdown}).sticky().approve();
-            if(last_thread && last_thread.id) { 
-              reddit.getSubmission(last_thread.id).unsticky();
-            }
+            reddit.getSubreddit(process.env.SUBREDDIT).submitSelfpost({title: post_title, text: markdown}).sticky().approve().then(data => {
+              if(last_thread && last_thread.id) { 
+                reddit.getSubmission(last_thread.id).unsticky().then(data => {
+                  done();
+                }).catch(err => {
+                  done(err);
+                });
+              } else {
+                done();
+              }
+            }).catch(err => {
+              done(err);
+            });
             //message(process.env.DISCORD_CHANNEL, false, `MoOooOoo FTT posted on ${process.env.SUBREDDIT}!`);
           });
         }
-        getFTT();    
+        getFTT();   
     });
 }
