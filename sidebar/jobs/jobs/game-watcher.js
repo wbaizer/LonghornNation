@@ -12,7 +12,7 @@ module.exports = function(agenda) {
             } else {
                 console.log('Game is still going lets do this..');
                 //Schedule
-                josb.attrs.data.event = game;
+                job.attrs.data.event = game;
                 job.attrs.nextRunAt = moment().add(5, 'minutes').toDate(); 
                 job.save();
                 done();
