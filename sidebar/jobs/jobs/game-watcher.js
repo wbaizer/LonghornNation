@@ -16,7 +16,7 @@ module.exports = function(agenda) {
                 agenda.create('game watcher', {
                     event: game,
                     sport: sport
-                }).unique({'game_id': event.id}).every('5 minutes').save();
+                }).unique({'game_id': event.id}).repeatEvery('5 minutes').save();
             }
         });
     });
