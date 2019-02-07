@@ -20,7 +20,7 @@ module.exports = function(agenda) {
                 agenda.create('game watcher', {
                     event: event,
                     sport: sport
-                }).unique({'game_id': event.id}).schedule('5 minutes').save();
+                }).unique({'game_id': event.id}).schedule('1 hour').save();
                 done();                
             }
         }).catch(err => {

@@ -6,8 +6,9 @@ module.exports = function(agenda) {
         gameData(event, sport).then(game => {
             if(game.completed) {
                 //Game is done make post game thread
-                done();
+                job.remove();
                 gameThread(game, true, sport)
+                done();
             } else {
                 console.log('Game is still going lets do this..');
                 //Schedule
@@ -15,7 +16,7 @@ module.exports = function(agenda) {
                 agenda.create('game watcher', {
                     event: game,
                     sport: sport
-                }).unique({'game_id': event.id}).schedule('5 minutes').save();
+                }).unique({'game_id': event.id}).every('5 minutes').save();
             }
         });
     });
