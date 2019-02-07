@@ -1,7 +1,7 @@
 const Agenda = require('agenda');
 
-//const mongoConnectionString = 'mongodb+srv://bevo:' + process.env.MONGO_ATLAS_PW + '@cluster0-ey81j.mongodb.net/agenda?retryWrites=true';
-const mongoConnectionString = 'mongodb://127.0.0.1/agenda';
+const mongoConnectionString = 'mongodb+srv://bevo:' + process.env.MONGO_ATLAS_PW + '@cluster0-ey81j.mongodb.net/agenda?retryWrites=true';
+//const mongoConnectionString = 'mongodb://127.0.0.1/agenda';
 
 // or override the default collection name:
 let agenda = new Agenda({
