@@ -13,10 +13,6 @@ module.exports = function(agenda) {
                 console.log('Game is still going lets do this..');
                 //Schedule
                 done();
-                agenda.create('game watcher', {
-                    event: game,
-                    sport: sport
-                }).unique({'game_id': event.id}).repeatEvery('5 minutes').save();
             }
         });
     });
