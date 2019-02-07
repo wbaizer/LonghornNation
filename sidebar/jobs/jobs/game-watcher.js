@@ -12,8 +12,11 @@ module.exports = function(agenda) {
             } else {
                 console.log('Game is still going lets do this..');
                 //Schedule
-                job.repeatEvery('5 minutes');
-                job.save();
+                done();
+                agenda.create('game watcher', {
+                    event: game,
+                    sport: sport
+                }).unique({'game_id': event.id}).repeatEvery('5 minutes').save();
             }
         });
     });
