@@ -12,7 +12,6 @@ module.exports = function(agenda) {
             } else {
                 console.log('Game is still going lets do this..');
                 //Schedule
-                done();
                 job.repeatEvery('5 minutes');
                 job.save();
             }
