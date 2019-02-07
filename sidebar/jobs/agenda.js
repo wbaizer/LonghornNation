@@ -1,6 +1,5 @@
 const Agenda = require('agenda');
 
-//const mongoConnectionString = 'mongodb+srv://bevo:' + process.env.MONGO_ATLAS_PW + '@cluster0-ey81j.mongodb.net/agenda?retryWrites=true';
 const mongoConnectionString = process.env.MONGO_URL;
 
 // or override the default collection name:
