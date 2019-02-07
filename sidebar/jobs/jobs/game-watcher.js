@@ -1,5 +1,4 @@
 const { gameData, gameThread } = require('../../utils/gameThread');
-const moment = require('moment');
 
 module.exports = function(agenda) {
     agenda.define('game watcher', function(job, done) {
@@ -7,15 +6,15 @@ module.exports = function(agenda) {
         gameData(event, sport).then(game => {
             if(game.completed) {
                 //Game is done make post game thread
+                job.remove();
                 gameThread(game, true, sport)
                 done();
             } else {
                 console.log('Game is still going lets do this..');
                 //Schedule
-                job.attrs.data.event = game;
-                job.attrs.nextRunAt = moment().add(5, 'minutes').toDate(); 
-                job.save();
                 done();
+                job.repeatEvery('5 minutes');
+                job.save();
             }
         });
     });
