@@ -72,7 +72,12 @@ function gameData(event, sport) {
         var url = `https://site.web.api.espn.com/apis/site/v2/sports/${sport}/${leagueName}/summary?event=${event.id}`;
         return axios.get(url).then(data => {
             var gameData = data.data.header.competitions[0];
-            gameData.link = data.data.header.links[2].href;
+            var boxScore = gameData.competitors.find(function( obj ) { return obj.text === 'Box Score'; });
+            if(boxScore) {
+                gameData.link = boxScore.href;
+            } else {
+                gameData.link = null;
+            }
             gameData.time = moment(gameData.date).format('h:mm a');
             return buildTitle(gameData, sport);
         });

@@ -136,28 +136,10 @@ const run = async () => {
   }
   if(ACTION == 'Send Message') {
     //message(process.env.DISCORD_CHANNEL, false, REASON);
-    var testData = { 
-      id: '401013060',
-    opposingTeam:
-     { id: '201',
-       team: { nickname: 'Oklahoma' },
-       curatedRank: { current: '2' },
-       score: { displayValue: null },
-       reddit: '/r/sooners' },
-    primaryTeam:
-     { id: '251',
-       winner: false,
-       team: { nickname: 'Texas' },
-       score: { displayValue: null } },
-    date: 'May 18',
-    time: '2:30 pm',
-    network: '',
-    homeAway: '',
-    complete: false,
-    venue: { address: { city: 'Austin', state: 'TX' } } }
-    gameData(testData, 'football').then(title => {
-      console.log(title.title);
-    });
+    agenda.create('example', {
+      event: 'test',
+      sport: 'test'
+    }).unique({'game_id': 1243123}).schedule('30 seconds').repeatEvery('1 minutes').save();
   }
   if(ACTION == 'Generate Spritesheet') {
     generateSprites();
