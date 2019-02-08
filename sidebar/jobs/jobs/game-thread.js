@@ -1,5 +1,7 @@
 const { gameThread, gameData } = require('../../utils/gameThread');
 const { reddit, getLastThread } = require('../../utils/reddit');
+const createMarkdown = require('../../utils/markdown');
+
 module.exports = function(agenda) {
     agenda.define('game thread', function(job, done) {
         const {event, type, sport} = job.attrs.data;
@@ -15,13 +17,21 @@ module.exports = function(agenda) {
                 });
                 done();
             } else {
-                reddit.getSubreddit(process.env.SUBREDDIT).submitSelfpost({title: game.title}).sticky().approve();
-                console.log(game.title);
-                agenda.create('game watcher', {
+                console.log('Posting game thread to reddit');
+                createMarkdown('partials/game_thread', game).then(markdown => {
+                    reddit.getSubreddit(process.env.SUBREDDIT).submitSelfpost({title: game.title, text: markdown}).sticky().approve().then(data => {
+                        done();
+                    }).catch(err => {
+                        done(err);
+                    });
+                    
+                }).catch(err => {
+                    done(err);
+                });
+                /*agenda.create('game watcher', {
                     event: event,
                     sport: sport
-                }).unique({'game_id': event.id}).schedule('1 hour').repeatEvery('10 minutes').save();
-                done();                
+                }).unique({'game_id': event.id}).schedule('1 hour').repeatEvery('10 minutes').save();*/
             }
         }).catch(err => {
             return done(err);

@@ -157,10 +157,12 @@ function processSchedule(response, agenda) {
                 }
             }
         }
-        if(moment(gameDate, 'MMM D YYYY h:mm:ss A').isAfter(Date.now())) {
-            var scheduleDate = moment(gameDate, 'MMM D YYYY h:mm:ss A').subtract(1, 'hours').toDate();
-            console.log('baseball - schedule game thread', moment(scheduleDate).fromNow());
-            agenda.create('game thread', {event: game, sport: 'baseball'}).unique({'game_id': game.id}).schedule(scheduleDate).save();
+        if(process.env.GAME_THREAD == 'true') {
+            if(moment(gameDate, 'MMM D YYYY h:mm:ss A').isAfter(Date.now())) {
+                var scheduleDate = moment(gameDate, 'MMM D YYYY h:mm:ss A').subtract(1, 'hours').toDate();
+                console.log('baseball - schedule game thread', moment(scheduleDate).fromNow());
+                agenda.create('game thread', {event: game, sport: 'baseball'}).unique({'game_id': game.id}).schedule(scheduleDate).save();
+            }
         }
         if($(this).parent('.sidearm-schedule-games-container').length) {
             schedule.regular.push(game);
@@ -228,8 +230,12 @@ function tsBoxScore(event) {
                 }
             },
             time: event.time,
+            date: event.date,
+            network: event.network,
             homeAway: event.homeAway == '@' ? '' : 'away',
-            competitors: [event.primaryTeam, event.opposingTeam]
+            competitors: [event.primaryTeam, event.opposingTeam],
+            venue: event.venue,
+            record: []
         }
         return new Promise(function(resolve, reject) {
             resolve(game);

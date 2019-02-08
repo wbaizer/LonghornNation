@@ -1,0 +1,40 @@
+<p><a href="<%= teamLink[data.teams.primaryTeam.id].reddit %>"></a> <%= data.teams.primaryTeam.rank ? '#' + data.teams.primaryTeam.rank : '' %><%= data.teams.primaryTeam.team.nickname %> <%= data.teams.primaryTeam.record && data.teams.primaryTeam.record.length > 0 ? '(' + data.teams.primaryTeam.record[0].displayValue + ')' : '' %> <%= data.homeAway == 'away' ? '@' : 'vs' %> <a href="<%= teamLink[data.teams.opposingTeam.id].reddit %>"></a> <%= data.teams.opposingTeam.rank ? '#' + data.teams.opposingTeam.rank : '' %> <%= data.teams.opposingTeam.team.nickname %> <%= data.teams.opposingTeam.record && data.teams.primaryTeam.record.length > 0 ? '(' + data.teams.opposingTeam.record[0].displayValue + ')' : '' %></p>
+<p>Game Time:  <%= data.date %> - <%= data.time %></p>
+<p>Venue: <% if(data.venue.shortName) { %><%= data.venue.shortName %>,<% } %> <%= data.venue.address.city %>, <%= data.venue.address.state %></p>
+<hr>
+<% if(data.network) { %>
+<p><strong>Television:</strong>  </p>
+<a href="<%= networks[data.network] %>"></a>
+<% } %>
+<p><strong>Radio:</strong>  </p>
+<ul>
+    <li><p>104.9 The Horn </p></li>
+    <li><p><a href="http://www.texassports.com/sports/2014/11/19/GEN_1119144623.aspx">Internet Radio</a></p></li>
+    <% if(data.sport == 'basketball') { %>
+        <li><p><a href="http://www.sidearmstats.com/texas/mbball/">Live Stats</a></span></p></li>
+    <% } %>
+    <% if(data.sport == 'football') { %>
+        <li><p><a href="http://www.sidearmstats.com/texas/football/">Live Stats</a></span></p></li>
+    <% } %>
+    <% if(data.sport == 'baseball') { %>
+        <li><p><a href="http://www.sidearmstats.com/texas/baseball/">Live Stats</a></span></p></li>
+    <% } %>   
+</ul>
+<hr>
+<% if(data.picks) { %>
+<p><strong>Game Odds</strong></p>
+<ul>
+    <li><p><strong>Line:</strong>  <%= data.picks.details %></p></li>
+    <li><p><strong>Over/Under:</strong> <%= data.picks.overUnder %></p></li>
+</ul>
+<hr>
+<% } %>
+<p><strong>Thread Notes:</strong>    </p>
+<ul>
+    <li><p>Discuss whatever you wish. You can trash talk, but keep it civil.    </p></li>
+    <li><p>Turning comment sort to 'new' will help you see the newest posts.    </p></li>
+    <li><p>Try <a href="https://chrome.google.com/extensions/detail/aifhnlnghddfdaccgbbpbhjfkmncekmn">Chrome Refresh</a> or Firefox's <a href="https://addons.mozilla.org/en-US/firefox/addon/115/">ReloadEvery</a> to auto-refresh this tab.</p></li>
+    <li><p>Show your team affiliation - get a team logo by clicking 'edit' in the column on the right  </p></li>
+    <li><p>No Karma begging. If you are caught karma begging you will be banned from the stream for the rest of the season.</p></li>
+</ul>
+<h1>Please use this for friendly discussion and not for inflammatory comments nor excessive complaining. Thank you and Hook 'em!</h1>

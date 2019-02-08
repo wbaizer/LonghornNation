@@ -52,10 +52,7 @@ async function fetchTeamSchedule(agenda) {
                 baseball: baseballData
               }
             }
-            ))
-            .catch(error => {
-              return error;
-            });
+            ));
     } else {
         return new Promise(function(resolve, rejct){
             resolve({
@@ -88,10 +85,12 @@ function mapSchedule(schedule, agenda, sport) {
       var complete = false;
       var homeAway = '@';
       var venue = {};
-      if(moment(event.date).isAfter(Date.now())) {
-        var scheduleDate = moment(event.date).subtract(2, 'hours').toDate();
-        console.log('schedule game thread', moment(scheduleDate).fromNow());
-        agenda.create('game thread', {event: event, sport: sport}).unique({'game_id': event.id}).schedule(scheduleDate).save();
+      if(process.env.GAME_THREAD == 'true') {
+        if(moment(event.date).isAfter(Date.now())) {
+          var scheduleDate = moment(event.date).subtract(2, 'hours').toDate();
+          console.log('schedule game thread', moment(scheduleDate).fromNow());
+          agenda.create('game thread', {event: event, sport: sport}).unique({'game_id': event.id}).schedule(scheduleDate).save();
+        }
       }
       event.competitions.forEach(game => {
         if(game.broadcasts.length > 0) {

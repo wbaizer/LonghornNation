@@ -26,7 +26,7 @@ module.exports = function(agenda) {
           basketball: true
         }
         fetchTeamSchedule(agenda).then(data => {
-          app.render('sidebar', {data, teamLink: teamLink, networks: networks, date, show}, function(err, doc) {
+            app.render('sidebar', {data, teamLink: teamLink, networks: networks, date, show}, function(err, doc) {
               if(err) {
                 done(err);
                 return console.log(err);

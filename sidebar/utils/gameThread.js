@@ -72,13 +72,21 @@ function gameData(event, sport) {
         var url = `https://site.web.api.espn.com/apis/site/v2/sports/${sport}/${leagueName}/summary?event=${event.id}`;
         return axios.get(url).then(data => {
             var gameData = data.data.header.competitions[0];
+            var odds = data.data.pickcenter.find(function( obj ) { return obj.provider.id === '25'; });
             var boxScore = gameData.competitors.find(function( obj ) { return obj.text === 'Box Score'; });
+            var date = moment(gameData.date).format('MMM D');
+            console.log('date from espn', gameData.date);
+            if(odds) {
+                gameData.picks = odds;
+            }
             if(boxScore) {
                 gameData.link = boxScore.href;
             } else {
                 gameData.link = null;
             }
+            gameData.venue = data.data.gameInfo.venue;
             gameData.time = moment(gameData.date).format('h:mm a');
+            gameData.date = date;
             return buildTitle(gameData, sport);
         });
     }
@@ -89,6 +97,13 @@ function buildTitle(gameData, sport) {
         id: gameData.id,
         completed: gameData.status.type.completed,
         link: gameData.link,
+        picks: gameData.picks,
+        date: gameData.date,
+        time: gameData.time,
+        venue: gameData.venue,
+        sport: sport,
+        network: gameData.broadcasts && gameData.broadcasts.length > 0 ? gameData.broadcasts[0].media.shortName : null,
+        homeAway: gameData.homeAway,
         teams: gameData.competitors.map(team => {
             return {
                 id: team.id,
@@ -119,16 +134,23 @@ function buildTitle(gameData, sport) {
         var primary = gameData.competitors.find(function( obj ) { return obj.id === process.env.TEAM_ID; });
         var opposing = gameData.competitors.find(function( obj ) { return obj.id != process.env.TEAM_ID; });
         game.title = `[GAME THREAD] ${sportIcon} `;
+        if(primary.rank) {
+            game.title += '#' + primary.rank + ' ';
+        }
         game.title += ' ' + primary.team.nickname;
         if(primary.record && primary.record.length > 0) {
             game.title += ' (' + primary.record[0].displayValue + ')'
         }
         game.title += primary.homeAway == 'away' ? ' @ ' : ' vs. ';
+        if(opposing.rank) {
+            game.title += '#' + opposing.rank + ' ';
+        }
         game.title += opposing.team.nickname;
         if(opposing.record && opposing.record.length > 0) {
             game.title += ' (' + opposing.record[0].displayValue + ')';
         }
         game.title += ' - ' + gameData.time;
+        game.teams = {primaryTeam: primary, opposingTeam: opposing};
     }
     return game;    
 }
@@ -136,5 +158,6 @@ function buildTitle(gameData, sport) {
 module.exports = {
     gameThread,
     gameWatcher,
-    gameData
+    gameData,
+    buildTitle
 };
