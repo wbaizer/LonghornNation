@@ -28,17 +28,6 @@
 <hr>
 <h1>Your go-to place to talk about whatever you want. From the dumb shit aggies do on a near daily basis, to the latest whatever happening wherever. What ya got?</h1>
 <hr>
-<h3>Trending on Reddit</h3>
-<hr>
-<% for(var i=0; i < data.top.length; i++) { %>
-    <h6><a href="/<%= data.top[i].link %>">/<%= data.top[i].link %></a></h6>
-    <ol>
-        <% for(var n=0; n < data.top[i].posts.length; n++) { %>
-            <li><a href="<%= data.top[i].posts[n].link %>"><%= data.top[i].posts[n].title %></a></li>
-        <% } %>
-    </ol>
-<% } %>
-<hr>
 <h3>Recent Longhorn Tweets</h3>
 <ol>
     <% for(var i=0; i < data.tweets.length; i++) { %>
@@ -48,5 +37,26 @@
         </li>
     <% } %>
 </ol>
+<hr>
+<% if(data.calendar.length > 0) { %>
+<h3>Here's A Look At Todays Longhorn Sporting Event(s):</h3>
+<ol>
+    <% for(var i=0; i < data.calendar.length; i++) { %>
+        <li>
+            <a href="<%= data.calendar[i].link %>"><%= data.calendar[i].title %></a>
+        </li>
+    <% } %>
+</ol>
+<hr>
+<% } %>
+<h3>Trending on Reddit</h3>
+<% for(var i=0; i < data.top.length; i++) { %>
+    <h6><a href="/<%= data.top[i].link %>">/<%= data.top[i].link %></a></h6>
+    <ol>
+        <% for(var n=0; n < data.top[i].posts.length; n++) { %>
+            <li><a href="<%= data.top[i].posts[n].link %>"><%= data.top[i].posts[n].title %></a></li>
+        <% } %>
+    </ol>
+<% } %>
 <hr>
 <p>This thread was programmatically generated and posted on <%= data.date.long %></p>

@@ -5,6 +5,7 @@ const TurndownService = require('turndown');
 const turndownPluginGfm = require('turndown-plugin-gfm');
 const { reddit , getLastThread } = require('../../utils/reddit');
 const { getWeather, getRecentPosts, getRecentTweets } = require('../../utils/ftt');
+const { tsCalendar } = require('../../utils/service');
 const { message } = require('../../utils/discord');
 var gfm = turndownPluginGfm.gfm
 var turndownService = new TurndownService();
@@ -32,6 +33,7 @@ module.exports = function(agenda) {
             '_delconte'
           ]);
           var last_thread = await getLastThread('Off Topic Free Talk Thread');
+          var calendar = await tsCalendar();
           var data = {
             date: {
               short: date,
@@ -40,7 +42,8 @@ module.exports = function(agenda) {
             last_thread: last_thread || null,
             weather: weather,
             top: posts,
-            tweets: tweets
+            tweets: tweets,
+            calendar: calendar
           }
           app.render('ftt', {data}, function(err, doc) {
             if(err) {

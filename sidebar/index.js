@@ -22,7 +22,7 @@ const { fetchTeamSchedule } = require('./utils/schedule');
 const { generateSprites } = require('./utils/sprites');
 const { message } = require('./utils/discord');
 const { getWeather, getRecentPosts, getRecentTweets } = require('./utils/ftt');
-const { texasSports, tsBoxScore }= require('./utils/service');
+const { texasSports, tsBoxScore, tsCalendar }= require('./utils/service');
 var gfm = turndownPluginGfm.gfm
 var turndownService = new TurndownService();
 turndownService.use(gfm);
@@ -137,7 +137,9 @@ const run = async () => {
   if(ACTION == 'Send Message') {
     //message(process.env.DISCORD_CHANNEL, false, REASON);
     //agenda.create('Free Talk Thread').unique({'ftt-sub': process.env.SUBREDDIT}).schedule('30 seconds').save();
-
+    tsCalendar().then(data => {
+      console.log(data);
+    })
   }
   if(ACTION == 'Generate Spritesheet') {
     generateSprites();

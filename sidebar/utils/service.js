@@ -6,6 +6,8 @@ const ts_teams = require('../static_data/texas_sports_teams.json');
 const ts_networks = require('../static_data/texas_sports_networks.json');
 const teams = require('../static_data/teams.json');
 const statesList = require('../static_data/states.json');
+let Parser = require('rss-parser');
+
 function texasSports(agenda) {
     //var base = 'https://texassports.com/schedule.aspx?path='+ sport;
     let baseball = {
@@ -243,7 +245,31 @@ function tsBoxScore(event) {
     });
 }
 
+async function tsCalendar() {
+    let parser = new Parser({
+        customFields: {
+            item:[
+                ['s:localstartdate', 'date']
+            ]
+        }
+    });
+    let feed = await parser.parseURL('http://www.texassports.com/calendar.ashx/calendar.rss?sport_id=&han=');
+    let today = moment();
+    var events = await feed.items.filter(function(item) {
+        var date = moment(item.isoDate);
+        return today.isSame(date, 'day');
+    });
+    return events.limit(5);
+}
+function limit(c){
+    return this.filter((x,i)=>{
+        if(i<=(c-1)){return true}
+    })
+}
+Array.prototype.limit=limit;
+
 module.exports = {
     texasSports,
-    tsBoxScore
+    tsBoxScore,
+    tsCalendar
 };
