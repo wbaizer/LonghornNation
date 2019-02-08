@@ -40,14 +40,15 @@ async function getRecentTweets(users) {
 async function mapTweet(user) {
     var params = {
         screen_name: user,
-        count: 1
+        count: 1,
+        exclude_replies:true
     }
     return new Promise((resolve, reject) => {
         client.get('statuses/user_timeline', params, function(error, tweets, response) {
             if (!error) {
                 resolve({
                     screen_name: tweets[0].user.screen_name,
-                    url: 'https://twitter.com/user/status/' + tweets[0].id,
+                    url: 'https://twitter.com/user/status/' + tweets[0].id_str,
                     text: tweets[0].text
                 });
             } else {

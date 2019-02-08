@@ -136,7 +136,8 @@ const run = async () => {
   }
   if(ACTION == 'Send Message') {
     //message(process.env.DISCORD_CHANNEL, false, REASON);
-    agenda.create('Free Talk Thread').unique({'ftt-sub': process.env.SUBREDDIT}).schedule('30 seconds').save();
+    //agenda.create('Free Talk Thread').unique({'ftt-sub': process.env.SUBREDDIT}).schedule('30 seconds').save();
+
   }
   if(ACTION == 'Generate Spritesheet') {
     generateSprites();
