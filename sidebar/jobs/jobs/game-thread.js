@@ -21,6 +21,7 @@ module.exports = function(agenda) {
                 createMarkdown('partials/game_thread', game).then(markdown => {
                     reddit.getSubreddit(process.env.SUBREDDIT).submitSelfpost({title: game.title, text: markdown}).sticky().approve().then(data => {
                         done();
+                        agenda.create('game watcher', {event: event, sport: sport}).unique({'game_id': event.id}).schedule('1 hour').repeatEvery('10 minutes').save();
                     }).catch(err => {
                         done(err);
                     });
@@ -28,10 +29,7 @@ module.exports = function(agenda) {
                 }).catch(err => {
                     done(err);
                 });
-                /*agenda.create('game watcher', {
-                    event: event,
-                    sport: sport
-                }).unique({'game_id': event.id}).schedule('1 hour').repeatEvery('10 minutes').save();*/
+
             }
         }).catch(err => {
             return done(err);
