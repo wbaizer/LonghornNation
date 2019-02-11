@@ -19,7 +19,10 @@ function gameThread(event, type, sport) {
     if(type) {
         //Post Game Thread
         console.log('sending post game thread and stopping watcher');
-        var markdown = `[Box Score](${event.link})`;
+        var markdown = '';
+        if(event.link) {
+            markdown = `[Box Score](${event.link})`;
+        }
         reddit.getSubreddit(process.env.SUBREDDIT).submitSelfpost({title: event.title, text: markdown}).sticky().approve();
         getLastThread('[GAME THREAD]').then(last_thread => {
             if(last_thread && last_thread.id) { 
@@ -73,7 +76,7 @@ function gameData(event, sport) {
         return axios.get(url).then(data => {
             var gameData = data.data.header.competitions[0];
             var odds = data.data.pickcenter.find(function( obj ) { return obj.provider.id === '25'; });
-            var boxScore = gameData.competitors.find(function( obj ) { return obj.text === 'Box Score'; });
+            var boxScore = data.data.header.links.find(function( obj ) { return obj.text === 'Box Score'; });
             var date = moment(gameData.date).format('MMM D');
             console.log('date from espn', gameData.date);
             if(odds) {
