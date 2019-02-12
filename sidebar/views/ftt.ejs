@@ -38,7 +38,7 @@
     <% } %>
 </ol>
 <hr>
-<% if(data.calendar.length > 0) { %>
+<% if(data.calendar != null && data.calendar.length > 0) { %>
 <h3>Here's A Look At Todays Longhorn Sporting Event(s):</h3>
 <ol>
     <% for(var i=0; i < data.calendar.length; i++) { %>
