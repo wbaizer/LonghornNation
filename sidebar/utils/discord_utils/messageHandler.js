@@ -1,5 +1,5 @@
-const discordCommands = require('./discordCommands');
-const discordMacroHandler = require('./discordMacroHandler');
+const discordCommands = require('../discord_utils/discordCommands');
+const discordMacroHandler = require('../discord_utils/discordMacroHandler');
 
 const discordMessageHandler = (message) => {
   // Ignore all bots.
