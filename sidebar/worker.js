@@ -13,6 +13,7 @@ const { message, client } = require('./utils/discord');
 const { buildTitle } = require('./utils/gameThread');
 const teamLink = require('./static_data/teams.reddit.json');
 const networks = require('./static_data/networks.json');
+const messageHandler = require('./utils/discord_utils/messageHandler');
 let agenda = require('./jobs/agenda');
 
 
@@ -21,6 +22,11 @@ console.log('Starting Up App');
 agenda.on('ready', function() {
     agenda.create('Update Sidebar').unique({'subreddit': process.env.SUBREDDIT}).repeatEvery('0 0 * * *', {skipImmediate: false}).save();
     agenda.create('Free Talk Thread').unique({'ftt-sub': process.env.SUBREDDIT}).repeatEvery('0 0 * * *', {skipImmediate: true}).save();
+});
+
+
+client.on('ready', () => {
+    console.log('Discord Ready');
 });
 
 console.log('created recurring event');
