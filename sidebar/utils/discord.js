@@ -4,7 +4,7 @@ const {
   RichEmbed
 } = require('discord.js');
 const client = new Client();
-const messageHandler = require('./discord_utils/messageHandler');
+const messageHandler = require('../utils/discord_utils/messageHandler');
 
 function message(channel, status, message) {
   client.on('ready', () => {
