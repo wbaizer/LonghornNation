@@ -4,7 +4,7 @@ const {
   RichEmbed
 } = require('discord.js');
 const client = new Client();
-const messageHandler = require('../utils/discord_utils/messageHandler');
+//const messageHandler = require('../utils/discord_utils/messageHandler');
 
 function message(channel, status, message) {
   client.on('ready', () => {
@@ -26,7 +26,7 @@ function message(channel, status, message) {
 
 client.login(process.env.BOT_TOKEN);
 
-client.on('message', messageHandler);
+//client.on('message', messageHandler);
 
 module.exports = {
   message,
