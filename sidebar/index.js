@@ -181,9 +181,12 @@ const run = async () => {
   if (ACTION == 'Send Message') {
     //message(process.env.DISCORD_CHANNEL, false, REASON);
     //agenda.create('Free Talk Thread').unique({'ftt-sub': process.env.SUBREDDIT}).schedule('30 seconds').save();
-    tsCalendar().then(data => {
+    var event = {
+      id: "12343"
+    }
+    tsBoxScore(event).then(data => {
       console.log(data);
-    })
+    });
   }
   if (ACTION == 'Generate Spritesheet') {
     generateSprites();

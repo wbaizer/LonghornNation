@@ -191,8 +191,8 @@ function tsBoxScore(event) {
             var loserScore = $(loserObj).find('td:nth-last-child(3)').text();
             var winnerName = $(winnerObj).find('th span:nth-child(2)').text().toUpperCase().trim();
             var loserName = $(loserObj).find('th span:nth-child(2)').text().toUpperCase().trim();
-            var winnerRegex = new RegExp('(\\S+)(?=\\s+' + winnerName + ')', 'g');
-            var loserRegex = new RegExp('(\\S+)(?=\\s+' + loserName + ')', 'g');
+            var winnerRegex = new RegExp('([1-9]\\S+)(?=\\s+' + winnerName + ')', 'g');
+            var loserRegex = new RegExp('([1-9]\\S+)(?=\\s+' + loserName + ')', 'g');
             var winnerRank = title.match(winnerRegex);
             var loserRank = title.match(loserRegex);
             var loser = {
@@ -226,6 +226,7 @@ function tsBoxScore(event) {
     }, (error) => {
         console.log('no game passing normal data');
         var game = {
+            id:event.id,
             status: {
                 type: {
                     completed: false
