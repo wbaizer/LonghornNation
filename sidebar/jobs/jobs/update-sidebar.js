@@ -18,7 +18,7 @@ module.exports = function(agenda) {
         var app = express();
         app.set('views', path.join(__dirname, '../../views'));
         app.set('view engine', 'ejs');
-    
+        app.locals.moment = moment;
         var date = moment(Date.now()).format('M/D/Y hh:mm A');
         var show = {
           football: false,
@@ -26,7 +26,7 @@ module.exports = function(agenda) {
           basketball: true
         }
         fetchTeamSchedule(agenda).then(data => {
-            app.render('sidebar', {data, teamLink: teamLink, networks: networks, date, show}, function(err, doc) {
+            app.render('sidebar', {data, teamLink: teamLink, networks: networks, date, show, moment: moment}, function(err, doc) {
               if(err) {
                 done(err);
                 return console.log(err);

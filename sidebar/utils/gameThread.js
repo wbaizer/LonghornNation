@@ -2,6 +2,7 @@ const { reddit, getLastThread } = require('../utils/reddit');
 const axios = require('axios');
 const moment = require('moment');
 const { tsBoxScore } = require('../utils/service');
+const teamLink = require('../static_data/teams.reddit.json');
 const oneHour = 1000 * 60 * 60;
 const quick = 3000;
 const long = 300000;
@@ -61,38 +62,34 @@ function gameWatcher(event, sport) {
 }
 
 function gameData(event, sport) {
-    if(sport == 'baseball') {
-        return tsBoxScore(event).then(gameData => {
-            gameData.link = `https://texassports.com/boxscore.aspx?id=${gameData.id}&path=baseball`;
-            return buildTitle(gameData, sport);
-        });
-    } else {
-        //var url = 'http://localhost:3100/summary';
-        var leagueName = 'college-football'
-        if(sport == 'basketball') {
-            leagueName = 'mens-college-basketball'
-        }
-        var url = `https://site.web.api.espn.com/apis/site/v2/sports/${sport}/${leagueName}/summary?event=${event.id}`;
-        return axios.get(url).then(data => {
-            var gameData = data.data.header.competitions[0];
-            var odds = data.data.pickcenter.find(function( obj ) { return obj.provider.id === '25'; });
-            var boxScore = data.data.header.links.find(function( obj ) { return obj.text === 'Box Score'; });
-            var date = moment(gameData.date).format('MMM D');
-            console.log('date from espn', gameData.date);
-            if(odds) {
-                gameData.picks = odds;
-            }
-            if(boxScore) {
-                gameData.link = boxScore.href;
-            } else {
-                gameData.link = null;
-            }
-            gameData.venue = data.data.gameInfo.venue;
-            gameData.time = moment(gameData.date).format('h:mm a');
-            gameData.date = date;
-            return buildTitle(gameData, sport);
-        });
+    //var url = 'http://localhost:3100/summary';
+    var leagueName = 'college-football'
+    if(sport == 'basketball') {
+        leagueName = 'mens-college-basketball';
     }
+    if(sport == 'baseball') {
+        leagueName = 'college-baseball';
+    }
+    var url = `https://site.web.api.espn.com/apis/site/v2/sports/${sport}/${leagueName}/summary?event=${event.id}`;
+    return axios.get(url).then(data => {
+        var gameData = data.data.header.competitions[0];
+        var odds = data.data.pickcenter.find(function( obj ) { return obj.provider.id === '25'; });
+        var boxScore = data.data.header.links.find(function( obj ) { return obj.text === 'Box Score'; });
+        var date = moment(gameData.date).format('MMM D');
+        console.log('date from espn', gameData.date);
+        if(odds) {
+            gameData.picks = odds;
+        }
+        if(boxScore) {
+            gameData.link = boxScore.href;
+        } else {
+            gameData.link = null;
+        }
+        gameData.venue = data.data.gameInfo.venue;
+        gameData.time = moment(gameData.date).format('h:mm a');
+        gameData.date = date;
+        return buildTitle(gameData, sport);
+    });
 }
 
 function buildTitle(gameData, sport) {
@@ -124,6 +121,8 @@ function buildTitle(gameData, sport) {
     if(gameData.status.type.completed) {
         var winner = gameData.competitors.find(function( obj ) { return obj.winner === true; });
         var loser = gameData.competitors.find(function( obj ) { return obj.winner === false; });
+        winner.team.nickname ? '' : winner.team.nickname = winner.team.location;
+        loser.team.nickname ? '' : loser.team.nickname = loser.team.location;
         game.title = `[POST GAME THREAD] ${sportIcon} `;
         if(winner.rank) {
             game.title += ' #' + winner.rank + ' ';
@@ -134,13 +133,21 @@ function buildTitle(gameData, sport) {
         }
         game.title += loser.team.nickname + ', ' + winner.score + '-' + loser.score;
     } else {
-        var primary = gameData.competitors.find(function( obj ) { return obj.id === process.env.TEAM_ID; });
-        var opposing = gameData.competitors.find(function( obj ) { return obj.id != process.env.TEAM_ID; });
+        var checkID = process.env.TEAM_ID;
+        if(sport == 'baseball') {
+            checkID = "126";
+        }
+        var primary = gameData.competitors.find(function( obj ) { return obj.id === checkID; });
+        var opposing = gameData.competitors.find(function( obj ) { return obj.id != checkID; });
+        primary.team.nickname ? '' : primary.team.nickname = primary.team.location;
+        opposing.team.nickname ? '' : opposing.team.nickname = opposing.team.location;
+        primary.reddit = teamLink[primary.team.abbreviation];
+        opposing.reddit = teamLink[opposing.team.abbreviation];
         game.title = `[GAME THREAD] ${sportIcon} `;
         if(primary.rank) {
             game.title += '#' + primary.rank + ' ';
         }
-        game.title += ' ' + primary.team.nickname;
+        game.title += primary.team.nickname;
         if(primary.record && primary.record.length > 0) {
             game.title += ' (' + primary.record[0].displayValue + ')'
         }

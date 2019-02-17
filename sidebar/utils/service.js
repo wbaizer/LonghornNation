@@ -8,7 +8,7 @@ const teams = require('../static_data/teams.json');
 const statesList = require('../static_data/states.json');
 let Parser = require('rss-parser');
 
-function texasSports(agenda) {
+async function texasSports(agenda) {
     //var base = 'https://texassports.com/schedule.aspx?path='+ sport;
     let baseball = {
         schedule: {
@@ -27,15 +27,102 @@ function texasSports(agenda) {
         baseball_schedule,
         baseball_standings,
         ) {
+            // This is a hotfix and terrible fix later.
             return {
                 schedule: processSchedule(baseball_schedule, agenda),
                 rankings: processStandings(baseball_standings)
             }
-
         })
     ).catch(err => {
         return err;
     });
+}
+async function processXML(agenda) {
+    let parser = new Parser({
+        customFields: {
+            item:[
+                ['s:localstartdate', 'date'],
+                ['s:opponent', 'opponent'],
+                ['s:gameid', 'id'],
+                ['ev:location', 'location']
+            ]
+        }
+    });
+    let feed = await parser.parseURL('http://www.texassports.com/calendar.ashx/calendar.rss?sport_id=1');
+    var events = feed.items.map(item => {
+        var content = item.content;
+        var split = content.split("\\n");
+        var scoreData = '';
+        var primaryTeamScore = null;
+        var opposingTeamScore = null;
+        var scores = [];
+        var homeAway = '';
+        var network = '';
+        var location = item.location.split(',');
+        var networkData = split.find(function(element) {
+            return element.includes("TV");
+        });
+        var scoreResult = split.find(function(element) {
+            return element.match(/^(W|L)/g);
+        });
+        if(scoreResult) {
+            scoreData = scoreResult.split(" ");
+            var scoresTemp = scoreData[1].split("-");
+            if(scoreData[0] == 'W') {
+                primaryTeamScore = scoresTemp[0];
+                opposingTeamScore = scoresTemp[1];
+            } else {
+                primaryTeamScore = scoresTemp[1];
+                opposingTeamScore = scoresTemp[0];
+            }
+        }
+        if(networkData) {
+            var values = networkData.split(":");
+            network = values[1].trim().toUpperCase();
+        }
+        if(item.title.match(/(at)/g)) {
+            homeAway = '@';
+        }
+        var teamID = ts_teams[item.opponent.toUpperCase()];
+        var team = teams[teamID];
+        return {
+            id: item.id,
+            date: moment(item.isoDate).format('MMM D'),
+            dateISO: item.isoDate,
+            time: moment(item.isoDate).format('h:mm a'),
+            homeAway: homeAway,
+            primaryTeam: {
+                id: process.env.TEAM_ID,
+                winner: scoreData[0] == 'W' ? true : false,
+                team: {
+                    nickname: teams[process.env.TEAM_ID].nickname
+                },
+                score: {
+                    displayValue: primaryTeamScore
+                }
+            },
+            opposingTeam: {
+                id: teamID,
+                team: {
+                    nickname: team.nickname
+                },
+                score: {
+                    displayValue: opposingTeamScore
+                },
+                reddit: team.reddit
+            },
+            completed: scoreResult ? true : false,
+            network: ts_networks[network] || null,
+            venue: {
+                address: {
+                    city: location[0] || '',
+                    state: location[1] || ''
+                }
+            }
+            
+        }
+    })
+    return events;
 }
 function processStandings(response) {
     let rankings = {
@@ -148,6 +235,7 @@ function processSchedule(response, agenda) {
                 }
             },
             date: moment(gameDate, 'MMM D YYYY h:mm:ss A').format('MMM D'),
+            dateISO: gameDate,
             time: moment(gameDate, 'MMM D YYYY h:mm:ss A').format('h:mm a'),
             network: ts_networks[network] ? ts_networks[network] : network,
             homeAway: away == 'at' ? '@' : '',
@@ -160,11 +248,11 @@ function processSchedule(response, agenda) {
             }
         }
         if(process.env.GAME_THREAD == 'true') {
-            if(moment(gameDate, 'MMM D YYYY h:mm:ss A').isAfter(Date.now())) {
+            /*if(moment(gameDate, 'MMM D YYYY h:mm:ss A').isAfter(Date.now())) {
                 var scheduleDate = moment(gameDate, 'MMM D YYYY h:mm:ss A').subtract(1, 'hours').toDate();
                 console.log('baseball - schedule game thread', moment(scheduleDate).fromNow());
                 agenda.create('game thread', {event: game, sport: 'baseball'}).unique({'game_id': game.id}).schedule(scheduleDate).save();
-            }
+            }*/
         }
         if($(this).parent('.sidearm-schedule-games-container').length) {
             schedule.regular.push(game);
@@ -272,5 +360,6 @@ Array.prototype.limit=limit;
 module.exports = {
     texasSports,
     tsBoxScore,
-    tsCalendar
+    tsCalendar,
+    processXML
 };

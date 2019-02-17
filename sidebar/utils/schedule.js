@@ -1,6 +1,7 @@
 const axios = require('axios');
 const moment = require('moment');
 const teamLink = require('../static_data/teams.reddit.json');
+const teamABR = require('../static_data/teams.abr.json');
 const { gameThread } = require('../utils/gameThread');
 const { texasSports }= require('../utils/service');
 const test_ncaaf_post_schedule = require('../exampleData/ncaaf_post_schedule');
@@ -24,7 +25,9 @@ async function fetchTeamSchedule(agenda) {
             axios.get('https://site.web.api.espn.com/apis/v2/sports/football/college-football/standings?region=us&lang=en&group=4&disable=stats&xhr=1'),
             axios.get('https://site.web.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/teams/' + process.env.TEAM_ID + '/schedule?region=us&lang=en&enable=broadcasts&disable=leaders&flat=true'),
             axios.get('https://site.web.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/teams/' + process.env.TEAM_ID + '/schedule?region=us&lang=en&seasontype=3&enable=broadcasts&disable=leaders'),
-            axios.get('https://site.web.api.espn.com/apis/v2/sports/basketball/mens-college-basketball/standings?region=us&lang=en&group=8&sort=vsconf_winpercent%3Adesc%2Cvsconf_wins%3Adesc%2Cvsconf_losses%3Aasc%2Cvsconf_gamesbehind%3Aasc&xhr=1')
+            axios.get('https://site.web.api.espn.com/apis/v2/sports/basketball/mens-college-basketball/standings?region=us&lang=en&group=8&sort=vsconf_winpercent%3Adesc%2Cvsconf_wins%3Adesc%2Cvsconf_losses%3Aasc%2Cvsconf_gamesbehind%3Aasc&xhr=1'),
+            axios.get('http://site.api.espn.com/apis/site/v2/sports/baseball/college-baseball/teams/126/schedule?seasontype=2&enable=broadcasts&disable=leaders'),
+            axios.get('http://site.api.espn.com/apis/site/v2/sports/baseball/college-baseball/teams/126/schedule?seasontype=3&enable=broadcasts&disable=leaders')
         ])
         .then(axios.spread(function(
             ncaaf_regular_schedule,
@@ -32,7 +35,9 @@ async function fetchTeamSchedule(agenda) {
             ncaaf_standings,
             ncaam_regular_schedule,
             ncaam_post_schedule,
-            ncaam_standings
+            ncaam_standings,
+            baseball_regular_schedule,
+            baseball_post_schedule
             ) {
               return {
                 basketball: {
@@ -49,7 +54,13 @@ async function fetchTeamSchedule(agenda) {
                     },
                     rankings: standings(ncaaf_standings.data)
                 },
-                baseball: baseballData
+                baseball: {
+                    schedule: {
+                      regular: mapSchedule(baseball_regular_schedule.data, agenda, 'baseball'),
+                      post: mapSchedule(baseball_post_schedule.data, agenda, 'baseball')
+                    },
+                    rankings: baseballData.rankings
+                }
               }
             }
             ));
@@ -77,6 +88,7 @@ async function fetchTeamSchedule(agenda) {
 
 function mapSchedule(schedule, agenda, sport) {
     console.log('Digesting the data');
+    console.log()
     return schedule.events.map(event => {
       var primaryTeam = {};
       var opposingTeam = {}
@@ -85,10 +97,14 @@ function mapSchedule(schedule, agenda, sport) {
       var complete = false;
       var homeAway = '@';
       var venue = {};
+      var checkID = process.env.TEAM_ID;
+      if(sport == 'baseball') {
+        checkID = "126";
+      }
       if(process.env.GAME_THREAD == 'true') {
         if(moment(event.date).isAfter(Date.now())) {
           var scheduleDate = moment(event.date).subtract(2, 'hours').toDate();
-          console.log('schedule game thread', moment(scheduleDate).fromNow());
+          console.log(`${sport} - game thread`, moment(scheduleDate).fromNow());
           agenda.create('game thread', {event: event, sport: sport}).unique({'game_id': event.id}).schedule(scheduleDate).save();
         }
       }
@@ -99,7 +115,10 @@ function mapSchedule(schedule, agenda, sport) {
         complete = game.status.type.completed;
         venue = game.venue;
         game.competitors.forEach(team => {
-          if(team.id === process.env.TEAM_ID) {
+          if(!team.team.nickname) {
+            team.team.nickname = team.team.location;
+          }
+          if(team.id === checkID) {
             primaryTeam = team;
             if(game.neutralSite) {
               homeAway = '';
@@ -119,6 +138,7 @@ function mapSchedule(schedule, agenda, sport) {
       return {
         date: moment(event.date).format('MMM D'),
         time: moment(event.date).format('h:mm a'),
+        dateISO: event.date,
         name: event.name,
         score: score,
         venue: venue,

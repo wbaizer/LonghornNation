@@ -42,7 +42,8 @@ const {
 const {
   texasSports,
   tsBoxScore,
-  tsCalendar
+  tsCalendar,
+  processXML
 } = require('./utils/service');
 var gfm = turndownPluginGfm.gfm
 var turndownService = new TurndownService();
@@ -124,7 +125,8 @@ const run = async () => {
         teamLink: teamLink,
         networks: networks,
         date,
-        show
+        show,
+        moment
       }, function(err, doc) {
         if (err) {
           return console.log(err);
@@ -132,7 +134,8 @@ const run = async () => {
         var markdown = turndownService.turndown(doc, {
           gfm: true
         });
-        reddit.getSubreddit(process.env.SUBREDDIT).editSettings({
+        console.log(markdown);
+        /*reddit.getSubreddit(process.env.SUBREDDIT).editSettings({
           description: markdown
         }).then(data => {
           success('Success, you did it peter!');
@@ -140,7 +143,7 @@ const run = async () => {
         }).catch(err => {
           console.log(err.message);
           message(process.env.DISCORD_CHANNEL, true, err.message);
-        });
+        });*/
 
       });
     });
@@ -180,13 +183,10 @@ const run = async () => {
   }
   if (ACTION == 'Send Message') {
     //message(process.env.DISCORD_CHANNEL, false, REASON);
-    //agenda.create('Free Talk Thread').unique({'ftt-sub': process.env.SUBREDDIT}).schedule('30 seconds').save();
-    var event = {
-      id: "12343"
-    }
-    tsBoxScore(event).then(data => {
-      console.log(data);
-    });
+    //agenda.create('Update Sidebar').schedule('5 seconds').save();
+    fetchTeamSchedule().then(data => {
+      console.log(JSON.stringify(data.baseball));
+    })
   }
   if (ACTION == 'Generate Spritesheet') {
     generateSprites();
@@ -251,7 +251,11 @@ const run = async () => {
   }
   if (ACTION == 'Scrape Texas') {
     //tsBoxScore('12343').then(data => {});
-    texasSports().then(data => {});
+    async function dog() {
+      let dog = await texasSports();
+      
+    }
+    dog();
   }
   if (ACTION == 'Schedule Job') {
     var jobsList = {};

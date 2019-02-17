@@ -3,7 +3,7 @@ const path = require('path');
 const moment = require('moment');
 const TurndownService = require('turndown');
 const turndownPluginGfm = require('turndown-plugin-gfm');
-const teamLink = require('../static_data/teams.json');
+const teamLink = require('../static_data/teams.abr.json');
 const networks = require('../static_data/networks.json');
 
 var app = express();

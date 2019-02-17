@@ -106,6 +106,12 @@
        </thead>
        <tbody>
            <% for(var i=0; i < data.basketball.schedule.regular.length; i++) { %>
+            <% 
+                var end = moment().add('2', 'weeks');
+                var start = moment().subtract('2', 'weeks');
+                var eventDate = data.basketball.schedule.regular[i].dateISO;
+                if(moment(eventDate).isBetween(start, end)) {
+            %>
            <tr>
                <td><a href="<%= data.basketball.schedule.regular[i].opposingTeam.reddit %>"></a></td>
                <td>        
@@ -132,6 +138,7 @@
                    <% } %>
                </td>
            </tr>
+           <% } %>
            <% } %>
        </tbody>
    </table>
