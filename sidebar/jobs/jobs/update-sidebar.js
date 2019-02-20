@@ -38,11 +38,11 @@ module.exports = function(agenda) {
                     //success('Success, you did it peter!'); 
                     console.log('updated reddit');
                     done();
-                    message(process.env.DISCORD_CHANNEL, false, `MoOooOoo I updated the sidebar on ${process.env.SUBREDDIT}!`);         
+                    //message(process.env.DISCORD_CHANNEL, false, `MoOooOoo I updated the sidebar on ${process.env.SUBREDDIT}!`);         
                   }).catch(err => {
                       console.log(err.message);
                       done(err.message);
-                      message(process.env.DISCORD_CHANNEL, true, err.message);
+                      //message(process.env.DISCORD_CHANNEL, true, err.message);
                   });
     
             });
