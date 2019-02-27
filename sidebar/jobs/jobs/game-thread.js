@@ -29,7 +29,7 @@ module.exports = function(agenda) {
                 createMarkdown('partials/game_thread', game).then(markdown => {
                     reddit.getSubreddit(process.env.SUBREDDIT).submitSelfpost({title: game.title, text: markdown}).sticky().approve().then(data => {
                         done();
-                        agenda.create('game watcher', {event: event, sport: sport}).unique({'game_id': event.id}).schedule('3 hours').repeatEvery('10 minutes').save();
+                        agenda.create('game watcher', {event: event, sport: sport}).unique({'game_id': event.id}).schedule('3 hours').repeatEvery('3 minutes').save();
                     }).catch(err => {
                         if (err.code === 'ETIMEDOUT') {
                             console.log('Reddit timed out, will try again in 15 seconds.');
