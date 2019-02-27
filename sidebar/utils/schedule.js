@@ -1,6 +1,7 @@
 const axios = require('axios');
 const moment = require('moment');
 const teamLink = require('../static_data/teams.reddit.json');
+const baseballRemap = require('../static_data/baseball_remap.json');
 const teamABR = require('../static_data/teams.abr.json');
 const { gameThread } = require('../utils/gameThread');
 const { texasSports }= require('../utils/service');
@@ -130,7 +131,13 @@ function mapSchedule(schedule, agenda, sport) {
               }
             }    
           } else {
-            team.reddit = teamLink[team.team.abbreviation];
+            
+            if(teamLink[team.team.abbreviation]) {
+              team.reddit = teamLink[team.team.abbreviation];
+            } else {
+              var alt = baseballRemap[team.team.abbreviation];
+              team.reddit = teamLink[alt];
+            }
             opposingTeam = team;           
           }
         })
