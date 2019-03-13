@@ -74,7 +74,7 @@
                                      <% } %>                            
                                      <%= data.baseball.schedule.post[i].opposingTeam.team.nickname %>
                                  </strong>
-                                 <%= data.baseball.schedule.post[i].date %> <% if(data.baseball.schedule.post[i].venue.address && data.baseball.schedule.post[i].venue.address.city && data.baseball.schedule.post[i].venue.address.state) { %>- <%= data.baseball.schedule.post[i].venue.address.city %>, <%= data.baseball.schedule.post[i].venue.address.state %><% } %>
+                                 <%= data.baseball.schedule.post[i].date %> <% if(data.baseball.schedule.post[i].venue && data.baseball.schedule.post[i].venue.address && data.baseball.schedule.post[i].venue.address.city && data.baseball.schedule.post[i].venue.address.state) { %>- <%= data.baseball.schedule.post[i].venue.address.city %>, <%= data.baseball.schedule.post[i].venue.address.state %><% } %>
                             </a>
                         </td>
                             <td><a href="<%= networks[data.baseball.schedule.post[i].network] %>"></a></td>
@@ -122,7 +122,7 @@
                             <% } %>                            
                             <%= data.baseball.schedule.regular[i].opposingTeam.team.nickname %>
                         </strong>
-                        <%= data.baseball.schedule.regular[i].date %> <% if(data.baseball.schedule.regular[i].venue.address && data.baseball.schedule.regular[i].venue.address.city && data.baseball.schedule.regular[i].venue.address.state) { %>- <%= data.baseball.schedule.regular[i].venue.address.city %>, <%= data.baseball.schedule.regular[i].venue.address.state %><% } %>
+                        <%= data.baseball.schedule.regular[i].date %> <% if(data.baseball.schedule.regular[i].venue && data.baseball.schedule.regular[i].venue.address && data.baseball.schedule.regular[i].venue.address.city && data.baseball.schedule.regular[i].venue.address.state) { %>- <%= data.baseball.schedule.regular[i].venue.address.city %>, <%= data.baseball.schedule.regular[i].venue.address.state %><% } %>
                    </a>
                </td>
                    <td><a href="<%= networks[data.baseball.schedule.regular[i].network] %>"></a></td>

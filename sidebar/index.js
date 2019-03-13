@@ -17,7 +17,7 @@ const moment = require('moment');
 const TurndownService = require('turndown');
 const turndownPluginGfm = require('turndown-plugin-gfm');
 const nodeSchedule = require('node-schedule');
-const agenda = require('./jobs/agenda');
+//const agenda = require('./jobs/agenda');
 const {
   gameThread,
   gameData
@@ -120,21 +120,43 @@ const run = async () => {
       basketball: true
     }
     fetchTeamSchedule().then(data => {
-      app.render('sidebar', {
-        data,
-        teamLink: teamLink,
-        networks: networks,
-        date,
-        show,
-        moment
-      }, function(err, doc) {
-        if (err) {
-          return console.log(err);
+      const events = {
+        series:[],
+        regular: []
+      }  
+      var group_to_values = data.baseball.schedule.regular.reduce(function (obj, item) {
+            obj[item.opposingTeam.team.id] = obj[item.opposingTeam.team.id] || [];
+            obj[item.opposingTeam.team.id].push({
+              date: item.dateISO,
+              team: item.opposingTeam.team.nickname,
+              formatDate: item.date,
+              id: item.id
+            });
+            return obj;
+        }, {});
+        var series = []
+        var checkDate = function(dates) {
+          var firstDate = moment(dates[0].date).subtract('1', 'day');
+          var end = moment(dates[0].date).add('5', 'days');
+          var games = []
+          for(const s of dates) {
+            if(moment(s.date).isBetween(firstDate, end)) {
+              games.push(s);
+            }
+          }
+          return games;
         }
-        var markdown = turndownService.turndown(doc, {
-          gfm: true
+        var groups = Object.keys(group_to_values).map(function (key) {
+          if(group_to_values[key].length > 1) {  
+            var games = checkDate(group_to_values[key]);
+            if(games.length > 1) {
+              events.series.push({group: key, games: group_to_values[key]});
+            }
+          } else {
+            events.regular.push({group: key, games: group_to_values[key]});
+          }
         });
-        console.log(markdown);
+        console.log(JSON.stringify(events));
         /*reddit.getSubreddit(process.env.SUBREDDIT).editSettings({
           description: markdown
         }).then(data => {
@@ -145,7 +167,7 @@ const run = async () => {
           message(process.env.DISCORD_CHANNEL, true, err.message);
         });*/
 
-      });
+
     });
   }
   if (ACTION == 'Update Stylesheet') {
