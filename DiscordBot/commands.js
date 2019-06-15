@@ -5,6 +5,11 @@
  */
 
 const discordCommands = {
+  ADD_MACRO: {
+    command: 'add_macro',
+    description: 'adds a macro if you are allowed to. first arg is new macro name' +
+      " second arg is macro contents",
+  },
   MACRO: {
     command: 'm',
     description: "When you send the m command, BevoBot will reply with a " +

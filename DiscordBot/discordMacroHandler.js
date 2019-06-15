@@ -1,4 +1,7 @@
-const discordMacros = require('./discordmacros');
+const fs = require('fs');
+const rawData = fs.readFileSync('./discordmacros.json');
+let discordMacros = JSON.parse(rawData);
+fs.watch('./discordmacros.json', (event, filename) =>{discordMacros = JSON.parse(fs.readFileSync(filename))});
 
 const discordMacroHandler = (args, message) => {
   if (args.length > 0) {

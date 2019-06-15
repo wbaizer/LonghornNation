@@ -1,5 +1,6 @@
 const discordCommands = require('./commands');
 const discordMacroHandler = require('./discordMacroHandler');
+const discordAddMacroHandler = require('./discordAddMacroHandler');
 
 const discordMessageHandler = (message) => {
   // Ignore all bots.
@@ -27,9 +28,13 @@ const discordMessageHandler = (message) => {
     message.author.send(discordCommand.description);
   } else {
     const {
+      ADD_MACRO,
       MACRO
     } = discordCommands;
     switch (command) {
+      case ADD_MACRO.command: 
+        discordAddMacroHandler(args, message);
+        break;
       case MACRO.command:
         discordMacroHandler(args, message);
         break;
