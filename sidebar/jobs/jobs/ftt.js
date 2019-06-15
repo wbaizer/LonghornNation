@@ -51,19 +51,22 @@ module.exports = function(agenda) {
             }
             var markdown = turndownService.turndown(doc, {gfm: true});
             var post_title = "[" + date + "] " + day + " Off Topic Free Talk Thread";
-            reddit.getSubreddit(process.env.SUBREDDIT).submitSelfpost({title: post_title, text: markdown}).sticky().approve().then(data => {
-              if(last_thread && last_thread.id) { 
-                reddit.getSubmission(last_thread.id).unsticky().then(data => {
+            reddit.getSubreddit(process.env.SUBREDDIT).submitSelfpost({title: post_title, text: markdown})
+              .sticky()
+              .setSuggestedSort('new')
+              .approve().then(data => {
+                if(last_thread && last_thread.id) { 
+                  reddit.getSubmission(last_thread.id).unsticky().then(data => {
+                    done();
+                  }).catch(err => {
+                    done(err);
+                  });
+                } else {
                   done();
-                }).catch(err => {
-                  done(err);
-                });
-              } else {
-                done();
-              }
-            }).catch(err => {
-              done(err);
-            });
+                }
+              }).catch(err => {
+                done(err);
+              });
             //message(process.env.DISCORD_CHANNEL, false, `MoOooOoo FTT posted on ${process.env.SUBREDDIT}!`);
           });
         }
