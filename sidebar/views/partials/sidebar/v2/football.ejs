@@ -51,7 +51,7 @@
            <% } %>
        </tbody>
    </table>
-   <% if(data.football.schedule.post) { %>
+   <% if(data.football.schedule.post && data.football.schedule.post.length > 0) { %>
        <h4>Post Season</h4>
        <table>
                <thead>
@@ -111,7 +111,7 @@
                <td>        
                        <strong>
                             <%= data.football.schedule.regular[i].homeAway %>
-                            <% if(data.football.schedule.regular[i].opposingTeam.curatedRank.current < 99) {%>
+                            <% if(data.football.schedule.regular[i].opposingTeam.curatedRank.current < 99 && data.football.schedule.regular[i].opposingTeam.curatedRank.current > 0) {%>
                                 <em><%= data.football.schedule.regular[i].opposingTeam.curatedRank.current %></em>
                             <% } %>                            
                             <%= data.football.schedule.regular[i].opposingTeam.team.nickname %>
