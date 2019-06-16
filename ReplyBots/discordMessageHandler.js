@@ -1,8 +1,15 @@
 const discordCommands = require('./commands');
-const discordMacroHandler = require('./discordMacroHandler');
-const discordAddMacroHandler = require('./discordAddMacroHandler');
+const macroHandler = require('./macroHandler');
+const addMacroHandler = require('./addMacroHandler');
+
+const ELIGIBLE_ROLES = ['Mods', 'Coders'];
+
 
 const discordMessageHandler = (message) => {
+  const channelSend = (text) => {
+    message.channel.send(text);
+  };
+
   // Ignore all bots.
   if (message.author.bot) {
     return;
@@ -33,10 +40,20 @@ const discordMessageHandler = (message) => {
     } = discordCommands;
     switch (command) {
       case ADD_MACRO.command: 
-        discordAddMacroHandler(args, message);
+        const matchedEligibleRoles = message.member.roles.filter(r => ELIGIBLE_ROLES.indexOf(r.name) >= 0);
+      
+        if (Array.from(matchedEligibleRoles).length > 0) {
+          addMacroHandler(args, channelSend);
+        } else {
+          channelSend('You are not allowed to do this');
+        }
         break;
       case MACRO.command:
-        discordMacroHandler(args, message);
+        macroHandler(
+          args, 
+          (text) => {message.author.send(text)},
+          channelSend,
+        );
         break;
       default:
         message.channel.send(

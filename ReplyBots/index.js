@@ -1,5 +1,5 @@
 const Discord = require('Discord.js');
-const messageHandler = require('./messageHandler.js')
+const discordMessageHandler = require('./discordMessageHandler.js')
 
 const client = new Discord.Client();
 
@@ -8,7 +8,7 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-  messageHandler(message);
+  discordMessageHandler(message);
 });
 
 client.login(process.env.BOT_TOKEN);
