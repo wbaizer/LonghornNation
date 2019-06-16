@@ -21,9 +21,9 @@ module.exports = function(agenda) {
         app.locals.moment = moment;
         var date = moment(Date.now()).format('M/D/Y hh:mm A');
         var show = {
-          football: false,
-          baseball: true,
-          basketball: true
+          football: true,
+          baseball: false,
+          basketball: false
         }
         fetchTeamSchedule(agenda).then(data => {
             app.render('sidebar', {data, teamLink: teamLink, networks: networks, date, show, moment: moment}, function(err, doc) {
