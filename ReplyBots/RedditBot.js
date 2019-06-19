@@ -3,6 +3,7 @@ const Snoowrap = require('snoowrap');
 const { CommentStream } = require('snoostorm');
 const macroHandler = require('./macroHandler');
 const commands = require('./commands');
+const texasHandler = require('./texasHandler');
 
 const client = new Snoowrap({
     userAgent: 'my-node-js-bot',
@@ -11,10 +12,6 @@ const client = new Snoowrap({
     username: process.env.USERNAME,
     password: process.env.PASSWORD,
 });
-
-// const canSummon = (msg) => {
-//     return msg && msg.toLowerCase().includes('/u/myusernamebutactuallybot');
-// };
 
 const isBot = (msg) => {
   return msg != null && msg.toLower
@@ -28,7 +25,6 @@ const comments = new CommentStream(client, {
 
 comments.on('item', (item) => {
     if(item.created_utc < BOT_START) return;
-    // if(!canSummon(item.body)) return;
     const commandPrefix = ".";
 
     // Ignore messages not starting with the prefix (in config.json)
@@ -42,19 +38,24 @@ comments.on('item', (item) => {
     const command = args.shift().toLowerCase();
     
     const {
-      MACRO
+      MACRO,
+      TEXAS,
     } = commands;
+    
+    const reply = (text) => {
+      item.reply(text);
+    }
     
     switch (command) {
       case MACRO.command:
         macroHandler(
           args, 
           () => {},
-          (text) => {
-            item.reply(text);
-          },
+          reply,
         );
         break;
+      case TEXAS.command:
+        texasHandler(reply);
       default:
     }
 

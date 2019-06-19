@@ -15,6 +15,10 @@ const discordCommands = {
     description: "When you send the m command, BevoBot will reply with a " +
       " picture. You can see valid arguments by sending '.m list'"
   },
+  TEXAS: {
+    command: 'texas',
+    description: "bot will respond with FIGHT!",
+  }
 };
 
 module.exports = discordCommands;

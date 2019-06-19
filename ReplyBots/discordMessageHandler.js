@@ -1,6 +1,7 @@
 const discordCommands = require('./commands');
 const macroHandler = require('./macroHandler');
 const addMacroHandler = require('./addMacroHandler');
+const texasHandler = require('./texasHandler');
 
 const ELIGIBLE_ROLES = ['Mods', 'Coders'];
 
@@ -32,11 +33,14 @@ const discordMessageHandler = (message) => {
     const discordCommand = Object.values(discordCommands).find(val =>
       val.command === command
     );
-    message.author.send(discordCommand.description);
+    if (discordCommand != null) {
+      message.author.send(discordCommand.description);
+    }
   } else {
     const {
       ADD_MACRO,
-      MACRO
+      MACRO,
+      TEXAS,
     } = discordCommands;
     switch (command) {
       case ADD_MACRO.command: 
@@ -52,6 +56,11 @@ const discordMessageHandler = (message) => {
         macroHandler(
           args, 
           (text) => {message.author.send(text)},
+          channelSend,
+        );
+        break;
+      case TEXAS.command:
+        texasHandler(
           channelSend,
         );
         break;
