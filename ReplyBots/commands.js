@@ -18,7 +18,11 @@ const discordCommands = {
   TEXAS: {
     command: 'texas',
     description: "bot will respond with FIGHT!",
-  }
+  },
+  TIME: {
+    command: 'what_time',
+    description: "bot will reply with 'Its x:xx in Austin, Texas and OU still sucks!'",
+  },
 };
 
 module.exports = discordCommands;

@@ -4,6 +4,7 @@ const { CommentStream } = require('snoostorm');
 const macroHandler = require('./macroHandler');
 const commands = require('./commands');
 const texasHandler = require('./texasHandler');
+const ouTimeHandler = require('./ouTimeHandler');
 
 const client = new Snoowrap({
     userAgent: 'my-node-js-bot',
@@ -40,6 +41,7 @@ comments.on('item', (item) => {
     const {
       MACRO,
       TEXAS,
+      TIME,
     } = commands;
     
     const reply = (text) => {
@@ -56,8 +58,12 @@ comments.on('item', (item) => {
         break;
       case TEXAS.command:
         texasHandler(reply);
+        break;
+      case TIME.command:
+        ouTimeHandler(
+          reply,
+        );
+        break;
       default:
     }
-
-    // item.reply('hello world!');
 });

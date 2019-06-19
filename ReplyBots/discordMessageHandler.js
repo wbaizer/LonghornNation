@@ -2,6 +2,7 @@ const discordCommands = require('./commands');
 const macroHandler = require('./macroHandler');
 const addMacroHandler = require('./addMacroHandler');
 const texasHandler = require('./texasHandler');
+const ouTimeHandler = require('./ouTimeHandler');
 
 const ELIGIBLE_ROLES = ['Mods', 'Coders'];
 
@@ -41,6 +42,7 @@ const discordMessageHandler = (message) => {
       ADD_MACRO,
       MACRO,
       TEXAS,
+      TIME,
     } = discordCommands;
     switch (command) {
       case ADD_MACRO.command: 
@@ -61,6 +63,11 @@ const discordMessageHandler = (message) => {
         break;
       case TEXAS.command:
         texasHandler(
+          channelSend,
+        );
+        break;
+      case TIME.command:
+        ouTimeHandler(
           channelSend,
         );
         break;
