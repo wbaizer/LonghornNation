@@ -1,10 +1,7 @@
 const BOT_START = Date.now() / 1000;
 const Snoowrap = require('snoowrap');
 const { CommentStream } = require('snoostorm');
-const macroHandler = require('./macroHandler');
-const commands = require('./commands');
-const texasHandler = require('./texasHandler');
-const ouTimeHandler = require('./ouTimeHandler');
+const commandHandler = require('./commandHandler');
 
 const client = new Snoowrap({
     userAgent: 'my-node-js-bot',
@@ -26,44 +23,17 @@ const comments = new CommentStream(client, {
 
 comments.on('item', (item) => {
     if(item.created_utc < BOT_START) return;
-    const commandPrefix = ".";
-
-    // Ignore messages not starting with the prefix (in config.json)
-    if (item.body.indexOf(commandPrefix) !== 0) {
-      return;
-    }
-
-    // Our standard argument/command name definition.
-    const args = item.body.slice(commandPrefix.length).trim().split(
-      / +/g);
-    const command = args.shift().toLowerCase();
-    
-    const {
-      MACRO,
-      TEXAS,
-      TIME,
-    } = commands;
     
     const reply = (text) => {
       item.reply(text);
     }
     
-    switch (command) {
-      case MACRO.command:
-        macroHandler(
-          args, 
-          () => {},
-          reply,
-        );
-        break;
-      case TEXAS.command:
-        texasHandler(reply);
-        break;
-      case TIME.command:
-        ouTimeHandler(
-          reply,
-        );
-        break;
-      default:
-    }
+    commandHandler(
+      item.body, 
+      reply, 
+      // TODO: implement this 
+      () => {},
+      // TODO: implement this as well
+      false, // determine if it's a mod sending message
+    );
 });
