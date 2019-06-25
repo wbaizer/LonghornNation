@@ -11,7 +11,7 @@ const ouTimeHandler = (send) => {
   );
   
   send(
-    `It's ${time} in Austin, Texas and OU still sucks!`
+    `It's ${time} in Austin, and OU still sucks!`
   );
 }
 
