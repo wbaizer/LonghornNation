@@ -27,6 +27,8 @@ const commandHandler = (message, reply, privateReply, isMessageFromMod) => {
     "seconds",
   ];
   
+  const numberStrings = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"];
+  
   const dateIndex = tokens.findIndex(
     token => dateStrings.includes(token.toLowerCase())
   );
@@ -39,7 +41,7 @@ const commandHandler = (message, reply, privateReply, isMessageFromMod) => {
       const decimal = Math.floor(Math.random() * 99);
       reply(`${prefix} ${dateType} is equal to approximately 0.${decimal} bru's`);
     }
-    if (prefix.toLowerCase() === 'a' || prefix.toLowerCase() === 'an') {
+    if (prefix.toLowerCase() === 'a' || prefix.toLowerCase() === 'an' || numberStrings.includes(prefix.toLowerCase())) {
       convertBrus();
     } else  {
       const parsedPrefix = parseFloat(prefix);
