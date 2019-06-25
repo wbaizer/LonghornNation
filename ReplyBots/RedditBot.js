@@ -22,7 +22,9 @@ const comments = new CommentStream(client, {
 });
 
 comments.on('item', (item) => {
-    if(item.created_utc < BOT_START) return;
+    if(item.created_utc < BOT_START || item.author.name.toLowerCase() === process.env.USERNAME.toLowerCase()){ 
+      return;
+    }
     
     const reply = (text) => {
       item.reply(text);
