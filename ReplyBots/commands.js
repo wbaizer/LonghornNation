@@ -10,6 +10,10 @@ const discordCommands = {
     description: 'adds a macro if you are allowed to. first arg is new macro name' +
       " second arg is macro contents",
   },
+  IPHONE: {
+    command: 'iphone',
+    description: 'Sends the infamous copypasta',
+  },
   MACRO: {
     command: 'm',
     description: "When you send the m command, BevoBot will reply with a " +

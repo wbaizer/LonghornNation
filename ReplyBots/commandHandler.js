@@ -3,6 +3,7 @@ const macroHandler = require('./macroHandler');
 const addMacroHandler = require('./addMacroHandler');
 const texasHandler = require('./texasHandler');
 const ouTimeHandler = require('./ouTimeHandler');
+const iPhoneHandler = require('./iPhoneHandler');
 
 const commandHandler = (message, reply, privateReply, isMessageFromMod) => {
   const commandPrefix = ".";
@@ -114,6 +115,7 @@ const commandHandler = (message, reply, privateReply, isMessageFromMod) => {
   } else {
     const {
       ADD_MACRO,
+      IPHONE,
       MACRO,
       TEXAS,
       TIME,
@@ -125,6 +127,10 @@ const commandHandler = (message, reply, privateReply, isMessageFromMod) => {
         } else {
           reply('You are not allowed to do this');
         }
+        break;
+      case IPHONE.command:
+      console.log('here');
+        iPhoneHandler(reply);
         break;
       case MACRO.command:
         macroHandler(
