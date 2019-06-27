@@ -7,8 +7,12 @@
 const discordCommands = {
   ADD_MACRO: {
     command: 'add_macro',
-    description: 'adds a macro if you are allowed to. first arg is new macro name' +
+    description: 'adds a macro if you are a mod or coder. first arg is new macro name' +
       " second arg is macro contents",
+  },
+  HELP: {
+    command: 'help',
+    description: 'gives info on what the bot can do',
   },
   IPHONE: {
     command: 'iphone',

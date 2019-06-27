@@ -7,6 +7,7 @@ const iPhoneHandler = require('./iPhoneHandler');
 const easterEggHandler = require('./easterEggHandler');
 const playerInfoHandler = require('./playerInfoHandler');
 const scoreHandler = require('./scoreHandler');
+const helpHandler = require('./helpHandler');
 
 const commandHandler = (message, reply, privateReply, isMessageFromMod) => {
   const commandPrefix = ".";
@@ -34,6 +35,7 @@ const commandHandler = (message, reply, privateReply, isMessageFromMod) => {
   } else {
     const {
       ADD_MACRO,
+      HELP,
       IPHONE,
       MACRO,
       PLAYER_INFO,
@@ -49,8 +51,10 @@ const commandHandler = (message, reply, privateReply, isMessageFromMod) => {
           reply('You are not allowed to do this');
         }
         break;
+      case HELP.command:
+        helpHandler(privateReply);
+        break;
       case IPHONE.command:
-      console.log('here');
         iPhoneHandler(reply);
         break;
       case MACRO.command:
@@ -78,7 +82,7 @@ const commandHandler = (message, reply, privateReply, isMessageFromMod) => {
         break;
       default:
         reply(
-          "That's not a valid command! I'll PM you a list of commands if you message '.m help'"
+          "That's not a valid command! I'll PM you a list of commands if you message '.help'"
         );
     }
   }
