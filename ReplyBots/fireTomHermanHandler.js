@@ -9,10 +9,14 @@ const fireTomHermanHandler = (message, reply) => {
     "herman needs to be fired",
     "herman needs to go",
     "herman should be fired",
+    "we must kill the herm",
+    "fire thomas",
+    "fire big time tommy john",
+    "fire titter tom",
   ]
 
   if (firePhrases.find(value => lowercase.includes(value)) != null) {
-    reply('https://cdn.discordapp.com/attachments/289481914384121856/593636369578983425/image0.jpg');
+    reply('[](https://i.imgur.com/me3h0ao.jpg)');
   }
 }
 
