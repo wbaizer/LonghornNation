@@ -33,8 +33,13 @@ comments.on('item', (item) => {
     commandHandler(
       item.body, 
       reply, 
-      // TODO: implement this 
-      () => {},
+      (message) => {
+        client.composeMessage({
+          to: item.author.name,
+          subject: "Beep boop: message from longhornmod",
+          text: message,
+        })
+      },
       // TODO: implement this as well
       false, // determine if it's a mod sending message
     );
