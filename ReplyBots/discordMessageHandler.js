@@ -13,7 +13,6 @@ const discordMessageHandler = (message) => {
   if (message.author.bot) {
     return;
   }
-  
   const matchedEligibleRoles = 
     message
       .member

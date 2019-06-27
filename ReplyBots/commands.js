@@ -19,6 +19,14 @@ const discordCommands = {
     description: "When you send the m command, BevoBot will reply with a " +
       " picture. You can see valid arguments by sending '.m list'"
   },
+  PLAYER_INFO: {
+    command: 'player_info',
+    description: "Given a name or a number, bot will tell you basic info about a player",
+  },
+  SCORE: {
+    command: 'score',
+    description: 'gets score information for current game',
+  },
   TEXAS: {
     command: 'texas',
     description: "bot will respond with FIGHT!",

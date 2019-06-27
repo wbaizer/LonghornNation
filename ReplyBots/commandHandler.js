@@ -5,6 +5,8 @@ const texasHandler = require('./texasHandler');
 const ouTimeHandler = require('./ouTimeHandler');
 const iPhoneHandler = require('./iPhoneHandler');
 const easterEggHandler = require('./easterEggHandler');
+const playerInfoHandler = require('./playerInfoHandler');
+const scoreHandler = require('./scoreHandler');
 
 const commandHandler = (message, reply, privateReply, isMessageFromMod) => {
   const commandPrefix = ".";
@@ -34,6 +36,8 @@ const commandHandler = (message, reply, privateReply, isMessageFromMod) => {
       ADD_MACRO,
       IPHONE,
       MACRO,
+      PLAYER_INFO,
+      SCORE,
       TEXAS,
       TIME,
     } = discordCommands;
@@ -56,6 +60,9 @@ const commandHandler = (message, reply, privateReply, isMessageFromMod) => {
           reply,
         );
         break;
+      case PLAYER_INFO.command:
+        playerInfoHandler(args, reply);
+        break;
       case TEXAS.command:
         texasHandler(
           reply,
@@ -65,6 +72,9 @@ const commandHandler = (message, reply, privateReply, isMessageFromMod) => {
         ouTimeHandler(
           reply,
         );
+        break;
+      case SCORE.command:
+        scoreHandler(reply);
         break;
       default:
         reply(
