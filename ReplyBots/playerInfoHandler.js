@@ -24,8 +24,6 @@ const playerInfoHandler = (args, reply) => {
         })
       );
       
-      // console.log(matchingPlayers);
-      
       // print matching matching players 
       if (matchingPlayers.length === 0) {
         reply(`Could not find any matching players.`);
@@ -33,15 +31,15 @@ const playerInfoHandler = (args, reply) => {
         reply(
           matchingPlayers.reduce(
             (accumulator, player) => {
-              return `${accumulator}\n\n${player.displayName}: ${player.position.abbreviation} #${player.jersey}, ${player.experience.displayValue}`
+              const displayName = player.displayName === "Sam Ehlinger" ? "Daddy Ehlinger" : player.displayName;
+              if (player.jersey) 
+              return `${accumulator}\n\n${displayName}: ${player.position.abbreviation} #${player.jersey}, ${player.experience.displayValue}`
             }, 
             "Here is the info I could find"
           )
         );
         
       }
-      
-    
     })
   .catch(e => {
     send('Something went wrong, please try again. If this persists, please message /u/brihoang or /u/chrislabeard');
