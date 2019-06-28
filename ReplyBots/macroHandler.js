@@ -5,7 +5,7 @@ fs.watch('./discordmacros.json', (event, filename) =>{discordMacros = JSON.parse
 
 const discordMacroHandler = (args, privateSend, send) => {
   if (args.length > 0) {
-    const macro = discordMacros[args[0]];
+    const macro = discordMacros[args[0].toLowerCase()];
     if (args[0] === 'list') {
       // pm a list of macros to the author
       const list = Object.keys(discordMacros).reduce((acc, curr) =>
