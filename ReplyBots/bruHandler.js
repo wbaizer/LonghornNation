@@ -1,4 +1,8 @@
 const bruHandler = (tokens, reply) => {
+  // only do it randomly 
+  if (Math.random() > 0.3) {
+    return;
+  }
   // brus
   const dateStrings = [
     "days", 
