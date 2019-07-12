@@ -32,7 +32,10 @@ const commandHandler = (message, reply, privateReply, isMessageFromMod) => {
     if (discordCommand != null) {
       privateReply(discordCommand.description);
     }
-  } else {
+  } else if (command.length > 0 && command.charAt(0) === "."){
+    return;
+  }
+  else {
     const {
       ADD_MACRO,
       HELP,
