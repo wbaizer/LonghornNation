@@ -8,7 +8,7 @@ fs.watch('./discordmacros.json', (event, filename) => {
 });
 
 const discordMacroHandler = (args, send) => {  
-  if (args.length === 1) {
+  if (args.length === 2) {
     const macroName = args[0].toLowerCase();
     const macroValue = args[1];
     
