@@ -8,7 +8,7 @@ fs.watch('./discordmacros.json', (event, filename) => {
 });
 
 const discordMacroHandler = (args, send) => {  
-  if (args.length > 1) {
+  if (args.length === 1) {
     const macroName = args[0].toLowerCase();
     const macroValue = args[1];
     
@@ -25,7 +25,7 @@ const discordMacroHandler = (args, send) => {
     );
   } else {
     send(
-      "Insufficient arguments"
+      "Insufficient arguments. You must have exactly 2 arguments"
     );
   }
 }
