@@ -37,9 +37,9 @@ discord.on('ready', () => {
         if (event.text === '🤫') {
           const url = `https://twitter.com/${event.user.screen_name}/status/${event.id_str}`;
           let chan = discord.channels.get("601575968804700160");
-          chan.send("BAT SIGNAL!!!!" + url);
+          chan.send(url);
           chan = discord.channels.get("289481914384121856");
-          chan.send("BAT SIGNAL!!!!: " + url);
+          chan.send(url);
           reddit.getSubreddit(process.env.SUBREDDIT).submitLink({
             title: `[Carrington] ${event.text}`,
             url,
