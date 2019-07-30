@@ -1,3 +1,5 @@
+"use strict"
+
 const Discord = require('discord.js');
 const Twitter = require('twitter');
 const snoowrap = require('snoowrap');
