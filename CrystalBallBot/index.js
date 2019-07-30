@@ -1,5 +1,3 @@
-"use strict"
-
 const Discord = require('discord.js');
 const Twitter = require('twitter');
 const snoowrap = require('snoowrap');
@@ -37,7 +35,7 @@ discord.on('ready', () => {
     stream.on('data', function(event) {
       if (event != null) {
         const url = `https://twitter.com/${event.user.screen_name}/status/${event.id_str}`;
-        let chan = discord.channels.get("601575968804700160");
+        var chan = discord.channels.get("601575968804700160");
         chan.send(url);
       }
     });
