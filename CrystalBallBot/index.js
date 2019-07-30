@@ -34,11 +34,9 @@ discord.on('ready', () => {
   var stream = client.stream('statuses/filter', params, (stream) => {
     stream.on('data', function(event) {
       if (event != null) {
-        if (event.text === '🤫') {
-          const url = `https://twitter.com/${event.user.screen_name}/status/${event.id_str}`;
-          let chan = discord.channels.get("601575968804700160");
-          chan.send(url);
-        }
+        const url = `https://twitter.com/${event.user.screen_name}/status/${event.id_str}`;
+        let chan = discord.channels.get("601575968804700160");
+        chan.send(url);
       }
     });
   });
