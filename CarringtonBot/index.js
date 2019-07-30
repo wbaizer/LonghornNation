@@ -38,7 +38,7 @@ discord.on('ready', () => {
       if (event != null) {
         if (event.text === '🤫') {
           const url = `https://twitter.com/${event.user.screen_name}/status/${event.id_str}`;
-          let chan = discord.channels.get("601575968804700160");
+          var chan = discord.channels.get("601575968804700160");
           chan.send(url);
           chan = discord.channels.get("289481914384121856");
           chan.send(url);
