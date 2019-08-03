@@ -25,11 +25,15 @@ discord.on('ready', () => {
   try {
     var stream = client.stream('statuses/filter', params, (stream) => {
       stream.on('data', function(event) {
-        if (event != null) {
-          const url =
-            `https://twitter.com/${event.user.screen_name}/status/${event.id_str}`;
-          var chan = discord.channels.get('601575968804700160');
-          chan.send(url);
+        try {
+          if (event != null && event.user.id_str == params.follow) {
+            const url =
+              `https://twitter.com/${event.user.screen_name}/status/${event.id_str}`;
+            var chan = discord.channels.get('601575968804700160');
+            chan.send(url);
+          }
+        } catch (e) {
+          
         }
       });
     });
