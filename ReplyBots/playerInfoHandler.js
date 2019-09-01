@@ -31,7 +31,7 @@ const playerInfoHandler = (args, reply) => {
       
       let playerStats = [];
       
-      if (texasStats != null && texasStats.hasOwnProperty(statistics)){
+      if (texasStats != null && texasStats.hasOwnProperty("statistics")){
           playerStats = texasStats.statistics;
       };
       
