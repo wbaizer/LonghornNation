@@ -27,7 +27,13 @@ const playerInfoHandler = (args, reply) => {
       
       const fullTexasScoreboard = (await axios.get('http://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=' + gameID)).data.boxscore;
       
-      const playerStats = fullTexasScoreboard.players.find(stats => stats.team.id == TEXAS_ID).statistics;
+      const texasStats = (fullTexasScoreboard.players || []).find(stats => stats.team.id == TEXAS_ID);
+      
+      let playerStats = [];
+      
+      if (texasStats != null && texasStats.hasOwnProperty(statistics)){
+          playerStats = texasStats.statistics;
+      };
       
       // object of playerIDs to strings for prettys stats
       const prettyStats = {};
