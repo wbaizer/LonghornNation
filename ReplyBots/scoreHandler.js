@@ -37,11 +37,17 @@ const repeat = (c, width) => {
 const prettifyScoreboard = (scoreboard) => {
   const width = 9;
   const competition = scoreboard.competitions[0];
-  const firstTeam = competition.competitors[0].team.abbreviation;
-  const secondTeam =  competition.competitors[1].team.abbreviation;
+  const firstTeamGiven = competition.competitors[0];
+  const secondTeamGiven =  competition.competitors[1];
+  const homeTeam = firstTeamGiven.homeAway == "home" ? firstTeamGiven : secondTeamGiven;
+  const awayTeam = firstTeamGiven.homeAway == "away" ? firstTeamGiven : secondTeamGiven;
+  
+  const secondTeam = homeTeam.team.abbreviation;
+  const firstTeam = awayTeam.team.abbreviation;
+  
   const status = competition.status.type.name;
-  const team1Rank = competition.competitors[0].curatedRank.current;
-  const team2Rank = competition.competitors[1].curatedRank.current;
+  const team1Rank = awayTeam.curatedRank.current;
+  const team2Rank = homeTeam.curatedRank.current;
   
   let team1DisplayRank = team1Rank > 25 ? "   " : spacify(`#${team1Rank}`, 3);
   let team2DisplayRank = team2Rank > 25 ? "   " : spacify(`#${team2Rank}`, 3);
