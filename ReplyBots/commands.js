@@ -29,7 +29,7 @@ const discordCommands = {
   },
   SCORE: {
     command: 'score',
-    description: 'gets score information for current game',
+    description: 'gets score information for big 12 games this week',
   },
   TEXAS: {
     command: 'texas',
