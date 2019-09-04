@@ -28,6 +28,7 @@ const discordMessageHandler = (message) => {
         message.author.send(text)
       },
       Array.from(matchedEligibleRoles).length > 0,
+      s => "```" + s + "```"
     );
   } catch(e) {
     console.log(e);

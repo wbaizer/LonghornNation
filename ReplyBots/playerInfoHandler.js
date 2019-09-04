@@ -2,7 +2,7 @@ const axios = require('axios');
 
 const TEXAS_ID = 251;
 
-const playerInfoHandler = (args, reply) => {
+const playerInfoHandler = (args, reply, codify) => {
   const arg = args[0];
   
   const number = parseInt(arg);
@@ -51,31 +51,33 @@ const playerInfoHandler = (args, reply) => {
             prettyStats[id] = "";
           }
           
-          prettyStats[id] += "**" + name.toUpperCase() + "**" + "\n```";
+          prettyStats[id] += "**" + name.toUpperCase() + "**" + "\n";
+          
+          let codePart = "";
           
           for (i  = 0; i < labels.length; i++) {
-            prettyStats[id] += labels[i];
+            codePart += labels[i];
             for (j = 0; j < WIDTH - labels[i].length; j++ ) {
-              prettyStats[id] += " ";
+              codePart += " ";
             }
-            prettyStats[id] += "|";
+            codePart += "|";
           }
           
-          prettyStats[id] += "\n";
+          codePart+= "\n";
           for(i = 0; i < labels.length * (WIDTH + 1); i++) {
-            prettyStats[id] += "-";
+            codePart += "-";
           }
-          prettyStats[id] += "\n";
+          codePart += "\n";
           
           
           for (i  = 0; i < stats.length; i++) {
-            prettyStats[id] += stats[i];
+            codePart += stats[i];
             for (j = 0; j < WIDTH - stats[i].length; j++ ) {
-              prettyStats[id] += " ";
+              codePart += " ";
             }
-            prettyStats[id] += "|";
+            codePart += "|";
           }
-          prettyStats[id] += "```\n";
+          prettyStats[id] += codify(codePart) + "\n";
           
         })
       });

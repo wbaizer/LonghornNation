@@ -28,7 +28,7 @@ const discordCommands = {
     description: "Given a name or a number, bot will tell you basic info about a player",
   },
   SCORE: {
-    command: 'score',
+    command: 'scores',
     description: 'gets score information for big 12 games this week',
   },
   TEXAS: {

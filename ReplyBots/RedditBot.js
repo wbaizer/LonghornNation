@@ -40,7 +40,8 @@ comments.on('item', (item) => {
           text: message,
         })
       },
-      // TODO: implement this as well
+      // TODO: implement this
       false, // determine if it's a mod sending message
+      s => "\n    " + s.replace(/(?:\r\n|\r|\n)/g, '\n    ') + "\n",
     );
 });

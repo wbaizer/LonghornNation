@@ -9,7 +9,7 @@ const playerInfoHandler = require('./playerInfoHandler');
 const scoreHandler = require('./scoreHandler');
 const helpHandler = require('./helpHandler');
 
-const commandHandler = (message, reply, privateReply, isMessageFromMod) => {
+const commandHandler = (message, reply, privateReply, isMessageFromMod, codify) => {
   const commandPrefix = ".";
   
   easterEggHandler(message, reply);
@@ -68,7 +68,7 @@ const commandHandler = (message, reply, privateReply, isMessageFromMod) => {
         );
         break;
       case PLAYER_INFO.command:
-        playerInfoHandler(args, reply);
+        playerInfoHandler(args, reply, codify);
         break;
       case TEXAS.command:
         texasHandler(
@@ -81,7 +81,7 @@ const commandHandler = (message, reply, privateReply, isMessageFromMod) => {
         );
         break;
       case SCORE.command:
-        scoreHandler(reply);
+        scoreHandler(reply, codify);
         break;
       default:
         reply(

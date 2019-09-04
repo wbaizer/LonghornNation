@@ -108,7 +108,7 @@ const prettifyScoreboard = (scoreboard) => {
   + line + "|" + spacify(`${team2DisplayRank}${secondTeam}`, width) + "|" + line2Extra + "|\n" +line;
 }
 
-const scoreHandler = (send) => {
+const scoreHandler = (send, codify) => {
   const url = 'http://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard?groups=4';
   
   axios.get(url).then(({data}) => {
@@ -116,7 +116,7 @@ const scoreHandler = (send) => {
     
     
     send(allEvents.reduce((acc, score) => {
-      return acc + "```" + prettifyScoreboard(score) + "```";
+      return acc + codify(prettifyScoreboard(score));
     }, ""));
 
   }).catch (e => {
