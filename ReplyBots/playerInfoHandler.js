@@ -1,28 +1,36 @@
 const axios = require('axios');
 
-const TEXAS_ID = 251;
+const TEXAS_ID = "251";
 
-const playerInfoHandler = (args, reply, codify) => {
-  const arg = args[0];
+const playerInfoHandler = async (args, reply, codify) => {
+  const useAway = args.includes("-a");
+  const arg = args.filter(a => a != "-a")[0];
+  
+  if (arg == null) {
+    reply("There are not enough arguments. Please try again.");
+    return;
+  }
   
   const number = parseInt(arg);
   
+  let TEAM_ID = TEXAS_ID;
+  const scoreboardResponse = await axios.get('http://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard');
+  const {data: fullScoreboard} = scoreboardResponse;
+  const {events} = fullScoreboard;
+  const texasScoreboard = events.find(e => {
+    const {competitions} = e;
+    const competition = competitions[0];
+    const {competitors} = competition;
+    return competitors.find(competitor => competitor.team.id == TEAM_ID);
+  });
   
-  axios.get('https://site.web.api.espn.com/apis/site/v2/sports/football/college-football/teams/'+TEXAS_ID+'/roster?region=us&lang=en&seasontype=2&enable=broadcasts&disable=leaders')
+  if (useAway) {
+    TEAM_ID = texasScoreboard.competitions[0].competitors.find(team => team.id != TEXAS_ID).id;
+  }
+  
+  
+  axios.get('https://site.web.api.espn.com/apis/site/v2/sports/football/college-football/teams/'+TEAM_ID+'/roster?region=us&lang=en&seasontype=2&enable=broadcasts&disable=leaders')
     .then(async response => {
-      // get this weeks game
-      const scoreboardResponse = await axios.get('http://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard');
-
-      const {data: fullScoreboard} = scoreboardResponse;
-      const {events} = fullScoreboard
-      
-      const texasScoreboard = events.find(e => {
-        const {competitions} = e;
-        const competition = competitions[0];
-        const {competitors} = competition;
-        return competitors.find(competitor => competitor.team.id == TEXAS_ID);
-      });
-      
       const {id: gameID} = texasScoreboard;
       
       const fullTexasScoreboard = (await axios.get('http://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=' + gameID)).data.boxscore;
@@ -32,7 +40,7 @@ const playerInfoHandler = (args, reply, codify) => {
       const team1 = teams[0].team.displayName;
       const team2 = teams[1].team.displayName;
       
-      const texasStats = (fullTexasScoreboard.players || []).find(stats => stats.team.id == TEXAS_ID);
+      const texasStats = (fullTexasScoreboard.players || []).find(stats => stats.team.id == TEAM_ID);
       
       let playerStats = [];
       
@@ -114,7 +122,9 @@ const playerInfoHandler = (args, reply, codify) => {
                 if (prettyStats.hasOwnProperty(player.id)) {
                   stats =  prettyStats[player.id];
                 }
-                return `${accumulator}${displayName}: ${player.position.abbreviation} #${player.jersey}, ${player.experience.displayValue}\nStats for ${team1} vs. ${team2} game\n\n${stats}`;
+                
+                const statsString = stats.trim().length > 0 ? `Stats for ${team1} vs. ${team2} game\n\n${stats}` : "\n\n";
+                return `${accumulator}${displayName}: ${player.position.abbreviation} #${player.jersey}, ${player.experience.displayValue}\n${statsString}`;
               }
             }, 
             "Here is the info I could find\n\n"

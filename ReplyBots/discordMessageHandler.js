@@ -32,7 +32,7 @@ const discordMessageHandler = (message) => {
     );
   } catch(e) {
     console.log(e);
-    message.author.send('Somethign went wrong. Please try again. if this persists, please meessage /u/brihoang or /u/chrislabeard');
+    message.author.send('Something went wrong. Please try again. if this persists, please meessage /u/brihoang or /u/chrislabeard');
   }
 };
 

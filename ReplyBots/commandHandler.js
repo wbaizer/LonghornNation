@@ -67,6 +67,7 @@ const commandHandler = (message, reply, privateReply, isMessageFromMod, codify) 
           reply,
         );
         break;
+      case "pi":
       case PLAYER_INFO.command:
         playerInfoHandler(args, reply, codify);
         break;
