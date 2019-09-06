@@ -115,7 +115,12 @@ const playerInfoHandler = async (args, reply, codify) => {
         reply(
           matchingPlayers.reduce(
             (accumulator, player) => {
-              const displayName = player.displayName === "Sam Ehlinger" ? "Daddy Ehlinger" : player.displayName;
+              let displayName = player.displayName;
+              if (displayName === "Sam Ehlinger") {
+                displayName = "Daddy Ehlinger";
+              } else if (displayName === "K'Lavon Chaisson") {
+                displayName = "He who must not be named";
+              }
               if (player.jersey) {
                 let stats = "";
                 
