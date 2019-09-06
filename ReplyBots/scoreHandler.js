@@ -33,6 +33,20 @@ const repeat = (c, width) => {
   }
   return ret;
 }
+const CONFERENCE_MAPPING = {
+  "acc": "1",
+  "aac": "151",
+  "big12": "4",
+  "big10": "5",
+  "bigten": "5",
+  "cusa": "12",
+  "independent": "18",
+  "mac": "15",
+  "mwc": "17",
+  "pac12": "9",
+  "sec": "8",
+  "sunbelt": "37",
+};
 
 const prettifyScoreboard = (scoreboard) => {
   const width = 9;
@@ -49,8 +63,8 @@ const prettifyScoreboard = (scoreboard) => {
   const team1Rank = awayTeam.curatedRank.current;
   const team2Rank = homeTeam.curatedRank.current;
   
-  let team1DisplayRank = team1Rank > 25 ? "   " : spacify(`#${team1Rank}`, 3);
-  let team2DisplayRank = team2Rank > 25 ? "   " : spacify(`#${team2Rank}`, 3);
+  let team1DisplayRank = team1Rank > 25 ? "    " : spacify(`#${team1Rank}`, 4);
+  let team2DisplayRank = team2Rank > 25 ? "    " : spacify(`#${team2Rank}`, 4);
   
   if (team1Rank > 25 && team2Rank  > 25) {
     team1DisplayRank = "";
@@ -108,8 +122,18 @@ const prettifyScoreboard = (scoreboard) => {
   + line + "|" + spacify(`${team2DisplayRank}${secondTeam}`, width) + "|" + line2Extra + "|\n" +line;
 }
 
-const scoreHandler = (send, codify) => {
-  const url = 'http://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard?groups=4';
+const scoreHandler = (args, send, codify) => {
+  let CONFERENCE_ID = 4;
+  if (args.length > 0) {
+    const arg = args[0].trim().toLowerCase();
+    if (CONFERENCE_MAPPING.hasOwnProperty(arg)) {
+      CONFERENCE_ID = CONFERENCE_MAPPING[arg];
+    } else {
+      send("That is not a valid conference. Please Try again");
+      return;
+    }
+  }
+  const url = 'http://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard?groups=' + CONFERENCE_ID;
   
   axios.get(url).then(({data}) => {
     const {events: allEvents} = data;

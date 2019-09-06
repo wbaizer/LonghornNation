@@ -82,7 +82,7 @@ const commandHandler = (message, reply, privateReply, isMessageFromMod, codify) 
         );
         break;
       case SCORE.command:
-        scoreHandler(reply, codify);
+        scoreHandler(args, reply, codify);
         break;
       default:
         reply(
