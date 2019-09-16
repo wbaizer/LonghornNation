@@ -41,6 +41,8 @@ module.exports = function(agenda) {
                     //message(process.env.DISCORD_CHANNEL, false, `MoOooOoo I updated the sidebar on ${process.env.SUBREDDIT}!`);         
                   }).catch(err => {
                       console.log(err.message);
+                      job.schedule('15 seconds');
+                      job.save();                      
                       done(err.message);
                       //message(process.env.DISCORD_CHANNEL, true, err.message);
                   });
