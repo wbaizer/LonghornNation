@@ -147,6 +147,7 @@ function mapSchedule(schedule, agenda, sport) {
         time: moment(event.date).format('h:mm a'),
         dateISO: event.date,
         name: event.name,
+        timeValid: event.timeValid,
         score: score,
         venue: venue,
         primaryTeam: primaryTeam,
