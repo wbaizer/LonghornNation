@@ -86,7 +86,11 @@
                                 <a href="/loss"></a> <%= data.football.schedule.post[i].primaryTeam.score.displayValue %>-<%= data.football.schedule.post[i].opposingTeam.score.displayValue %>
                                 <% } %>
                             <% } else {%>
-                                <%= data.football.schedule.post[i].time %>
+                                <% if(data.football.schedule.post[i].timeValid) {%>
+                                    <%= data.football.schedule.post[i].time %>
+                                <% } else {%>
+                                    TBD
+                                <% } %>
                             <% } %>
                         </td>
                     </tr>
@@ -128,7 +132,11 @@
                        <a href="/loss"></a> <%= data.football.schedule.regular[i].primaryTeam.score.displayValue %>-<%= data.football.schedule.regular[i].opposingTeam.score.displayValue %>
                        <% } %>
                    <% } else {%>
-                       <%= data.football.schedule.regular[i].time %>
+                        <% if(data.football.schedule.regular[i].timeValid) {%>
+                            <%= data.football.schedule.regular[i].time %>
+                        <% } else {%>
+                            TBD
+                        <% } %>
                    <% } %>
                </td>
            </tr>
