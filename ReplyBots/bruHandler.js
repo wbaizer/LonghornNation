@@ -1,4 +1,5 @@
 const bruHandler = (tokens, reply) => {
+  return;
   // only do it randomly 
   if (Math.random() > 0.3) {
     return;

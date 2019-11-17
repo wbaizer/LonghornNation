@@ -15,7 +15,7 @@ const fireTomHermanHandler = (message, reply) => {
     "fire titter tom",
   ]
 
-  if (firePhrases.find(value => lowercase.includes(value)) != null) {
+  if (false && firePhrases.find(value => lowercase.includes(value)) != null) {
     reply('[](https://i.imgur.com/me3h0ao.jpg)');
   }
 }
