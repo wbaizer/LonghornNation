@@ -22,6 +22,7 @@ const discordSendMessage = (channel, message) => {
 }
 
 discord.on('ready', () => {
+  return;
   try {
     var stream = client.stream('statuses/filter', params, (stream) => {
       stream.on('data', function(event) {
