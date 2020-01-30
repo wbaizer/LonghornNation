@@ -18,18 +18,15 @@ async function texasSports(agenda) {
         rankings: {}
     };
     var schedule = 'https://texassports.com/schedule.aspx?path=baseball';
-    var standings = 'http://www.big12sports.com/standings/Standings.dbml?DB_OEM_ID=10410&SPID=13131';
+    var standings = 'https://big12sports.com/standings.aspx?standings=123';
     return axios.all([
-        axios.get(schedule),
-        axios.get(standings),
+        axios.get(standings)
     ])
     .then(axios.spread(function(
-        baseball_schedule,
-        baseball_standings,
+        baseball_standings
         ) {
             // This is a hotfix and terrible fix later.
             return {
-                schedule: processSchedule(baseball_schedule, agenda),
                 rankings: processStandings(baseball_standings)
             }
         })
@@ -132,35 +129,31 @@ function processStandings(response) {
     const html = response.data;
     const $ = cheerio.load(html);
     var list = []
-    var rows = $('.standings-table tbody tr');
+    var rows = $('.sidearm-standings-table tbody tr');
     $(rows).each(function(i, elem) {
-        //Skip the first 3 rows because fuck em.
-        if(i > 2) {
-            //Get the team data from ESPN Static
-            var teamKey = $(this).find('td.team a').text().trim().toUpperCase();
-            var teamID = ts_teams[teamKey];
-            var team = teams[teamID];
-            //Get standings info
-            var overall = $(this).find('td.overall.record').text().trim();
-            var conference = $(this).find('td.conference.record').text().trim();
-            if(teamID == process.env.TEAM_ID) {
-                primaryTeamRanking = {
-                    overall: overall,
-                    conference: conference
-                }
-                rankings.primaryTeam = primaryTeamRanking;
-            }
-            var teamTemp = {
-                name: team.nickname,
-                id: teamID,
-                rank: '',
-                abbreviation: team.abbreviation,
+        //Get the team data from ESPN Static
+        var teamKey = $(this).find('td:first-child a').text().trim().toUpperCase();
+        var teamID = ts_teams[teamKey];
+        var team = teams[teamID];
+        //Get standings info
+        var overall = $(this).find('td:nth-child(11)').text().trim();
+        var conference = $(this).find('td:nth-child(4)').text().trim();
+        if(teamID == process.env.TEAM_ID) {
+            primaryTeamRanking = {
                 overall: overall,
                 conference: conference
             }
-            rankings.teams.push(teamTemp);
-
+            rankings.primaryTeam = primaryTeamRanking;
         }
+        var teamTemp = {
+            name: team.nickname,
+            id: teamID,
+            rank: '',
+            abbreviation: team.abbreviation,
+            overall: overall,
+            conference: conference
+        }
+        rankings.teams.push(teamTemp);
     });
     return rankings;
 }
