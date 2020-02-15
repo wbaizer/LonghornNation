@@ -169,9 +169,11 @@ const run = async () => {
   if (ACTION == 'Send Message') {
     //message(process.env.DISCORD_CHANNEL, false, REASON);
     //agenda.create('Update Sidebar').schedule('5 seconds').save();
-    fetchTeamSchedule().then(data => {
-      console.log(JSON.stringify(data.baseball));
-    })
+    if(process.env.test.includes('football')) {
+      console.log('yes');
+    } else {
+      console.log('no');
+    }
   }
   if (ACTION == 'Generate Spritesheet') {
     generateSprites();

@@ -102,7 +102,7 @@ function mapSchedule(schedule, agenda, sport) {
       if(sport == 'baseball') {
         checkID = "126";
       }
-      if(process.env.GAME_THREAD == 'true') {
+      if(process.env.GAME_THREAD.includes(sport)) {
         if(moment(event.date).isAfter(Date.now())) {
           var scheduleDate = moment(event.date).subtract(2, 'hours').toDate();
           console.log(`${sport} - game thread`, moment(scheduleDate).fromNow());
