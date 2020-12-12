@@ -111,8 +111,8 @@ function mapSchedule(schedule, agenda, sport) {
               console.log(`CANCEL: ${sport} - game thread: ${event.name}`, moment(scheduleDate).fromNow());
               agenda.cancel({'game_id' : event.id})
             } else {
-              console.log(`${sport} - game thread: ${event.name}`, moment(scheduleDate).fromNow());
-              agenda.create('CREATE: game thread', {event: event, sport: sport}).unique({'game_id': event.id}).schedule(scheduleDate).save();
+              console.log(`CREATE: ${sport} - game thread: ${event.name}`, moment(scheduleDate).fromNow());
+              agenda.create('game thread', {event: event, sport: sport}).unique({'game_id': event.id}).schedule(scheduleDate).save();
             }
           }
         }
