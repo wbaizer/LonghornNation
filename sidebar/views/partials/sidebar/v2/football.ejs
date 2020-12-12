@@ -86,11 +86,24 @@
                                 <a href="/loss"></a> <%= data.football.schedule.post[i].primaryTeam.score.displayValue %>-<%= data.football.schedule.post[i].opposingTeam.score.displayValue %>
                                 <% } %>
                             <% } else {%>
-                                <% if(data.football.schedule.post[i].timeValid) {%>
-                                    <%= data.football.schedule.post[i].time %>
-                                <% } else {%>
-                                    TBD
-                                <% } %>
+                                <% switch (data.football.schedule.post[i].status) {
+                                    case 'STATUS_SCHEDULED' : %>
+                                            <% if(data.football.schedule.post[i].timeValid) {%>
+                                                <%= data.football.schedule.post[i].time %>
+                                            <% } else {%>
+                                                TBD
+                                            <% } %>
+                                            <% break;
+                                    
+                                    case 'STATUS_POSTPONED' : %>
+                                            PPD
+                                            <% break;
+                                    
+                                    case 'STATUS_CANCELED' : %>
+                                            CXL
+                                            <% break;
+                                    
+                                    } %>
                             <% } %>
                         </td>
                     </tr>
@@ -132,11 +145,24 @@
                        <a href="/loss"></a> <%= data.football.schedule.regular[i].primaryTeam.score.displayValue %>-<%= data.football.schedule.regular[i].opposingTeam.score.displayValue %>
                        <% } %>
                    <% } else {%>
-                        <% if(data.football.schedule.regular[i].timeValid) {%>
-                            <%= data.football.schedule.regular[i].time %>
-                        <% } else {%>
-                            TBD
-                        <% } %>
+                        <% switch (data.football.schedule.regular[i].status) {
+                            case 'STATUS_SCHEDULED' : %>
+                                    <% if(data.football.schedule.regular[i].timeValid) {%>
+                                        <%= data.football.schedule.regular[i].time %>
+                                    <% } else {%>
+                                        TBD
+                                    <% } %>
+                                    <% break;
+                            
+                            case 'STATUS_POSTPONED' : %>
+                                    PPD
+                                    <% break;
+                            
+                            case 'STATUS_CANCELED' : %>
+                                    CXL
+                                    <% break;
+                            
+                            } %>
                    <% } %>
                </td>
            </tr>
