@@ -96,23 +96,30 @@ function mapSchedule(schedule, agenda, sport) {
       var score = [];
       var network = '';
       var complete = false;
+      var status = '';
       var homeAway = '@';
       var venue = {};
       var checkID = process.env.TEAM_ID;
       if(sport == 'baseball') {
         checkID = "126";
       }
-      if(process.env.GAME_THREAD.includes(sport)) {
-        if(moment(event.date).isAfter(Date.now())) {
-          var scheduleDate = moment(event.date).subtract(2, 'hours').toDate();
-          console.log(`${sport} - game thread`, moment(scheduleDate).fromNow());
-          agenda.create('game thread', {event: event, sport: sport}).unique({'game_id': event.id}).schedule(scheduleDate).save();
-        }
-      }
       event.competitions.forEach(game => {
+        if(process.env.GAME_THREAD.includes(sport)) {
+          if(moment(event.date).isAfter(Date.now())) {
+            var scheduleDate = moment(event.date).subtract(2, 'hours').toDate();
+            if (game.status.type.name === 'STATUS_CANCELED' || game.status.type.name === 'STATUS_POSTPONED') {
+              console.log(`CANCEL: ${sport} - game thread: ${event.name}`, moment(scheduleDate).fromNow());
+              agenda.cancel({'game_id' : event.id})
+            } else {
+              console.log(`${sport} - game thread: ${event.name}`, moment(scheduleDate).fromNow());
+              agenda.create('CREATE: game thread', {event: event, sport: sport}).unique({'game_id': event.id}).schedule(scheduleDate).save();
+            }
+          }
+        }
         if(game.broadcasts.length > 0) {
           network = game.broadcasts[0].media.shortName;
         }
+        status = game.status.type.name
         complete = game.status.type.completed;
         venue = game.venue;
         game.competitors.forEach(team => {
@@ -155,6 +162,7 @@ function mapSchedule(schedule, agenda, sport) {
         opposingTeam: opposingTeam,
         complete: complete,
         homeAway: homeAway,
+        status: status
       }
     });
 }
