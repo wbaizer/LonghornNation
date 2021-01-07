@@ -26,7 +26,7 @@ module.exports = function(agenda) {
           var posts = await getRecentPosts(reddit, ['All', 'CFB', 'LonghornNation']);
           var tweets = await getRecentTweets([
             'sehlinger3', 
-            'CoachTomHerman', 
+            'CoachSark', 
             'TexasFootball', 
             'BCarringtonUT',
             'MikeRoach247',

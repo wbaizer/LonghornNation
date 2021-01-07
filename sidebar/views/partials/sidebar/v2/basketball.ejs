@@ -86,7 +86,24 @@
                                 <a href="/loss"></a> <%= data.basketball.schedule.post[i].primaryTeam.score.displayValue %>-<%= data.basketball.schedule.post[i].opposingTeam.score.displayValue %>
                                 <% } %>
                             <% } else {%>
-                                <%= data.basketball.schedule.post[i].time %>
+                                <% switch (data.basketball.schedule.post[i].status) {
+                                    case 'STATUS_SCHEDULED' : %>
+                                            <% if(data.basketball.schedule.post[i].timeValid) {%>
+                                                <%= data.basketball.schedule.post[i].time %>
+                                            <% } else {%>
+                                                TBD
+                                            <% } %>
+                                            <% break;
+                                    
+                                    case 'STATUS_POSTPONED' : %>
+                                            PPD
+                                            <% break;
+                                    
+                                    case 'STATUS_CANCELED' : %>
+                                            CXL
+                                            <% break;
+                                    
+                                    } %>
                             <% } %>
                         </td>
                     </tr>
@@ -134,7 +151,24 @@
                        <a href="/loss"></a> <%= data.basketball.schedule.regular[i].primaryTeam.score.displayValue %>-<%= data.basketball.schedule.regular[i].opposingTeam.score.displayValue %>
                        <% } %>
                    <% } else {%>
-                       <%= data.basketball.schedule.regular[i].time %>
+                        <% switch (data.basketball.schedule.regular[i].status) {
+                            case 'STATUS_SCHEDULED' : %>
+                                    <% if(data.basketball.schedule.regular[i].timeValid) {%>
+                                        <%= data.basketball.schedule.regular[i].time %>
+                                    <% } else {%>
+                                        TBD
+                                    <% } %>
+                                    <% break;
+                            
+                            case 'STATUS_POSTPONED' : %>
+                                    PPD
+                                    <% break;
+                            
+                            case 'STATUS_CANCELED' : %>
+                                    CXL
+                                    <% break;
+                            
+                            } %>
                    <% } %>
                </td>
            </tr>
