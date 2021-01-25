@@ -88,7 +88,7 @@ async function fetchTeamSchedule(agenda) {
 }
 
 function mapSchedule(schedule, agenda, sport) {
-    console.log('Digesting the data');
+    console.log(`Digesting the data ${sport} - ${schedule.events.length} events`);
     console.log()
     return schedule.events.map(event => {
       var primaryTeam = {};
