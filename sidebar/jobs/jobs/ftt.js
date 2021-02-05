@@ -28,8 +28,6 @@ module.exports = function(agenda) {
             'sehlinger3', 
             'CoachSark', 
             'TexasFootball', 
-            'BCarringtonUT',
-            'MikeRoach247',
             '_delconte'
           ]);
           var last_thread = await getLastThread('Off Topic Free Talk Thread');
