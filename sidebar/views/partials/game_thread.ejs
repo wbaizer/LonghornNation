@@ -3,7 +3,7 @@
 <p>Venue: <% if(data.venue.shortName) { %><%= data.venue.shortName %>, <% } %><% if(data.venue.address && data.venue.address.city && data.venue.address.state) { %><%= data.venue.address.city %>, <%= data.venue.address.state %><% } %></p>
 <hr>
 <% if(data.network) { %>
-<p><strong>Television:</strong><%= data.network %></p>
+<p><strong>Television:</strong> <%= data.network %></p>
 <% } %>
 <p><strong>Radio:</strong>  </p>
 <ul>
