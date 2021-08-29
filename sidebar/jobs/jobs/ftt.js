@@ -25,7 +25,7 @@ module.exports = function(agenda) {
           var weather = await getWeather();
           var posts = await getRecentPosts(reddit, ['All', 'CFB', 'LonghornNation']);
           var tweets = await getRecentTweets([
-            'sehlinger3', 
+            'Hcard7', 
             'CoachSark', 
             'TexasFootball', 
             '_delconte'
