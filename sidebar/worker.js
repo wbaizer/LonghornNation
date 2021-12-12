@@ -29,7 +29,7 @@ agenda.on("ready", function () {
     .save();
   agenda
     .create("Sports Talk Thread")
-    .unique({ "ftt-sub": process.env.SUBREDDIT })
+    .unique({ "stt-sub": process.env.SUBREDDIT })
     .repeatEvery("0 0 * * *", { skipImmediate: true })
     .save();
 });
