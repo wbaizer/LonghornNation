@@ -1,23 +1,25 @@
 #!/usr/bin/env node
 
-require('dotenv').config();
+require("dotenv").config();
 
-const inquirer = require('inquirer');
-const chalk = require('chalk');
-const figlet = require('figlet');
-const { reddit, getLastThread } = require('./utils/reddit');
-const sass = require('node-sass');
-const express = require('express');
-const path = require('path');
-const moment = require('moment');
-const TurndownService = require('turndown');
-const turndownPluginGfm = require('turndown-plugin-gfm');
+const inquirer = require("inquirer");
+const chalk = require("chalk");
+const figlet = require("figlet");
+const { reddit, getLastThread } = require("./utils/reddit");
+const sass = require("node-sass");
+const express = require("express");
+const path = require("path");
+const moment = require("moment");
+const TurndownService = require("turndown");
+const turndownPluginGfm = require("turndown-plugin-gfm");
+const teamLink = require("./static_data/teams.reddit.json");
+const networks = require("./static_data/networks.json");
 
-const { fetchTeamSchedule } = require('./utils/schedule');
-const { generateSprites } = require('./utils/sprites');
-const { message } = require('./utils/discord');
-const { getWeather, getRecentPosts, getRecentTweets } = require('./utils/ftt');
-const { texasSports } = require('./utils/service');
+const { fetchTeamSchedule } = require("./utils/schedule");
+const { generateSprites } = require("./utils/sprites");
+const { message } = require("./utils/discord");
+const { getWeather, getRecentPosts, getRecentTweets } = require("./utils/ftt");
+const { texasSports } = require("./utils/service");
 
 var gfm = turndownPluginGfm.gfm;
 var turndownService = new TurndownService();
@@ -27,9 +29,9 @@ const init = () => {
   console.log(
     chalk.green(
       figlet.textSync("HOOK'EM", {
-        font: 'Ghost',
-        horizontalLayout: 'default',
-        verticalLayout: 'default',
+        font: "Ghost",
+        horizontalLayout: "default",
+        verticalLayout: "default",
       })
     )
   );
@@ -38,34 +40,34 @@ const init = () => {
 const askQuestions = () => {
   const questions = [
     {
-      name: 'ACTION',
-      type: 'rawlist',
-      message: 'What do you want to do?',
+      name: "ACTION",
+      type: "rawlist",
+      message: "What do you want to do?",
       choices: [
-        'Update Sidebar',
-        'Update Stylesheet',
-        'Send Message',
-        'Generate Spritesheet',
-        'Generate FTT',
-        'Scrape Texas',
-        'Schedule Job',
-        'Generate STT',
+        "Update Sidebar",
+        "Update Stylesheet",
+        "Send Message",
+        "Generate Spritesheet",
+        "Generate FTT",
+        "Scrape Texas",
+        "Schedule Job",
+        "Generate STT",
       ],
     },
     {
-      name: 'USERNAME',
-      message: 'Your reddit username',
-      type: 'input',
+      name: "USERNAME",
+      message: "Your reddit username",
+      type: "input",
     },
     {
-      name: 'PASSWORD',
-      message: 'Your reddit password',
-      type: 'password',
+      name: "PASSWORD",
+      message: "Your reddit password",
+      type: "password",
     },
     {
-      name: 'REASON',
-      message: 'Reason for updating',
-      type: 'input',
+      name: "REASON",
+      message: "Reason for updating",
+      type: "input",
     },
   ];
   return inquirer.prompt(questions);
@@ -82,34 +84,65 @@ const run = async () => {
   // ask questions
   const answers = await askQuestions();
   const { ACTION, USERNAME, PASSWORD, REASON } = answers;
-  if (ACTION == 'Update Sidebar') {
+  if (ACTION == "Update Sidebar") {
     var app = express();
-    app.set('views', path.join(__dirname, 'views'));
-    app.set('view engine', 'ejs');
+    app.set("views", path.join(__dirname, "views"));
+    app.set("view engine", "ejs");
 
-    var date = moment(Date.now()).format('M/D/Y hh:mm A');
+    var date = moment(Date.now()).format("M/D/Y hh:mm A");
     var show = {
-      football: false,
-      baseball: true,
-      basketball: true,
+      football: true,
+      baseball: false,
+      basketball: false,
     };
-    fetchTeamSchedule().then((data) => {
-      /*reddit.getSubreddit(process.env.SUBREDDIT).editSettings({
-          description: markdown
-        }).then(data => {
-          success('Success, you did it peter!');
-          //message(process.env.DISCORD_CHANNEL, false, `MoOooOoo I updated the sidebar on ${process.env.SUBREDDIT}!`);
-        }).catch(err => {
-          console.log(err.message);
-          message(process.env.DISCORD_CHANNEL, true, err.message);
-        });*/
-    });
+    var show = {
+      football: process.env.FOOTBALL,
+      baseball: process.env.BASEBALL,
+      basketball: process.env.BASKETBALL,
+    };
+    fetchTeamSchedule()
+      .then((data) => {
+        app.render(
+          "sidebar",
+          {
+            data,
+            teamLink: teamLink,
+            networks: networks,
+            date,
+            show,
+            moment: moment,
+          },
+          function (err, doc) {
+            if (err) {
+              return console.log(err);
+            }
+            var markdown = turndownService.turndown(doc, { gfm: true });
+            reddit
+              .getSubreddit(process.env.SUBREDDIT)
+              .editSettings({
+                description: markdown,
+              })
+              .then((data) => {
+                //success('Success, you did it peter!');
+                console.log("updated reddit");
+                //message(process.env.DISCORD_CHANNEL, false, `MoOooOoo I updated the sidebar on ${process.env.SUBREDDIT}!`);
+              })
+              .catch((err) => {
+                console.log(err.message);
+                //message(process.env.DISCORD_CHANNEL, true, err.message);
+              });
+          }
+        );
+      })
+      .catch((err) => {
+        return console.log(err);
+      });
   }
-  if (ACTION == 'Update Stylesheet') {
+  if (ACTION == "Update Stylesheet") {
     sass.render(
       {
-        file: './src/css/style.scss',
-        outputStyle: 'compressed',
+        file: "./src/css/style.scss",
+        outputStyle: "compressed",
       },
       function (err, result) {
         if (err) {
@@ -121,8 +154,8 @@ const run = async () => {
         reddit
           .getSubreddit(process.env.SUBREDDIT)
           .uploadStylesheetImage({
-            name: 'sprite',
-            file: './src/images/sprite.png',
+            name: "sprite",
+            file: "./src/images/sprite.png",
           })
           .then((data) => {
             message(
@@ -138,7 +171,7 @@ const run = async () => {
           .getSubreddit(process.env.SUBREDDIT)
           .updateStylesheet(style)
           .then((data) => {
-            success('Success, you did it peter!');
+            success("Success, you did it peter!");
             message(
               process.env.DISCORD_CHANNEL,
               false,
@@ -152,47 +185,47 @@ const run = async () => {
       }
     );
   }
-  if (ACTION == 'Send Message') {
+  if (ACTION == "Send Message") {
     //message(process.env.DISCORD_CHANNEL, false, REASON);
     //agenda.create('Update Sidebar').schedule('5 seconds').save();
-    if (process.env.test.includes('football')) {
-      console.log('yes');
+    if (process.env.test.includes("football")) {
+      console.log("yes");
     } else {
-      console.log('no');
+      console.log("no");
     }
   }
-  if (ACTION == 'Generate Spritesheet') {
+  if (ACTION == "Generate Spritesheet") {
     generateSprites();
-    success('Spritesheet Generated');
+    success("Spritesheet Generated");
   }
-  if (ACTION == 'Generate FTT') {
+  if (ACTION == "Generate FTT") {
     var app = express();
     // app.set('views', path.join(__dirname, 'views'));
-    app.set('view engine', 'ejs');
+    app.set("view engine", "ejs");
 
-    var date = moment(Date.now()).format('M/D/Y');
-    var date_2 = moment(Date.now()).format('M/D/Y hh:mm A');
+    var date = moment(Date.now()).format("M/D/Y");
+    var date_2 = moment(Date.now()).format("M/D/Y hh:mm A");
     var day = moment(Date.now()).format("dddd['s]");
 
     async function getFTT() {
       var weather = await getWeather();
 
       var posts = await getRecentPosts(reddit, [
-        'All',
-        'CFB',
-        'LonghornNation',
+        "All",
+        "CFB",
+        "LonghornNation",
       ]);
 
       var tweets = await getRecentTweets([
-        'sehlinger3',
-        'CoachTomHerman',
-        'TexasFootball',
-        'BCarringtonUT',
-        'MikeRoach247',
-        '_delconte',
+        "sehlinger3",
+        "CoachTomHerman",
+        "TexasFootball",
+        "BCarringtonUT",
+        "MikeRoach247",
+        "_delconte",
       ]);
 
-      var last_thread = await getLastThread('Off Topic Free Talk Thread');
+      var last_thread = await getLastThread("Off Topic Free Talk Thread");
       var data = {
         date: {
           short: date,
@@ -204,7 +237,7 @@ const run = async () => {
         tweets: tweets,
       };
       app.render(
-        'ftt.ejs',
+        "ftt.ejs",
         {
           data,
         },
@@ -214,7 +247,7 @@ const run = async () => {
           });
 
           var post_title =
-            '[' + date + '] ' + day + ' Off Topic Free Talk Thread - Testing';
+            "[" + date + "] " + day + " Off Topic Free Talk Thread - Testing";
           console.log(markdown);
           reddit
             .getSubreddit(process.env.SUBREDDIT)
@@ -223,7 +256,7 @@ const run = async () => {
               text: markdown,
             })
             .sticky()
-            .setSuggestedSort('new');
+            .setSuggestedSort("new");
           if (last_thread && last_thread.id) {
             reddit.getSubmission(last_thread.id).unsticky();
           }
@@ -237,58 +270,58 @@ const run = async () => {
     }
     await getFTT();
   }
-  if (ACTION == 'Scrape Texas') {
+  if (ACTION == "Scrape Texas") {
     //tsBoxScore('12343').then(data => {});
     async function dog() {
       let dog = await texasSports();
     }
     dog();
   }
-  if (ACTION == 'Schedule Job') {
+  if (ACTION == "Schedule Job") {
     var jobsList = {};
     var testData = {
-      id: '401013060',
+      id: "401013060",
       opposingTeam: {
-        id: '201',
+        id: "201",
         team: {
-          nickname: 'Oklahoma',
+          nickname: "Oklahoma",
         },
         curatedRank: {
-          current: '2',
+          current: "2",
         },
         score: {
           displayValue: null,
         },
-        reddit: '/r/sooners',
+        reddit: "/r/sooners",
       },
       primaryTeam: {
-        id: '251',
+        id: "251",
         winner: false,
         team: {
-          nickname: 'Texas',
+          nickname: "Texas",
         },
         score: {
           displayValue: null,
         },
       },
-      date: 'May 18',
-      time: '2:30 pm',
-      network: '',
-      homeAway: '',
+      date: "May 18",
+      time: "2:30 pm",
+      network: "",
+      homeAway: "",
       complete: false,
       venue: {
         address: {
-          city: 'Austin',
-          state: 'TX',
+          city: "Austin",
+          state: "TX",
         },
       },
     };
-    var scheduleDate = moment().add(30, 'seconds').toDate();
-    console.log('schedule game thread', moment(scheduleDate).fromNow());
+    var scheduleDate = moment().add(30, "seconds").toDate();
+    console.log("schedule game thread", moment(scheduleDate).fromNow());
     agenda
-      .create('game thread', {
+      .create("game thread", {
         event: testData,
-        sport: 'football',
+        sport: "football",
       })
       .unique({
         game_id: testData.id,
@@ -297,15 +330,15 @@ const run = async () => {
       .save();
     //agenda.create('update sidebar', {event: testData}).unique({'game_id': testData.id}).schedule(scheduleDate).save();
   }
-  if (ACTION === 'Generate STT') {
+  if (ACTION === "Generate STT") {
     const app = express();
-    app.set('view engine', 'ejs');
+    app.set("view engine", "ejs");
 
-    const date = moment(Date.now()).format('M/D/Y');
-    const longDate = moment(Date.now()).format('M/D/Y hh:mm A');
+    const date = moment(Date.now()).format("M/D/Y");
+    const longDate = moment(Date.now()).format("M/D/Y hh:mm A");
     const day = moment(Date.now()).format("dddd['s]");
     async function getSTT() {
-      const last_thread = await getLastThread('Sports Talk Thread');
+      const last_thread = await getLastThread("Sports Talk Thread");
       const data = {
         date: {
           short: date,
@@ -313,17 +346,17 @@ const run = async () => {
         },
         last_thread: last_thread || null,
       };
-      app.render('sports-talk-thread', { data }, function (err, doc) {
+      app.render("sports-talk-thread", { data }, function (err, doc) {
         if (err) {
           console.log(err);
         }
         const markdown = turndownService.turndown(doc, { gfm: true });
-        const post_title = '[' + date + '] ' + day + ' Sports Talk Thread';
+        const post_title = "[" + date + "] " + day + " Sports Talk Thread";
         reddit
           .getSubreddit(process.env.SUBREDDIT)
           .submitSelfpost({ title: post_title, text: markdown })
           .sticky()
-          .setSuggestedSort('new')
+          .setSuggestedSort("new")
           .approve()
           .then(() => {
             if (last_thread && last_thread.id) {
@@ -331,7 +364,7 @@ const run = async () => {
                 .getSubmission(last_thread.id)
                 .unsticky()
                 .then((data) => {
-                  message(539365867402690565, null, 'Success!');
+                  message(539365867402690565, null, "Success!");
                 })
                 .catch((err) => {});
             } else {

@@ -69,7 +69,7 @@
                         <td>        
                                 <strong>
                                      <%= data.football.schedule.post[i].homeAway %>
-                                     <% if(data.football.schedule.post[i].opposingTeam.curatedRank.current < 99) {%>
+                                     <% if(data.football.schedule.post[i].opposingTeam.curatedRank.current && data.football.schedule.post[i].opposingTeam.curatedRank.current < 99) {%>
                                          <em><%= data.football.schedule.post[i].opposingTeam.curatedRank.current %></em>
                                      <% } %>                            
                                      <%= data.football.schedule.post[i].opposingTeam.team.nickname %>
@@ -128,7 +128,7 @@
                <td>        
                        <strong>
                             <%= data.football.schedule.regular[i].homeAway %>
-                            <% if(data.football.schedule.regular[i].opposingTeam.curatedRank.current < 99 && data.football.schedule.regular[i].opposingTeam.curatedRank.current > 0) {%>
+                            <% if(data.football.schedule.regular[i].opposingTeam.curatedRank && data.football.schedule.regular[i].opposingTeam.curatedRank.current < 99 && data.football.schedule.regular[i].opposingTeam.curatedRank.current > 0) {%>
                                 <em><%= data.football.schedule.regular[i].opposingTeam.curatedRank.current %></em>
                             <% } %>                            
                             <%= data.football.schedule.regular[i].opposingTeam.team.nickname %>
