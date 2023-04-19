@@ -7,7 +7,6 @@ const { reddit } = require('../../utils/reddit');
 const { fetchTeamSchedule } = require('../../utils/schedule');
 const teamLink = require('../../static_data/teams.reddit.json');
 const networks = require('../../static_data/networks.json');
-const { message } = require('../../utils/discord');
 
 var gfm = turndownPluginGfm.gfm
 var turndownService = new TurndownService();

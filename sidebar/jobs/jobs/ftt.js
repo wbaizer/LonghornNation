@@ -6,7 +6,6 @@ const turndownPluginGfm = require('turndown-plugin-gfm');
 const { reddit , getLastThread } = require('../../utils/reddit');
 const { getWeather, getRecentPosts, getRecentTweets } = require('../../utils/ftt');
 const { tsCalendar } = require('../../utils/service');
-const { message } = require('../../utils/discord');
 var gfm = turndownPluginGfm.gfm
 var turndownService = new TurndownService();
 turndownService.use(gfm);
