@@ -329,19 +329,25 @@ function tsBoxScore(event) {
 
 async function tsCalendar() {
     let parser = new Parser({
-        customFields: {
-            item:[
-                ['s:localstartdate', 'date']
-            ]
-        }
+      customFields: {
+        item: [['s:localstartdate', 'date']],
+      },
     });
-    let feed = await parser.parseURL('http://www.texassports.com/calendar.ashx/calendar.rss?sport_id=&han=');
-    let today = moment();
-    var events = await feed.items.filter(function(item) {
-        var date = moment(item.isoDate);
-        return today.isSame(date, 'day');
+  
+    let feed = await parser.parseURL(
+      'https://texassports.com/calendar.ashx/calendar.rss?sport_id=0&_=clhs70eur00013bb1sl75v6mh'
+    );
+  
+    let today = moment().utc();
+  
+    let endDate = moment(today).add(7, 'days');
+  
+    let events = feed.items.filter(function (item) {
+      var date = moment(item.isoDate);
+      return date.isBetween(today, endDate, 'days', '[]');
     });
-    return events.limit(5);
+  
+    return events.slice(0, 7);
 }
 function limit(c){
     return this.filter((x,i)=>{

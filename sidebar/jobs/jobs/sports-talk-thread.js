@@ -39,7 +39,7 @@ module.exports = function (agenda) {
           "_delconte",
         ]);
         var last_thread = await getLastThread("Sports Talk Thread");
-        // var calendar = await tsCalendar();
+        var calendar = await tsCalendar();
         // They killed the calendar need to re-do this scraper.
         var data = {
           date: {
@@ -50,7 +50,7 @@ module.exports = function (agenda) {
           weather: weather,
           top: posts,
           tweets: tweets,
-          calendar: null,
+          calendar,
         };
         app.render("sports-talk-thread", { data }, function (err, doc) {
           if (err) {

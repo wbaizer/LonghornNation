@@ -19,7 +19,8 @@ const { fetchTeamSchedule } = require("./utils/schedule");
 const { generateSprites } = require("./utils/sprites");
 const { message } = require("./utils/discord");
 const { getWeather, getRecentPosts, getRecentTweets } = require("./utils/ftt");
-const { texasSports } = require("./utils/service");
+const { texasSports, tsCalendar } = require("./utils/service");
+let agenda = require("./jobs/agenda");
 
 var gfm = turndownPluginGfm.gfm;
 var turndownService = new TurndownService();
@@ -225,6 +226,8 @@ const run = async () => {
         "_delconte",
       ]);
 
+      var calendar = await tsCalendar();
+
       var last_thread = await getLastThread("Off Topic Free Talk Thread");
       var data = {
         date: {
@@ -235,6 +238,7 @@ const run = async () => {
         weather: weather,
         top: posts,
         tweets: tweets,
+        calendar,
       };
       app.render(
         "ftt.ejs",
