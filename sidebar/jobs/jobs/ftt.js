@@ -32,7 +32,7 @@ module.exports = function(agenda) {
             ]);
             var last_thread = await getLastThread('Off Topic Free Talk Thread');
             // They killed the calendar need to re-work it.
-            var calendar = null
+            var calendar = await tsCalendar();
             var data = {
               date: {
                 short: date,

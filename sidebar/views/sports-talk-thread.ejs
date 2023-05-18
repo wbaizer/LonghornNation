@@ -6,6 +6,17 @@
 <a href="<%= data.last_thread.url %>">Last Thread</a>
 <hr>
 <% } %>
+<% if(data.calendar != null && data.calendar.length > 0) { %>
+  <h3>Here's a look at upcoming Longhorn Sporting Event(s):</h3>
+  <ol>
+      <% for(var i=0; i < data.calendar.length; i++) { %>
+          <li>
+              <a href="<%= data.calendar[i].link %>"><%= data.calendar[i].title %></a>
+          </li>
+      <% } %>
+  </ol>
+  <hr>
+<% } %>
 
 <p>Feel Free to talk about anything sports related, Texas related or otherwise</p>
 <hr>
