@@ -28,6 +28,7 @@
 <hr>
 <h1>Your go-to place to talk about whatever you want. From the dumb shit aggies do on a near daily basis, to the latest whatever happening wherever. What ya got?</h1>
 <hr>
+<% if(data.tweets != null && data.tweets.length > 0) { %>
 <h3>Recent Longhorn Tweets</h3>
 <ol>
     <% for(var i=0; i < data.tweets.length; i++) { %>
@@ -38,6 +39,7 @@
     <% } %>
 </ol>
 <hr>
+<% } %>
 <% if(data.calendar != null && data.calendar.length > 0) { %>
 <h3>Here's a look at upcoming Longhorn Sporting Event(s):</h3>
 <ol>

@@ -330,25 +330,30 @@ function tsBoxScore(event) {
 async function tsCalendar() {
     let parser = new Parser({
       customFields: {
-        item: [['s:localstartdate', 'date']],
+        item: [["s:localstartdate", "date"]], // Assuming this is correctly set up
       },
     });
   
-    let feed = await parser.parseURL(
-      'https://texassports.com/calendar.ashx/calendar.rss?sport_id=0&_=clhs70eur00013bb1sl75v6mh'
-    );
+    try {
+      let feed = await parser.parseURL(
+        "https://texassports.com/calendar.ashx/calendar.rss?sport_id=0&_=clhs70eur00013bb1sl75v6mh"
+      );
   
-    let today = moment().utc();
+      let today = moment().utc();
+      let endDate = moment(today).add(7, "days");
   
-    let endDate = moment(today).add(7, 'days');
+      let events = feed.items.filter(function (item) {
+        var date = moment(item.date); // Use the custom field 'date'
+        return date.isBetween(today, endDate, "days", "[]");
+      });
   
-    let events = feed.items.filter(function (item) {
-      var date = moment(item.isoDate);
-      return date.isBetween(today, endDate, 'days', '[]');
-    });
-  
-    return events.slice(0, 7);
+      return events.slice(0, 7);
+    } catch (error) {
+      console.error("Error fetching or parsing the feed:", error);
+      return []; // Return an empty array in case of an error
+    }
 }
+
 function limit(c){
     return this.filter((x,i)=>{
         if(i<=(c-1)){return true}
