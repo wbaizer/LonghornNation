@@ -69,7 +69,7 @@
                         <td>        
                                 <strong>
                                      <%= data.baseball.schedule.post[i].homeAway %>
-                                     <% if(data.baseball.schedule.post[i].opposingTeam.curatedRank.current < 99) {%>
+                                     <% if(data.baseball.schedule.post[i].opposingTeam.curatedRank && data.baseball.schedule.post[i].opposingTeam.curatedRank.current < 99) {%>
                                          <em><%= data.baseball.schedule.post[i].opposingTeam.curatedRank.current %></em>
                                      <% } %>                            
                                      <%= data.baseball.schedule.post[i].opposingTeam.team.nickname %>
