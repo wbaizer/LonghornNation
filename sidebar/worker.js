@@ -30,7 +30,7 @@ agenda.on("ready", function () {
   agenda
     .create("Sports Talk Thread")
     .unique({ "stt-sub": process.env.SUBREDDIT })
-    .repeatEvery("0 0 * * *", { skipImmediate: true })
+    .repeatEvery("2 0 * * *", { skipImmediate: true })
     .save();
 });
 
