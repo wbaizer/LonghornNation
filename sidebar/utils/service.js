@@ -18,7 +18,7 @@ async function texasSports(agenda) {
         rankings: {}
     };
     var schedule = 'https://texassports.com/schedule.aspx?path=baseball';
-    var standings = 'https://big12sports.com/standings.aspx?standings=178';
+    var standings = 'https://big12sports.com/standings.aspx?standings=200';
     return axios.all([
         axios.get(standings)
     ])
