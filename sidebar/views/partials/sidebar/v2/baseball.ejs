@@ -1,4 +1,4 @@
-<h1><a href="/r/BigXII">Baseball</a>: (<%= data.baseball.rankings.primaryTeam.overall %>) <%= data.baseball.rankings.primaryTeam.conference %></h1>
+<h1><a href="/r/BigXII">Baseball</a><% if(data.baseball.rankings.primaryTeam.overall) { %>: (<%= data.baseball.rankings.primaryTeam.overall %>) <%= data.baseball.rankings.primaryTeam.conference %><% } %></h1>
 <h4>Big 12 Baseball Standings</h4>   
 <table>
        <thead>
