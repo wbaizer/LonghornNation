@@ -31,6 +31,7 @@ async function texasSports(agenda) {
             }
         })
     ).catch(err => {
+        console.error(err)
         return err;
     });
 }
@@ -136,8 +137,11 @@ function processStandings(response) {
         var teamID = ts_teams[teamKey];
         var team = teams[teamID];
         //Get standings info
-        var overall = $(this).find('td:nth-child(11)').text().trim();
+        var overall = $(this).find('td:nth-child(10)').text().trim();
         var conference = $(this).find('td:nth-child(4)').text().trim();
+        if (!team || !teamID) {
+            console.warn('no team found', teamKey)
+        }
         if(teamID == process.env.TEAM_ID) {
             primaryTeamRanking = {
                 overall: overall,

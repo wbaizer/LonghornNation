@@ -20,7 +20,6 @@ const { generateSprites } = require("./utils/sprites");
 const { message } = require("./utils/discord");
 const { getWeather, getRecentPosts, getRecentTweets } = require("./utils/ftt");
 const { texasSports, tsCalendar } = require("./utils/service");
-let agenda = require("./jobs/agenda");
 
 var gfm = turndownPluginGfm.gfm;
 var turndownService = new TurndownService();
@@ -322,16 +321,16 @@ const run = async () => {
     };
     var scheduleDate = moment().add(30, "seconds").toDate();
     console.log("schedule game thread", moment(scheduleDate).fromNow());
-    agenda
-      .create("game thread", {
-        event: testData,
-        sport: "football",
-      })
-      .unique({
-        game_id: testData.id,
-      })
-      .schedule(scheduleDate)
-      .save();
+    // agenda
+    //   .create("game thread", {
+    //     event: testData,
+    //     sport: "football",
+    //   })
+    //   .unique({
+    //     game_id: testData.id,
+    //   })
+    //   .schedule(scheduleDate)
+    //   .save();
     //agenda.create('update sidebar', {event: testData}).unique({'game_id': testData.id}).schedule(scheduleDate).save();
   }
   if (ACTION === "Generate STT") {
