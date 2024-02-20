@@ -11,6 +11,7 @@ const test_ncaaf_standings = require('../exampleData/ncaaf_standings');
 const test_ncaam_post_schedule = require('../exampleData/ncaam_post_schedule');
 const test_ncaam_regular_schedule = require('../exampleData/ncaam_regular_schedule.json');
 const test_ncaam_standings = require('../exampleData/ncaam_standings');
+const { formatTeam } = require('./team');
 
 const production = process.env.PRODUCTION || false;
 var jobsList = {};
@@ -87,7 +88,87 @@ async function fetchTeamSchedule(agenda) {
     }
 }
 
-function mapSchedule(schedule, agenda, sport) {
+function mapSchedule(data, agenda, sport) {
+  const seriesMap = new Map();
+
+  data.events.forEach(event => {
+      const gameId = event.id;
+      const homeTeamId = sport === 'baseball' ? '126' : process.env.TEAM_ID;
+      const competitors = event.competitions[0].competitors;
+      const isComplete = event.competitions[0].status.type.completed;
+      const homeTeam = competitors.find(team => team.homeAway === 'home');
+      const awayTeam = competitors.find(team => team.homeAway === 'away');
+
+      const primaryTeam = homeTeam.team.id === homeTeamId ? homeTeam : awayTeam;
+      const opposingTeam = homeTeam.team.id !== homeTeamId ? homeTeam : awayTeam;
+      const homeAway = event.competitions[0].neutralSite ? '' : primaryTeam.homeAway === 'home' ? '' : '@';
+      const venue = event.competitions[0].venue;
+      const network = event.competitions[0].broadcasts.length ? event.competitions[0].broadcasts[0].media.shortName : '';
+      const date = moment(event.date);
+      const status = event.competitions[0].status.type.name;
+      const notes = event.competitions[0].notes && event.competitions[0].notes.length ? event.competitions[0].notes[0].headline : '';
+      const weekStartDate = date.clone().startOf('isoWeek');
+      const compareKey = notes ? notes : opposingTeam.team.displayName;
+      const seriesKey = [primaryTeam.team.displayName, compareKey, venue.fullName].sort().join('_') + '_' + weekStartDate.format('YYYY-MM-DD');
+
+      const eventData = {
+          id: seriesKey,
+          date: event.date,
+          name: notes ? notes : event.name,
+          timeValid: event.timeValid,
+          venue,
+          network,
+          tournament: notes,
+          completed: false,
+          games: []
+      };
+
+      if (!seriesMap.has(seriesKey)) {
+          seriesMap.set(seriesKey, eventData);
+      }
+
+      const series = seriesMap.get(seriesKey);
+      series.games.push({
+          id: gameId,
+          date: event.date,
+          primaryTeam: formatTeam(primaryTeam),
+          opposingTeam: formatTeam(opposingTeam),
+          winner: primaryTeam.winner,
+          complete: isComplete,
+          status,
+          timeValid: event.timeValid
+      });
+
+      const allCompleted = series.games.every(game => game.complete);
+      if (allCompleted) {
+          series.completed = true;
+      }
+  });
+
+  const allSeries = Array.from(seriesMap.values());
+
+  allSeries.forEach(series => {
+      if (process.env.GAME_THREAD.includes(sport)) {
+          if (moment(series.date).isAfter(Date.now())) {
+              const scheduleDate = moment(series.date).subtract(2, 'hours').toDate();
+              const isSeries = series.games.length > 1;
+
+              if (series.status === 'STATUS_CANCELED' || series.status === 'STATUS_POSTPONED') {
+                  console.log(`CANCEL: ${sport} - ${isSeries ? 'series' : 'game'} thread: ${series.name}`, moment(scheduleDate).fromNow());
+                  agenda.cancel({ 'game_id': series.id });
+              } else {
+                  console.log(`CREATE: ${sport} - ${isSeries ? 'series' : 'game'} thread: ${series.name} - ${series.games.length} game(s) -`, moment(scheduleDate).fromNow());
+                  agenda.create('game thread', { event: series, sport: sport }).unique({ 'game_id': series.id }).schedule(scheduleDate).save();
+              }
+          }
+      }
+  });
+
+  return allSeries;
+}
+
+
+function mapSchedule2(schedule, agenda, sport) {
     console.log(`Digesting the data ${sport} - ${schedule.events.length} events`);
     console.log()
     return schedule.events.map(event => {

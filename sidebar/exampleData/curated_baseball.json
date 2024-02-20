@@ -1,0 +1,582 @@
+{
+  "events": [
+      {
+          "id": "401631945",
+          "date": "2024-02-17T01:00Z",
+          "name": "San Diego Toreros at Texas Longhorns",
+          "shortName": "USD @ TEX",
+          "season": {
+              "year": 2024,
+              "displayName": "2023-24"
+          },
+          "seasonType": {
+              "id": "2",
+              "type": 2,
+              "name": "Regular Season",
+              "abbreviation": "reg"
+          },
+          "timeValid": true,
+          "competitions": [
+              {
+                  "id": "401631945",
+                  "date": "2024-02-17T01:00Z",
+                  "attendance": 0,
+                  "timeValid": true,
+                  "neutralSite": false,
+                  "boxscoreAvailable": false,
+                  "ticketsAvailable": false,
+                  "venue": {
+                      "fullName": "UFCU Disch-Falk Field",
+                      "address": {
+                          "city": "Austin",
+                          "state": "Texas"
+                      }
+                  },
+                  "competitors": [
+                      {
+                          "id": "126",
+                          "type": "team",
+                          "order": 0,
+                          "homeAway": "home",
+                          "team": {
+                              "id": "126",
+                              "location": "Texas",
+                              "nickname": "Texas",
+                              "abbreviation": "TEX",
+                              "displayName": "Texas",
+                              "shortDisplayName": "Texas",
+                              "logos": [
+                                  {
+                                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/251.png",
+                                      "width": 500,
+                                      "height": 500,
+                                      "alt": "",
+                                      "rel": [
+                                          "full",
+                                          "default"
+                                      ],
+                                      "lastUpdated": "2018-06-05T12:08Z"
+                                  },
+                                  {
+                                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/251.png",
+                                      "width": 500,
+                                      "height": 500,
+                                      "alt": "",
+                                      "rel": [
+                                          "full",
+                                          "dark"
+                                      ],
+                                      "lastUpdated": "2018-06-05T12:08Z"
+                                  }
+                              ]
+                          },
+                          "curatedRank": {
+                              "current": 16
+                          }
+                      },
+                      {
+                          "id": "143",
+                          "type": "team",
+                          "order": 1,
+                          "homeAway": "away",
+                          "team": {
+                              "id": "143",
+                              "location": "San Diego",
+                              "nickname": "San Diego",
+                              "abbreviation": "USD",
+                              "displayName": "San Diego",
+                              "shortDisplayName": "San Diego",
+                              "logos": [
+                                  {
+                                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/301.png",
+                                      "width": 500,
+                                      "height": 500,
+                                      "alt": "",
+                                      "rel": [
+                                          "full",
+                                          "default"
+                                      ],
+                                      "lastUpdated": "2023-01-23T20:42Z"
+                                  },
+                                  {
+                                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/301.png",
+                                      "width": 500,
+                                      "height": 500,
+                                      "alt": "",
+                                      "rel": [
+                                          "full",
+                                          "dark"
+                                      ],
+                                      "lastUpdated": "2023-01-23T20:43Z"
+                                  }
+                              ]
+                          }
+                      }
+                  ],
+                  "broadcasts": [
+                      {
+                          "type": {
+                              "id": "1",
+                              "shortName": "TV"
+                          },
+                          "market": {
+                              "id": "1",
+                              "type": "National"
+                          },
+                          "media": {
+                              "shortName": "LHN"
+                          },
+                          "lang": "en",
+                          "region": "us"
+                      }
+                  ],
+                  "status": {
+                      "period": 1,
+                      "type": {
+                          "id": "1",
+                          "name": "STATUS_SCHEDULED",
+                          "state": "pre",
+                          "completed": false,
+                          "description": "Scheduled",
+                          "detail": "Fri, February 16th at 8:00 PM EST",
+                          "shortDetail": "2/16 - 8:00 PM EST"
+                      },
+                      "halfInning": 0,
+                      "periodPrefix": "Top"
+                  }
+              }
+          ]
+      },
+      {
+          "id": "401631946",
+          "date": "2024-02-17T20:30Z",
+          "name": "San Diego Toreros at Texas Longhorns",
+          "shortName": "USD @ TEX",
+          "timeValid": true,
+          "competitions": [
+              {
+                  "id": "401631946",
+                  "date": "2024-02-17T20:30Z",
+                  "attendance": 0,
+                  "timeValid": true,
+                  "neutralSite": false,
+                  "boxscoreAvailable": false,
+                  "ticketsAvailable": false,
+                  "venue": {
+                      "fullName": "UFCU Disch-Falk Field",
+                      "address": {
+                          "city": "Austin",
+                          "state": "Texas"
+                      }
+                  },
+                  "competitors": [
+                      {
+                          "id": "126",
+                          "type": "team",
+                          "order": 0,
+                          "homeAway": "home",
+                          "team": {
+                              "id": "126",
+                              "location": "Texas",
+                              "nickname": "Texas",
+                              "abbreviation": "TEX",
+                              "displayName": "Texas",
+                              "shortDisplayName": "Texas",
+                              "logos": [
+                                  {
+                                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/251.png",
+                                      "width": 500,
+                                      "height": 500,
+                                      "alt": "",
+                                      "rel": [
+                                          "full",
+                                          "default"
+                                      ],
+                                      "lastUpdated": "2018-06-05T12:08Z"
+                                  },
+                                  {
+                                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/251.png",
+                                      "width": 500,
+                                      "height": 500,
+                                      "alt": "",
+                                      "rel": [
+                                          "full",
+                                          "dark"
+                                      ],
+                                      "lastUpdated": "2018-06-05T12:08Z"
+                                  }
+                              ]
+                          },
+                          "curatedRank": {
+                              "current": 16
+                          }
+                      },
+                      {
+                          "id": "143",
+                          "type": "team",
+                          "order": 1,
+                          "homeAway": "away",
+                          "team": {
+                              "id": "143",
+                              "location": "San Diego",
+                              "nickname": "San Diego",
+                              "abbreviation": "USD",
+                              "displayName": "San Diego",
+                              "shortDisplayName": "San Diego",
+                              "logos": [
+                                  {
+                                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/301.png",
+                                      "width": 500,
+                                      "height": 500,
+                                      "alt": "",
+                                      "rel": [
+                                          "full",
+                                          "default"
+                                      ],
+                                      "lastUpdated": "2023-01-23T20:42Z"
+                                  },
+                                  {
+                                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/301.png",
+                                      "width": 500,
+                                      "height": 500,
+                                      "alt": "",
+                                      "rel": [
+                                          "full",
+                                          "dark"
+                                      ],
+                                      "lastUpdated": "2023-01-23T20:43Z"
+                                  }
+                              ]
+                          }
+                      }
+                  ],
+                  "broadcasts": [
+                      {
+                          "type": {
+                              "id": "1",
+                              "shortName": "TV"
+                          },
+                          "market": {
+                              "id": "1",
+                              "type": "National"
+                          },
+                          "media": {
+                              "shortName": "LHN"
+                          },
+                          "lang": "en",
+                          "region": "us"
+                      }
+                  ],
+                  "status": {
+                      "period": 1,
+                      "type": {
+                          "id": "1",
+                          "name": "STATUS_SCHEDULED",
+                          "state": "pre",
+                          "completed": false,
+                          "description": "Scheduled",
+                          "detail": "Sat, February 17th at 3:30 PM EST",
+                          "shortDetail": "2/17 - 3:30 PM EST"
+                      },
+                      "halfInning": 0,
+                      "periodPrefix": "Top"
+                  }
+              }
+          ]
+      },
+      {
+          "id": "401631947",
+          "date": "2024-02-18T19:00Z",
+          "name": "San Diego Toreros at Texas Longhorns",
+          "shortName": "USD @ TEX",
+          "season": {
+              "year": 2024,
+              "displayName": "2023-24"
+          },
+          "seasonType": {
+              "id": "2",
+              "type": 2,
+              "name": "Regular Season",
+              "abbreviation": "reg"
+          },
+          "timeValid": true,
+          "competitions": [
+              {
+                  "id": "401631947",
+                  "date": "2024-02-18T19:00Z",
+                  "attendance": 0,
+                  "timeValid": true,
+                  "neutralSite": false,
+                  "boxscoreAvailable": false,
+                  "ticketsAvailable": false,
+                  "venue": {
+                      "fullName": "UFCU Disch-Falk Field",
+                      "address": {
+                          "city": "Austin",
+                          "state": "Texas"
+                      }
+                  },
+                  "competitors": [
+                      {
+                          "id": "126",
+                          "type": "team",
+                          "order": 0,
+                          "homeAway": "home",
+                          "team": {
+                              "id": "126",
+                              "location": "Texas",
+                              "nickname": "Texas",
+                              "abbreviation": "TEX",
+                              "displayName": "Texas",
+                              "shortDisplayName": "Texas",
+                              "logos": [
+                                  {
+                                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/251.png",
+                                      "width": 500,
+                                      "height": 500,
+                                      "alt": "",
+                                      "rel": [
+                                          "full",
+                                          "default"
+                                      ],
+                                      "lastUpdated": "2018-06-05T12:08Z"
+                                  },
+                                  {
+                                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/251.png",
+                                      "width": 500,
+                                      "height": 500,
+                                      "alt": "",
+                                      "rel": [
+                                          "full",
+                                          "dark"
+                                      ],
+                                      "lastUpdated": "2018-06-05T12:08Z"
+                                  }
+                              ]
+                          },
+                          "curatedRank": {
+                              "current": 16
+                          }
+                      },
+                      {
+                          "id": "143",
+                          "type": "team",
+                          "order": 1,
+                          "homeAway": "away",
+                          "team": {
+                              "id": "143",
+                              "location": "San Diego",
+                              "nickname": "San Diego",
+                              "abbreviation": "USD",
+                              "displayName": "San Diego",
+                              "shortDisplayName": "San Diego",
+                              "logos": [
+                                  {
+                                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/301.png",
+                                      "width": 500,
+                                      "height": 500,
+                                      "alt": "",
+                                      "rel": [
+                                          "full",
+                                          "default"
+                                      ],
+                                      "lastUpdated": "2023-01-23T20:42Z"
+                                  },
+                                  {
+                                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/301.png",
+                                      "width": 500,
+                                      "height": 500,
+                                      "alt": "",
+                                      "rel": [
+                                          "full",
+                                          "dark"
+                                      ],
+                                      "lastUpdated": "2023-01-23T20:43Z"
+                                  }
+                              ]
+                          }
+                      }
+                  ],
+                  "broadcasts": [
+                      {
+                          "type": {
+                              "id": "1",
+                              "shortName": "TV"
+                          },
+                          "market": {
+                              "id": "1",
+                              "type": "National"
+                          },
+                          "media": {
+                              "shortName": "LHN"
+                          },
+                          "lang": "en",
+                          "region": "us"
+                      }
+                  ],
+                  "status": {
+                      "period": 1,
+                      "type": {
+                          "id": "1",
+                          "name": "STATUS_SCHEDULED",
+                          "state": "pre",
+                          "completed": false,
+                          "description": "Scheduled",
+                          "detail": "Sun, February 18th at 2:00 PM EST",
+                          "shortDetail": "2/18 - 2:00 PM EST"
+                      },
+                      "halfInning": 0,
+                      "periodPrefix": "Top"
+                  }
+              }
+          ]
+      },
+      {
+          "id": "401633177",
+          "date": "2024-02-21T00:30Z",
+          "name": "Houston Christian Huskies at Texas Longhorns",
+          "shortName": "HCU @ TEX",
+          "season": {
+              "year": 2024,
+              "displayName": "2023-24"
+          },
+          "seasonType": {
+              "id": "2",
+              "type": 2,
+              "name": "Regular Season",
+              "abbreviation": "reg"
+          },
+          "timeValid": true,
+          "competitions": [
+              {
+                  "id": "401633177",
+                  "date": "2024-02-21T00:30Z",
+                  "attendance": 0,
+                  "timeValid": true,
+                  "neutralSite": false,
+                  "boxscoreAvailable": false,
+                  "ticketsAvailable": false,
+                  "venue": {
+                      "fullName": "UFCU Disch-Falk Field",
+                      "address": {
+                          "city": "Austin",
+                          "state": "Texas"
+                      }
+                  },
+                  "competitors": [
+                      {
+                          "id": "126",
+                          "type": "team",
+                          "order": 0,
+                          "homeAway": "home",
+                          "team": {
+                              "id": "126",
+                              "location": "Texas",
+                              "nickname": "Texas",
+                              "abbreviation": "TEX",
+                              "displayName": "Texas",
+                              "shortDisplayName": "Texas",
+                              "logos": [
+                                  {
+                                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/251.png",
+                                      "width": 500,
+                                      "height": 500,
+                                      "alt": "",
+                                      "rel": [
+                                          "full",
+                                          "default"
+                                      ],
+                                      "lastUpdated": "2018-06-05T12:08Z"
+                                  },
+                                  {
+                                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/251.png",
+                                      "width": 500,
+                                      "height": 500,
+                                      "alt": "",
+                                      "rel": [
+                                          "full",
+                                          "dark"
+                                      ],
+                                      "lastUpdated": "2018-06-05T12:08Z"
+                                  }
+                              ]
+                          },
+                          "curatedRank": {
+                              "current": 16
+                          }
+                      },
+                      {
+                          "id": "367",
+                          "type": "team",
+                          "order": 1,
+                          "homeAway": "away",
+                          "team": {
+                              "id": "367",
+                              "location": "Houston Christian",
+                              "nickname": "Hou Christian",
+                              "abbreviation": "HCU",
+                              "displayName": "Houston Christian",
+                              "shortDisplayName": "Hou Christian",
+                              "logos": [
+                                  {
+                                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2277.png",
+                                      "width": 500,
+                                      "height": 500,
+                                      "alt": "",
+                                      "rel": [
+                                          "full",
+                                          "default"
+                                      ],
+                                      "lastUpdated": "2023-11-21T19:01Z"
+                                  },
+                                  {
+                                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2277.png",
+                                      "width": 500,
+                                      "height": 500,
+                                      "alt": "",
+                                      "rel": [
+                                          "full",
+                                          "dark"
+                                      ],
+                                      "lastUpdated": "2023-11-21T19:01Z"
+                                  }
+                              ]
+                          }
+                      }
+                  ],
+                  "broadcasts": [
+                      {
+                          "type": {
+                              "id": "1",
+                              "shortName": "TV"
+                          },
+                          "market": {
+                              "id": "1",
+                              "type": "National"
+                          },
+                          "media": {
+                              "shortName": "LHN"
+                          },
+                          "lang": "en",
+                          "region": "us"
+                      }
+                  ],
+                  "status": {
+                      "period": 1,
+                      "type": {
+                          "id": "1",
+                          "name": "STATUS_SCHEDULED",
+                          "state": "pre",
+                          "completed": false,
+                          "description": "Scheduled",
+                          "detail": "Tue, February 20th at 7:30 PM EST",
+                          "shortDetail": "2/20 - 7:30 PM EST"
+                      },
+                      "halfInning": 0,
+                      "periodPrefix": "Top"
+                  }
+              }
+          ]
+      }
+  ]
+}

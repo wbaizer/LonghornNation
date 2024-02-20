@@ -14,6 +14,9 @@ const TurndownService = require("turndown");
 const turndownPluginGfm = require("turndown-plugin-gfm");
 const teamLink = require("./static_data/teams.reddit.json");
 const networks = require("./static_data/networks.json");
+const baseball_static = require('./exampleData/baseball.json')
+const football_static = require('./exampleData/ncaaf_regular_schedule.json')
+let agenda = require("./jobs/agenda");
 
 const { fetchTeamSchedule } = require("./utils/schedule");
 const { generateSprites } = require("./utils/sprites");
@@ -100,7 +103,7 @@ const run = async () => {
       baseball: process.env.BASEBALL,
       basketball: process.env.BASKETBALL,
     };
-    fetchTeamSchedule()
+    fetchTeamSchedule(agenda)
       .then((data) => {
         app.render(
           "sidebar",

@@ -17,6 +17,7 @@ let agenda = require("./jobs/agenda");
 
 console.log("Starting Up App");
 agenda.on("ready", function () {
+
   agenda
     .create("Update Sidebar")
     .unique({ subreddit: process.env.SUBREDDIT })
