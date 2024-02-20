@@ -61,6 +61,57 @@ function gameWatcher(event, sport) {
 
 }
 
+async function gameStatus(event, sport) {
+    // Create a shallow copy of the event object
+    const updatedEvent = { ...event };
+    let leagueName = 'college-football'
+    let teamId = process.env.TEAM_ID
+    if (sport === 'basketball') {
+        leagueName = 'mens-college-basketball';
+    } else if (sport === 'baseball') {
+        leagueName = 'college-baseball';
+        teamId = '126';
+    }
+
+    const currentTime = moment().tz("America/Chicago");
+    const currentGame = event.games.find(game => {
+        const gameTime = moment(game.date).tz("America/Chicago");
+        const endTime = moment(gameTime).endOf('day'); // End of the game day
+        return currentTime.isSameOrAfter(gameTime) && currentTime.isSameOrBefore(endTime);
+    });
+
+    if (currentGame) {
+        console.log("The ID of the current game is:", currentGame.id);
+        const url = `https://site.web.api.espn.com/apis/site/v2/sports/${sport}/${leagueName}/summary?event=${currentGame.id}`;
+        
+        try {
+            const response = await axios.get(url);
+            const gameData = response.data.header.competitions[0];
+            const primaryTeam = gameData.competitors.find(team => team.id === teamId);
+            const opposingTeam = gameData.competitors.find(team => team.id !== teamId);
+            const isComplete = gameData.status.type.completed;
+            const gameIndex = updatedEvent.games.findIndex(game => game.id === currentGame.id)
+
+            const primaryTeamScoreIndex = updatedEvent.games[gameIndex].score.findIndex(score => score.team === primaryTeam.team.nickname);
+            const opposingTeamScoreIndex = updatedEvent.games[gameIndex].score.findIndex(score => score.team === opposingTeam.team.nickname);
+
+            updatedEvent.games[gameIndex].score[primaryTeamScoreIndex].value = primaryTeam.score;
+            updatedEvent.games[gameIndex].score[opposingTeamScoreIndex].value = opposingTeam.score;
+            updatedEvent.games[gameIndex].complete = isComplete;
+            updatedEvent.games[gameIndex].winner = primaryTeam.winner
+
+            return { event: updatedEvent, game: updatedEvent.games[gameIndex] };
+        } catch (error) {
+            console.error("Error fetching game data:", error);
+            return { event: updatedEvent, game: null }; // Return the event without modifications in case of an error
+        }
+    } else {
+        console.log("There is no game happening right now.");
+        return { event, game: null };
+    }
+}
+
+
 function gameData(event, sport) {
     //var url = 'http://localhost:3100/summary';
     var leagueName = 'college-football'
@@ -70,7 +121,8 @@ function gameData(event, sport) {
     if(sport == 'baseball') {
         leagueName = 'college-baseball';
     }
-    var url = `https://site.web.api.espn.com/apis/site/v2/sports/${sport}/${leagueName}/summary?event=${event.id}`;
+    const id = event.games[0].id
+    var url = `https://site.web.api.espn.com/apis/site/v2/sports/${sport}/${leagueName}/summary?event=${id}`;
     return axios.get(url).then(data => {
         var gameData = data.data.header.competitions[0];
         var odds = data.data.pickcenter.find(function( obj ) { return obj.provider.id === '25'; });
@@ -88,86 +140,127 @@ function gameData(event, sport) {
         gameData.venue = data.data.gameInfo.venue;
         gameData.time = moment(gameData.date).format('h:mm a');
         gameData.date = date;
+        gameData.tournament = event.tournament;
+        gameData.games = event.games;
+        gameData.completed = event.games.every(game => {
+            return game.complete === true
+        })
         return buildTitle(gameData, sport);
     });
 }
 
 function buildTitle(gameData, sport) {
-    var game = {
+    const sportIcons = {
+        'baseball': '⚾',
+        'basketball': '🏀',
+        'football': '🏈'
+    };
+
+    const game = {
         id: gameData.id,
-        completed: gameData.status.type.completed,
+        completed: gameData.completed,
         link: gameData.link,
         picks: gameData.picks,
         date: gameData.date,
         time: gameData.time,
         venue: gameData.venue,
         sport: sport,
+        tournament: gameData.tournament,
         network: gameData.broadcasts && gameData.broadcasts.length > 0 ? gameData.broadcasts[0].media.shortName : null,
         homeAway: gameData.homeAway,
-        teams: gameData.competitors.map(team => {
-            return {
-                id: team.id,
-                score: team.score || null
-            }
-        })
-    }
-    var sportIcon = "🏈";
-    if(sport == 'baseball') {
-      sportIcon = "⚾";
-    }
-    if(sport == 'basketball') {
-      sportIcon = "🏀";
-    }
-    if(gameData.status.type.completed) {
-        var winner = gameData.competitors.find(function( obj ) { return obj.winner === true; });
-        var loser = gameData.competitors.find(function( obj ) { return obj.winner === false; });
-        winner.team.nickname ? '' : winner.team.nickname = winner.team.location;
-        loser.team.nickname ? '' : loser.team.nickname = loser.team.location;
-        game.title = `[POST GAME THREAD] ${sportIcon} `;
-        if(winner.rank) {
-            game.title += ' #' + winner.rank + ' ';
+        teams: gameData.competitors.map(team => ({
+            id: team.id,
+            score: team.score || null
+        })),
+        games: gameData.games
+    };
+
+    const sportIcon = sportIcons[sport] || '🏈';
+
+    if (gameData.completed) {
+        const winner = gameData.competitors.find(function (obj) { return obj.winner === true; });
+        const loser = gameData.competitors.find(function (obj) { return obj.winner === false; });
+
+        const winCount = game.games.filter(function (game) { return game.winner === true; }).length;
+        const loseCount = game.games.filter(function (game) { return game.winner === false; }).length;
+
+        let winnerScore = winner.score;
+        let loserScore = loser.score;
+        let threadType = game.games.length > 1 ? 'SERIES' : 'GAME';
+
+        if (game.games.length > 1) {
+            winnerScore = winCount;
+            loserScore = loseCount;
         }
-        game.title += winner.team.nickname + ' defeats ';
-        if(loser.rank) {
-            game.title += '#' + loser.rank + ' ';
+
+        game.title = `[POST ${threadType} THREAD] ${sportIcon} `;
+
+        if (winner.rank) {
+            game.title += `#${winner.rank} `;
         }
-        game.title += loser.team.nickname + ', ' + winner.score + '-' + loser.score;
+
+        game.title += `${winner.team.nickname || winner.team.location} defeats `;
+
+        if (loser.rank) {
+            game.title += `#${loser.rank} `;
+        }
+
+        game.title += `${loser.team.nickname || loser.team.location}, ${winnerScore}-${loserScore}`;
     } else {
-        var checkID = process.env.TEAM_ID;
-        if(sport == 'baseball') {
-            checkID = "126";
+        const checkID = sport === 'baseball' ? '126' : process.env.TEAM_ID;
+        const primary = gameData.competitors.find(function (obj) { return obj.id === checkID; });
+        const opposing = gameData.competitors.find(function (obj) { return obj.id !== checkID; });
+
+        let threadType = game.games.length > 1 ? 'SERIES' : 'GAME';
+
+        if (game.tournament) {
+            threadType = 'TOURNAMENT';
         }
-        var primary = gameData.competitors.find(function( obj ) { return obj.id === checkID; });
-        var opposing = gameData.competitors.find(function( obj ) { return obj.id != checkID; });
-        primary.team.nickname ? '' : primary.team.nickname = primary.team.location;
-        opposing.team.nickname ? '' : opposing.team.nickname = opposing.team.location;
-        primary.reddit = teamLink[primary.team.abbreviation];
-        opposing.reddit = teamLink[opposing.team.abbreviation];
-        game.title = `[GAME THREAD] ${sportIcon} `;
-        if(primary.rank) {
-            game.title += '#' + primary.rank + ' ';
+
+        game.title = `[${threadType} THREAD] ${sportIcon} `;
+
+        if (game.tournament) {
+            game.title += `${game.tournament}`
+        } else {
+            if (primary.rank) {
+                game.title += `#${primary.rank} `;
+            }
+    
+            game.title += `${primary.team.nickname || primary.team.location}`;
+    
+            if (primary.record && primary.record.length > 0) {
+                game.title += ` (${primary.record[0].displayValue})`;
+            }
+    
+            game.title += `${primary.homeAway === 'away' ? ' @ ' : ' vs. '}`;
+    
+            if (opposing.rank) {
+                game.title += `#${opposing.rank} `;
+            }
+    
+            game.title += `${opposing.team.nickname || opposing.team.location}`;
+    
+            if (opposing.record && opposing.record.length > 0) {
+                game.title += ` (${opposing.record[0].displayValue})`;
+            }
+    
+            if (game.games.length === 1) {
+                game.title += ` - ${gameData.time}`;
+            }
         }
-        game.title += primary.team.nickname;
-        if(primary.record && primary.record.length > 0) {
-            game.title += ' (' + primary.record[0].displayValue + ')'
-        }
-        game.title += primary.homeAway == 'away' ? ' @ ' : ' vs. ';
-        if(opposing.rank) {
-            game.title += '#' + opposing.rank + ' ';
-        }
-        game.title += opposing.team.nickname;
-        if(opposing.record && opposing.record.length > 0) {
-            game.title += ' (' + opposing.record[0].displayValue + ')';
-        }
-        game.title += ' - ' + gameData.time;
-        game.teams = {primaryTeam: primary, opposingTeam: opposing};
+
+        game.teams = { primaryTeam: primary, opposingTeam: opposing };
     }
-    return game;    
+
+    return game;
 }
+
+
 
 module.exports = {
     gameThread,
     gameWatcher,
     gameData,
+    gameStatus,
     buildTitle
 };

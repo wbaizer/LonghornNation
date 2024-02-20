@@ -9,6 +9,7 @@ const networks = require('../static_data/networks.json');
 var app = express();
 app.set('views', path.join(__dirname, '../views'));
 app.set('view engine', 'ejs');
+app.locals.moment = moment;
 
 var gfm = turndownPluginGfm.gfm
 var turndownService = new TurndownService();
@@ -16,7 +17,7 @@ turndownService.use(gfm);
 
 function createMarkdown(template, data) {
     return new Promise(function(resolve,reject) {
-        app.render(template, {data, networks, teamLink}, function(err, doc) {
+        app.render(template, {data, networks, teamLink, moment}, function(err, doc) {
             if(err) {
                 reject(err);
             }

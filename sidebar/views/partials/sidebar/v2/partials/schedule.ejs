@@ -1,0 +1,68 @@
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th>Opponent</th>
+          <th>TV</th>
+          <th>Score</th>
+      </tr>
+  </thead>
+  <tbody>
+      <% for (var i = 0; i < data[sport].schedule[type].length; i++) { %>
+          <% for (var j = 0; j < data[sport].schedule[type][i].games.length; j++) { %>
+              <% 
+                  var end = moment().add('2', 'weeks');
+                  var start = moment().subtract('2', 'weeks');
+                  var eventDate = data[sport].schedule[type][i].games[j].date;
+                  if (moment(eventDate).isBetween(start, end)) {
+              %>
+                  <tr>
+                      <td><a href="<%= data[sport].schedule[type][i].games[j].opposingTeam.reddit %>"></a></td>
+                      <td>        
+                          <strong>
+                              <%= data[sport].schedule[type][i].games[j].primaryTeam.homeAway %>
+                              <% if (data[sport].schedule[type][i].games[j].opposingTeam.rank < 99) { %>
+                                  <em><%= data[sport].schedule[type][i].games[j].opposingTeam.rank %></em>
+                              <% } %>                            
+                              <%= data[sport].schedule[type][i].games[j].opposingTeam.nickname %>
+                          </strong>
+                          <%= moment(data[sport].schedule[type][i].games[j].date).format('MMM D') %>
+                          <% if (data[sport].schedule[type][i].venue && data[sport].schedule[type][i].venue.address && data[sport].schedule[type][i].venue.address.city && data[sport].schedule[type][i].venue.address.state) { %>
+                              - <%= data[sport].schedule[type][i].venue.address.city %>, <%= data[sport].schedule[type][i].venue.address.state %>
+                          <% } %>
+                      </td>
+                      <td><a href="<%= networks[data[sport].schedule[type][i].network] %>"></a></td>
+                      <td>
+                          <% if (data[sport].schedule[type][i].games[j].complete) { %>
+                              <% if (data[sport].schedule[type][i].games[j].primaryTeam.winner) { %>
+                                  <strong><a href="/win"></a><%= data[sport].schedule[type][i].games[j].primaryTeam.score %>-<%= data[sport].schedule[type][i].games[j].opposingTeam.score %></strong>
+                              <% } else { %>
+                                  <a href="/loss"></a><%= data[sport].schedule[type][i].games[j].primaryTeam.score %>-<%= data[sport].schedule[type][i].games[j].opposingTeam.score %>
+                              <% } %>
+                          <% } else { %>
+                              <% switch (data[sport].schedule[type][i].games[j].status) {
+                                  case 'STATUS_SCHEDULED' : %>
+                                          <% if (data[sport].schedule[type][i].games[j].timeValid) { %>
+                                              <%= moment(data[sport].schedule[type][i].games[j].date).format('h:mm a') %>
+                                          <% } else { %>
+                                              TBD
+                                          <% } %>
+                                          <% break;
+                                  
+                                  case 'STATUS_POSTPONED' : %>
+                                          PPD
+                                          <% break;
+                                  
+                                  case 'STATUS_CANCELED' : %>
+                                          CXL
+                                          <% break;
+                                  
+                                  } %>
+                          <% } %>
+                      </td>
+                  </tr>
+              <% } %>
+          <% } %>
+      <% } %>
+  </tbody>
+</table>

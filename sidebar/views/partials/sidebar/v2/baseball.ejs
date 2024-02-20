@@ -1,4 +1,7 @@
-<h1><a href="/r/BigXII">Baseball</a><% if(data.baseball.rankings.primaryTeam) { %>: (<%= data.baseball.rankings.primaryTeam.overall %>) <%= data.baseball.rankings.primaryTeam.conference %><% } %></h1>
+<% 
+var sport = 'baseball'
+%>
+<h1><a href="/r/BigXII">Baseball</a><% if(data[sport].rankings.primaryTeam) { %>: (<%= data[sport].rankings.primaryTeam.overall %>) <%= data[sport].rankings.primaryTeam.conference %><% } %></h1>
 <h4>Big 12 Baseball Standings</h4>   
 <table>
        <thead>
@@ -10,40 +13,40 @@
            </tr>
        </thead>
        <tbody>
-           <% for(var i=0; i < data.baseball.rankings.teams.length; i++) { %>
+           <% for(var i=0; i < data[sport].rankings.teams.length; i++) { %>
            <tr>
                 <td>
-                    <% if(data.baseball.rankings.teams[i].id == process.env.TEAM_ID) { %><a href="/texas-row"></a><% } %>
-                    <a href="<%= teamLink[data.baseball.rankings.teams[i].abbreviation] %>"></a>
+                    <% if(data[sport].rankings.teams[i].id == process.env.TEAM_ID) { %><a href="/texas-row"></a><% } %>
+                    <a href="<%= teamLink[data[sport].rankings.teams[i].abbreviation] %>"></a>
                 </td>
                <td>          
-                   <% if(data.baseball.rankings.teams[i].id == process.env.TEAM_ID) { %>
+                   <% if(data[sport].rankings.teams[i].id == process.env.TEAM_ID) { %>
                        <strong>
                    <% } %>             
                         
-                   <% if(data.baseball.rankings.teams[i].rank) { %>
-                    <em><%= data.baseball.rankings.teams[i].rank %></em>
-                <% } %><%= data.baseball.rankings.teams[i].name %>
+                   <% if(data[sport].rankings.teams[i].rank) { %>
+                    <em><%= data[sport].rankings.teams[i].rank %></em>
+                <% } %><%= data[sport].rankings.teams[i].name %>
                     </a>
-                   <% if(data.baseball.rankings.teams[i].id == process.env.TEAM_ID) { %>
+                   <% if(data[sport].rankings.teams[i].id == process.env.TEAM_ID) { %>
                    </strong>
                    <% } %>
                </td>
                <td>
-                   <% if(data.baseball.rankings.teams[i].id == process.env.TEAM_ID) { %>
+                   <% if(data[sport].rankings.teams[i].id == process.env.TEAM_ID) { %>
                        <strong>
                    <% } %>
-                   <%= data.baseball.rankings.teams[i].overall %>
-                   <% if(data.baseball.rankings.teams[i].id == process.env.TEAM_ID) { %>
+                   <%= data[sport].rankings.teams[i].overall %>
+                   <% if(data[sport].rankings.teams[i].id == process.env.TEAM_ID) { %>
                        </strong>
                    <% } %>
                </td>
                <td>
-                   <% if(data.baseball.rankings.teams[i].id == process.env.TEAM_ID) { %>
+                   <% if(data[sport].rankings.teams[i].id == process.env.TEAM_ID) { %>
                        <strong>
                    <% } %>
-                       <%= data.baseball.rankings.teams[i].conference %>
-                   <% if(data.baseball.rankings.teams[i].id == process.env.TEAM_ID) { %>
+                       <%= data[sport].rankings.teams[i].conference %>
+                   <% if(data[sport].rankings.teams[i].id == process.env.TEAM_ID) { %>
                    </strong>
                    <% } %>
                </td>
@@ -51,94 +54,9 @@
            <% } %>
        </tbody>
    </table>
-   <% if(data.baseball.schedule.post.length > 0) { %>
-       <h4>Post Season</h4>
-       <table>
-               <thead>
-                   <tr>
-                       <th></th>
-                       <th>Opponent</th>
-                       <th>TV</th>
-                       <th>Score</th>
-                   </tr>
-               </thead>
-               <tbody>
-                    <% for(var i=0; i < data.baseball.schedule.post.length; i++) { %>
-                    <tr>
-                        <td><a href="<%= data.baseball.schedule.post[i].opposingTeam.reddit %>"></a></td>
-                        <td>        
-                                <strong>
-                                     <%= data.baseball.schedule.post[i].homeAway %>
-                                     <% if(data.baseball.schedule.post[i].opposingTeam.curatedRank && data.baseball.schedule.post[i].opposingTeam.curatedRank.current < 99) {%>
-                                         <em><%= data.baseball.schedule.post[i].opposingTeam.curatedRank.current %></em>
-                                     <% } %>                            
-                                     <%= data.baseball.schedule.post[i].opposingTeam.team.nickname %>
-                                 </strong>
-                                 <%= data.baseball.schedule.post[i].date %> <% if(data.baseball.schedule.post[i].venue && data.baseball.schedule.post[i].venue.address && data.baseball.schedule.post[i].venue.address.city && data.baseball.schedule.post[i].venue.address.state) { %>- <%= data.baseball.schedule.post[i].venue.address.city %>, <%= data.baseball.schedule.post[i].venue.address.state %><% } %>
-                            </a>
-                        </td>
-                            <td><a href="<%= networks[data.baseball.schedule.post[i].network] %>"></a></td>
-                        <td>
-                            <% if(data.baseball.schedule.post[i].complete) {%>
-                            <% if(data.baseball.schedule.post[i].primaryTeam.winner) {%>
-                                <strong><a href="/win"></a> <%= data.baseball.schedule.post[i].primaryTeam.score.displayValue %>-<%= data.baseball.schedule.post[i].opposingTeam.score.displayValue %></strong>
-                                <% } else { %>
-                                <a href="/loss"></a> <%= data.baseball.schedule.post[i].primaryTeam.score.displayValue %>-<%= data.baseball.schedule.post[i].opposingTeam.score.displayValue %>
-                                <% } %>
-                            <% } else {%>
-                                <%= data.baseball.schedule.post[i].time %>
-                            <% } %>
-                        </td>
-                    </tr>
-                    <% } %>
-                </tbody>
-           </table>
+   <% if(data[sport].schedule.post.length > 0) { %>
+        <h4>Post Season</h4>
+        <%- include('../views/partials/sidebar/v2/partials/schedule', { type: 'post', sport: 'baseball', data }) %>
    <% }%>
    <h4>Regular Season</h4>
-   <table>
-       <thead>
-           <tr>
-               <th></th>
-               <th>Opponent</th>
-               <th>TV</th>
-               <th>Score</th>
-           </tr>
-       </thead>
-       <tbody>
-           <% for(var i=0; i < data.baseball.schedule.regular.length; i++) { %>
-            <% 
-                var end = moment().add('2', 'weeks');
-                var start = moment().subtract('2', 'weeks');
-                var eventDate = data.baseball.schedule.regular[i].dateISO;
-                if(moment(eventDate).isBetween(start, end)) {
-            %>
-           <tr>
-               <td><a href="<%= data.baseball.schedule.regular[i].opposingTeam.reddit %>"></a></td>
-               <td>        
-                       <strong>
-                            <%= data.baseball.schedule.regular[i].homeAway %>
-                            <% if(data.baseball.schedule.regular[i].opposingTeam.curatedRank && data.baseball.schedule.regular[i].opposingTeam.curatedRank.current < 99) {%>
-                                <em><%= data.baseball.schedule.regular[i].opposingTeam.curatedRank.current %></em>
-                            <% } %>                            
-                            <%= data.baseball.schedule.regular[i].opposingTeam.team.nickname %>
-                        </strong>
-                        <%= data.baseball.schedule.regular[i].date %> <% if(data.baseball.schedule.regular[i].venue && data.baseball.schedule.regular[i].venue.address && data.baseball.schedule.regular[i].venue.address.city && data.baseball.schedule.regular[i].venue.address.state) { %>- <%= data.baseball.schedule.regular[i].venue.address.city %>, <%= data.baseball.schedule.regular[i].venue.address.state %><% } %>
-                   </a>
-               </td>
-                   <td><a href="<%= networks[data.baseball.schedule.regular[i].network] %>"></a></td>
-               <td>
-                   <% if(data.baseball.schedule.regular[i].complete) {%>
-                   <% if(data.baseball.schedule.regular[i].primaryTeam.winner) {%>
-                       <strong><a href="/win"></a> <%= data.baseball.schedule.regular[i].primaryTeam.score.displayValue %>-<%= data.baseball.schedule.regular[i].opposingTeam.score.displayValue %></strong>
-                       <% } else { %>
-                       <a href="/loss"></a> <%= data.baseball.schedule.regular[i].primaryTeam.score.displayValue %>-<%= data.baseball.schedule.regular[i].opposingTeam.score.displayValue %>
-                       <% } %>
-                   <% } else {%>
-                       <%= data.baseball.schedule.regular[i].time %>
-                   <% } %>
-               </td>
-           </tr>
-           <% } %>
-           <% } %>
-       </tbody>
-   </table>
+   <%- include('../views/partials/sidebar/v2/partials/schedule', { type: 'regular', sport: 'baseball', data }) %>
