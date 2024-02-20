@@ -8,47 +8,44 @@ const { fetchTeamSchedule } = require('../../utils/schedule');
 const teamLink = require('../../static_data/teams.reddit.json');
 const networks = require('../../static_data/networks.json');
 
-var gfm = turndownPluginGfm.gfm
-var turndownService = new TurndownService();
+const gfm = turndownPluginGfm.gfm;
+const turndownService = new TurndownService();
 turndownService.use(gfm);
 
-module.exports = function(agenda) {
-    agenda.define('Update Sidebar', function(job, done) {
-        var app = express();
-        app.set('views', path.join(__dirname, '../../views'));
-        app.set('view engine', 'ejs');
-        app.locals.moment = moment;
-        var date = moment(Date.now()).format('M/D/Y hh:mm A');
-        var show = {
-          football: process.env.FOOTBALL,
-          baseball: process.env.BASEBALL,
-          basketball: process.env.BASKETBALL
-        }
-        fetchTeamSchedule(agenda).then(data => {
-            app.render('sidebar', {data, teamLink: teamLink, networks: networks, date, show, moment: moment}, function(err, doc) {
-              if(err) {
-                done(err);
-                return console.log(err);
-              }
-              var markdown = turndownService.turndown(doc, {gfm: true}); 
-              reddit.getSubreddit(process.env.SUBREDDIT).editSettings({
-                    description: markdown
-                  }).then(data => {
-                    //success('Success, you did it peter!'); 
-                    console.log('updated reddit');
+module.exports = function (agenda) {
+    agenda.define('Update Sidebar', async function (job, done) {
+        try {
+            const app = express();
+            app.set('views', path.join(__dirname, '../../views'));
+            app.set('view engine', 'ejs');
+            app.locals.moment = moment;
+            const date = moment(Date.now()).format('M/D/Y hh:mm A');
+            const show = {
+                football: process.env.FOOTBALL,
+                baseball: process.env.BASEBALL,
+                basketball: process.env.BASKETBALL
+            };
+            const data = await fetchTeamSchedule(agenda);
+            app.render('sidebar', { data, teamLink, networks, date, show, moment }, async function (err, doc) {
+                if (err) {
+                    console.error('Error rendering sidebar:', err);
+                    return done(err);
+                }
+                try {
+                    const markdown = turndownService.turndown(doc, { gfm: true });
+                    await reddit.getSubreddit(process.env.SUBREDDIT).editSettings({ description: markdown });
+                    console.log('Updated Reddit sidebar');
                     done();
-                    //message(process.env.DISCORD_CHANNEL, false, `MoOooOoo I updated the sidebar on ${process.env.SUBREDDIT}!`);         
-                  }).catch(err => {
-                      console.log(err.message);
-                      job.schedule('15 seconds');
-                      job.save();                      
-                      done(err.message);
-                      //message(process.env.DISCORD_CHANNEL, true, err.message);
-                  });
-    
+                } catch (err) {
+                    console.error('Error updating Reddit sidebar:', err);
+                    job.schedule('15 seconds');
+                    job.save();
+                    done(err);
+                }
             });
-        }).catch(err => {
-            return done(err);
-        });
+        } catch (err) {
+            console.error('Error in job execution:', err);
+            done(err);
+        }
     });
 };

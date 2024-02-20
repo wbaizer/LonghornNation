@@ -1,38 +1,43 @@
 require("dotenv").config();
 
-const cron = require("node-cron");
 const moment = require("moment");
-const snoowrap = require("snoowrap");
-const express = require("express");
-const path = require("path");
-const TurndownService = require("turndown");
-const turndownPluginGfm = require("turndown-plugin-gfm");
-
 const { fetchTeamSchedule } = require("./utils/schedule");
-
 const { buildTitle } = require("./utils/gameThread");
 const teamLink = require("./static_data/teams.reddit.json");
 const networks = require("./static_data/networks.json");
-let agenda = require("./jobs/agenda");
+const agenda = require("./jobs/agenda");
 
 console.log("Starting Up App");
-agenda.on("ready", function () {
 
-  agenda
-    .create("Update Sidebar")
-    .unique({ subreddit: process.env.SUBREDDIT })
-    .repeatEvery("0 0 * * *", { skipImmediate: false })
-    .save();
-  agenda
-    .create("Free Talk Thread")
-    .unique({ "ftt-sub": process.env.SUBREDDIT })
-    .repeatEvery("0 0 * * *", { skipImmediate: true })
-    .save();
-  agenda
-    .create("Sports Talk Thread")
-    .unique({ "stt-sub": process.env.SUBREDDIT })
-    .repeatEvery("2 0 * * *", { skipImmediate: true })
-    .save();
-});
+async function initializeAgenda() {
+  try {
+    await new Promise((resolve, reject) => {
+      agenda.once("ready", () => resolve());
+    });
 
-console.log("created recurring event");
+    console.log("Agenda initialized successfully.");
+
+    agenda
+      .create("Update Sidebar")
+      .unique({ subreddit: process.env.SUBREDDIT })
+      .repeatEvery("0 0 * * *", { skipImmediate: false })
+      .save();
+    agenda
+      .create("Free Talk Thread")
+      .unique({ "ftt-sub": process.env.SUBREDDIT })
+      .repeatEvery("0 0 * * *", { skipImmediate: true })
+      .save();
+    agenda
+      .create("Sports Talk Thread")
+      .unique({ "stt-sub": process.env.SUBREDDIT })
+      .repeatEvery("2 0 * * *", { skipImmediate: true })
+      .save();
+
+    console.log("Recurring events created successfully.");
+  } catch (error) {
+    console.error("Error initializing Agenda:", error);
+    process.exit(1); // Exit the process with a non-zero status code to indicate failure
+  }
+}
+
+initializeAgenda();
