@@ -6,7 +6,7 @@ const requestLimit = 60; // per minute
 let lastReset = Date.now();
 
 const reddit = new snoowrap({
-  userAgent: 'nodejs:texas-schedule:v0.0.1 (by /u/' + process.env.USERNAME + ')',
+  userAgent: 'script:texas-sports-bot:v1.0.0 (by /u/' + process.env.USERNAME + ')',
   clientId: process.env.REDDIT_KEY,
   clientSecret: process.env.REDDIT_SECRET,
   username: process.env.USERNAME,
@@ -30,21 +30,31 @@ if (!process.env.REDDIT_KEY || !process.env.REDDIT_SECRET || !process.env.USERNA
 }
 
 async function makeRedditRequest(func) {
-  const now = Date.now();
-  if (now - lastReset > 60000) {
-    requestCount = 0;
-    lastReset = now;
+  try {
+    const now = Date.now();
+    if (now - lastReset > 60000) {
+      requestCount = 0;
+      lastReset = now;
+    }
+    
+    if (requestCount >= requestLimit) {
+      const waitTime = 60000 - (now - lastReset);
+      await new Promise(resolve => setTimeout(resolve, waitTime));
+      requestCount = 0;
+      lastReset = Date.now();
+    }
+    
+    requestCount++;
+    return await func();
+  } catch (error) {
+    console.error('Reddit API Error:', {
+      status: error.statusCode,
+      message: error.message,
+      name: error.name,
+      stack: error.stack
+    });
+    throw error;
   }
-  
-  if (requestCount >= requestLimit) {
-    const waitTime = 60000 - (now - lastReset);
-    await new Promise(resolve => setTimeout(resolve, waitTime));
-    requestCount = 0;
-    lastReset = Date.now();
-  }
-  
-  requestCount++;
-  return func();
 }
 
 async function getLastThread(search) {
