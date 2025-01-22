@@ -27,7 +27,7 @@ async function fetchTeamSchedule(agenda) {
             axios.get('https://site.web.api.espn.com/apis/v2/sports/football/college-football/standings?region=us&lang=en&group=8&disable=stats&xhr=1'),
             axios.get('https://site.web.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/teams/' + process.env.TEAM_ID + '/schedule?region=us&lang=en&enable=broadcasts&disable=leaders&flat=true'),
             axios.get('https://site.web.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/teams/' + process.env.TEAM_ID + '/schedule?region=us&lang=en&seasontype=3&enable=broadcasts&disable=leaders'),
-            axios.get('https://site.web.api.espn.com/apis/v2/sports/basketball/mens-college-basketball/standings?region=us&lang=en&group=8&sort=vsconf_winpercent%3Adesc%2Cvsconf_wins%3Adesc%2Cvsconf_losses%3Aasc%2Cvsconf_gamesbehind%3Aasc&xhr=1'),
+            axios.get('https://site.web.api.espn.com/apis/v2/sports/basketball/mens-college-basketball/standings?region=us&lang=en&group=23&sort=vsconf_winpercent%3Adesc%2Cvsconf_wins%3Adesc%2Cvsconf_losses%3Aasc%2Cvsconf_gamesbehind%3Aasc&xhr=1'),
             axios.get('http://site.api.espn.com/apis/site/v2/sports/baseball/college-baseball/teams/126/schedule?seasontype=2&enable=broadcasts&disable=leaders'),
             axios.get('http://site.api.espn.com/apis/site/v2/sports/baseball/college-baseball/teams/126/schedule?seasontype=3&enable=broadcasts&disable=leaders')
         ])
