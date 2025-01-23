@@ -88,16 +88,20 @@ agenda.on('ready', async function() {
       await agenda.start();
       console.log('Agenda has started');
 
-      // Schedule recurring jobs with different times to avoid concurrent Reddit requests
-      await agenda
+      // First, create and run the sidebar update immediately
+      const sidebarJob = await agenda
         .create("Update Sidebar")
         .unique({ subreddit: process.env.SUBREDDIT })
         .repeatEvery("0 0 * * *", { 
-          skipImmediate: false,
+          skipImmediate: true,  // Changed to true since we're running it manually
           timezone: 'America/Chicago'
         })
         .save();
+      
+      // Run the sidebar update immediately
+      await sidebarJob.run();
 
+      // Schedule recurring jobs with different times to avoid concurrent Reddit requests
       await agenda
         .create("Free Talk Thread")
         .unique({ "ftt-sub": process.env.SUBREDDIT })
